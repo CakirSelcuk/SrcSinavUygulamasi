@@ -78,6 +78,7 @@
 
 	<ItemGroup>
 	  <EmbeddedResource Include="Resources\Raw\sorular_src2.json" />
+	  <EmbeddedResource Include="Resources\Raw\sorular_src2_sinav.json" />
 	  <EmbeddedResource Include="Resources\Raw\sorular_src3.json" />
 	  <EmbeddedResource Include="Resources\Raw\sorular_src4.json" />
 	</ItemGroup>

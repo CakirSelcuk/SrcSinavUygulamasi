@@ -1,12 +1,502 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SrcSinavUygulamasi.Resources.Raw
-{
-    class sorular_src2
-    {
-    }
-}
+﻿[
+  {
+    "soru": "SRC 2 mesleki yeterlilik belgesinin yasal kapsamı aşağıdakilerden hangisidir?",
+    "siklar": ["Uluslararası eşya", "Yurtiçi yolcu", "Uluslararası yolcu", "Yurtiçi kargo"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC 2 belgesi ile aşağıdaki araçlardan hangisi ticari amaçla kullanılamaz?",
+    "siklar": ["Öğrenci servisi", "Personel servisi", "Şehirlerarası otobüs", "Tır / çekici"],
+    "dogruCevap": "D"
+  },
+  {
+    "soru": "SRC 1 belgesine sahip olan bir sürücü, yasal kapsam gereği hangi belgeye de sahip sayılır?",
+    "siklar": ["SRC 2", "SRC 3", "SRC 4", "SRC 5"],
+    "dogruCevap": "A"
+  },
+  {
+    "soru": "SRC belgesi almaya engel teşkil eden suçlardan biri aşağıdakilerden hangisidir?",
+    "siklar": ["Kaçakçılık suçları", "Basit yaralama", "Hakaret", "Borçlar hukuku ihlali"],
+    "dogruCevap": "A"
+  },
+  {
+    "soru": "SRC belgesi alabilmek için adayın sahip olması gereken asgari eğitim düzeyi nedir?",
+    "siklar": ["İlkokul", "Ortaokul", "Lise", "Üniversite"],
+    "dogruCevap": "A"
+  },
+  {
+    "soru": "Sınavsız (muafiyetli) SRC başvurusu yapabilmek için ehliyetin hangi tarihten önce alınmış olması gerekir?",
+    "siklar": ["25 Şubat 2003", "1 Ocak 2003", "25 Şubat 2004", "11 Eylül 2004"],
+    "dogruCevap": "A"
+  },
+  {
+    "soru": "SRC yazılı (teorik) sınavında başarılı sayılmak için en az kaç puan alınmalıdır?",
+    "siklar": ["60", "65", "70", "75"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC yazılı sınavında yanlış cevaplar doğru cevapları etkiler mi?",
+    "siklar": ["4 yanlış 1 doğruyu götürür", "3 yanlış 1 doğruyu götürür", "2 yanlış 1 doğruyu götürür", "Hayır, etkilemez"],
+    "dogruCevap": "D"
+  },
+  {
+    "soru": "SRC sınavlarında (teorik + uygulama) adayların toplam kaç sınav hakkı vardır?",
+    "siklar": ["2", "3", "4", "5"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC 2 eğitim programı toplam kaç ders saatinden oluşur?",
+    "siklar": ["28", "32", "36", "40"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC eğitimine katılan kursiyerlerin devamsızlık hakkı toplam ders saatinin yüzde kaçını geçemez?",
+    "siklar": ["%5", "%10", "%15", "%20"],
+    "dogruCevap": "A"
+  },
+  {
+    "soru": "Psikoteknik değerlendirme raporunun geçerlilik süresi kaç yıldır?",
+    "siklar": ["2", "3", "4", "5"],
+    "dogruCevap": "D"
+  },
+  {
+    "soru": "Ticari yolcu taşımacılığı yapan sürücüler için standart üst yaş sınırı hangisidir?",
+    "siklar": ["63", "65", "66", "69"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "Büyük otobüs kullanacak sürücüler için belirlenen alt yaş sınırı kaçtır?",
+    "siklar": ["22", "24", "25", "26"],
+    "dogruCevap": "D"
+  },
+  {
+    "soru": "Minibüs kullanacak ticari sürücüler için yasal alt yaş sınırı kaçtır?",
+    "siklar": ["18", "19", "21", "22"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "U-ETDS sisteminin temel amacı aşağıdakilerden hangisidir?",
+    "siklar": ["Yakıt tüketimini ölçmek", "Sefer ve yolcu bilgilerini kaydetmek", "Araç hızını sınırlamak", "Lastik basıncını kontrol etmek"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "U-ETDS kısaltmasının açılımı hangisidir?",
+    "siklar": ["Ulaştırma Elektronik Takip ve Denetim Sistemi", "Uluslararası Eşya Takip Sistemi", "Uydu Entegre Trafik Sistemi", "Ulaşım Enformasyon Tarife Sistemi"],
+    "dogruCevap": "A"
+  },
+  {
+    "soru": "Karayolu Taşıma Kanunu'nun numarası kaçtır?",
+    "siklar": ["2918", "4925", "5607", "6136"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "Bilet kesilmesi, yolcu taşımacılığında en geç hangi aşamada zorunludur?",
+    "siklar": ["Yolcu araca bindiğinde", "Yolculuk sırasında", "Yolculuk sonunda", "Hareketten önce"],
+    "dogruCevap": "D"
+  },
+  {
+    "soru": "Yurtiçi yolcu taşımacılığında yolcunun ücretsiz bagaj hakkı kaç kilogramdır?",
+    "siklar": ["20", "25", "30", "40"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "Diferansiyel sisteminin virajlardaki temel görevi nedir?",
+    "siklar": ["Yakıt tasarrufu sağlamak", "Motoru soğutmak", "Tekerleklerin farklı hızda dönmesini sağlamak", "Fren mesafesini kısaltmak"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "Motorun dönüş hareketini 90 derece çevirerek akslara ileten güç aktarma organı hangisidir?",
+    "siklar": ["Şaft", "Vites kutusu", "Diferansiyel", "Debriyaj"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "Dizel motorlarda yakıtın ateşlenmesi nasıl gerçekleşir?",
+    "siklar": ["Buji kıvılcımı ile", "Manyeto ile", "Sıcak hava üzerine püskürtülerek", "Bobin ile"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "ABS (Anti-lock Braking System) sisteminin temel görevi nedir?",
+    "siklar": ["Aracı daha hızlı durdurmak", "Tekerleklerin kilitlenmesini önlemek", "Yakıt tasarrufu sağlamak", "Direksiyon hakimiyetini azaltmak"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "Aşağıdakilerden hangisi aktif güvenlik sistemidir?",
+    "siklar": ["Emniyet kemeri", "Hava yastığı", "ABS", "Kapı içi çelik bar"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "Aşağıdakilerden hangisi pasif güvenlik sistemidir?",
+    "siklar": ["ASR", "ESP", "Emniyet kemeri", "ABS"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "Tehlikeyi fark edip frene basana kadar geçen sürede kat edilen yolun adı nedir?",
+    "siklar": ["Fren mesafesi", "Reaksiyon mesafesi", "Durma mesafesi", "Takip mesafesi"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "Toplam durma mesafesi hangi iki mesafenin toplamıdır?",
+    "siklar": ["Reaksiyon + fren", "Reaksiyon + takip", "Fren + takip", "İntikal + fren"],
+    "dogruCevap": "A"
+  },
+  {
+    "soru": "Lastik tabanının ortadan aşınması hangi duruma işaret eder?",
+    "siklar": ["Düşük hava basıncı", "Yüksek hava basıncı", "Rot ayarı bozukluğu", "Balans ayarı bozukluğu"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "Lastiklerin kenar (omuz) kısımlarının aşınması genellikle neyin göstergesidir?",
+    "siklar": ["Yüksek basınç", "Düşük basınç", "Amortisör arızası", "Fren ayarı"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "Ön lastiklerin sadece iç kısmının aşınması hangi ayarın bozuk olduğuna işaret eder?",
+    "siklar": ["Balans", "Rot", "Far", "Sübap"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "Rot ayarı bozuk olan bir araçta en sık görülen belirti hangisidir?",
+    "siklar": ["Motor harareti", "Araç bir yöne çeker", "Fren tutmaz", "Yakıt bitirir"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "Yangın söndürme cihazı araç içinde nerede bulunmalıdır?",
+    "siklar": ["Bagajda", "Motor bölümünde", "Sürücünün kolay ulaşabileceği yerde", "En arka koltuk altında"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "Turnike uygulaması hangi durumda yapılır?",
+    "siklar": ["Burkulmalarda", "Hafif kanamalarda", "Durdurulamayan şiddetli kanamalarda", "Böcek sokmalarında"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC belgesi olmayan bir sürücünün kazaya karışması halinde sigorta şirketinin uyguladığı \"rücu\" ne demektir?",
+    "siklar": ["Hasarı ödememek", "Ödediği tazminatı geri istemek", "Poliçeyi iptal etmek", "Primi düşürmek"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC belgesi olmadan araç kullandıran işleten için idari sorumluluk kime daha ağır yansır?",
+    "siklar": ["Yolcuya", "Sürücüye", "Araç sahibine", "Sigortacıya"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "B1 ve B2 yetki belgeleri hangi taşımacılık türü için verilir?",
+    "siklar": ["Kargo", "Otobüs ile yolcu", "Taksi", "Evden eve"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "Tarifesiz (grup/turizm) yurtiçi yolcu taşımacılığı için verilen yetki belgesi hangisidir?",
+    "siklar": ["D1", "D2", "B1", "A1"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC 2 belgesi aşağıdaki araçlardan hangisinin ticari kullanımını kapsar?",
+    "siklar": ["Tır", "Kamyon", "Otobüs", "Çekici"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC 2 kapsamının en doğru tanımı aşağıdakilerden hangisidir?",
+    "siklar": ["Yurtiçi yolcu taşımacılığı", "Uluslararası yolcu taşımacılığı", "Yurtiçi eşya taşımacılığı", "Uluslararası eşya taşımacılığı"],
+    "dogruCevap": "A"
+  },
+  {
+    "soru": "SRC 2 belgesi ile aşağıdaki faaliyetlerden hangisi yasal olarak yapılamaz?",
+    "siklar": ["Şehir içi yolcu taşımacılığı", "Personel servisi taşımacılığı", "Uluslararası yolcu taşımacılığı", "Öğrenci servisi taşımacılığı"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC 2 belgesi hangi taşıma türü için zorunludur?",
+    "siklar": ["Uluslararası yolcu", "Yurtiçi yolcu", "Yurtiçi kargo", "Uluslararası kargo"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC 2 sahibi bir sürücü aşağıdaki araçlardan hangisini ticari olarak kullanabilir?",
+    "siklar": ["Çekici", "Kamyon", "Otobüs", "Tır"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC belgesi almaya engel olan suç grubu hangisidir?",
+    "siklar": ["Hakaret", "Basit yaralama", "Kaçakçılık", "Trafik cezası"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC belgesi için adli sicil şartı aşağıdakilerden hangisini kapsamaz?",
+    "siklar": ["Uyuşturucu suçları", "Terör suçları", "Kaçakçılık suçları", "İcra borçları"],
+    "dogruCevap": "D"
+  },
+  {
+    "soru": "SRC 2 sınavına girebilmek için adayın öncelikle hangisini tamamlaması gerekir?",
+    "siklar": ["Psikoteknik raporu", "SRC eğitim programı", "Sağlık raporu", "U-ETDS kaydı"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC teorik sınavında adaylara tanınan süre kaç dakikadır?",
+    "siklar": ["45", "50", "60", "90"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC sınavında yanlış cevapların doğru cevaplara etkisi nasıldır?",
+    "siklar": ["4 yanlış 1 doğruyu götürür", "3 yanlış 1 doğruyu götürür", "2 yanlış 1 doğruyu götürür", "Etkilemez"],
+    "dogruCevap": "D"
+  },
+  {
+    "soru": "SRC sınavlarında adayların toplam sınav hakkı kaçtır?",
+    "siklar": ["2", "3", "4", "5"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC 2 belgesi almaya hak kazanan aday belgesini nereden alır?",
+    "siklar": ["İl Emniyet Müdürlüğü", "MEB", "e-Devlet sistemi", "Noter"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC 2 eğitim süresi toplam kaç ders saatidir?",
+    "siklar": ["28", "32", "36", "40"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC eğitiminde kursiyerin devamsızlık hakkı toplam ders saatinin yüzde kaçını geçemez?",
+    "siklar": ["%5", "%10", "%15", "%20"],
+    "dogruCevap": "A"
+  },
+  {
+    "soru": "Psikoteknik değerlendirme raporu kaç yılda bir yenilenmelidir?",
+    "siklar": ["2", "3", "4", "5"],
+    "dogruCevap": "D"
+  },
+  {
+    "soru": "Ticari yolcu taşımacılığı yapan sürücüler için standart üst yaş sınırı hangisidir?",
+    "siklar": ["63", "65", "66", "69"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "Büyük otobüs kullanacak sürücüler için belirlenen asgari yaş kaçtır?",
+    "siklar": ["22", "24", "25", "26"],
+    "dogruCevap": "D"
+  },
+  {
+    "soru": "Minibüs kullanacak ticari sürücüler için alt yaş sınırı kaçtır?",
+    "siklar": ["18", "19", "21", "22"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "U-ETDS sistemine veri girme zorunluluğu kime aittir?",
+    "siklar": ["Yolcuya", "Şoföre", "İşletmeye", "Terminale"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "U-ETDS sistemine girilen veriler temel olarak neyi kapsar?",
+    "siklar": ["Yakıt tüketimi", "Yolcu ve sefer bilgileri", "Lastik basıncı", "Motor arıza kayıtları"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "U-ETDS kısaltmasının açılımı hangisidir?",
+    "siklar": ["Ulaştırma Elektronik Takip ve Denetim Sistemi", "Uluslararası Elektronik Taşıma Sistemi", "Uydu Entegre Trafik Sistemi", "Ulaşım Enformasyon Tarife Sistemi"],
+    "dogruCevap": "A"
+  },
+  {
+    "soru": "Karayolu Taşıma Kanunu'nun numarası hangisidir?",
+    "siklar": ["2918", "4925", "5607", "6136"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "Yolcu taşımacılığında bilet kesilmesi en geç ne zaman zorunludur?",
+    "siklar": ["Yolculuk bitiminde", "Yolcu araca bindiğinde", "Yolcu ücret ödediğinde", "Sefer başlamadan önce"],
+    "dogruCevap": "D"
+  },
+  {
+    "soru": "Yurtiçi yolcu taşımacılığında yolcunun ücretsiz bagaj hakkı kaç kilogramdır?",
+    "siklar": ["20", "25", "30", "40"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "Aşağıdakilerden hangisi aktif güvenlik sistemidir?",
+    "siklar": ["Emniyet kemeri", "Hava yastığı", "ABS", "Kapı içi bar"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "Aşağıdakilerden hangisi pasif güvenlik sistemidir?",
+    "siklar": ["ESP", "ASR", "Emniyet kemeri", "ABS"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "Diferansiyelin temel görevi aşağıdakilerden hangisidir?",
+    "siklar": ["Yakıt tasarrufu sağlamak", "Motoru soğutmak", "Tekerleklerin farklı hızda dönmesini sağlamak", "Fren mesafesini kısaltmak"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "Motorun dönme hareketini 90 derece çevirerek akslara ileten parça hangisidir?",
+    "siklar": ["Debriyaj", "Şaft", "Diferansiyel", "Vites kutusu"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "Dizel motorlarda yakıtın ateşlenmesi nasıl gerçekleşir?",
+    "siklar": ["Buji kıvılcımıyla", "Sıcak hava üzerine püskürtülerek", "Manyeto ile", "Bobin yardımıyla"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "ABS sisteminin temel amacı nedir?",
+    "siklar": ["Aracı daha hızlı durdurmak", "Tekerleklerin kilitlenmesini önlemek", "Yakıt tüketimini azaltmak", "Direksiyon sertliğini artırmak"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "Tehlikeyi fark edip frene basılana kadar geçen sürede kat edilen yolun adı nedir?",
+    "siklar": ["Fren mesafesi", "Reaksiyon mesafesi", "Takip mesafesi", "Durma mesafesi"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "Toplam durma mesafesi hangi iki mesafenin toplamıdır?",
+    "siklar": ["Reaksiyon + fren", "Reaksiyon + takip", "Fren + takip", "İntikal + fren"],
+    "dogruCevap": "A"
+  },
+  {
+    "soru": "Lastik tabanının ortadan aşınması neyin göstergesidir?",
+    "siklar": ["Düşük hava basıncı", "Yüksek hava basıncı", "Rot ayarı bozukluğu", "Amortisör arızası"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "Lastiklerin kenar (omuz) kısımlarının aşınması genellikle hangi durumu gösterir?",
+    "siklar": ["Yüksek basınç", "Düşük basınç", "Fren ayarı", "Balans bozukluğu"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "Ön lastiklerin sadece iç kısmının aşınması hangi ayarın bozuk olduğuna işaret eder?",
+    "siklar": ["Balans", "Rot", "Far", "Sübap"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "Rot ayarı bozuk bir araçta aşağıdakilerden hangisi görülür?",
+    "siklar": ["Motor harareti", "Araç bir yöne çeker", "Fren tutmaz", "Yakıt bitirir"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "Yangın söndürme cihazı araç içinde nerede bulunmalıdır?",
+    "siklar": ["Bagajda", "Motor bölümünde", "Sürücünün kolay ulaşabileceği yerde", "En arka koltuk altında"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "Turnike uygulaması hangi durumda yapılır?",
+    "siklar": ["Burkulmalarda", "Hafif kanamalarda", "Durdurulamayan şiddetli kanamalarda", "Böcek sokmalarında"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC belgesi olmayan sürücünün kazaya karışması halinde sigortanın \"rücu\" uygulaması ne anlama gelir?",
+    "siklar": ["Hasarı karşılamaz", "Ödediği tazminatı geri ister", "Poliçeyi iptal eder", "Prim indirimi yapar"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC belgesi olmadan araç kullandıran işleten için sorumluluk kime daha ağır yansır?",
+    "siklar": ["Yolcuya", "Sürücüye", "Araç sahibine", "Sigortacıya"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "Tarifesiz (grup/turizm) yurtiçi yolcu taşımacılığı için gerekli yetki belgesi hangisidir?",
+    "siklar": ["D1", "D2", "B1", "A1"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "B1 ve B2 yetki belgeleri hangi taşımacılık türü için verilir?",
+    "siklar": ["Kargo", "Otobüs ile yolcu", "Taksi", "Evden eve"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC 2 belgesi ile aşağıdaki araçlardan hangisi kullanılamaz?",
+    "siklar": ["Personel servisi", "Öğrenci servisi", "Şehirlerarası otobüs", "Tır"],
+    "dogruCevap": "D"
+  },
+  {
+    "soru": "SRC belgesi almaya engel teşkil eden suçlardan biri aşağıdakilerden hangisidir?",
+    "siklar": ["Hakaret", "Kaçakçılık", "Basit yaralama", "Trafik cezası"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC sınavına giren adayların teorik sınavdan sonra girdiği ikinci aşama hangisidir?",
+    "siklar": ["Mülakat", "Uygulama sınavı", "Direksiyon sınavı", "Saha sınavı"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC sınavlarında uygulama sınavında başarı şartı hangisidir?",
+    "siklar": ["3 sorudan 1 doğru", "3 sorudan 2 doğru", "5 sorudan 3 doğru", "Puan usulü"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC belgeleri hangi kurum tarafından düzenlenir?",
+    "siklar": ["MEB", "İçişleri Bakanlığı", "Ulaştırma ve Altyapı Bakanlığı", "Emniyet Genel Müdürlüğü"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC belgesi alabilmek için adayın sahip olması gereken sağlık raporu hangi kapsamda olmalıdır?",
+    "siklar": ["Aile hekimi raporu", "Sürücü olur raporu", "Heyet raporu", "İş göremezlik raporu"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC belgeleri hangi sistem üzerinden sorgulanabilir?",
+    "siklar": ["MERNİS", "e-Devlet", "SGK", "U-ETDS"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC 2 belgesinin temel amacı aşağıdakilerden hangisidir?",
+    "siklar": ["Uluslararası taşımayı düzenlemek", "Yurtiçi yolcu taşımacılığında mesleki yeterliliği belgelemek", "Eşya taşımacılığını denetlemek", "Tehlikeli madde taşımacılığını düzenlemek"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC belgesi almaya engel olmayan suç hangisidir?",
+    "siklar": ["Uyuşturucu ticareti", "İnsan kaçakçılığı", "Basit yaralama", "Kaçakçılık"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC 2 belgesi sahipleri aşağıdaki faaliyetlerden hangisini yapabilir?",
+    "siklar": ["Uluslararası yolcu taşımacılığı", "Yurtiçi yolcu taşımacılığı", "Uluslararası kargo taşımacılığı", "Tehlikeli madde taşımacılığı"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC belgesi hangi kanuna dayanılarak düzenlenir?",
+    "siklar": ["2918", "4925", "5607", "6136"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC sınavında ölçülen temel unsur aşağıdakilerden hangisidir?",
+    "siklar": ["Motor bilgisi", "Mesleki yeterlilik", "Trafik cezaları", "Ehliyet sınıfı"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC 2 belgesi aşağıdakilerden hangisi için zorunludur?",
+    "siklar": ["Özel otomobil kullanımı", "Ticari yolcu taşımacılığı", "Özel servis taşımacılığı", "Uluslararası kargo"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC belgesi olmayan bir sürücünün ticari araç kullanması hangi sonucu doğurur?",
+    "siklar": ["Uyarı", "İdari yaptırım", "Ehliyet iptali", "Hapis cezası"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC belgesi olmayan sürücü için sorumluluk kime daha fazla yüklenir?",
+    "siklar": ["Yolcuya", "Sürücüye", "Araç sahibine", "Sigortacıya"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC 2 belgesi ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "siklar": ["Uluslararası yolcu taşımacılığında geçerlidir", "Yurtiçi yolcu taşımacılığında geçerlidir", "Yalnızca kargo taşımacılığında geçerlidir", "Tehlikeli madde taşımacılığında geçerlidir"],
+    "dogruCevap": "B"
+  },
+  {
+    "soru": "SRC 2 belgesi aşağıdakilerden hangisi için alınır?",
+    "siklar": ["Yurtiçi yolcu", "Uluslararası yolcu", "Yurtiçi eşya", "Uluslararası eşya"],
+    "dogruCevap": "A"
+  },
+  {
+    "soru": "SRC 2 sınavında ölçülen bilgiler aşağıdakilerden hangisini kapsamaz?",
+    "siklar": ["Yolcu taşımacılığı mevzuatı", "Araç bilgisi", "Güvenli sürüş", "Uluslararası gümrük işlemleri"],
+    "dogruCevap": "D"
+  },
+  {
+    "soru": "SRC 2 belgesi hangi sınavla kazanılır?",
+    "siklar": ["Sadece yazılı", "Sadece uygulama", "Yazılı + uygulama", "Direksiyon"],
+    "dogruCevap": "C"
+  },
+  {
+    "soru": "SRC 2 belgesinin kapsamı aşağıdakilerden hangisiyle en doğru şekilde ifade edilir?",
+    "siklar": ["Yurtiçi yolcu taşımacılığı", "Uluslararası yolcu taşımacılığı", "Yurtiçi eşya taşımacılığı", "Uluslararası eşya taşımacılığı"],
+    "dogruCevap": "A"
+  }
+]
