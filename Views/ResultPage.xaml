@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SrcSinavUygulamasi.Views.ResultPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#0f172a">
+
+    <Grid RowDefinitions="Auto, *, Auto">
+
+        <BoxView Grid.Row="0" x:Name="HeaderBox" Color="#334155" HeightRequest="250" 
+                 VerticalOptions="Start" CornerRadius="0,0,40,40"/>
+
+        <VerticalStackLayout Grid.Row="0" Grid.RowSpan="2" VerticalOptions="Center" 
+                             HorizontalOptions="Center" Spacing="20" Margin="20,50,20,0">
+
+            <Border Stroke="White" StrokeThickness="4" BackgroundColor="#1e293b"
+                    HeightRequest="180" WidthRequest="180"
+                    StrokeShape="RoundRectangle 90">
+                <Border.Shadow>
+                    <Shadow Brush="Black" Offset="0,10" Opacity="0.4" Radius="20"/>
+                </Border.Shadow>
+                <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label Text="PUAN" TextColor="#94a3b8" FontSize="14" HorizontalOptions="Center" FontAttributes="Bold"/>
+                    <Label x:Name="LblScore" Text="85" TextColor="White" FontSize="50" FontAttributes="Bold" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Label x:Name="LblMessage" Text="Tebrikler!" TextColor="White" FontSize="24" 
+                   FontAttributes="Bold" HorizontalOptions="Center"/>
+            <Label x:Name="LblSubMessage" Text="Sınavı başarıyla tamamladın." TextColor="#cbd5e1" 
+                   FontSize="16" HorizontalOptions="Center" HorizontalTextAlignment="Center"
+                   Margin="20,0"/>
+
+            <Border Stroke="Transparent" BackgroundColor="#1e293b" StrokeShape="RoundRectangle 20" Padding="20" Margin="0,10">
+                <Grid ColumnDefinitions="*, *, *">
+                    <VerticalStackLayout Grid.Column="0" HorizontalOptions="Center">
+                        <Label Text="Doğru" TextColor="#94a3b8" FontSize="12"/>
+                        <Label x:Name="LblCorrect" Text="18" TextColor="#4ade80" FontSize="22" FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center">
+                        <Label Text="Yanlış" TextColor="#94a3b8" FontSize="12"/>
+                        <Label x:Name="LblWrong" Text="2" TextColor="#f87171" FontSize="22" FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center">
+                        <Label Text="Boş" TextColor="#94a3b8" FontSize="12"/>
+                        <Label x:Name="LblEmpty" Text="0" TextColor="#fbbf24" FontSize="22" FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+                </Grid>
+            </Border>
+
+        </VerticalStackLayout>
+
+        <!-- Butonlar -->
+        <VerticalStackLayout Grid.Row="2" Spacing="12" Margin="20,0,20,30">
+            
+            <!-- Sınavı Tekrarla butonu -->
+            <Button x:Name="BtnRetry" Text="Sınavı Tekrarla" 
+                    Clicked="OnRetryClicked"
+                    BackgroundColor="#f59e0b" TextColor="White"
+                    FontAttributes="Bold" FontSize="16" CornerRadius="16" HeightRequest="55"/>
+            
+            <!-- Sonraki Deneme butonu -->
+            <Button x:Name="BtnNextExam" Text="Sonraki Denemeye Geç" 
+                    Clicked="OnNextExamClicked"
+                    BackgroundColor="#22c55e" TextColor="White"
+                    FontAttributes="Bold" FontSize="16" CornerRadius="16" HeightRequest="55"/>
+            
+            <!-- Ana Menüye Dön -->
+            <Button Text="Ana Menüye Dön" 
+                    Clicked="OnGoHomeClicked"
+                    BackgroundColor="#475569" TextColor="White"
+                    FontAttributes="Bold" FontSize="14" CornerRadius="16" HeightRequest="50"/>
+                    
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentPage>

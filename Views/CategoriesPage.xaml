@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:SrcSinavUygulamasi.ViewModels"
+             xmlns:models="clr-namespace:SrcSinavUygulamasi.Models"
+             x:Class="SrcSinavUygulamasi.Views.CategoriesPage"
+             Title="Sınav Merkezi"
+             BackgroundColor="#0f172a"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.BindingContext>
+        <viewmodels:CategoriesViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid RowDefinitions="Auto, *">
+
+        <VerticalStackLayout Grid.Row="0" Padding="25,40,25,20" Spacing="5">
+            <Label Text="Merhaba," TextColor="#94a3b8" FontSize="16"/>
+            <Label Text="Hangi Sınava Hazırlanıyorsun?" TextColor="White" FontSize="24" FontAttributes="Bold" LineHeight="1.2"/>
+        </VerticalStackLayout>
+
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Categories}" Margin="15,0">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="1" VerticalItemSpacing="15"/>
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:CategoryModel">
+                    <Border Stroke="Transparent" 
+                            BackgroundColor="#1e293b" 
+                            StrokeShape="RoundRectangle 16"
+                            HeightRequest="100"
+                            Padding="0">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:CategoriesViewModel}}, Path=KategoriSecCommand}"
+                      CommandParameter="{Binding .}"/>
+                        </Border.GestureRecognizers>
+
+                        <Grid ColumnDefinitions="80, *, Auto">
+                            <BoxView Grid.Column="0" Color="{Binding Color}" Opacity="0.2"/>
+                            <Label Grid.Column="0" Text="{Binding IconText}" 
+                                   TextColor="{Binding Color}" 
+                                   FontSize="40" FontAttributes="Bold"
+                                   HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                            <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="2" Padding="10,0">
+                                <Label Text="{Binding Title}" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+                                <Label Text="{Binding Description}" TextColor="#94a3b8" FontSize="13"/>
+                            </VerticalStackLayout>
+
+                            <Label Grid.Column="2" Text="➤" TextColor="#475569" 
+                                   FontSize="20" VerticalOptions="Center" Margin="0,0,20,0"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+
+</ContentPage>

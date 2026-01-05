@@ -1,0 +1,48 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:SrcSinavUygulamasi.Converters"
+             x:Class="SrcSinavUygulamasi.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- Converters -->
+            <converters:InverseBoolConverter x:Key="InverseBoolConverter"/>
+            <converters:ProgressConverter x:Key="ProgressConverter"/>
+            
+            <!-- Colors -->
+            <Color x:Key="PrimaryColor">#6366F1</Color>
+            <Color x:Key="PrimaryDarkColor">#4F46E5</Color>
+            <Color x:Key="SuccessColor">#22C55E</Color>
+            <Color x:Key="DangerColor">#EF4444</Color>
+            <Color x:Key="BackgroundColor">#0F172A</Color>
+            <Color x:Key="SurfaceColor">#1E293B</Color>
+            <Color x:Key="TextPrimaryColor">#F8FAFC</Color>
+            <Color x:Key="TextSecondaryColor">#94A3B8</Color>
+            
+            <!-- Button Style -->
+            <Style TargetType="Button">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="Scale" Value="1"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Pressed">
+                                <VisualState.Setters>
+                                    <Setter Property="Scale" Value="0.98"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Disabled">
+                                <VisualState.Setters>
+                                    <Setter Property="Opacity" Value="0.8"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

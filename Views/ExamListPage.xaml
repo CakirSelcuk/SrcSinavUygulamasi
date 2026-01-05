@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:SrcSinavUygulamasi.ViewModels"
+             xmlns:models="clr-namespace:SrcSinavUygulamasi.Models"
+             x:Class="SrcSinavUygulamasi.Views.ExamListPage"
+             Title="Deneme Sınavları"
+             BackgroundColor="#0f172a"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.BindingContext>
+        <viewmodels:ExamListViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid RowDefinitions="Auto, *">
+
+        <!-- Başlık -->
+        <VerticalStackLayout Grid.Row="0" Padding="25,40,25,20" Spacing="5">
+            <HorizontalStackLayout Spacing="10">
+                <Button Text="←" BackgroundColor="Transparent" TextColor="White" 
+                        FontSize="24" Clicked="OnBackClicked" Padding="0"/>
+                <Label Text="{Binding CategoryTitle}" TextColor="White" FontSize="26" 
+                       FontAttributes="Bold" VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+            <Label Text="Deneme sınavını seçin" TextColor="#94a3b8" FontSize="14" Margin="40,0,0,0"/>
+        </VerticalStackLayout>
+
+        <!-- Deneme Listesi -->
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Exams}" Margin="15,0">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="1" VerticalItemSpacing="12"/>
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:ExamModel">
+                    <Border Stroke="Transparent" 
+                            BackgroundColor="#1e293b" 
+                            StrokeShape="RoundRectangle 16"
+                            HeightRequest="85"
+                            Padding="0">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:ExamListViewModel}}, Path=SelectExamCommand}"
+                                CommandParameter="{Binding .}"/>
+                        </Border.GestureRecognizers>
+
+                        <Grid ColumnDefinitions="80, *, Auto" Padding="0">
+                            <!-- Sol renk bloğu -->
+                            <BoxView Grid.Column="0" Color="{Binding Color}" Opacity="0.3"/>
+                            <Label Grid.Column="0" Text="{Binding IconText}" 
+                                   TextColor="{Binding Color}" 
+                                   FontSize="32" FontAttributes="Bold"
+                                   HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                            <!-- Başlık ve soru sayısı -->
+                            <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="4" Padding="15,0">
+                                <Label Text="{Binding Title}" TextColor="White" FontSize="17" FontAttributes="Bold"/>
+                                <Label Text="{Binding Subtitle}" 
+                                       TextColor="#94a3b8" FontSize="13"/>
+                            </VerticalStackLayout>
+
+                            <!-- Ok işareti -->
+                            <Label Grid.Column="2" Text="▶" TextColor="#475569" 
+                                   FontSize="16" VerticalOptions="Center" Margin="0,0,20,0"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" 
+                           Color="White" HorizontalOptions="Center" VerticalOptions="Center" Grid.RowSpan="2"/>
+    </Grid>
+
+</ContentPage>
