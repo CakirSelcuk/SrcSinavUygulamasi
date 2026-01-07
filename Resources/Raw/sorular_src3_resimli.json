@@ -1,0 +1,167 @@
+[
+    {
+        "soru": "SRC 3 belgesine sahip bir sürücü, mevzuata göre aşağıdaki taşımacılık faaliyetlerinden hangisini yapmaya yetkilidir?",
+        "siklar": [
+            "Sadece uluslararası eşya taşımacılığı",
+            "Uluslararası ve yurtiçi eşya/kargo taşımacılığı",
+            "Uluslararası yolcu taşımacılığı",
+            "Sadece yurtiçi kargo dağıtımı"
+        ],
+        "dogruCevap": "B",
+        "resimYolu": "src3_1.jpeg"
+    },
+    {
+        "soru": "Uluslararası karayolu eşya taşımalarında, taşıma sözleşmesinin ve yük bilgilerinin yazılı olarak düzenlendiği 'taşıma senedi' hangisidir?",
+        "siklar": [
+            "TIR Karnesi",
+            "Sevk İrsaliyesi",
+            "CMR Belgesi",
+            "Geçiş Belgesi"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src3_2.jpeg"
+    },
+    {
+        "soru": "AETR kurallarına göre sürücü, aralıksız araç kullanımından sonra mola vermek zorundadır. Bu aralıksız sürüş süresi en fazla kaç saattir?",
+        "siklar": [
+            "4 saat",
+            "4,5 saat",
+            "5 saat",
+            "5,5 saat"
+        ],
+        "dogruCevap": "B",
+        "resimYolu": "src3_3.jpeg"
+    },
+    {
+        "soru": "SRC 3 belgesi almak isteyen sürücüler için genel kural olarak belirlenen mesleki üst yaş sınırı aşağıdakilerden hangisidir?",
+        "siklar": [
+            "63 yaşından gün almamış olmak",
+            "65 yaşını doldurmamış olmak",
+            "66 yaşından gün almamış olmak",
+            "69 yaşından gün almamış olmak"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src3_4.jpeg"
+    },
+    {
+        "soru": "Eşya taşımacılığı yapan bir firma, U-ETDS sistemine sefer/taşıma bilgisini araç hareket ettikten sonra en geç hangi sürede girmek zorundadır?",
+        "siklar": [
+            "1 saat",
+            "3 saat",
+            "6 saat",
+            "24 saat"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src3_5.jpeg"
+    },
+    {
+        "soru": "TIR Karnesi kapsamında yapılan uluslararası transit taşımalarda bu belge, uygulamada en çok hangi işlemin yerine geçer?",
+        "siklar": [
+            "Gümrük teminatı",
+            "Zorunlu trafik sigortası",
+            "Araç ruhsatı",
+            "Sürücü ehliyeti"
+        ],
+        "dogruCevap": "A",
+        "resimYolu": "src3_6.jpeg"
+    },
+    {
+        "soru": "AETR'ye göre haftalık dinlenme süresi normal şartlarda kaç saat olmalıdır?",
+        "siklar": [
+            "45 saat",
+            "36 saat",
+            "24 saat",
+            "12 saat"
+        ],
+        "dogruCevap": "A",
+        "resimYolu": "src3_7.jpeg"
+    },
+    {
+        "soru": "AETR'de 'azaltılmış haftalık dinlenme' uygulanacaksa, haftalık dinlenme en az kaç saate indirilebilir?",
+        "siklar": [
+            "24 saat",
+            "36 saat",
+            "45 saat",
+            "12 saat"
+        ],
+        "dogruCevap": "A",
+        "resimYolu": "src3_8.jpeg"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi Karayolu Taşıma Kanunu kapsamı dışında örnek olarak gösterilebilir?",
+        "siklar": [
+            "Ticari kamyonetle eşya taşınması",
+            "Kargo şirketi aracıyla dağıtım yapılması",
+            "Resmi plakalı TSK aracıyla yapılan taşıma",
+            "Uluslararası evden eve nakliyat"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src3_9.jpeg"
+    },
+    {
+        "soru": "C türü yetki belgesi genel olarak hangi faaliyetleri kapsar?",
+        "siklar": [
+            "Uluslararası ve yurtiçi eşya taşımacılığı",
+            "Şehirlerarası otobüs işletmeciliği",
+            "Uluslararası yolcu taşımacılığı",
+            "Terminal işletmeciliği"
+        ],
+        "dogruCevap": "A",
+        "resimYolu": "src3_10.jpeg"
+    },
+    {
+        "soru": "CMR taşıma senedi uluslararası taşımada kaç nüsha olarak düzenlenir?",
+        "siklar": [
+            "2 nüsha",
+            "3 nüsha",
+            "4 nüsha",
+            "5 nüsha"
+        ],
+        "dogruCevap": "B",
+        "resimYolu": "src3_11.jpeg"
+    },
+    {
+        "soru": "CMR belgesinin 1. nüshası kural olarak kimde kalır?",
+        "siklar": [
+            "Göndericide",
+            "Alıcıda",
+            "Taşımacıda",
+            "Gümrükte"
+        ],
+        "dogruCevap": "A",
+        "resimYolu": "src3_12.jpeg"
+    },
+    {
+        "soru": "CMR belgesinin 2. nüshası genellikle nasıl işlem görür?",
+        "siklar": [
+            "Göndericide kalır",
+            "Yükle birlikte alıcıya gider",
+            "Gümrükte dosyalanır",
+            "Sigorta şirketine verilir"
+        ],
+        "dogruCevap": "B",
+        "resimYolu": "src3_13.jpeg"
+    },
+    {
+        "soru": "CMR belgesinin 3. nüshası kural olarak kimde kalır?",
+        "siklar": [
+            "Gönderici",
+            "Alıcı",
+            "Taşımacı",
+            "Gümrük"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src3_14.jpeg"
+    },
+    {
+        "soru": "Sürücü, 4,5 saatlik sürüş süresini tamamladıktan sonra en az kaç dakika mola vermek zorundadır?",
+        "siklar": [
+            "15 dk",
+            "30 dk",
+            "45 dk",
+            "60 dk"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src3_15.jpeg"
+    }
+]

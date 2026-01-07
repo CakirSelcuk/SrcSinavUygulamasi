@@ -1,12 +1,1002 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SrcSinavUygulamasi.Resources.Raw
-{
-    class sorular_src4
+﻿[
     {
+        "soru": "Yurtiçi eşya taşımacılığı yapan firmaların, taşıma faaliyetlerinde kullanacakları özmal (kendine ait) taşıtlar için genel kural olarak uygulanan yaş sınırı aşağıdakilerden hangisidir?",
+        "siklar": [
+            "En fazla 10 yaş",
+            "En fazla 15 yaş",
+            "En fazla 20 yaş",
+            "Yaş sınırı yoktur"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Karayolu Taşıma Yönetmeliği'ne göre, K1 Yetki Belgesi için başvuran gerçek kişilerin (şahısların) sahip olması gereken asgari istiap haddi kaç tondur?",
+        "siklar": [
+            "25 Ton",
+            "30 Ton",
+            "35 Ton",
+            "75 Ton"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Ticari araç sürücüsünün, 24 saatlik bir zaman dilimi içinde kesintisiz olarak araç kullanabileceği azami süre kaç saattir?",
+        "siklar": [
+            "4 saat",
+            "5 saat",
+            "4,5 saat",
+            "5,5 saat"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Aşağıdaki yetki belgelerinden hangisi Evden Eve Nakliyat faaliyeti yapan firmalara verilir?",
+        "siklar": [
+            "K1 Yetki Belgesi",
+            "K2 Yetki Belgesi",
+            "K3 Yetki Belgesi",
+            "L1 Yetki Belgesi"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Tehlikeli madde taşıyan araçların otoyollarda uyması gereken azami hız sınırı saatte kaç kilometredir?",
+        "siklar": [
+            "50 km/s",
+            "60 km/s",
+            "70 km/s",
+            "80 km/s"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "SRC 4 belgesi almak isteyen bir sürücü için belirlenen asgari yaş şartı aşağıdakilerden hangisidir?",
+        "siklar": [
+            "18 yaşını doldurmuş olmak",
+            "20 yaşından gün almış olmak",
+            "19 yaşından gün almış olmak",
+            "22 yaşını doldurmuş olmak"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Güvenli sürüşte \"takip mesafesi\" hesabında kullanılan pratik yöntem aşağıdakilerden hangisidir?",
+        "siklar": [
+            "1 saniye kuralı",
+            "88-89 kuralı (2 saniye)",
+            "Araç boyu kuralı",
+            "100 metre kuralı"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Birleşik iki haftalık (14 gün) süre içinde bir sürücünün toplam araç kullanma süresi en fazla kaç saat olabilir?",
+        "siklar": [
+            "80 saat",
+            "90 saat",
+            "100 saat",
+            "56 saat"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Kendi iştigal konusu ile ilgili eşyayı, kendi araçlarıyla taşıyan (hususi taşımacılık yapan) firmaların alması gereken yetki belgesi hangisidir?",
+        "siklar": [
+            "K1 Yetki Belgesi",
+            "K2 Yetki Belgesi",
+            "C2 Yetki Belgesi",
+            "L1 Yetki Belgesi"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "İlk yardım uygulamalarında Heimlich Manevrası hangi durumda uygulanır?",
+        "siklar": [
+            "Şiddetli kanamalarda",
+            "Kalp durmasında",
+            "Soluk borusunun tam tıkanması durumunda",
+            "Kırık ve çıkıklarda"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Karayolunda bulunan yan yana iki devamlı yol çizgisi aşağıdakilerden hangisini ifade eder?",
+        "siklar": [
+            "Sollamanın serbest olduğunu",
+            "Yolun bölünmüş yol olduğunu",
+            "Sadece gece geçilebileceğini",
+            "Park yapılabileceğini"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "SRC 4 belgesine sahip bir sürücü, aşağıdaki belgelerden hangisine otomatik olarak sahip sayılmaz?",
+        "siklar": [
+            "SRC 1",
+            "SRC 3",
+            "SRC 2",
+            "Hiçbiri"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Araçların yüklenmesi sırasında, yükün aracın arka kısmından azami ne kadar taşmasına izin verilir?",
+        "siklar": [
+            "1 metre",
+            "2 metre",
+            "2,5 metre",
+            "3 metre"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "4925 sayılı Karayolu Taşıma Kanunu'na göre, yetki belgesi sahipleri faaliyetleri sırasında meydana gelen kazaları en geç kaç gün içinde Bakanlığa bildirmek zorundadır?",
+        "siklar": [
+            "7 Gün",
+            "15 Gün",
+            "30 Gün",
+            "Derhal"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Atardamar (arter) kanamalarının en belirgin özelliği aşağıdakilerden hangisidir?",
+        "siklar": [
+            "Koyu kırmızı ve yavaş akması",
+            "Açık kırmızı renkte ve fışkırır tarzda olması",
+            "Kısa sürede pıhtılaşması",
+            "Sızıntı şeklinde akması"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Araçta iki sürücü bulunması halinde, her 30 saatlik süre içinde her bir sürücünün alması gereken kesintisiz dinlenme süresi en az kaç saattir?",
+        "siklar": [
+            "8 Saat",
+            "9 Saat",
+            "10 Saat",
+            "11 Saat"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "\"Taşıma İşleri Organizatörlüğü\" (komisyonculuk) yapacak firmaların alması gereken yetki belgesi hangisidir?",
+        "siklar": [
+            "M Türü",
+            "R Türü",
+            "P Türü",
+            "L Türü"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Lastik hava basıncının normalden düşük olması aşağıdaki sonuçlardan hangisine yol açar?",
+        "siklar": [
+            "Yakıt tüketimi azalır",
+            "Yakıt tüketimi artar ve lastik kenarlardan aşınır",
+            "Fren mesafesi kısalır",
+            "Direksiyon sertleşir"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "SRC 4 sınavında başarılı sayılabilmek için 40 sorudan en az kaçının doğru cevaplanması gerekir?",
+        "siklar": [
+            "25",
+            "28",
+            "30",
+            "20"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Kazazedenin solunumunun değerlendirilmesinde kullanılan Bak-Dinle-Hisset yöntemi kaç saniye uygulanmalıdır?",
+        "siklar": [
+            "5 saniye",
+            "10 saniye",
+            "30 saniye",
+            "60 saniye"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Karayolu Taşıma Yönetmeliği'ne göre, C2 Yetki Belgesi (Uluslararası ve yurtiçi ticari eşya) alacak firmaların sahip olması gereken asgari kapasite kaç tondur?",
+        "siklar": [
+            "150 Ton",
+            "75 Ton",
+            "320 Ton",
+            "200 Ton"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Bir aracın yükü, aracın arka kısmından en fazla kaç metre taşacak şekilde yüklenebilir?",
+        "siklar": [
+            "1 metre",
+            "2 metre",
+            "2,5 metre",
+            "3 metre"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Sürücülerin günlük 11 saatlik kesintisiz dinlenme süresi, haftada en fazla kaç kez 9 saate indirilebilir?",
+        "siklar": [
+            "1 kez",
+            "2 kez",
+            "3 kez",
+            "4 kez"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Hususi (ticari olmayan) olarak kendi eşyasını kendi aracıyla taşıyanların alması gereken yetki belgesi hangisidir?",
+        "siklar": [
+            "K1",
+            "K3",
+            "C2",
+            "K2"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Tehlikeli madde taşıyan araçların otoyollardaki azami hız sınırı kaç km/s'dir?",
+        "siklar": [
+            "60",
+            "70",
+            "50",
+            "80"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "İlk yardımın ABC'sindeki \"C\" harfi hangi kavramı ifade eder?",
+        "siklar": [
+            "Havayolu açıklığını",
+            "Dolaşım (kan) kontrolünü",
+            "Solunumu",
+            "Bilinç kontrolünü"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Yangın söndürme cihazı araç içinde nerede bulundurulmalıdır?",
+        "siklar": [
+            "Bagajda kilitli dolapta",
+            "Arka koltuk altında",
+            "Sürücünün kolayca ulaşabileceği yerde",
+            "Yedek lastik yanında"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Ticari araçlar için kış lastiği uygulaması hangi tarihler arasında zorunludur?",
+        "siklar": [
+            "1 Kasım – 1 Nisan",
+            "1 Aralık – 1 Nisan",
+            "15 Aralık – 15 Mart",
+            "1 Ocak – 1 Mart"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Rentek Manevrası hangi durumda uygulanmalıdır?",
+        "siklar": [
+            "Yaralı bilinci açıkken",
+            "Araçta yangın veya patlama tehlikesi varsa",
+            "Yaralı yürüyebiliyorsa",
+            "Sadece kırık şüphesinde"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "90 km/s hızla giden bir aracın, öndeki araçla bırakması gereken asgari takip mesafesi kaç metredir?",
+        "siklar": [
+            "35 m",
+            "40 m",
+            "45 m",
+            "50 m"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Kaza sonrası zarar gören kişinin, zararı sigorta şirketine bildirme süresi en geç ne kadardır?",
+        "siklar": [
+            "2 yıl",
+            "5 yıl",
+            "1 yıl",
+            "10 yıl"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Karayolu Taşıma Yönetmeliği'ne göre araçların azami yüksekliği (gabari) kaç metredir?",
+        "siklar": [
+            "3,80",
+            "4,20",
+            "4,00",
+            "4,50"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "SRC belgesi olmayan sürücüye ve araç sahibine uygulanan yaptırım aşağıdakilerden hangisidir?",
+        "siklar": [
+            "Hapis cezası",
+            "Ehliyete el koyma",
+            "İdari para cezası",
+            "Uyarı"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Lojistik işletmeciliği yapacak firmaların alması gereken yetki belgesi grubu hangisidir?",
+        "siklar": [
+            "K Grubu",
+            "M Grubu",
+            "L Grubu",
+            "N Grubu"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Sürücülerin 6 günlük çalışma süresinden sonra kullanmaları gereken haftalık tatil süresi en az kaç saattir?",
+        "siklar": [
+            "36",
+            "48",
+            "12",
+            "24"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Toplam durma mesafesi hangi iki mesafenin toplamıdır?",
+        "siklar": [
+            "Reaksiyon + Fren",
+            "İntikal + Takip",
+            "Fren + Duruş",
+            "Reaksiyon + İntikal"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Turnike uygulaması vücudun hangi bölgesine yapılmalıdır?",
+        "siklar": [
+            "Eklem yerleri",
+            "Tek kemikli bölgeler (uyluk/pazu)",
+            "Boyun bölgesi",
+            "Çift kemikli bölgeler"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Şok pozisyonunda kazazedenin bacakları yerden yaklaşık kaç cm yukarı kaldırılır?",
+        "siklar": [
+            "15 cm",
+            "45 cm",
+            "30 cm",
+            "60 cm"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Çok şeritli yollarda kamyon ve tır gibi ağır taşıtlar hangi şeridi kullanmak zorundadır?",
+        "siklar": [
+            "Sol şerit",
+            "Orta şerit",
+            "Emniyet şeridi",
+            "En sağ şerit"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Sigorta şirketleri, kendilerine iletilen kaza evrakları sonrasında tazminatı en geç kaç iş günü içinde ödemelidir?",
+        "siklar": [
+            "8 İş Günü",
+            "15 İş Günü",
+            "30 İş Günü",
+            "45 İş Günü"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "\"Yurtiçi Ticari Eşya Taşımacılığı\" yapacak firmaların (Tüzel Kişiler) K1 yetki belgesi alabilmesi için toplam azami yüklü ağırlığı en az kaç ton olan araçlara sahip olması gerekir?",
+        "siklar": [
+            "75 Ton",
+            "150 Ton",
+            "110 Ton",
+            "50 Ton"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Yetişkin bir hastaya Temel Yaşam Desteği (Kalp Masajı + Suni Solunum) uygulanırken standart oran hangisidir?",
+        "siklar": [
+            "15 Masaj – 2 Solunum",
+            "30 Masaj – 2 Solunum",
+            "30 Masaj – 1 Solunum",
+            "5 Masaj – 1 Solunum"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Karayolu Taşıma Yönetmeliği'ne göre, K1 yetki belgesi sahipleri (şirketler) sözleşmeli/kiralık taşıt çalıştırabilir mi?",
+        "siklar": [
+            "Özmalın 2 katına kadar çalıştırabilir",
+            "Özmalın yarısı kadar çalıştırabilir",
+            "Çalıştırabilir, ancak sadece 1 adet",
+            "Çalıştıramaz"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Araçların yüklenmesi sırasında yükün aracın boyunu \"önden\" en fazla ne kadar aşmasına izin verilir?",
+        "siklar": [
+            "2 metre",
+            "0,50 metre",
+            "Hiç aşamaz",
+            "1 metre"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "4,5 saatlik sürüşten sonra verilmesi gereken 45 dakikalık mola, sürüş süresi içinde en az hangi parçalar halinde kullanılabilir?",
+        "siklar": [
+            "15 dakika + 30 dakika",
+            "20 dakika + 25 dakika",
+            "30 dakika + 15 dakika",
+            "10 dakika + 35 dakika"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi hava kirliliğini azaltmaya yönelik doğru bir uygulamadır?",
+        "siklar": [
+            "Aracı sürekli yüksek devirde kullanmak",
+            "Araç bakımlarını zamanında yaptırmak",
+            "Kalitesiz yakıt kullanmak",
+            "Camlar açık seyahat etmek"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "\"Kurye İşletmeciliği\" yapacak olanların alması gereken yetki belgesi türü hangisidir?",
+        "siklar": [
+            "M Türü",
+            "N Türü",
+            "P Türü",
+            "K Türü"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Kamyon, çekici ve tanker cinsi araçların yerleşim yeri dışındaki çift yönlü (bölünmemiş) karayollarında azami hız sınırı kaçtır?",
+        "siklar": [
+            "90 km/s",
+            "50 km/s",
+            "85 km/s",
+            "80 km/s"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Bir sürücünün trafik ceza puanı 1 yıl içinde 100 puana ulaşırsa, sürücü belgesine ilk seferde ne kadar süreyle el konulur?",
+        "siklar": [
+            "2 Ay",
+            "4 Ay",
+            "6 Ay",
+            "1 Yıl"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Ticari amaçla \"ev ve büro eşyası taşımacılığı\" (evden eve nakliyat) yapacaklara verilen yetki belgesi hangisidir?",
+        "siklar": [
+            "K1",
+            "K3",
+            "K2",
+            "L1"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "İlk yardımda turnike uygulanan bölge hangi aralıklarla gevşetilmelidir?",
+        "siklar": [
+            "5–10 dakikada bir",
+            "15–20 dakikada bir",
+            "1 saatte bir",
+            "Gevşetilmez"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi Karayolu Taşıma Kanunu kapsamı dışındadır?",
+        "siklar": [
+            "Eşya taşımacılığı",
+            "Kargo işletmeciliği",
+            "Nakliyat ambarı işletmeciliği",
+            "TSK'ya ait taşıtlarla yapılan taşımalar"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Ticari araçlarda lastik diş derinliği yasal alt sınır (muayeneden geçme alt limiti) en az kaç mm'dir?",
+        "siklar": [
+            "1,6 mm",
+            "2,5 mm",
+            "3 mm",
+            "4 mm"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Malın göndericiden alıcıya taşınmasında; malın cinsini ve miktarını gösteren ve araçta bulunması zorunlu belge hangisidir?",
+        "siklar": [
+            "Taşıt Kartı",
+            "Sigorta Poliçesi",
+            "Sevk İrsaliyesi",
+            "Fatura"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Trafik kazasında \"asli kusur\" sayılan hallerden biri aşağıdakilerden hangisidir?",
+        "siklar": [
+            "Hız sınırını %10 aşmak",
+            "Cam sileceklerinin çalışmaması",
+            "Arkadan çarpmak",
+            "Muayenesi geçmiş araçla yola çıkmak"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "SRC 4 belgesine sahip bir sürücü, aşağıdaki taşımalardan hangisini yapamaz?",
+        "siklar": [
+            "Yurtiçi kargo",
+            "Şehir içi kamyonetle taşıma",
+            "Yurtiçi evden eve nakliyat",
+            "Uluslararası eşya taşımacılığı"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "\"Taşıma İşleri Organizatörlüğü (Komisyonculuk)\" yapacak firmalara verilen yetki belgesi türü hangisidir?",
+        "siklar": [
+            "R Türü",
+            "P Türü",
+            "N Türü",
+            "L Türü"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Geceleyin önündeki aracı geçmek isteyen sürücü, uyarı amaçlı ışıklarını nasıl kullanmalıdır?",
+        "siklar": [
+            "Sadece uzun far",
+            "Sadece kısa far",
+            "Uzun-kısa farı sırayla yakarak (selektör)",
+            "Dörtlüler"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Bir haftada toplam 56 saat araç kullanan bir sürücü, iki haftalık 90 saat kuralına göre ertesi hafta en fazla kaç saat araç kullanabilir?",
+        "siklar": [
+            "34 saat",
+            "45 saat",
+            "44 saat",
+            "56 saat"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Burkulmalarda doğru ilk yardım uygulaması hangisidir?",
+        "siklar": [
+            "Sıcak uygulama ve masaj",
+            "Bölge yukarı kaldırılır, soğuk uygulanır",
+            "Turnike uygulanır",
+            "Sürekli hareket ettirilir"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Kamyon ve çekici türü araçların otoyollardaki azami hız sınırı kaç km/s'tir?",
+        "siklar": [
+            "90 km/s",
+            "85 km/s",
+            "80 km/s",
+            "100 km/s"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Ticari araç sürücüleri için yasal alkol sınırı (promil) kaçtır?",
+        "siklar": [
+            "0,50",
+            "0,20",
+            "0,00",
+            "1,00"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "\"Nakliyat Ambarı İşletmeciliği\" yapacak firmaların alması gereken yetki belgesi hangisidir?",
+        "siklar": [
+            "M Türü",
+            "P Türü",
+            "N Türü",
+            "L Türü"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Aracın yetki belgesine kayıtlı olduğunu gösteren ve araçta aslı bulundurulması zorunlu belge hangisidir?",
+        "siklar": [
+            "Taşıt Kartı",
+            "Taşıt Belgesi",
+            "Faaliyet Belgesi",
+            "Uygunluk Belgesi"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "6 günlük araç kullanma süresinden sonra yapılması zorunlu hafta tatili en az kaç saattir?",
+        "siklar": [
+            "24 saat",
+            "36 saat",
+            "48 saat",
+            "12 saat"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Motor yağ seviyesi kontrol edilirken araç hangi konumda olmalıdır?",
+        "siklar": [
+            "Yokuş yukarı",
+            "Motor çalışır halde",
+            "Düz zeminde",
+            "Yokuş aşağı"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Karayolları Trafik Yönetmeliği'ne göre araçların azami genişliği (aynalar hariç) en fazla kaç metredir?",
+        "siklar": [
+            "2,50",
+            "2,60",
+            "2,45",
+            "2,55"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Boyun yaralanması şüphesi olan kazazedeye ilk yardım olarak ne yapılmalıdır?",
+        "siklar": [
+            "Masaj yapılır",
+            "Boyunlukla hareketsizlik sağlanır",
+            "Su içirilir",
+            "Kucakta taşınır"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "\"Kargo İşletmeciliği\" yapacak firmaların alması gereken yetki belgesi hangisidir?",
+        "siklar": [
+            "M Türü",
+            "N Türü",
+            "P Türü",
+            "K Türü"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Ticari yük taşıyan araçların (kamyon/tır) teknik muayeneleri hangi sıklıkla yapılır?",
+        "siklar": [
+            "2 yılda bir",
+            "3 yılda bir",
+            "Yılda bir",
+            "İlk 3 yıl sonra 2 yılda bir"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Hız sınırını %30'dan fazla aşan sürücülere (para cezası haricinde) hangi yaptırım uygulanır?",
+        "siklar": [
+            "15 ceza puanı verilir",
+            "Araç trafikten men edilir",
+            "1 yıl ehliyete el konulur",
+            "Hapis cezası verilir"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi defansif (savunmacı) sürüş kuralıdır?",
+        "siklar": [
+            "Sürekli sol şeritte gitmek",
+            "Diğer sürücülerin hata yapabileceğini öngörmek",
+            "Yakın takip yapmak",
+            "Geçiş hakkını her zaman zorlamak"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Yanıklarda ilk müdahale olarak ne yapılmalıdır?",
+        "siklar": [
+            "Yoğurt sürülür",
+            "Buz direkt uygulanır",
+            "En az 20 dakika soğuk su altında tutulur",
+            "Diş macunu sürülür"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "AETR'ye göre günlük dinlenme süresi 11 saat yerine bölünerek kullanılacaksa toplam en az kaç saat olmalıdır?",
+        "siklar": [
+            "11 saat",
+            "10 saat",
+            "9 saat",
+            "12 saat"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "\"Gabari\" kavramı neyi ifade eder?",
+        "siklar": [
+            "Araçların genişlik–yükseklik–uzunluk ölçülerini",
+            "Aracın motor gücünü",
+            "Aracın boş ağırlığını",
+            "Aracın yüklü ağırlığını"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Yetki belgesi sahipleri, ünvan veya adres değişikliklerini kaç gün içinde Bakanlığa bildirmelidir?",
+        "siklar": [
+            "30 gün",
+            "60 gün",
+            "90 gün",
+            "15 gün"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "\"295/80 R 22.5\" lastik ölçüsündeki \"22.5\" ifadesi neyi belirtir?",
+        "siklar": [
+            "Taban genişliği",
+            "Jant çapı (inç)",
+            "Yanak yüksekliği",
+            "Hız endeksi"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Kaza tespit tutanağı kimler tarafından imzalanmalıdır?",
+        "siklar": [
+            "Sigorta eksperi",
+            "Sadece trafik polisi",
+            "Kazaya karışan tüm sürücüler",
+            "Sadece kusurlu sürücü"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Eşya taşımacılığında araçların kapalı kasa/tenteli olması hangi yük türü için zorunlu değildir?",
+        "siklar": [
+            "İnşaat malzemesi (demir/kum)",
+            "Ev eşyası",
+            "Kargo",
+            "Bozulabilir gıda"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Dizel motor yakıt sisteminin parçası hangisidir?",
+        "siklar": [
+            "Bobin",
+            "Distribütör",
+            "Buji",
+            "Enjektör"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Yetki belgesi sahipleri; fatura, irsaliye vb. belgeleri denetim için ne kadar süreyle saklamak zorundadır?",
+        "siklar": [
+            "5 yıl",
+            "2 yıl",
+            "10 yıl",
+            "1 yıl"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Dizel motorlarda yakıt sisteminin \"hava yapmasının\" en tipik nedeni hangisidir?",
+        "siklar": [
+            "Radyatör suyunun bitmesi",
+            "Yakıtın bitmesi",
+            "Akünün bitmesi",
+            "Yağın azalması"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Trafik sigortası olmayan ticari araç için hangi işlem uygulanır?",
+        "siklar": [
+            "Sadece para cezası",
+            "Puan cezası alır, yola devam eder",
+            "Araç trafikten men edilir",
+            "Hapis cezası"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Eğimli yollarda (inişlerde) vites kullanımı nasıl olmalıdır?",
+        "siklar": [
+            "Vites boşa alınmalı",
+            "Çıkılan vitesle inilmeli (küçük vites)",
+            "Kontak kapatılarak inilmeli",
+            "En yüksek viteste inilmeli"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Turnike uygulanan bölgenin üzerine ne yazılmalıdır?",
+        "siklar": [
+            "Turnikenin uygulandığı saat ve dakika",
+            "Kan grubu",
+            "Hastane adı",
+            "Hastanın adı"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Ticari araçlarda kış lastiği zorunluluğu hangi tarihler arasındadır?",
+        "siklar": [
+            "1 Kasım – 1 Nisan",
+            "15 Aralık – 15 Mart",
+            "1 Ocak – 1 Mart",
+            "1 Aralık – 1 Nisan"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "K1 Yetki Belgesi talep edenlerin araçları için yaş sınırı kuralı nedir?",
+        "siklar": [
+            "15 yaş",
+            "Yaş sınırı yoktur",
+            "20 yaş",
+            "10 yaş"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi çevre kirliliğini önleyici doğru bir tedbirdir?",
+        "siklar": [
+            "Atık yağları toprağa dökmek",
+            "Klimayı sürekli açık tutmak",
+            "Bakımı yetkili servislerde yaptırıp atıkları geri dönüştürmek",
+            "Şehir içinde yüksek hızla gitmek"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Araçların azami yüksekliği (gabari) en fazla kaç metredir?",
+        "siklar": [
+            "4,00 m",
+            "4,20 m",
+            "3,80 m",
+            "4,50 m"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Sağa dönecek sürücü hangi kurala uymalıdır?",
+        "siklar": [
+            "Sol şeride geçerek dönmeli",
+            "Dar kavisle dönmeli",
+            "Hızını artırarak dönmeli",
+            "Geniş kavisle dönmeli"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Kanamanın ciddiyetini belirleyen en önemli faktör hangisidir?",
+        "siklar": [
+            "Kanın rengi",
+            "Yaralının yaşı",
+            "Kanamanın olduğu bölge",
+            "Kanamanın hızı ve kaybedilen kan miktarı"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi güvenli sürüşü olumsuz etkileyen psikolojik faktördür?",
+        "siklar": [
+            "Öfke ve stres",
+            "Hoşgörülü olmak",
+            "Empati kurmak",
+            "Sabırlı olmak"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Tır/kamyon/çekicide yangın söndürme cihazı standardı hangisidir?",
+        "siklar": [
+            "1 adet 2 kg",
+            "2 adet 2 kg",
+            "1 adet 6 kg",
+            "1 adet 1 kg"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Arkadan çarpmalı kazaların en yaygın sebebi hangisidir?",
+        "siklar": [
+            "Takip mesafesine uymamak",
+            "Kötü hava koşulları",
+            "Lastik patlaması",
+            "Aşırı hız"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "\"Yurtiçi Dağıtım İşletmeciliği\" (kargo dağıtımı vb.) yapacakların alması gereken yetki belgesi hangisidir?",
+        "siklar": [
+            "P Türü",
+            "M Türü",
+            "N Türü",
+            "K Türü"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Karlı/buzlu yolda direksiyon hakimiyetini kaybetmemek için ne yapılmalıdır?",
+        "siklar": [
+            "Ani fren yapılmalı",
+            "Ani direksiyon hareketlerinden kaçınılmalı",
+            "Vites boşa alınmalı",
+            "Gaza sonuna kadar basılmalı"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Ticari araç şoförleri, SRC dışında 5 yılda bir hangi raporu yenilemek zorundadır?",
+        "siklar": [
+            "Portör muayenesi",
+            "İş göremezlik raporu",
+            "Psikoteknik değerlendirme raporu",
+            "Heyet raporu"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Emniyet kemerinin kaza anındaki temel faydalarından biri hangisidir?",
+        "siklar": [
+            "Fren mesafesini kısaltır",
+            "Yangın çıkmasını önler",
+            "Araçtan fırlamayı ve başın cama çarpmasını önler",
+            "Kazayı tamamen önler"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "SRC 4 sınavında yanlış cevapların puanlamaya etkisi nasıldır?",
+        "siklar": [
+            "4 yanlış 1 doğruyu götürür",
+            "Yanlışlar doğruyu götürmez",
+            "Her yanlış 1 puan siler",
+            "3 yanlış 1 doğruyu götürür"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Döner kavşakta, aksine işaret yoksa geçiş hakkı kiminindir?",
+        "siklar": [
+            "Sağdan gelen aracın",
+            "İlk gelen aracın",
+            "Hızlı olan aracın",
+            "Kavşak içindeki aracın"
+        ],
+        "dogruCevap": "D"
     }
-}
+]

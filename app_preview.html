@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRC Sınav Uygulaması - Önizleme</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --card-dark: #1e293b;
+            --text-white: #ffffff;
+            --text-slate: #94a3b8;
+            --accent-src1: #FF5722;
+            --accent-src2: #2196F3;
+            --accent-src3: #4CAF50;
+            --accent-src4: #9C27B0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f1f5f9;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Phone frame simulation */
+        .phone-container {
+            width: 375px;
+            height: 812px;
+            background-color: var(--bg-dark);
+            border-radius: 40px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            position: relative;
+            border: 8px solid #334155;
+        }
+
+        .status-bar {
+            height: 44px;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .screen {
+            height: calc(100% - 44px);
+            overflow-y: auto;
+            display: none;
+        }
+
+        .screen.active {
+            display: block;
+        }
+
+        /* Categories Page */
+        .header {
+            padding: 25px 25px 20px;
+        }
+
+        .hi { color: var(--text-slate); font-size: 16px; margin: 0; }
+        .title { color: white; font-size: 24px; font-weight: 700; margin: 5px 0 0; line-height: 1.2; }
+
+        .category-list {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .category-card {
+            background-color: var(--card-dark);
+            border-radius: 16px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .category-card:active { transform: scale(0.98); }
+
+        .icon-box {
+            width: 80px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: 800;
+            border-top-left-radius: 16px;
+            border-bottom-left-radius: 16px;
+            position: relative;
+        }
+
+        .icon-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            opacity: 0.2;
+            border-top-left-radius: 16px;
+            border-bottom-left-radius: 16px;
+        }
+
+        .card-info {
+            flex: 1;
+            padding: 0 15px;
+        }
+
+        .card-info h3 { margin: 0; color: white; font-size: 18px; }
+        .card-info p { margin: 2px 0 0; color: var(--text-slate); font-size: 13px; }
+
+        .arrow { color: #475569; margin-right: 20px; font-size: 20px; }
+
+        /* Exam List Page */
+        .back-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .exam-item {
+            background-color: var(--card-dark);
+            border-radius: 16px;
+            height: 85px;
+            display: flex;
+            align-items: center;
+            margin: 0 15px 12px;
+            cursor: pointer;
+        }
+
+        /* Quiz Page Styles */
+        .quiz-top {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 20px 20px;
+        }
+
+        .progress-container {
+            flex: 1;
+        }
+
+        .puan-badge {
+            background: var(--card-dark);
+            padding: 8px 15px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .question-card {
+            background: var(--card-dark);
+            margin: 10px 20px;
+            padding: 25px;
+            border-radius: 20px;
+            min-height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        .options {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .opt-btn {
+            background: #1e293b;
+            border: 1px solid #475569;
+            color: white;
+            padding: 18px;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 15px;
+            cursor: pointer;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="phone-container">
+        <div class="status-bar">
+            <span>9:41</span>
+            <div>🔋 Signal 📶</div>
+        </div>
+
+        <!-- Categories Page -->
+        <div id="categories-page" class="screen active">
+            <div class="header">
+                <p class="hi">Merhaba,</p>
+                <h1 class="title">Hangi Sınava Hazırlanıyorsun?</h1>
+            </div>
+            <div class="category-list">
+                <div class="category-card" onclick="showPage('examlist-page')">
+                    <div class="icon-box" style="color: var(--accent-src1)">
+                        <div class="icon-overlay" style="background-color: var(--accent-src1)"></div>
+                        1
+                    </div>
+                    <div class="card-info">
+                        <h3>SRC 1</h3>
+                        <p>Uluslararası Yolcu Taşımacılığı</p>
+                    </div>
+                    <div class="arrow">➤</div>
+                </div>
+                <!-- etc other cards -->
+                <div class="category-card">
+                    <div class="icon-box" style="color: var(--accent-src2)">
+                        <div class="icon-overlay" style="background-color: var(--accent-src2)"></div>
+                        2
+                    </div>
+                    <div class="card-info">
+                        <h3>SRC 2</h3>
+                        <p>Yurtiçi Yolcu Taşımacılığı</p>
+                    </div>
+                    <div class="arrow">➤</div>
+                </div>
+                <div class="category-card">
+                    <div class="icon-box" style="color: var(--accent-src3)">
+                        <div class="icon-overlay" style="background-color: var(--accent-src3)"></div>
+                        3
+                    </div>
+                    <div class="card-info">
+                        <h3>SRC 3</h3>
+                        <p>Uluslararası Eşya Taşımacılığı</p>
+                    </div>
+                    <div class="arrow">➤</div>
+                </div>
+                <div class="category-card">
+                    <div class="icon-box" style="color: var(--accent-src4)">
+                        <div class="icon-overlay" style="background-color: var(--accent-src4)"></div>
+                        4
+                    </div>
+                    <div class="card-info">
+                        <h3>SRC 4</h3>
+                        <p>Yurtiçi Eşya Taşımacılığı</p>
+                    </div>
+                    <div class="arrow">➤</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exam List Page (Simplified View) -->
+        <div id="examlist-page" class="screen">
+            <div class="header">
+                <div style="display: flex; align-items: center;">
+                    <button class="back-btn" onclick="showPage('categories-page')">←</button>
+                    <h1 class="title" style="margin: 0;">SRC 1</h1>
+                </div>
+                <p style="color: #94a3b8; margin: 10px 0 0 35px;">Deneme sınavını seçin</p>
+            </div>
+            <div class="exam-item" onclick="showPage('quiz-page')">
+                <div class="icon-box" style="width:70px; font-size: 28px; color: var(--accent-src1)">
+                    <div class="icon-overlay" style="background-color: var(--accent-src1)"></div>
+                    1
+                </div>
+                <div class="card-info">
+                    <h3>SRC 1 - Deneme 1</h3>
+                    <p>20 Soru</p>
+                </div>
+                <div class="arrow" style="font-size: 14px;">▶</div>
+            </div>
+            <div class="exam-item">
+                <div class="icon-box" style="width:70px; font-size: 28px; color: #E91E63">
+                    <div class="icon-overlay" style="background-color: #E91E63"></div>
+                    R
+                </div>
+                <div class="card-info">
+                    <h3>🖼️ Resimli Sorular</h3>
+                    <p>15 Görsel Soru</p>
+                </div>
+                <div class="arrow" style="font-size: 14px;">▶</div>
+            </div>
+            <div class="exam-item">
+                <div class="icon-box" style="width:70px; font-size: 28px; color: #FFD700">
+                    <div class="icon-overlay" style="background-color: #FFD700"></div>
+                    S
+                </div>
+                <div class="card-info">
+                    <h3>🎯 Gerçek Sınav Simülasyonu</h3>
+                    <p>40 Soru · 100 Puan</p>
+                </div>
+                <div class="arrow" style="font-size: 14px;">▶</div>
+            </div>
+        </div>
+
+        <!-- Quiz Page -->
+        <div id="quiz-page" class="screen">
+            <div class="quiz-top">
+                <div class="progress-container">
+                    <p style="color: #cbd5e1; font-size: 12px; font-weight: 700; margin: 0;">SINAV MODU</p>
+                    <h2 style="color: white; margin: 5px 0;">1.</h2>
+                </div>
+                <div class="puan-badge">
+                    <p style="color: #94a3b8; font-size: 10px; margin: 0;">PUAN</p>
+                    <p style="color: #4ade80; font-size: 20px; font-weight: 700; margin: 0;">0</p>
+                </div>
+            </div>
+            
+            <div class="question-card">
+                Karayolu Taşıma Yönetmeliği'ne göre, aşağıdaki taşıma türlerinden hangisi SRC belgesi kapsamındadır?
+            </div>
+
+            <div class="options">
+                <button class="opt-btn" onclick="showPage('result-page')">A) Şehirlerarası eşya taşımacılığı</button>
+                <button class="opt-btn">B) Özel otomobil kullanımı</button>
+                <button class="opt-btn">C) Resmi plakalı araç kullanımı</button>
+                <button class="opt-btn">D) Belediye mücavir alanı içi taşıma</button>
+            </div>
+        </div>
+
+        <!-- Result Page -->
+        <div id="result-page" class="screen">
+             <!-- Header circle effect simulation -->
+             <div style="background: #334155; height: 230px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; text-align: center; padding-top: 40px;">
+                <div style="width: 150px; height: 150px; border: 4px solid white; border-radius: 50%; background: var(--card-dark); margin: 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.4);">
+                    <p style="color: #94a3b8; font-size: 14px; font-weight: 700; margin: 0;">PUAN</p>
+                    <p style="color: white; font-size: 50px; font-weight: 800; margin: 0;">85</p>
+                </div>
+             </div>
+
+             <div style="text-align: center; margin-top: 20px;">
+                <h2 style="color: white; margin: 0;">Tebrikler!</h2>
+                <p style="color: #cbd5e1; font-size: 16px;">Sınavı başarıyla tamamladın.</p>
+             </div>
+
+             <div style="background: var(--card-dark); margin: 20px; border-radius: 20px; display: grid; grid-template-columns: 1fr 1fr 1fr; padding: 20px; text-align: center;">
+                <div>
+                    <p style="color: #94a3b8; font-size: 12px; margin: 0;">Doğru</p>
+                    <p style="color: #4ade80; font-size: 22px; font-weight: 800; margin: 0;">18</p>
+                </div>
+                <div>
+                    <p style="color: #94a3b8; font-size: 12px; margin: 0;">Yanlış</p>
+                    <p style="color: #f87171; font-size: 22px; font-weight: 800; margin: 0;">2</p>
+                </div>
+                <div>
+                    <p style="color: #94a3b8; font-size: 12px; margin: 0;">Boş</p>
+                    <p style="color: #fbbf24; font-size: 22px; font-weight: 800; margin: 0;">0</p>
+                </div>
+             </div>
+
+             <div style="padding: 0 20px; display: flex; flex-direction: column; gap: 12px;">
+                <button style="background: #f59e0b; color: white; border: none; padding: 18px; border-radius: 16px; font-weight: 700; cursor: pointer;" onclick="showPage('quiz-page')">Sınavı Tekrarla</button>
+                <button style="background: #22c55e; color: white; border: none; padding: 18px; border-radius: 16px; font-weight: 700; cursor: pointer;">Sonraki Denemeye Geç</button>
+                <button style="background: #475569; color: white; border: none; padding: 15px; border-radius: 16px; font-weight: 700; cursor: pointer;" onclick="showPage('categories-page')">Ana Menüye Dön</button>
+             </div>
+        </div>
+
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

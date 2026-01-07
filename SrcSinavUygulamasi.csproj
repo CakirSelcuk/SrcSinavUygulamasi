@@ -69,11 +69,17 @@
 	  <EmbeddedResource Include="Resources\Raw\sorular_src1.json" />
 	  <EmbeddedResource Include="Resources\Raw\sorular_src1_sinav.json" />
 	  <EmbeddedResource Include="Resources\Raw\sorular_src1_resimli.json" />
+	  <EmbeddedResource Include="Resources\Raw\sorular_src2_resimli.json" />
+	  <EmbeddedResource Include="Resources\Raw\sorular_src3_resimli.json" />
+	  <EmbeddedResource Include="Resources\Raw\sorular_src3_sinav.json" />
 	</ItemGroup>
 
 	<!-- Resimli sorular için görseller -->
 	<ItemGroup>
 	  <MauiImage Include="Resources\Images\src1_*.png" />
+	  <MauiImage Include="Resources\Images\src2_*.jpeg" />
+	  <MauiImage Include="Resources\Images\src3_*.jpeg" />
+	  <MauiImage Include="Resources\Images\src4_*.jpeg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -81,6 +87,8 @@
 	  <EmbeddedResource Include="Resources\Raw\sorular_src2_sinav.json" />
 	  <EmbeddedResource Include="Resources\Raw\sorular_src3.json" />
 	  <EmbeddedResource Include="Resources\Raw\sorular_src4.json" />
+	  <EmbeddedResource Include="Resources\Raw\sorular_src4_sinav.json" />
+	  <EmbeddedResource Include="Resources\Raw\sorular_src4_resimli.json" />
 	</ItemGroup>
 
 </Project>

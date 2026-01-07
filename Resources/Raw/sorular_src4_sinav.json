@@ -1,0 +1,402 @@
+[
+    {
+        "soru": "Yurtiçi eşya taşımacılığı yapan firmaların, kullandıkları özmal taşıtlar için genel kural olarak uygulanan yaş sınırı aşağıdakilerden hangisidir?",
+        "siklar": [
+            "En fazla 10 yaş",
+            "En fazla 15 yaş",
+            "En fazla 20 yaş",
+            "Yaş sınırı yoktur"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Karayolu Taşıma Yönetmeliği'ne göre K1 yetki belgesi almak isteyen gerçek kişilerin sahip olması gereken asgari istiap haddi kaç tondur?",
+        "siklar": [
+            "25 Ton",
+            "30 Ton",
+            "35 Ton",
+            "75 Ton"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Ticari araç sürücülerinin 24 saatlik süre içinde kesintisiz araç kullanabileceği azami süre kaç saattir?",
+        "siklar": [
+            "4 saat",
+            "4,5 saat",
+            "5 saat",
+            "5,5 saat"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Evden eve nakliyat faaliyeti yapan firmalara verilen yetki belgesi hangisidir?",
+        "siklar": [
+            "K1",
+            "K2",
+            "K3",
+            "L1"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Tehlikeli madde taşıyan araçların otoyollardaki azami hız sınırı kaç km/s'tir?",
+        "siklar": [
+            "50",
+            "60",
+            "70",
+            "80"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "SRC 4 belgesi almak isteyen sürücüler için belirlenen asgari yaş şartı hangisidir?",
+        "siklar": [
+            "18 yaşını doldurmuş olmak",
+            "20 yaşından gün almış olmak",
+            "19 yaşından gün almış olmak",
+            "22 yaşını doldurmuş olmak"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Güvenli sürüşte takip mesafesi hesabında kullanılan \"88–89 kuralı\" neyi ifade eder?",
+        "siklar": [
+            "1 saniyelik takip süresini",
+            "2 saniyelik takip süresini",
+            "3 saniyelik takip süresini",
+            "Araç boyu kuralını"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Bir sürücünün iki haftalık (14 gün) toplam araç kullanma süresi en fazla kaç saat olabilir?",
+        "siklar": [
+            "80",
+            "90",
+            "100",
+            "56"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Kendi eşyasını kendi aracıyla taşıyan (hususi taşımacılık yapan) firmaların alması gereken yetki belgesi hangisidir?",
+        "siklar": [
+            "K1",
+            "K2",
+            "C2",
+            "L1"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Heimlich Manevrası hangi durumda uygulanır?",
+        "siklar": [
+            "Kalp durmasında",
+            "Şiddetli kanamalarda",
+            "Soluk borusu tam tıkandığında",
+            "Kırık ve çıkıklarda"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Karayolunda yan yana çizilmiş iki devamlı yol çizgisi ne anlama gelir?",
+        "siklar": [
+            "Sollama yapılabilir",
+            "Yol bölünmüş yoldur",
+            "Park yapılabilir",
+            "Gece geçilebilir"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "SRC 4 belgesine sahip bir sürücü aşağıdaki belgelerden hangisine otomatik olarak sahip sayılmaz?",
+        "siklar": [
+            "SRC 1",
+            "SRC 2",
+            "SRC 3",
+            "Hiçbiri"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Araç yüklenirken yükün aracın arkasından en fazla kaç metre taşmasına izin verilir?",
+        "siklar": [
+            "1 m",
+            "2 m",
+            "2,5 m",
+            "3 m"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Yetki belgesi sahipleri faaliyetleri sırasında meydana gelen kazaları kaç gün içinde Bakanlığa bildirmek zorundadır?",
+        "siklar": [
+            "7",
+            "15",
+            "30",
+            "Derhal"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Atardamar kanamalarının en belirgin özelliği hangisidir?",
+        "siklar": [
+            "Koyu kırmızı ve yavaş akması",
+            "Açık kırmızı ve fışkırır tarzda olması",
+            "Kısa sürede pıhtılaşması",
+            "Sızıntı şeklinde olması"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Araçta iki sürücü bulunması durumunda, her 30 saatlik sürede her bir sürücünün kesintisiz dinlenme süresi en az kaç saattir?",
+        "siklar": [
+            "8",
+            "9",
+            "10",
+            "11"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Taşıma İşleri Organizatörlüğü yapan firmalara verilen yetki belgesi hangisidir?",
+        "siklar": [
+            "M Türü",
+            "R Türü",
+            "P Türü",
+            "L Türü"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Lastik hava basıncının düşük olması hangi sonuca yol açar?",
+        "siklar": [
+            "Yakıt tüketimi azalır",
+            "Lastik ortadan aşınır",
+            "Yakıt tüketimi artar, lastik kenarlardan aşınır",
+            "Fren mesafesi kısalır"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "SRC 4 sınavında başarılı olmak için en az kaç doğru yapılmalıdır?",
+        "siklar": [
+            "25",
+            "28",
+            "30",
+            "20"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "\"Bak–Dinle–Hisset\" yöntemi solunum kontrolü için kaç saniye uygulanır?",
+        "siklar": [
+            "5",
+            "10",
+            "30",
+            "60"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "C2 yetki belgesi almak isteyen firmaların sahip olması gereken asgari kapasite kaç tondur?",
+        "siklar": [
+            "150",
+            "200",
+            "75",
+            "320"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Günlük 11 saatlik dinlenme süresi haftada en fazla kaç kez 9 saate indirilebilir?",
+        "siklar": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Ticari araçlarda yangın söndürme cihazı nerede bulunmalıdır?",
+        "siklar": [
+            "Bagajda",
+            "Arka koltuk altında",
+            "Sürücünün kolay ulaşabileceği yerde",
+            "Yedek lastik yanında"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Ticari araçlar için kış lastiği uygulaması hangi tarihler arasında zorunludur?",
+        "siklar": [
+            "1 Kasım – 1 Nisan",
+            "1 Aralık – 1 Nisan",
+            "15 Aralık – 15 Mart",
+            "1 Ocak – 1 Mart"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Rentek Manevrası hangi durumda uygulanmalıdır?",
+        "siklar": [
+            "Yaralı bilinci açıkken",
+            "Araçta yangın veya patlama riski varsa",
+            "Yaralı yürüyebiliyorsa",
+            "Sadece kırık varsa"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "90 km/s hızla giden bir araç için takip mesafesi en az kaç metredir?",
+        "siklar": [
+            "35",
+            "40",
+            "45",
+            "50"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Araçların azami yüksekliği (gabari) en fazla kaç metredir?",
+        "siklar": [
+            "3,80",
+            "4,20",
+            "4,00",
+            "4,50"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "SRC belgesi olmayan sürücü ve araç sahibine uygulanan yaptırım hangisidir?",
+        "siklar": [
+            "Hapis cezası",
+            "Ehliyete el koyma",
+            "İdari para cezası",
+            "Uyarı"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Lojistik işletmeciliği yapan firmalar hangi yetki belgesini almalıdır?",
+        "siklar": [
+            "K",
+            "M",
+            "L",
+            "N"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Toplam durma mesafesi hangi iki mesafenin toplamıdır?",
+        "siklar": [
+            "Reaksiyon + Fren",
+            "Fren + Duruş",
+            "Reaksiyon + İntikal",
+            "Takip + Fren"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "Şok pozisyonunda kazazedenin bacakları yerden yaklaşık kaç cm yukarı kaldırılır?",
+        "siklar": [
+            "15",
+            "30",
+            "45",
+            "60"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Kamyon ve tır gibi ağır taşıtlar çok şeritli yollarda hangi şeridi kullanmalıdır?",
+        "siklar": [
+            "Sol",
+            "Orta",
+            "Emniyet",
+            "En sağ"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Sigorta şirketleri tazminatı en geç kaç iş günü içinde ödemek zorundadır?",
+        "siklar": [
+            "8",
+            "15",
+            "30",
+            "45"
+        ],
+        "dogruCevap": "A"
+    },
+    {
+        "soru": "K1 yetki belgesi için araç yaşı ile ilgili genel kural hangisidir?",
+        "siklar": [
+            "10 yaş sınırı vardır",
+            "15 yaş sınırı vardır",
+            "20 yaş sınırı vardır",
+            "Yaş sınırı yoktur"
+        ],
+        "dogruCevap": "D"
+    },
+    {
+        "soru": "Karlı ve buzlu yolda direksiyon hakimiyetini korumak için ne yapılmalıdır?",
+        "siklar": [
+            "Ani fren yapılmalı",
+            "Ani direksiyon hareketlerinden kaçınılmalı",
+            "Vites boşa alınmalı",
+            "Gaza ani basılmalı"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "Emniyet kemerinin kaza anındaki temel faydası hangisidir?",
+        "siklar": [
+            "Fren mesafesini kısaltır",
+            "Yangını önler",
+            "Araçtan fırlamayı engeller",
+            "Kazayı önler"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Tır ve kamyonlarda bulunması gereken yangın söndürme cihazı standardı hangisidir?",
+        "siklar": [
+            "1 kg",
+            "2 kg",
+            "6 kg",
+            "10 kg"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Arkadan çarpmalı kazaların en yaygın nedeni hangisidir?",
+        "siklar": [
+            "Hız",
+            "Takip mesafesine uymamak",
+            "Lastik patlaması",
+            "Yol bozukluğu"
+        ],
+        "dogruCevap": "B"
+    },
+    {
+        "soru": "SRC 4 sınavında yanlış cevapların puanlamaya etkisi nasıldır?",
+        "siklar": [
+            "3 yanlış 1 doğruyu götürür",
+            "4 yanlış 1 doğruyu götürür",
+            "Yanlışlar doğruyu etkilemez",
+            "Her yanlış puan siler"
+        ],
+        "dogruCevap": "C"
+    },
+    {
+        "soru": "Döner kavşakta, aksine işaret yoksa geçiş hakkı kime aittir?",
+        "siklar": [
+            "Sağdan gelen araca",
+            "İlk gelene",
+            "Hızlı olana",
+            "Kavşak içindeki araca"
+        ],
+        "dogruCevap": "D"
+    }
+]

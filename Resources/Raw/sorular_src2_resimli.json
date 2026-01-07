@@ -1,0 +1,167 @@
+[
+    {
+        "soru": "Seyir halindeyken otobüsün gösterge panelinde bu ikaz ışığı yanarsa sürücü ne yapmalıdır?",
+        "siklar": [
+            "Hızını azaltıp servise gitmelidir",
+            "Yağ ekleyip devam etmelidir",
+            "Aracı güvenli bir yere çekip kontağı hemen kapatmalıdır",
+            "Bir sonraki mola yerine kadar gitmelidir"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src2_1.jpeg"
+    },
+    {
+        "soru": "Görseldeki taşıma tekniği (Rentek Manevrası) hangi durumda uygulanır?",
+        "siklar": [
+            "Yaralının kolu veya bacağı kırıksa",
+            "Yaralı araç içinde sıkışmamışsa",
+            "Araçta yangın veya patlama tehlikesi varsa",
+            "Yaralının bilinci yerindeyse"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src2_2.jpeg"
+    },
+    {
+        "soru": "SRC 2 belgeli bir sürücü, kullandığı yolcu otobüsüyle seyrederken bu levhayı görürse ne yapmalıdır?",
+        "siklar": [
+            "Yolcu indirip devam etmelidir",
+            "Bu yola girmemelidir",
+            "Hızını azaltarak girmelidir",
+            "Sadece gece saatlerinde girmelidir"
+        ],
+        "dogruCevap": "B",
+        "resimYolu": "src2_3.jpeg"
+    },
+    {
+        "soru": "Karayolu Taşıma Yönetmeliği'ne göre, şehirlerarası otobüslerde yolcuların emniyet kemeri takması ile ilgili kural nedir?",
+        "siklar": [
+            "Sadece en ön koltuktakiler takmalıdır",
+            "Sadece şoför takmalıdır",
+            "Tüm yolcuların takması zorunludur",
+            "İsteğe bağlıdır"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src2_4.jpeg"
+    },
+    {
+        "soru": "Şehirlerarası yolcu taşıyan araçlarda bu lastik türünün (kış lastiği) kullanımı hangi tarihler arasında zorunludur?",
+        "siklar": [
+            "1 Kasım - 1 Mart",
+            "1 Ocak - 1 Nisan",
+            "1 Aralık - 1 Nisan",
+            "15 Aralık - 15 Mart"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src2_5.jpeg"
+    },
+    {
+        "soru": "Görseldeki 'Koma Pozisyonu' hangi durumdaki kazazedeye verilir?",
+        "siklar": [
+            "Bilinci kapalı ama solunumu olan",
+            "Solunumu ve kalbi durmuş olan",
+            "Omurga kırığı şüphesi olan",
+            "Bacağı kırık olan"
+        ],
+        "dogruCevap": "A",
+        "resimYolu": "src2_6.jpeg"
+    },
+    {
+        "soru": "Görseldeki cihazın (Takograf) ticari araçlarda bulundurulmasının temel amacı nedir?",
+        "siklar": [
+            "Aracın yakıt tüketimini ölçmek",
+            "Sürücünün çalışma ve dinlenme sürelerini denetlemek",
+            "Yolcu sayısını saymak",
+            "Motor arızalarını tespit etmek"
+        ],
+        "dogruCevap": "B",
+        "resimYolu": "src2_7.jpeg"
+    },
+    {
+        "soru": "Otobüs sürücüsü şerit değiştirirken, görseldeki 'kör nokta' riskini ortadan kaldırmak için ne yapmalıdır?",
+        "siklar": [
+            "Sadece dikiz aynasına bakmalıdır",
+            "Müziğin sesini kısmalıdır",
+            "Başını çevirerek omuz üstü bakış yapmalıdır",
+            "Kornaya basıp hemen şeride girmelidir"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src2_8.jpeg"
+    },
+    {
+        "soru": "Tali yoldan ana yola çıkan bir sürücü bu levhayı gördüğünde ne yapmalıdır?",
+        "siklar": [
+            "Yavaşlayıp geçmelidir",
+            "Mutlaka durmalı, yolu kontrol edip öyle geçmelidir",
+            "Kornaya basıp geçmelidir",
+            "Selektör yapıp geçmelidir"
+        ],
+        "dogruCevap": "B",
+        "resimYolu": "src2_9.jpeg"
+    },
+    {
+        "soru": "Mevzuata göre, engelli yolcuların araçlara biniş ve inişleri ile ilgili sürücünün sorumluluğu nedir?",
+        "siklar": [
+            "Sadece refakatçisi varsa yardım etmek",
+            "Yardım etmek zorunda değildir",
+            "Yolcuya ve eşyasına yardımcı olmak zorundadır",
+            "Ek ücret talep ederek yardım etmek"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src2_10.jpeg"
+    },
+    {
+        "soru": "Motor çalışırken bu ikaz ışığının yanması neyi bildirir?",
+        "siklar": [
+            "Akünün bittiğini",
+            "Alternatörün (şarj sisteminin) aküyü şarj etmediğini",
+            "Yakıtın azaldığını",
+            "Motorun ısındığını"
+        ],
+        "dogruCevap": "B",
+        "resimYolu": "src2_11.jpeg"
+    },
+    {
+        "soru": "Bir kazada 112 arandığında, ilk yardımcının vermesi gereken en öncelikli ve net bilgi nedir?",
+        "siklar": [
+            "Sürücünün ehliyet sınıfı",
+            "Aracın marka ve modeli",
+            "Olayın tam ve açık adresi",
+            "Sigorta poliçe numarası"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src2_12.jpeg"
+    },
+    {
+        "soru": "Görseldeki gibi yağışlı havalarda 'takip mesafesi' ile ilgili doğru davranış hangisidir?",
+        "siklar": [
+            "Takip mesafesi azaltılır",
+            "Takip mesafesi aynı kalır",
+            "Takip mesafesi artırılır (iki katına çıkarılır)",
+            "Öndeki araç geçilmeye çalışılır"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src2_13.jpeg"
+    },
+    {
+        "soru": "Otobüslerde yangın söndürme cihazının konumu neresi olmalıdır?",
+        "siklar": [
+            "Sürücünün hemen ulaşabileceği, kolay erişilebilir bir yerde",
+            "Yolcuların göremeyeceği kapalı bir yerde",
+            "Sadece bagaj bölümünde",
+            "Motor kapağının altında"
+        ],
+        "dogruCevap": "A",
+        "resimYolu": "src2_14.jpeg"
+    },
+    {
+        "soru": "Karayolu Taşıma Yönetmeliği'ne göre, kucakta seyahat etmesi şartıyla hangi yaş grubundaki çocuklar bilet alma zorunluluğundan muaftır (ücretsizdir)?",
+        "siklar": [
+            "0-6 Yaş",
+            "0-2 Yaş",
+            "0-10 Yaş",
+            "0-4 Yaş"
+        ],
+        "dogruCevap": "A",
+        "resimYolu": "src2_15.jpeg"
+    }
+]

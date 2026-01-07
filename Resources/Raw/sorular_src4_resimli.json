@@ -1,0 +1,167 @@
+[
+    {
+        "soru": "Karayolları Trafik Yönetmeliği'ne göre, yükün araç kasasından arkaya doğru en fazla kaç metre taşmasına izin verilir?",
+        "siklar": [
+            "1 metre",
+            "2 metre",
+            "3 metre",
+            "2.5 metre"
+        ],
+        "dogruCevap": "B",
+        "resimYolu": "src4_1.jpeg"
+    },
+    {
+        "soru": "Yurtiçi eşya taşımacılığı yapan bir araçta, denetim sırasında görseldeki belgenin (Sevk İrsaliyesi) ibraz edilmesi neden zorunludur?",
+        "siklar": [
+            "Aracın sigortalı olduğunu göstermek için",
+            "Malın cinsi, miktarı ve kime ait olduğunu kanıtlamak için",
+            "Sürücünün ehliyetini doğrulamak için",
+            "Aracın muayenesini göstermek için"
+        ],
+        "dogruCevap": "B",
+        "resimYolu": "src4_2.jpeg"
+    },
+    {
+        "soru": "SRC 4 belgeli bir sürücü, seyir halindeyken bu levhayı gördüğünde ne yapmalıdır?",
+        "siklar": [
+            "Yükünü boşaltıp girmelidir",
+            "Bu yola veya güzergaha girmemelidir",
+            "Sadece gece saatlerinde girmelidir",
+            "Hızını azaltarak girmelidir"
+        ],
+        "dogruCevap": "B",
+        "resimYolu": "src4_3.jpeg"
+    },
+    {
+        "soru": "Görseldeki lastiğin sadece orta kısmının aşınmış olmasının teknik sebebi nedir?",
+        "siklar": [
+            "Düşük hava basıncı",
+            "Bozuk rot ayarı",
+            "Yüksek hava basıncı (Lastiğin şişkin olması)",
+            "Ani fren yapılması"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src4_4.jpeg"
+    },
+    {
+        "soru": "Mevzuata göre, azami ağırlığı 12 tonun üzerinde olan kamyon ve çekicilerde yangın söndürme cihazı bulundurma zorunluluğu nasıldır?",
+        "siklar": [
+            "1 adet 1 kg",
+            "2 adet 1 kg",
+            "1 adet 6 kg",
+            "1 adet 2 kg"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src4_5.jpeg"
+    },
+    {
+        "soru": "Yük taşıyan bir araçta seyir halindeyken hararet göstergesi kırmızıya gelirse sürücü ne yapmalıdır?",
+        "siklar": [
+            "Vitesi boşa alıp devam etmelidir",
+            "Klimayı açıp devam etmelidir",
+            "Kurallara uygun şekilde derhal durmalı ve motoru rölantide çalıştırıp soğumasını beklemelidir",
+            "Hızlanarak motoru soğutmalıdır"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src4_6.jpeg"
+    },
+    {
+        "soru": "Yüklü bir kamyon sürücüsü bu levhayı gördüğünde direksiyon hakimiyetini kaybetmemek için ne yapmalıdır?",
+        "siklar": [
+            "Ani fren yapmalıdır",
+            "Ani direksiyon hareketlerinden kaçınmalı ve hızını azaltmalıdır",
+            "Vitesi boşa almalıdır",
+            "Gaza basarak hızlı geçmelidir"
+        ],
+        "dogruCevap": "B",
+        "resimYolu": "src4_7.jpeg"
+    },
+    {
+        "soru": "Görseldeki ekipmanın (Spanset) temel kullanım amacı nedir?",
+        "siklar": [
+            "Yükü yağmurdan korumak",
+            "Yükün araç içinde savrulmasını ve devrilmesini önlemek (Sabitleme)",
+            "Yükleme işlemini hızlandırmak",
+            "Yükün ağırlığını azaltmak"
+        ],
+        "dogruCevap": "B",
+        "resimYolu": "src4_8.jpeg"
+    },
+    {
+        "soru": "Kamyon sürücüsü geri manevra yaparken kör noktada kalan bir cismi veya kişiyi göremeyebilir. Bu riski en aza indirmek için ne yapılmalıdır?",
+        "siklar": [
+            "Sadece dikiz aynasına bakılmalıdır",
+            "Mümkünse bir gözcüden yardım alınmalıdır",
+            "Hızlıca geri gidilmelidir",
+            "Kornaya basıp geri gidilmelidir"
+        ],
+        "dogruCevap": "B",
+        "resimYolu": "src4_9.jpeg"
+    },
+    {
+        "soru": "Görseldeki yetki belgesine sahip olan bir firma hangi tür taşımacılık faaliyetinde bulunabilir?",
+        "siklar": [
+            "Uluslararası yolcu taşımacılığı",
+            "Yurtiçi ticari eşya taşımacılığı",
+            "Uluslararası evden eve nakliyat",
+            "Yurtiçi kargo dağıtımı"
+        ],
+        "dogruCevap": "B",
+        "resimYolu": "src4_10.jpeg"
+    },
+    {
+        "soru": "Trafik kazası sonrası bir yaralıya görseldeki \"Boyunluk\" takılmasının temel amacı nedir?",
+        "siklar": [
+            "Yaralının üşümesini engellemek",
+            "Solunum yolunu açmak",
+            "Olası omurilik felcini önlemek için boynu sabitlemek",
+            "Yaralının uyumasını sağlamak"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src4_11.jpeg"
+    },
+    {
+        "soru": "Dizel motorlu bir kamyonda yakıt tamamen biterse ne olur?",
+        "siklar": [
+            "Motor hava yapar ve tekrar çalıştırılması zorlaşır",
+            "Motor daha performanslı çalışır",
+            "Hiçbir şey olmaz, yakıt konunca hemen çalışır",
+            "Akü biter"
+        ],
+        "dogruCevap": "A",
+        "resimYolu": "src4_12.jpeg"
+    },
+    {
+        "soru": "Bu levhayı gören yüklü bir kamyon sürücüsü neyi kontrol etmelidir?",
+        "siklar": [
+            "Aracın toplam yüksekliğini",
+            "Aracın dingil ağırlıklarının levhadaki sınırdan fazla olup olmadığını",
+            "Aracın genişliğini",
+            "Aracın hızını"
+        ],
+        "dogruCevap": "B",
+        "resimYolu": "src4_13.jpeg"
+    },
+    {
+        "soru": "Şehirlerarası yolda arızalanan bir kamyonun arkasına konulan reflektör, diğer sürücüler tarafından en az kaç metreden görülebilmelidir?",
+        "siklar": [
+            "50 metre",
+            "100 metre",
+            "150 metre",
+            "200 metre"
+        ],
+        "dogruCevap": "C",
+        "resimYolu": "src4_14.jpeg"
+    },
+    {
+        "soru": "SRC 4 sınavında veya trafik denetiminde, araç ruhsatındaki bilgiler ile araç üzerindeki bu numaranın uyuşmaması ne anlama gelir?",
+        "siklar": [
+            "Aracın \"change\" (değiştirilmiş/çalıntı) veya motor/şasi değişikliğinin işlenmemiş olduğunu",
+            "Aracın yeni model olduğunu",
+            "Aracın muayenesinin tam olduğunu",
+            "Aracın sigortalı olduğunu"
+        ],
+        "dogruCevap": "A",
+        "resimYolu": "src4_15.jpeg"
+    }
+]
