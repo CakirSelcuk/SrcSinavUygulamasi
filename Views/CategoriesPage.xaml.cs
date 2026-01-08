@@ -6,4 +6,9 @@ public partial class CategoriesPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	private async void OnAboutTapped(object sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new AboutPage());
+	}
 }

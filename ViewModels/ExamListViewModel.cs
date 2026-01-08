@@ -21,15 +21,27 @@ namespace SrcSinavUygulamasi.ViewModels
         [ObservableProperty]
         private bool isBusy;
 
+        [ObservableProperty]
+        private bool showAnalysisButton;
+
+        [ObservableProperty]
+        private string readinessLabel = "";
+
+        [ObservableProperty]
+        private string readinessColor = "#64748b";
+
         private string _categoryId = "";
         private QuestionService _questionService = new();
+        private ExamProgressService _progressService = new();
+        private List<string> _expectedExamIds = new();
 
         private Dictionary<string, (string title, string color)> _categoryInfo = new()
         {
             { "src1", ("SRC 1", "#FF5722") },
             { "src2", ("SRC 2", "#2196F3") },
             { "src3", ("SRC 3", "#4CAF50") },
-            { "src4", ("SRC 4", "#9C27B0") }
+            { "src4", ("SRC 4", "#9C27B0") },
+            { "src5", ("SRC 5", "#00BCD4") }
         };
 
         public async void LoadExams(string categoryId)
@@ -38,6 +50,7 @@ namespace SrcSinavUygulamasi.ViewModels
 
             IsBusy = true;
             _categoryId = categoryId.ToLower();
+            _expectedExamIds.Clear();
 
             // Kategori bilgilerini ayarla
             if (_categoryInfo.TryGetValue(_categoryId, out var info))
@@ -52,6 +65,9 @@ namespace SrcSinavUygulamasi.ViewModels
                 var allQuestions = await _questionService.SorulariGetir(_categoryId);
                 int totalQuestions = allQuestions.Count;
 
+                // Tamamlanan sınavları getir
+                var completedExamIds = _progressService.GetCompletedExamIds(_categoryId);
+
                 Exams.Clear();
 
                 if (totalQuestions > 0)
@@ -64,42 +80,48 @@ namespace SrcSinavUygulamasi.ViewModels
                     {
                         int startIndex = i * questionsPerExam;
                         int count = Math.Min(questionsPerExam, totalQuestions - startIndex);
+                        string examId = $"deneme_{i + 1}";
+                        bool isCompleted = completedExamIds.Contains(examId);
+
+                        _expectedExamIds.Add(examId);
 
                         Exams.Add(new ExamModel
                         {
                             Id = i + 1,
-                            IconText = (i + 1).ToString(),  // Numara göster
+                            IconText = isCompleted ? "✓" : (i + 1).ToString(),
                             Title = $"{CategoryTitle} - Deneme {i + 1}",
                             QuestionCount = count,
                             CategoryId = _categoryId,
                             StartIndex = startIndex,
-                            Color = CategoryColor,
+                            Color = isCompleted ? "#22c55e" : CategoryColor,
                             IsRealExam = false,
                             PointsPerQuestion = 5,
-                            Subtitle = $"{count} Soru"
+                            Subtitle = isCompleted ? $"✓ Tamamlandı · {count} Soru" : $"{count} Soru"
                         });
                     }
                 }
 
-                // Resimli soruları kontrol et (gerçek sınavdan önce)
+                // Resimli soruları kontrol et
                 var imageQuestions = await _questionService.ResimliSorulariGetir(_categoryId);
                 if (imageQuestions.Count > 0)
                 {
-                    // 15 soru = 100 puan: ilk 14 soru 7 puan, son soru 2 puan
-                    // PointsPerQuestion = 6.67 kullanacağız (yaklaşık)
+                    string examId = "image_exam";
+                    bool isCompleted = completedExamIds.Contains(examId);
+                    _expectedExamIds.Add(examId);
+
                     Exams.Add(new ExamModel
                     {
                         Id = 998,
-                        IconText = "R",  // Resimli için "R"
+                        IconText = isCompleted ? "✓" : "R",
                         Title = "🖼️ Resimli Sorular",
                         QuestionCount = imageQuestions.Count,
                         CategoryId = _categoryId,
                         StartIndex = 0,
-                        Color = "#E91E63",  // Pembe/Magenta rengi
+                        Color = isCompleted ? "#22c55e" : "#E91E63",
                         IsRealExam = false,
                         IsImageExam = true,
-                        PointsPerQuestion = 6.67,  // 15 × 6.67 ≈ 100
-                        Subtitle = $"{imageQuestions.Count} Görsel Soru · 100 Puan · 70+ Geçer"
+                        PointsPerQuestion = 6.67,
+                        Subtitle = isCompleted ? $"✓ Tamamlandı · {imageQuestions.Count} Görsel Soru" : $"{imageQuestions.Count} Görsel Soru · 100 Puan · 70+ Geçer"
                     });
                 }
 
@@ -107,21 +129,32 @@ namespace SrcSinavUygulamasi.ViewModels
                 var realExamQuestions = await _questionService.SinavSorulariniGetir(_categoryId);
                 if (realExamQuestions.Count > 0)
                 {
-                    // Gerçek sınav simülasyonu ekle
+                    string examId = "real_exam";
+                    bool isCompleted = completedExamIds.Contains(examId);
+                    _expectedExamIds.Add(examId);
+
                     Exams.Add(new ExamModel
                     {
                         Id = 999,
-                        IconText = "S",  // Sınav için "S"
+                        IconText = isCompleted ? "✓" : "S",
                         Title = "🎯 Gerçek Sınav Simülasyonu",
                         QuestionCount = realExamQuestions.Count,
                         CategoryId = _categoryId,
                         StartIndex = 0,
-                        Color = "#FFD700",  // Altın rengi
+                        Color = isCompleted ? "#22c55e" : "#FFD700",
                         IsRealExam = true,
                         PointsPerQuestion = 2.5,
-                        Subtitle = $"{realExamQuestions.Count} Soru · 100 Puan · 70+ Geçer"
+                        Subtitle = isCompleted ? $"✓ Tamamlandı · {realExamQuestions.Count} Soru" : $"{realExamQuestions.Count} Soru · 100 Puan · 70+ Geçer"
                     });
                 }
+
+                // Tüm sınavlar tamamlandı mı kontrol et
+                ShowAnalysisButton = _progressService.AreAllExamsCompleted(_categoryId, _expectedExamIds);
+
+                // Hazırlık durumu
+                var readiness = _progressService.GetReadinessStatus(_categoryId);
+                ReadinessLabel = readiness.Label;
+                ReadinessColor = readiness.Color;
 
                 // Hiç soru yoksa uyarı
                 if (Exams.Count == 0)
@@ -152,8 +185,6 @@ namespace SrcSinavUygulamasi.ViewModels
             // Özel sınavlar için ExamIndex = 0, normal denemeler için kendi indexi
             string examIndex = (exam.IsRealExam || exam.IsImageExam) ? "0" : (exam.Id - 1).ToString();
 
-            // Quiz sayfasına git, exam bilgilerini gönder
-            // Not: QueryProperty string bekler, bu yüzden ToString() kullanıyoruz
             await Shell.Current.GoToAsync($"{nameof(QuizPage)}",
                 new Dictionary<string, object>
                 {
@@ -163,6 +194,16 @@ namespace SrcSinavUygulamasi.ViewModels
                     { "IsRealExam", exam.IsRealExam.ToString() },
                     { "IsImageExam", exam.IsImageExam.ToString() },
                     { "PointsPerQuestion", exam.PointsPerQuestion.ToString(System.Globalization.CultureInfo.InvariantCulture) }
+                });
+        }
+
+        [RelayCommand]
+        private async Task OpenAnalysis()
+        {
+            await Shell.Current.GoToAsync($"{nameof(AnalysisPage)}",
+                new Dictionary<string, object>
+                {
+                    { "CategoryId", _categoryId }
                 });
         }
     }

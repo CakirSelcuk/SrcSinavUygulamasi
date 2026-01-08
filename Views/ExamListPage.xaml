@@ -12,7 +12,7 @@
         <viewmodels:ExamListViewModel />
     </ContentPage.BindingContext>
 
-    <Grid RowDefinitions="Auto, *">
+    <Grid RowDefinitions="Auto, *, Auto">
 
         <!-- Başlık -->
         <VerticalStackLayout Grid.Row="0" Padding="25,40,25,20" Spacing="5">
@@ -23,6 +23,16 @@
                        FontAttributes="Bold" VerticalOptions="Center"/>
             </HorizontalStackLayout>
             <Label Text="Deneme sınavını seçin" TextColor="#94a3b8" FontSize="14" Margin="40,0,0,0"/>
+            
+            <!-- Hazırlık Durumu -->
+            <Border Stroke="Transparent" BackgroundColor="#1e293b" StrokeShape="RoundRectangle 8" 
+                    Padding="10,5" Margin="40,10,0,0" HorizontalOptions="Start"
+                    IsVisible="{Binding ShowAnalysisButton}">
+                <HorizontalStackLayout Spacing="8">
+                    <Label Text="📊" FontSize="14"/>
+                    <Label Text="{Binding ReadinessLabel}" TextColor="{Binding ReadinessColor}" FontSize="13" FontAttributes="Bold"/>
+                </HorizontalStackLayout>
+            </Border>
         </VerticalStackLayout>
 
         <!-- Deneme Listesi -->
@@ -68,8 +78,25 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
 
+        <!-- Analiz Butonu (Tüm sınavlar tamamlandığında görünür) -->
+        <Button Grid.Row="2"
+                Text="📊 Sınav Analizimi Göster"
+                FontSize="16"
+                FontAttributes="Bold"
+                HeightRequest="55"
+                CornerRadius="14"
+                Margin="20,10,20,25"
+                BackgroundColor="#2563eb"
+                TextColor="White"
+                IsVisible="{Binding ShowAnalysisButton}"
+                Command="{Binding OpenAnalysisCommand}">
+            <Button.Shadow>
+                <Shadow Brush="Black" Offset="0,4" Opacity="0.3"/>
+            </Button.Shadow>
+        </Button>
+
         <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" 
-                           Color="White" HorizontalOptions="Center" VerticalOptions="Center" Grid.RowSpan="2"/>
+                           Color="White" HorizontalOptions="Center" VerticalOptions="Center" Grid.RowSpan="3"/>
     </Grid>
 
 </ContentPage>

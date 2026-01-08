@@ -20,6 +20,14 @@ namespace SrcSinavUygulamasi.ViewModels
         [ObservableProperty] private Color themeColor;
         [ObservableProperty] private string examTitle = "Deneme Sınavı";
 
+        // Timer properties
+        [ObservableProperty] private string timerText = "60:00";
+        [ObservableProperty] private bool isTimerVisible = false;
+        [ObservableProperty] private Color timerColor = Colors.White;
+        private System.Timers.Timer? _examTimer;
+        private int _remainingSeconds = 0;
+        private int _totalExamTimeMinutes = 0;
+
         private int _correctCount = 0;
         private int _wrongCount = 0;
 
@@ -46,13 +54,16 @@ namespace SrcSinavUygulamasi.ViewModels
         private double _pointsPerQuestion = 5;
 
         private QuestionService _questionService = new QuestionService();
+        private ExamProgressService _progressService = new ExamProgressService();
+        private string _examId = "";
 
         private Dictionary<string, (string title, Color color)> _categoryInfo = new()
         {
             { "src1", ("SRC 1", Color.FromArgb("#FF5722")) },
             { "src2", ("SRC 2", Color.FromArgb("#2196F3")) },
             { "src3", ("SRC 3", Color.FromArgb("#4CAF50")) },
-            { "src4", ("SRC 4", Color.FromArgb("#9C27B0")) }
+            { "src4", ("SRC 4", Color.FromArgb("#9C27B0")) },
+            { "src5", ("SRC 5", Color.FromArgb("#00BCD4")) }
         };
 
         public QuizViewModel()
@@ -78,16 +89,19 @@ namespace SrcSinavUygulamasi.ViewModels
             if (_isRealExam)
             {
                 ExamTitle = $"{_categoryTitle} - Gerçek Sınav";
+                _examId = "real_exam";
                 ThemeColor = Color.FromArgb("#FFD700");  // Altın rengi
             }
             else if (_isImageExam)
             {
                 ExamTitle = $"{_categoryTitle} - Resimli Sorular";
+                _examId = "image_exam";
                 ThemeColor = Color.FromArgb("#E91E63");  // Pembe rengi
             }
             else
             {
                 ExamTitle = $"{_categoryTitle} - Deneme {_examIndex + 1}";
+                _examId = $"deneme_{_examIndex + 1}";
             }
 
             await LoadQuestionsForExam();
@@ -192,10 +206,157 @@ namespace SrcSinavUygulamasi.ViewModels
                     _currentIndex = 0;
                     ShowQuestion();
                 }
+
+                // Timer başlat
+                StartExamTimer();
             }
             finally
             {
                 IsBusy = false;
+            }
+        }
+
+        private void StartExamTimer()
+        {
+            // Timer sürelerini belirle
+            if (_isRealExam)
+            {
+                _totalExamTimeMinutes = 60; // Gerçek sınav: 60 dakika
+            }
+            else if (_isImageExam)
+            {
+                _totalExamTimeMinutes = 20; // Resimli sorular: 20 dakika
+            }
+            else
+            {
+                _totalExamTimeMinutes = 30; // Deneme sınavı: 30 dakika
+            }
+
+            _remainingSeconds = _totalExamTimeMinutes * 60;
+            IsTimerVisible = true;
+            UpdateTimerDisplay();
+
+            _examTimer?.Stop();
+            _examTimer = new System.Timers.Timer(1000);
+            _examTimer.Elapsed += OnTimerElapsed;
+            _examTimer.AutoReset = true;
+            _examTimer.Start();
+        }
+
+        private void OnTimerElapsed(object? sender, System.Timers.ElapsedEventArgs e)
+        {
+            _remainingSeconds--;
+
+            MainThread.BeginInvokeOnMainThread(() =>
+            {
+                UpdateTimerDisplay();
+
+                if (_remainingSeconds <= 0)
+                {
+                    _examTimer?.Stop();
+                    // Süre doldu, sınavı bitir
+                    EndExamDueToTimeout();
+                }
+            });
+        }
+
+        private void UpdateTimerDisplay()
+        {
+            int minutes = _remainingSeconds / 60;
+            int seconds = _remainingSeconds % 60;
+            TimerText = $"{minutes:D2}:{seconds:D2}";
+
+            // Son 5 dakikada kırmızı renk
+            if (_remainingSeconds <= 300)
+            {
+                TimerColor = Colors.Red;
+            }
+            else if (_remainingSeconds <= 600)
+            {
+                TimerColor = Colors.Orange;
+            }
+            else
+            {
+                TimerColor = Colors.White;
+            }
+        }
+
+        private async void EndExamDueToTimeout()
+        {
+            StopTimer();
+
+            // Boş (cevaplanmamış) soru sayısını hesapla
+            int emptyCount = _examQuestions.Count - _currentIndex;
+
+            var resultModel = new QuizResultModel
+            {
+                Score = Score,
+                CorrectCount = _correctCount,
+                WrongCount = _wrongCount,
+                EmptyCount = emptyCount,
+                ThemeColor = ThemeColor,
+                CategoryTitle = ExamTitle + " (Süre Doldu)",
+                ExamIndex = _examIndex,
+                TotalExams = _totalExams,
+                CategoryId = _categoryId,
+                IsRealExam = _isRealExam || _isImageExam
+            };
+            await Application.Current.MainPage.Navigation.PushAsync(new ResultPage(resultModel));
+        }
+
+        private void StopTimer()
+        {
+            _examTimer?.Stop();
+            _examTimer?.Dispose();
+            _examTimer = null;
+            IsTimerVisible = false;
+        }
+
+        /// <summary>
+        /// Sınav sonucunu Preferences'a kaydet
+        /// </summary>
+        private void SaveExamProgress()
+        {
+            try
+            {
+                // Tüm cevapları topla
+                var allAnswers = new Dictionary<string, string>();
+                var wrongAnswers = new Dictionary<string, string>();
+
+                foreach (var q in _examQuestions)
+                {
+                    if (!string.IsNullOrEmpty(q.Id))
+                    {
+                        allAnswers[q.Id] = q.UserAnswer;
+                        
+                        // Yanlış cevapları ayır
+                        if (!string.IsNullOrEmpty(q.UserAnswer) && q.UserAnswer != q.DogruCevap)
+                        {
+                            wrongAnswers[q.Id] = q.UserAnswer;
+                        }
+                    }
+                }
+
+                var progress = new ExamProgressModel
+                {
+                    CategoryId = _categoryId,
+                    ExamId = _examId,
+                    CompletedDate = DateTime.UtcNow,
+                    TotalQuestionCount = _examQuestions.Count,
+                    CorrectCount = _correctCount,
+                    WrongCount = _wrongCount,
+                    BlankCount = _examQuestions.Count - _correctCount - _wrongCount,
+                    Answers = allAnswers,
+                    WrongAnswers = wrongAnswers
+                };
+
+                _progressService.SaveExamProgress(progress);
+                
+                System.Diagnostics.Debug.WriteLine($"Sınav kaydedildi: {_categoryId}/{_examId} - Doğru: {_correctCount}, Yanlış: {_wrongCount}");
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Sınav kaydetme hatası: {ex.Message}");
             }
         }
 
@@ -239,6 +400,11 @@ namespace SrcSinavUygulamasi.ViewModels
             else
             {
                 // SINAV BİTTİ -> SONUÇ SAYFASINA GİT
+                StopTimer();
+                
+                // Sınav sonucunu kaydet
+                SaveExamProgress();
+                
                 var resultModel = new QuizResultModel
                 {
                     Score = Score,
@@ -277,6 +443,17 @@ namespace SrcSinavUygulamasi.ViewModels
             else if (selectedIndex == 2) BtnCColor = targetColor;
             else if (selectedIndex == 3) BtnDColor = targetColor;
 
+            // Kullanıcının cevabını kaydet
+            string userAnswer = selectedIndex switch
+            {
+                0 => "A",
+                1 => "B",
+                2 => "C",
+                3 => "D",
+                _ => ""
+            };
+            CurrentQuestion.UserAnswer = userAnswer;
+            
             if (selectedIndex != correctIndex)
             {
                 if (correctIndex == 0) BtnAColor = Colors.Green;
@@ -284,12 +461,18 @@ namespace SrcSinavUygulamasi.ViewModels
                 else if (correctIndex == 2) BtnCColor = Colors.Green;
                 else if (correctIndex == 3) BtnDColor = Colors.Green;
                 _wrongCount++;
+                
+                // Yanlış cevabı progress service'e kaydet
+                _progressService.MarkQuestionWrong(_categoryId, CurrentQuestion.Id);
             }
             else
             {
                 _correctCount++;
                 // Puan hesaplama: deneme = 5 puan/soru, gerçek sınav = 2.5 puan/soru
                 Score += _pointsPerQuestion;
+                
+                // Doğru cevabı progress service'e kaydet
+                _progressService.MarkQuestionCorrect(_categoryId, CurrentQuestion.Id);
             }
 
             await Task.Delay(1200);

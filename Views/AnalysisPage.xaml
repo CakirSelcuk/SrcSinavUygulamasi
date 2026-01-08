@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SrcSinavUygulamasi.Views.AnalysisPage"
+             Title="Sınav Analizi">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#1e3a5f" Offset="0.0" />
+            <GradientStop Color="#0f172a" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid RowDefinitions="Auto, Auto, *, Auto" Padding="20">
+        
+        <!-- Başlık -->
+        <VerticalStackLayout Grid.Row="0" Spacing="10" Margin="0,20,0,15">
+            <Label Text="📊 Sınav Analiziniz" FontSize="24" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+            <Label x:Name="CategoryLabel" Text="" FontSize="16" TextColor="#94a3b8" HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+
+        <!-- Hazırlık Durumu -->
+        <Border Grid.Row="1" Stroke="Transparent" StrokeShape="RoundRectangle 12" Padding="15" Margin="0,0,0,15"
+                x:Name="ReadinessBorder" BackgroundColor="#1e293b">
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Label Text="Hazırlık Durumu:" TextColor="#94a3b8" FontSize="14" VerticalOptions="Center"/>
+                <Label x:Name="ReadinessLabel" Text="Hesaplanıyor..." FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+        </Border>
+
+        <!-- Yanlış Sorular Listesi veya Tebrik Mesajı -->
+        <Grid Grid.Row="2">
+            <!-- Tebrik Mesajı (Hiç yanlış yoksa) -->
+            <Border x:Name="CongratsBorder" IsVisible="False" Stroke="Transparent" BackgroundColor="#1e293b" 
+                    StrokeShape="RoundRectangle 16" Padding="30" VerticalOptions="Center" HorizontalOptions="Center">
+                <VerticalStackLayout Spacing="15" HorizontalOptions="Center">
+                    <Label Text="🎉" FontSize="64" HorizontalOptions="Center"/>
+                    <Label Text="Tebrikler!" FontSize="24" FontAttributes="Bold" TextColor="#22c55e" HorizontalOptions="Center"/>
+                    <Label Text="Bu SRC setinde yanlışınız bulunmamaktadır." 
+                           FontSize="16" TextColor="White" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Yanlış Sorular Listesi -->
+            <ScrollView x:Name="WrongQuestionsScroll" IsVisible="True">
+                <VerticalStackLayout Spacing="15" x:Name="WrongQuestionsStack">
+                    <!-- Sorular dinamik olarak code-behind'da eklenecek -->
+                </VerticalStackLayout>
+            </ScrollView>
+        </Grid>
+
+        <!-- Alt Butonlar -->
+        <VerticalStackLayout Grid.Row="3" Spacing="10" Margin="0,15,0,20">
+            <!-- Mini Sınav Butonu -->
+            <Button x:Name="MiniExamButton"
+                    Text="🎯 Yanlışlarımdan Yeni Bir Deneme İstiyorum"
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    HeightRequest="55"
+                    CornerRadius="14"
+                    BackgroundColor="#2563eb"
+                    TextColor="White"
+                    IsVisible="False"
+                    Clicked="OnMiniExamClicked">
+                <Button.Shadow>
+                    <Shadow Brush="Black" Offset="0,4" Opacity="0.3"/>
+                </Button.Shadow>
+            </Button>
+
+            <!-- Geri Butonu -->
+            <Button Text="← Ana Sayfaya Dön"
+                    FontSize="14"
+                    HeightRequest="50"
+                    CornerRadius="14"
+                    BackgroundColor="#334155"
+                    TextColor="White"
+                    Clicked="OnBackClicked"/>
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentPage>

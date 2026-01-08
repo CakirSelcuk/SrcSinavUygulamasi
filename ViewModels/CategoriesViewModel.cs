@@ -21,7 +21,7 @@ namespace SrcSinavUygulamasi.ViewModels
     {
         Id = "src1",
         Title = "SRC 1",
-        IconText = "1", // <-- EKLENDİ
+        IconText = "🚌", // Uluslararası yolcu otobüsü
         Description = "Uluslararası Yolcu Taşımacılığı",
         Color = "#FF5722"
     },
@@ -29,7 +29,7 @@ namespace SrcSinavUygulamasi.ViewModels
     {
         Id = "src2",
         Title = "SRC 2",
-        IconText = "2", // <-- EKLENDİ
+        IconText = "🚐", // Yurtiçi minibüs/otobüs
         Description = "Yurtiçi Yolcu Taşımacılığı",
         Color = "#2196F3"
     },
@@ -37,7 +37,7 @@ namespace SrcSinavUygulamasi.ViewModels
     {
         Id = "src3",
         Title = "SRC 3",
-        IconText = "3", // <-- EKLENDİ
+        IconText = "🚛", // Uluslararası tır
         Description = "Uluslararası Eşya/Kargo Taşımacılığı",
         Color = "#4CAF50"
     },
@@ -45,9 +45,17 @@ namespace SrcSinavUygulamasi.ViewModels
     {
         Id = "src4",
         Title = "SRC 4",
-        IconText = "4", // <-- EKLENDİ
+        IconText = "🚚", // Yurtiçi kamyon
         Description = "Yurtiçi Eşya/Kargo Taşımacılığı",
         Color = "#9C27B0"
+    },
+    new CategoryModel
+    {
+        Id = "src5",
+        Title = "SRC 5",
+        IconText = "☢️", // Tehlikeli madde
+        Description = "Tehlikeli Madde Taşımacılığı (ADR)",
+        Color = "#00BCD4"
     }
 };
         }

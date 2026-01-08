@@ -1,1002 +1,1102 @@
 ﻿[
-  {
-    "soru": "SRC 3 belgesine sahip bir sürücü, mevzuata göre aşağıdaki taşımacılık faaliyetlerinden hangisini yapmaya yetkilidir?",
-    "siklar": [
-      "Sadece uluslararası eşya taşımacılığı",
-      "Uluslararası ve yurtiçi eşya/kargo taşımacılığı",
-      "Uluslararası yolcu taşımacılığı",
-      "Sadece yurtiçi kargo dağıtımı"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Uluslararası karayolu eşya taşımalarında, taşıma sözleşmesinin ve yük bilgilerinin yazılı olarak düzenlendiği 'taşıma senedi' hangisidir?",
-    "siklar": [
-      "TIR Karnesi",
-      "Sevk İrsaliyesi",
-      "CMR Belgesi",
-      "Geçiş Belgesi"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "AETR kurallarına göre sürücü, aralıksız araç kullanımından sonra mola vermek zorundadır. Bu aralıksız sürüş süresi en fazla kaç saattir?",
-    "siklar": [
-      "4 saat",
-      "4,5 saat",
-      "5 saat",
-      "5,5 saat"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "SRC 3 belgesi almak isteyen sürücüler için genel kural olarak belirlenen mesleki üst yaş sınırı aşağıdakilerden hangisidir?",
-    "siklar": [
-      "63 yaşından gün almamış olmak",
-      "65 yaşını doldurmamış olmak",
-      "66 yaşından gün almamış olmak",
-      "69 yaşından gün almamış olmak"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Eşya taşımacılığı yapan bir firma, U-ETDS sistemine sefer/taşıma bilgisini araç hareket ettikten sonra en geç hangi sürede girmek zorundadır?",
-    "siklar": [
-      "1 saat",
-      "3 saat",
-      "6 saat",
-      "24 saat"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "TIR Karnesi kapsamında yapılan uluslararası transit taşımalarda bu belge, uygulamada en çok hangi işlemin yerine geçer?",
-    "siklar": [
-      "Gümrük teminatı",
-      "Zorunlu trafik sigortası",
-      "Araç ruhsatı",
-      "Sürücü ehliyeti"
-    ],
-    "dogruCevap": "A"
-  },
-  {
-    "soru": "AETR'ye göre haftalık dinlenme süresi normal şartlarda kaç saat olmalıdır?",
-    "siklar": [
-      "45 saat",
-      "36 saat",
-      "24 saat",
-      "12 saat"
-    ],
-    "dogruCevap": "A"
-  },
-  {
-    "soru": "AETR'de 'azaltılmış haftalık dinlenme' uygulanacaksa, haftalık dinlenme en az kaç saate indirilebilir?",
-    "siklar": [
-      "24 saat",
-      "36 saat",
-      "45 saat",
-      "12 saat"
-    ],
-    "dogruCevap": "A"
-  },
-  {
-    "soru": "Aşağıdakilerden hangisi Karayolu Taşıma Kanunu kapsamı dışında örnek olarak gösterilebilir?",
-    "siklar": [
-      "Ticari kamyonetle eşya taşınması",
-      "Kargo şirketi aracıyla dağıtım yapılması",
-      "Resmi plakalı TSK aracıyla yapılan taşıma",
-      "Uluslararası evden eve nakliyat"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "C türü yetki belgesi genel olarak hangi faaliyetleri kapsar?",
-    "siklar": [
-      "Uluslararası ve yurtiçi eşya taşımacılığı",
-      "Şehirlerarası otobüs işletmeciliği",
-      "Uluslararası yolcu taşımacılığı",
-      "Terminal işletmeciliği"
-    ],
-    "dogruCevap": "A"
-  },
-  {
-    "soru": "CMR taşıma senedi uluslararası taşımada kaç nüsha olarak düzenlenir?",
-    "siklar": [
-      "2 nüsha",
-      "3 nüsha",
-      "4 nüsha",
-      "5 nüsha"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "CMR belgesinin 1. nüshası kural olarak kimde kalır?",
-    "siklar": [
-      "Göndericide",
-      "Alıcıda",
-      "Taşımacıda",
-      "Gümrükte"
-    ],
-    "dogruCevap": "A"
-  },
-  {
-    "soru": "CMR belgesinin 2. nüshası genellikle nasıl işlem görür?",
-    "siklar": [
-      "Göndericide kalır",
-      "Yükle birlikte alıcıya gider",
-      "Gümrükte dosyalanır",
-      "Sigorta şirketine verilir"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "CMR belgesinin 3. nüshası kural olarak kimde kalır?",
-    "siklar": [
-      "Gönderici",
-      "Alıcı",
-      "Taşımacı",
-      "Gümrük"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Sürücü, 4,5 saatlik sürüş süresini tamamladıktan sonra en az kaç dakika mola vermek zorundadır?",
-    "siklar": [
-      "15 dk",
-      "30 dk",
-      "45 dk",
-      "60 dk"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "45 dakikalık zorunlu mola, sürüş süresi içinde en az hangi parçalar halinde bölünebilir?",
-    "siklar": [
-      "10+35",
-      "15+30",
-      "20+25",
-      "30+15 (tek parça şartını sağlamaz)"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "AETR'ye göre bir sürücünün 'haftalık toplam sürüş süresi' en fazla kaç saat olabilir?",
-    "siklar": [
-      "45 saat",
-      "56 saat",
-      "60 saat",
-      "90 saat"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "AETR'ye göre 'iki haftalık (14 gün) toplam sürüş süresi' en fazla kaç saat olabilir?",
-    "siklar": [
-      "80 saat",
-      "90 saat",
-      "100 saat",
-      "112 saat"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Günlük sürüş süresi normalde 9 saattir. Bu süre haftada belirli sayıda en fazla kaç saate çıkarılabilir?",
-    "siklar": [
-      "10 saat",
-      "11 saat",
-      "12 saat",
-      "13 saat"
-    ],
-    "dogruCevap": "A"
-  },
-  {
-    "soru": "11 saatlik günlük dinlenme süresi, haftada en fazla kaç kez 9 saate indirilebilir?",
-    "siklar": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Kış döneminde gümrük idarelerince belirlenen 'güzergâh kat etme süresi' en fazla kaç saattir?",
-    "siklar": [
-      "120",
-      "150",
-      "192",
-      "200"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Kesilen idari para cezalarına karşı, tebliğ tarihinden itibaren kaç gün içinde Sulh Ceza Hakimliğine itiraz edilebilir?",
-    "siklar": [
-      "7 gün",
-      "10 gün",
-      "15 gün",
-      "30 gün"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Uluslararası lojistik işletmeciliği yapacak firmaların alması gereken yetki belgesi hangisidir?",
-    "siklar": [
-      "K1",
-      "C2",
-      "L2",
-      "M3"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Solunumu duran kazazedede oksijensizliğe bağlı olarak en hızlı hasar gören organ hangisidir?",
-    "siklar": [
-      "Kalp",
-      "Akciğer",
-      "Beyin",
-      "Böbrek"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "KBK (Koruma–Bildirme–Kurtarma) ilk yardımda hangi sırayla uygulanır?",
-    "siklar": [
-      "Kurtarma–Koruma–Bildirme",
-      "Koruma–Bildirme–Kurtarma",
-      "Bildirme–Koruma–Kurtarma",
-      "Koruma–Kurtarma–Bildirme"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Aşağıdaki suçlardan hangisinden hüküm giymiş olmak SRC 3 belgesi alınmasına engel teşkil eder?",
-    "siklar": [
-      "Hakaret",
-      "İnsan kaçakçılığı",
-      "Taksirli yaralama",
-      "Basit yaralama"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Bir aracın firmanın yetki belgesine kayıtlı olduğunu gösteren ve araçta bulundurulması gereken belge hangisidir?",
-    "siklar": [
-      "Taşıt Kartı",
-      "Kasko Poliçesi",
-      "Yeşil Kart",
-      "Oda Kayıt Belgesi"
-    ],
-    "dogruCevap": "A"
-  },
-  {
-    "soru": "SRC 3 eğitim müfredatında en yoğun ders saatinin ayrıldığı konu başlığı hangisidir?",
-    "siklar": [
-      "İlk yardım",
-      "Eşya/kargo mevzuatı",
-      "Trafik adabı",
-      "Harita okuma"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Gümrükte 'Kırmızı Hat' uygulaması genellikle neyi ifade eder?",
-    "siklar": [
-      "Hiç kontrol yapılmamasını",
-      "Fiziki muayene ve sıkı denetimi",
-      "Sadece belge kontrolünü",
-      "Sonradan kontrolü"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Gümrükte 'Mavi Hat' uygulaması genel olarak ne anlama gelir?",
-    "siklar": [
-      "Sonradan kontrol (belge/veri kontrolü)",
-      "Fiziki muayene",
-      "Kontrol yok",
-      "Sadece X-ray kontrolü"
-    ],
-    "dogruCevap": "A"
-  },
-  {
-    "soru": "Uluslararası taşımada trafik sigortasının yurt dışında da geçerli olmasını sağlayan belge hangisidir?",
-    "siklar": [
-      "TIR Karnesi",
-      "Yeşil Kart (Green Card)",
-      "CMR Belgesi",
-      "Sevk İrsaliyesi"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Kaçakçılık suçunun 'mesleki kolaylık' kullanılarak işlenmesi (ör. şoförlük mesleğinin kullanılması) halinde ceza nasıl etkilenir?",
-    "siklar": [
-      "Ceza yarıya iner",
-      "Ceza artırılarak uygulanır",
-      "Ceza kalkar",
-      "Sadece para cezası olur"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Egzoz gazından (karbonmonoksit) zehirlenme şüphesinde ilk yapılacak işlem hangisidir?",
-    "siklar": [
-      "Kusturmak",
-      "Temiz havaya çıkarmak",
-      "Şekerli su içirmek",
-      "Uyutmak"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Yetişkin bir insanda dinlenme halindeki normal nabız aralığı hangisidir?",
-    "siklar": [
-      "40–60",
-      "50–80",
-      "60–100",
-      "80–120"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Yetişkin bir insanda dinlenme halindeki normal solunum sayısı yaklaşık kaçtır?",
-    "siklar": [
-      "10–15",
-      "15–20",
-      "20–25",
-      "25–30"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Solunumu duran bir kişide kalıcı beyin hasarı riski yaklaşık ne kadar sürede başlar?",
-    "siklar": [
-      "1–2 dk",
-      "4–6 dk",
-      "10–15 dk",
-      "20 dk"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "112 arandığında verilmesi gereken en kritik ilk bilgi hangisidir?",
-    "siklar": [
-      "Yaralının kimliği",
-      "Olay yerinin açık adresi",
-      "Plaka",
-      "Kan grubu"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Atardamar kanamasının tipik özelliği hangisidir?",
-    "siklar": [
-      "Koyu kırmızı, sızıntı şeklinde",
-      "Açık kırmızı, kalp atımıyla fışkırır",
-      "Yavaş ve sürekli akar",
-      "Kısa sürede kendiliğinden durur"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "TIR Karnesi'nin geçerliliği ile ilgili doğru ifade hangisidir?",
-    "siklar": [
-      "Bir yıl sınırsız sefer",
-      "Tek bir yolculuk için",
-      "Sadece dönüşte",
-      "Sadece yurtiçi"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "TIR Karnesi'nin volet (yaprak) bölümünü koparma yetkisi kimdedir?",
-    "siklar": [
-      "Sürücü",
-      "Firma sahibi",
-      "Gümrük memuru",
-      "Sigorta görevlisi"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "SRC 3 belgesine sahip bir sürücü, mevzuata göre aşağıdaki belgelerden hangisinin kapsamındaki faaliyetleri de yapabilir?",
-    "siklar": [
-      "SRC 1",
-      "SRC 2",
-      "SRC 4",
-      "SRC 5"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "4925 sayılı Karayolu Taşıma Kanunu'na göre, ticari eşya taşımacılığı yapan araçlarda aşağıdaki belgelerden hangisinin araçta bulundurulması zorunludur?",
-    "siklar": [
-      "Firma faaliyet belgesi",
-      "Taşıt Kartı",
-      "Oda kayıt belgesi",
-      "Vergi levhası"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "AETR kurallarına göre, sürücünün 24 saatlik süre içinde kullanması gereken 'kesintisiz günlük dinlenme süresi' normal şartlarda kaç saattir?",
-    "siklar": [
-      "9 saat",
-      "10 saat",
-      "11 saat",
-      "12 saat"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Sürücünün 11 saatlik günlük dinlenme süresini haftada en fazla kaç kez 9 saate indirmesine izin verilir?",
-    "siklar": [
-      "1 kez",
-      "2 kez",
-      "3 kez",
-      "4 kez"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Birleşik iki hafta (14 gün) içinde bir sürücünün toplam araç kullanma süresi en fazla kaç saat olabilir?",
-    "siklar": [
-      "80 saat",
-      "90 saat",
-      "100 saat",
-      "112 saat"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "AETR'ye göre, haftalık sürüş süresi kural olarak en fazla kaç saattir?",
-    "siklar": [
-      "45 saat",
-      "56 saat",
-      "60 saat",
-      "90 saat"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "4,5 saatlik araç kullanımından sonra verilmesi gereken 45 dakikalık mola aşağıdaki şekillerden hangisiyle mevzuata uygun olarak bölünebilir?",
-    "siklar": [
-      "10 + 35",
-      "20 + 25",
-      "15 + 30",
-      "5 + 40"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Gümrük işlemlerinde 'Yeşil Hat' uygulaması aşağıdakilerden hangisini ifade eder?",
-    "siklar": [
-      "Fiziki muayene yapılır",
-      "Sadece belge kontrolü yapılır",
-      "Kontrol yapılmaz, geçiş sağlanır",
-      "Sonradan kontrol uygulanır"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Gümrük işlemlerinde 'Sarı Hat' uygulamasının temel anlamı nedir?",
-    "siklar": [
-      "Sadece fiziki muayene",
-      "Fiziki ve belge kontrolü",
-      "Sadece belge kontrolü",
-      "Kontrol yapılmaz"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Uluslararası eşya taşımacılığında, taşıyıcının yükü teslim almasıyla başlayıp teslim edinceye kadar olan sorumluluğunu düzenleyen sözleşme hangisidir?",
-    "siklar": [
-      "AETR",
-      "ADR",
-      "CMR",
-      "TIR"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "CMR Konvansiyonu'na göre taşıyıcının kayıp ve hasar durumundaki sorumluluğu hangi ölçütle sınırlandırılmıştır?",
-    "siklar": [
-      "Taşıma bedeli",
-      "Yükün piyasa değeri",
-      "Kilogram başına SDR",
-      "Sabit para cezası"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Uluslararası taşımacılıkta kullanılan TIR Karnesi aşağıdaki durumlardan hangisinde kullanılır?",
-    "siklar": [
-      "Yurtiçi eşya taşımalarında",
-      "Gümrük teminatı gerektiren transit taşımalarda",
-      "Yolcu taşımalarında",
-      "Şehir içi dağıtımda"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "TIR Karnesi ile yapılan bir taşımada, karnenin geçerliliği hangi kapsamla sınırlıdır?",
-    "siklar": [
-      "Bir yıl boyunca sınırsız sefer",
-      "Sadece dönüş yolculuğu",
-      "Tek bir yolculuk",
-      "Firma faaliyet süresi"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "TIR Karnesi'nin volet (yaprak) kısımlarını koparma yetkisi kime aittir?",
-    "siklar": [
-      "Sürücüye",
-      "Firma sahibine",
-      "Gümrük memuruna",
-      "Sigorta şirketine"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "U-ETDS sistemine taşıma verilerini girmeyen firmalara her sefer için hangi yaptırım uygulanır?",
-    "siklar": [
-      "Para cezası",
-      "Faaliyetten men",
-      "Belge iptali",
-      "Uyarma cezası"
-    ],
-    "dogruCevap": "D"
-  },
-  {
-    "soru": "Yetki belgesi sahibi bir firmanın 'kaldırılmamış' uyarma sayısı kaça ulaştığında faaliyetleri geçici olarak durdurulur?",
-    "siklar": [
-      "50",
-      "100",
-      "150",
-      "200"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Kesilen idari para cezalarına karşı itiraz mercii aşağıdakilerden hangisidir?",
-    "siklar": [
-      "Valilik",
-      "Emniyet Müdürlüğü",
-      "Ulaştırma Bakanlığı",
-      "Sulh Ceza Hakimliği"
-    ],
-    "dogruCevap": "D"
-  },
-  {
-    "soru": "İdari para cezalarına karşı itiraz süresi tebliğ tarihinden itibaren kaç gündür?",
-    "siklar": [
-      "7 gün",
-      "10 gün",
-      "15 gün",
-      "30 gün"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "SRC 3 belgesi almak isteyen sürücüler için belirlenen asgari eğitim düzeyi aşağıdakilerden hangisidir?",
-    "siklar": [
-      "İlkokul",
-      "Ortaokul",
-      "Lise",
-      "Üniversite"
-    ],
-    "dogruCevap": "A"
-  },
-  {
-    "soru": "SRC 3 belgesi almak isteyen sürücüler için belirlenen asgari yaş şartı nedir?",
-    "siklar": [
-      "18 yaşını doldurmuş olmak",
-      "19 yaşından gün almış olmak",
-      "21 yaşını doldurmuş olmak",
-      "22 yaşından gün almış olmak"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Ticari eşya taşımacılığı yapan sürücüler için genel mesleki üst yaş sınırı kaçtır?",
-    "siklar": [
-      "63",
-      "65",
-      "66",
-      "69"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Sürücülerin zihinsel ve psikomotor yeteneklerini ölçen psikoteknik değerlendirme raporu kaç yılda bir yenilenmelidir?",
-    "siklar": [
-      "1 yıl",
-      "2 yıl",
-      "3 yıl",
-      "5 yıl"
-    ],
-    "dogruCevap": "D"
-  },
-  {
-    "soru": "Egzoz gazından (karbonmonoksit) zehirlenen bir kişide ilk yapılması gereken müdahale aşağıdakilerden hangisidir?",
-    "siklar": [
-      "Kusturmak",
-      "Temiz havaya çıkarmak",
-      "Şekerli su içirmek",
-      "Kalp masajı yapmak"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Solunumu duran bir kişide, oksijensizliğe bağlı kalıcı beyin hasarı yaklaşık kaç dakika sonra başlar?",
-    "siklar": [
-      "1–2 dakika",
-      "3–4 dakika",
-      "4–6 dakika",
-      "10–15 dakika"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "İlk yardımda 'Hayat Kurtarma Zinciri'nin ilk halkası hangisidir?",
-    "siklar": [
-      "Ambulans ekiplerinin müdahalesi",
-      "Olay yerinde temel yaşam desteği",
-      "112'nin aranması",
-      "Hastane acil servisi"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Atardamar kanamasının en belirgin özelliği aşağıdakilerden hangisidir?",
-    "siklar": [
-      "Koyu kırmızı renkte sızıntı şeklinde olması",
-      "Yavaş ve sürekli akması",
-      "Açık kırmızı renkte ve kalp atımıyla fışkırması",
-      "Kısa sürede kendiliğinden durması"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Durdurulamayan uzuv kanamalarında ilk yardımda hangi uygulama yapılır?",
-    "siklar": [
-      "Sargı",
-      "Soğuk uygulama",
-      "Turnike",
-      "Masaj"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "112 Acil Servis aranırken verilmesi gereken en öncelikli bilgi aşağıdakilerden hangisidir?",
-    "siklar": [
-      "Yaralı sayısı",
-      "Yaralıların kimlik bilgisi",
-      "Olay yerinin açık adresi",
-      "Araç plakası"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Uluslararası taşımacılıkta trafik sigortasının yurt dışında da geçerli olmasını sağlayan belge hangisidir?",
-    "siklar": [
-      "CMR Belgesi",
-      "Yeşil Kart (Green Card)",
-      "TIR Karnesi",
-      "Kasko Poliçesi"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Kaçakçılık suçunun mesleki kolaylık kullanılarak işlenmesi halinde ceza nasıl uygulanır?",
-    "siklar": [
-      "Değişmez",
-      "Yarı oranında indirilir",
-      "Artırılarak uygulanır",
-      "Paraya çevrilir"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Aşağıdaki suçlardan hangisinden hüküm giymiş olmak SRC 3 belgesi alınmasına engeldir?",
-    "siklar": [
-      "Hakaret",
-      "Taksirli yaralama",
-      "İnsan kaçakçılığı",
-      "Basit yaralama"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Bir ticari aracın yetki belgesine kayıtlı olduğunu gösteren ve araçta aslı bulunması gereken belge hangisidir?",
-    "siklar": [
-      "Faaliyet Belgesi",
-      "Taşıt Kartı",
-      "Sigorta Poliçesi",
-      "Oda Sicil Belgesi"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Gümrükte 'Mavi Hat' uygulaması genel olarak neyi ifade eder?",
-    "siklar": [
-      "Fiziki muayene",
-      "Sadece X-ray kontrolü",
-      "Sonradan belge/beyan kontrolü",
-      "Kontrolsüz geçiş"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Gümrükte 'Kırmızı Hat'a sevk edilen bir araç için aşağıdakilerden hangisi yapılır?",
-    "siklar": [
-      "Kontrol yapılmaz",
-      "Sadece belge kontrolü yapılır",
-      "Fiziki muayene yapılır",
-      "Sonradan kontrol uygulanır"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Kış döneminde gümrük idarelerince belirlenen azami güzergâh kat etme süresi kaç saattir?",
-    "siklar": [
-      "120",
-      "150",
-      "192",
-      "240"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Yetişkin bir insanda dinlenme halindeki normal nabız aralığı hangisidir?",
-    "siklar": [
-      "40–60",
-      "50–80",
-      "60–100",
-      "80–120"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Yetişkin bir insanda normal solunum sayısı dakikada yaklaşık kaçtır?",
-    "siklar": [
-      "10–15",
-      "15–20",
-      "20–25",
-      "25–30"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "SRC 3 eğitim müfredatında en fazla ders saati ayrılan konu hangisidir?",
-    "siklar": [
-      "İlk Yardım",
-      "Eşya ve Kargo Mevzuatı",
-      "Trafik Adabı",
-      "Harita Okuma"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "SRC belgelerinin geçerlilik süresi aşağıdakilerden hangisidir?",
-    "siklar": [
-      "5 yıl",
-      "10 yıl",
-      "Ömür boyu (yaş haddine kadar)",
-      "1 yıl"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "SRC belgesi olmayan bir sürücüye kesilen idari para cezası, kime kesilen cezadan daha düşüktür?",
-    "siklar": [
-      "Yolcuya",
-      "Sigorta şirketine",
-      "Araç sahibine (işletene)",
-      "Trafik polisine"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Ticari eşya taşımacılığı yapan bir sürücü, 24 saatlik bir gün içinde en fazla kaç saat araç kullanabilir?",
-    "siklar": [
-      "8",
-      "9",
-      "10",
-      "11"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "9 saatlik günlük sürüş süresi, haftada en fazla kaç kez 10 saate çıkarılabilir?",
-    "siklar": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Haftalık sürüş süresi tamamlanan bir sürücü, haftalık dinlenmesini en geç ne zaman başlatmalıdır?",
-    "siklar": [
-      "24 saat içinde",
-      "6 gün sonunda",
-      "7 gün sonunda",
-      "14 gün sonunda"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Aşağıdakilerden hangisi pasif güvenlik sistemlerine örnektir?",
-    "siklar": [
-      "ABS",
-      "ESP",
-      "Emniyet kemeri",
-      "ASR"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Aşağıdakilerden hangisi aktif güvenlik sistemidir?",
-    "siklar": [
-      "Hava yastığı",
-      "Emniyet kemeri",
-      "ABS",
-      "Kafalık"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Dizel motorlarda yakıtın ateşlenmesi nasıl gerçekleşir?",
-    "siklar": [
-      "Buji kıvılcımıyla",
-      "Karbüratör yardımıyla",
-      "Sıkıştırılmış sıcak hava üzerine püskürtülerek",
-      "Manyeto ile"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Araçta 'rot ayarı' bozuk olduğunda genellikle hangi belirti görülür?",
-    "siklar": [
-      "Motor hararet yapar",
-      "Araç düz yolda sağa veya sola çeker",
-      "Fren mesafesi uzar",
-      "Yakıt tüketimi azalır"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Lastiklerin tabanının ortadan aşınması hangi duruma işaret eder?",
-    "siklar": [
-      "Düşük hava basıncı",
-      "Yüksek hava basıncı",
-      "Rot ayarı bozukluğu",
-      "Aşırı yükleme"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Lastiklerin kenar (omuz) kısımlarının aşınması genellikle hangi durumdan kaynaklanır?",
-    "siklar": [
-      "Yüksek hava basıncı",
-      "Düşük hava basıncı",
-      "Balans bozukluğu",
-      "Amortisör arızası"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Reaksiyon mesafesi ile fren mesafesinin toplamına ne ad verilir?",
-    "siklar": [
-      "Takip mesafesi",
-      "İntikal mesafesi",
-      "Toplam durma mesafesi",
-      "Güvenli aralık"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "Sürücünün tehlikeyi algılayıp frene basıncaya kadar geçen sürede kat ettiği mesafe hangisidir?",
-    "siklar": [
-      "Fren mesafesi",
-      "Reaksiyon mesafesi",
-      "Duruş mesafesi",
-      "Takip mesafesi"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "SRC yazılı sınavında yanlış cevaplar doğru cevapları etkiler mi?",
-    "siklar": [
-      "Evet, 4 yanlış 1 doğruyu götürür",
-      "Evet, 3 yanlış 1 doğruyu götürür",
-      "Hayır, etkilemez",
-      "Puan yarıya düşer"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "SRC sınavlarında (teorik + uygulama) adayların toplam kaç sınav hakkı vardır?",
-    "siklar": [
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "SRC 3 teorik (yazılı) sınavında başarılı sayılmak için 100 üzerinden en az kaç puan almak gerekir?",
-    "siklar": [
-      "60",
-      "65",
-      "70",
-      "80"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "SRC 3 uygulama (görsel) sınavında başarılı sayılmak için kaç soruya doğru cevap verilmelidir?",
-    "siklar": [
-      "1",
-      "2",
-      "3",
-      "Hepsi"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "SRC 3 eğitimine katılan bir kursiyerin devamsızlık hakkı toplam ders saatinin yüzde kaçıdır?",
-    "siklar": [
-      "%5",
-      "%10",
-      "%15",
-      "%20"
-    ],
-    "dogruCevap": "A"
-  },
-  {
-    "soru": "U-ETDS sisteminin temel amacı aşağıdakilerden hangisidir?",
-    "siklar": [
-      "Araç hızını denetlemek",
-      "Sefer ve taşıma verilerini izlemek",
-      "Yakıt tüketimini ölçmek",
-      "Sürücü puanı hesaplamak"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "SRC 3 belgesiyle aşağıdaki araçlardan hangisi ticari olarak kullanılabilir?",
-    "siklar": [
-      "Otobüs",
-      "Tır / Çekici",
-      "Yolcu minibüsü",
-      "Taksi"
-    ],
-    "dogruCevap": "B"
-  },
-  {
-    "soru": "Uluslararası eşya taşımacılığı yapan firmaların aldığı C2 / L2 yetki belgelerinin geçerlilik süresi kaç yıldır?",
-    "siklar": [
-      "2 yıl",
-      "3 yıl",
-      "5 yıl",
-      "10 yıl"
-    ],
-    "dogruCevap": "C"
-  },
-  {
-    "soru": "SRC 3 belgesi sahibi bir sürücü aşağıdaki faaliyetlerden hangisini yapamaz?",
-    "siklar": [
-      "Uluslararası eşya taşımacılığı",
-      "Yurtiçi eşya taşımacılığı",
-      "Uluslararası yolcu taşımacılığı",
-      "Kargo dağıtımı"
-    ],
-    "dogruCevap": "C"
-  }
+    {
+        "soru":  "SRC 3 belgesine sahip bir sürücü, mevzuata göre aşağıdaki taşımacılık faaliyetlerinden hangisini yapmaya yetkilidir?",
+        "siklar":  [
+                       "Sadece uluslararası eşya taşımacılığı",
+                       "Uluslararası ve yurtiçi eşya/kargo taşımacılığı",
+                       "Uluslararası yolcu taşımacılığı",
+                       "Sadece yurtiçi kargo dağıtımı"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q001"
+    },
+    {
+        "soru":  "Uluslararası karayolu eşya taşımalarında, taşıma sözleşmesinin ve yük bilgilerinin yazılı olarak düzenlendiği \u0027taşıma senedi\u0027 hangisidir?",
+        "siklar":  [
+                       "TIR Karnesi",
+                       "Sevk İrsaliyesi",
+                       "CMR Belgesi",
+                       "Geçiş Belgesi"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q002"
+    },
+    {
+        "soru":  "AETR kurallarına göre sürücü, aralıksız araç kullanımından sonra mola vermek zorundadır. Bu aralıksız sürüş süresi en fazla kaç saattir?",
+        "siklar":  [
+                       "4 saat",
+                       "4,5 saat",
+                       "5 saat",
+                       "5,5 saat"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q003"
+    },
+    {
+        "soru":  "SRC 3 belgesi almak isteyen sürücüler için genel kural olarak belirlenen mesleki üst yaş sınırı aşağıdakilerden hangisidir?",
+        "siklar":  [
+                       "63 yaşından gün almamış olmak",
+                       "65 yaşını doldurmamış olmak",
+                       "66 yaşından gün almamış olmak",
+                       "69 yaşından gün almamış olmak"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q004"
+    },
+    {
+        "soru":  "Eşya taşımacılığı yapan bir firma, U-ETDS sistemine sefer/taşıma bilgisini araç hareket ettikten sonra en geç hangi sürede girmek zorundadır?",
+        "siklar":  [
+                       "1 saat",
+                       "3 saat",
+                       "6 saat",
+                       "24 saat"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q005"
+    },
+    {
+        "soru":  "TIR Karnesi kapsamında yapılan uluslararası transit taşımalarda bu belge, uygulamada en çok hangi işlemin yerine geçer?",
+        "siklar":  [
+                       "Gümrük teminatı",
+                       "Zorunlu trafik sigortası",
+                       "Araç ruhsatı",
+                       "Sürücü ehliyeti"
+                   ],
+        "dogruCevap":  "A",
+        "id":  "src3_pratik_q006"
+    },
+    {
+        "soru":  "AETR\u0027ye göre haftalık dinlenme süresi normal şartlarda kaç saat olmalıdır?",
+        "siklar":  [
+                       "45 saat",
+                       "36 saat",
+                       "24 saat",
+                       "12 saat"
+                   ],
+        "dogruCevap":  "A",
+        "id":  "src3_pratik_q007"
+    },
+    {
+        "soru":  "AETR\u0027de \u0027azaltılmış haftalık dinlenme\u0027 uygulanacaksa, haftalık dinlenme en az kaç saate indirilebilir?",
+        "siklar":  [
+                       "24 saat",
+                       "36 saat",
+                       "45 saat",
+                       "12 saat"
+                   ],
+        "dogruCevap":  "A",
+        "id":  "src3_pratik_q008"
+    },
+    {
+        "soru":  "Aşağıdakilerden hangisi Karayolu Taşıma Kanunu kapsamı dışında örnek olarak gösterilebilir?",
+        "siklar":  [
+                       "Ticari kamyonetle eşya taşınması",
+                       "Kargo şirketi aracıyla dağıtım yapılması",
+                       "Resmi plakalı TSK aracıyla yapılan taşıma",
+                       "Uluslararası evden eve nakliyat"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q009"
+    },
+    {
+        "soru":  "C türü yetki belgesi genel olarak hangi faaliyetleri kapsar?",
+        "siklar":  [
+                       "Uluslararası ve yurtiçi eşya taşımacılığı",
+                       "Şehirlerarası otobüs işletmeciliği",
+                       "Uluslararası yolcu taşımacılığı",
+                       "Terminal işletmeciliği"
+                   ],
+        "dogruCevap":  "A",
+        "id":  "src3_pratik_q010"
+    },
+    {
+        "soru":  "CMR taşıma senedi uluslararası taşımada kaç nüsha olarak düzenlenir?",
+        "siklar":  [
+                       "2 nüsha",
+                       "3 nüsha",
+                       "4 nüsha",
+                       "5 nüsha"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q011"
+    },
+    {
+        "soru":  "CMR belgesinin 1. nüshası kural olarak kimde kalır?",
+        "siklar":  [
+                       "Göndericide",
+                       "Alıcıda",
+                       "Taşımacıda",
+                       "Gümrükte"
+                   ],
+        "dogruCevap":  "A",
+        "id":  "src3_pratik_q012"
+    },
+    {
+        "soru":  "CMR belgesinin 2. nüshası genellikle nasıl işlem görür?",
+        "siklar":  [
+                       "Göndericide kalır",
+                       "Yükle birlikte alıcıya gider",
+                       "Gümrükte dosyalanır",
+                       "Sigorta şirketine verilir"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q013"
+    },
+    {
+        "soru":  "CMR belgesinin 3. nüshası kural olarak kimde kalır?",
+        "siklar":  [
+                       "Gönderici",
+                       "Alıcı",
+                       "Taşımacı",
+                       "Gümrük"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q014"
+    },
+    {
+        "soru":  "Sürücü, 4,5 saatlik sürüş süresini tamamladıktan sonra en az kaç dakika mola vermek zorundadır?",
+        "siklar":  [
+                       "15 dk",
+                       "30 dk",
+                       "45 dk",
+                       "60 dk"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q015"
+    },
+    {
+        "soru":  "45 dakikalık zorunlu mola, sürüş süresi içinde en az hangi parçalar halinde bölünebilir?",
+        "siklar":  [
+                       "10+35",
+                       "15+30",
+                       "20+25",
+                       "30+15 (tek parça şartını sağlamaz)"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q016"
+    },
+    {
+        "soru":  "AETR\u0027ye göre bir sürücünün \u0027haftalık toplam sürüş süresi\u0027 en fazla kaç saat olabilir?",
+        "siklar":  [
+                       "45 saat",
+                       "56 saat",
+                       "60 saat",
+                       "90 saat"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q017"
+    },
+    {
+        "soru":  "AETR\u0027ye göre \u0027iki haftalık (14 gün) toplam sürüş süresi\u0027 en fazla kaç saat olabilir?",
+        "siklar":  [
+                       "80 saat",
+                       "90 saat",
+                       "100 saat",
+                       "112 saat"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q018"
+    },
+    {
+        "soru":  "Günlük sürüş süresi normalde 9 saattir. Bu süre haftada belirli sayıda en fazla kaç saate çıkarılabilir?",
+        "siklar":  [
+                       "10 saat",
+                       "11 saat",
+                       "12 saat",
+                       "13 saat"
+                   ],
+        "dogruCevap":  "A",
+        "id":  "src3_pratik_q019"
+    },
+    {
+        "soru":  "11 saatlik günlük dinlenme süresi, haftada en fazla kaç kez 9 saate indirilebilir?",
+        "siklar":  [
+                       "1",
+                       "2",
+                       "3",
+                       "4"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q020"
+    },
+    {
+        "soru":  "Kış döneminde gümrük idarelerince belirlenen \u0027güzergâh kat etme süresi\u0027 en fazla kaç saattir?",
+        "siklar":  [
+                       "120",
+                       "150",
+                       "192",
+                       "200"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q021"
+    },
+    {
+        "soru":  "Kesilen idari para cezalarına karşı, tebliğ tarihinden itibaren kaç gün içinde Sulh Ceza Hakimliğine itiraz edilebilir?",
+        "siklar":  [
+                       "7 gün",
+                       "10 gün",
+                       "15 gün",
+                       "30 gün"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q022"
+    },
+    {
+        "soru":  "Uluslararası lojistik işletmeciliği yapacak firmaların alması gereken yetki belgesi hangisidir?",
+        "siklar":  [
+                       "K1",
+                       "C2",
+                       "L2",
+                       "M3"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q023"
+    },
+    {
+        "soru":  "Solunumu duran kazazedede oksijensizliğe bağlı olarak en hızlı hasar gören organ hangisidir?",
+        "siklar":  [
+                       "Kalp",
+                       "Akciğer",
+                       "Beyin",
+                       "Böbrek"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q024"
+    },
+    {
+        "soru":  "KBK (Koruma–Bildirme–Kurtarma) ilk yardımda hangi sırayla uygulanır?",
+        "siklar":  [
+                       "Kurtarma–Koruma–Bildirme",
+                       "Koruma–Bildirme–Kurtarma",
+                       "Bildirme–Koruma–Kurtarma",
+                       "Koruma–Kurtarma–Bildirme"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q025"
+    },
+    {
+        "soru":  "Aşağıdaki suçlardan hangisinden hüküm giymiş olmak SRC 3 belgesi alınmasına engel teşkil eder?",
+        "siklar":  [
+                       "Hakaret",
+                       "İnsan kaçakçılığı",
+                       "Taksirli yaralama",
+                       "Basit yaralama"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q026"
+    },
+    {
+        "soru":  "Bir aracın firmanın yetki belgesine kayıtlı olduğunu gösteren ve araçta bulundurulması gereken belge hangisidir?",
+        "siklar":  [
+                       "Taşıt Kartı",
+                       "Kasko Poliçesi",
+                       "Yeşil Kart",
+                       "Oda Kayıt Belgesi"
+                   ],
+        "dogruCevap":  "A",
+        "id":  "src3_pratik_q027"
+    },
+    {
+        "soru":  "SRC 3 eğitim müfredatında en yoğun ders saatinin ayrıldığı konu başlığı hangisidir?",
+        "siklar":  [
+                       "İlk yardım",
+                       "Eşya/kargo mevzuatı",
+                       "Trafik adabı",
+                       "Harita okuma"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q028"
+    },
+    {
+        "soru":  "Gümrükte \u0027Kırmızı Hat\u0027 uygulaması genellikle neyi ifade eder?",
+        "siklar":  [
+                       "Hiç kontrol yapılmamasını",
+                       "Fiziki muayene ve sıkı denetimi",
+                       "Sadece belge kontrolünü",
+                       "Sonradan kontrolü"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q029"
+    },
+    {
+        "soru":  "Gümrükte \u0027Mavi Hat\u0027 uygulaması genel olarak ne anlama gelir?",
+        "siklar":  [
+                       "Sonradan kontrol (belge/veri kontrolü)",
+                       "Fiziki muayene",
+                       "Kontrol yok",
+                       "Sadece X-ray kontrolü"
+                   ],
+        "dogruCevap":  "A",
+        "id":  "src3_pratik_q030"
+    },
+    {
+        "soru":  "Uluslararası taşımada trafik sigortasının yurt dışında da geçerli olmasını sağlayan belge hangisidir?",
+        "siklar":  [
+                       "TIR Karnesi",
+                       "Yeşil Kart (Green Card)",
+                       "CMR Belgesi",
+                       "Sevk İrsaliyesi"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q031"
+    },
+    {
+        "soru":  "Kaçakçılık suçunun \u0027mesleki kolaylık\u0027 kullanılarak işlenmesi (ör. şoförlük mesleğinin kullanılması) halinde ceza nasıl etkilenir?",
+        "siklar":  [
+                       "Ceza yarıya iner",
+                       "Ceza artırılarak uygulanır",
+                       "Ceza kalkar",
+                       "Sadece para cezası olur"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q032"
+    },
+    {
+        "soru":  "Egzoz gazından (karbonmonoksit) zehirlenme şüphesinde ilk yapılacak işlem hangisidir?",
+        "siklar":  [
+                       "Kusturmak",
+                       "Temiz havaya çıkarmak",
+                       "Şekerli su içirmek",
+                       "Uyutmak"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q033"
+    },
+    {
+        "soru":  "Yetişkin bir insanda dinlenme halindeki normal nabız aralığı hangisidir?",
+        "siklar":  [
+                       "40–60",
+                       "50–80",
+                       "60–100",
+                       "80–120"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q034"
+    },
+    {
+        "soru":  "Yetişkin bir insanda dinlenme halindeki normal solunum sayısı yaklaşık kaçtır?",
+        "siklar":  [
+                       "10–15",
+                       "15–20",
+                       "20–25",
+                       "25–30"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q035"
+    },
+    {
+        "soru":  "Solunumu duran bir kişide kalıcı beyin hasarı riski yaklaşık ne kadar sürede başlar?",
+        "siklar":  [
+                       "1–2 dk",
+                       "4–6 dk",
+                       "10–15 dk",
+                       "20 dk"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q036"
+    },
+    {
+        "soru":  "112 arandığında verilmesi gereken en kritik ilk bilgi hangisidir?",
+        "siklar":  [
+                       "Yaralının kimliği",
+                       "Olay yerinin açık adresi",
+                       "Plaka",
+                       "Kan grubu"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q037"
+    },
+    {
+        "soru":  "Atardamar kanamasının tipik özelliği hangisidir?",
+        "siklar":  [
+                       "Koyu kırmızı, sızıntı şeklinde",
+                       "Açık kırmızı, kalp atımıyla fışkırır",
+                       "Yavaş ve sürekli akar",
+                       "Kısa sürede kendiliğinden durur"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q038"
+    },
+    {
+        "soru":  "TIR Karnesi\u0027nin geçerliliği ile ilgili doğru ifade hangisidir?",
+        "siklar":  [
+                       "Bir yıl sınırsız sefer",
+                       "Tek bir yolculuk için",
+                       "Sadece dönüşte",
+                       "Sadece yurtiçi"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q039"
+    },
+    {
+        "soru":  "TIR Karnesi\u0027nin volet (yaprak) bölümünü koparma yetkisi kimdedir?",
+        "siklar":  [
+                       "Sürücü",
+                       "Firma sahibi",
+                       "Gümrük memuru",
+                       "Sigorta görevlisi"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q040"
+    },
+    {
+        "soru":  "SRC 3 belgesine sahip bir sürücü, mevzuata göre aşağıdaki belgelerden hangisinin kapsamındaki faaliyetleri de yapabilir?",
+        "siklar":  [
+                       "SRC 1",
+                       "SRC 2",
+                       "SRC 4",
+                       "SRC 5"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q041"
+    },
+    {
+        "soru":  "4925 sayılı Karayolu Taşıma Kanunu\u0027na göre, ticari eşya taşımacılığı yapan araçlarda aşağıdaki belgelerden hangisinin araçta bulundurulması zorunludur?",
+        "siklar":  [
+                       "Firma faaliyet belgesi",
+                       "Taşıt Kartı",
+                       "Oda kayıt belgesi",
+                       "Vergi levhası"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q042"
+    },
+    {
+        "soru":  "AETR kurallarına göre, sürücünün 24 saatlik süre içinde kullanması gereken \u0027kesintisiz günlük dinlenme süresi\u0027 normal şartlarda kaç saattir?",
+        "siklar":  [
+                       "9 saat",
+                       "10 saat",
+                       "11 saat",
+                       "12 saat"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q043"
+    },
+    {
+        "soru":  "Sürücünün 11 saatlik günlük dinlenme süresini haftada en fazla kaç kez 9 saate indirmesine izin verilir?",
+        "siklar":  [
+                       "1 kez",
+                       "2 kez",
+                       "3 kez",
+                       "4 kez"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q044"
+    },
+    {
+        "soru":  "Birleşik iki hafta (14 gün) içinde bir sürücünün toplam araç kullanma süresi en fazla kaç saat olabilir?",
+        "siklar":  [
+                       "80 saat",
+                       "90 saat",
+                       "100 saat",
+                       "112 saat"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q045"
+    },
+    {
+        "soru":  "AETR\u0027ye göre, haftalık sürüş süresi kural olarak en fazla kaç saattir?",
+        "siklar":  [
+                       "45 saat",
+                       "56 saat",
+                       "60 saat",
+                       "90 saat"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q046"
+    },
+    {
+        "soru":  "4,5 saatlik araç kullanımından sonra verilmesi gereken 45 dakikalık mola aşağıdaki şekillerden hangisiyle mevzuata uygun olarak bölünebilir?",
+        "siklar":  [
+                       "10 + 35",
+                       "20 + 25",
+                       "15 + 30",
+                       "5 + 40"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q047"
+    },
+    {
+        "soru":  "Gümrük işlemlerinde \u0027Yeşil Hat\u0027 uygulaması aşağıdakilerden hangisini ifade eder?",
+        "siklar":  [
+                       "Fiziki muayene yapılır",
+                       "Sadece belge kontrolü yapılır",
+                       "Kontrol yapılmaz, geçiş sağlanır",
+                       "Sonradan kontrol uygulanır"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q048"
+    },
+    {
+        "soru":  "Gümrük işlemlerinde \u0027Sarı Hat\u0027 uygulamasının temel anlamı nedir?",
+        "siklar":  [
+                       "Sadece fiziki muayene",
+                       "Fiziki ve belge kontrolü",
+                       "Sadece belge kontrolü",
+                       "Kontrol yapılmaz"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q049"
+    },
+    {
+        "soru":  "Uluslararası eşya taşımacılığında, taşıyıcının yükü teslim almasıyla başlayıp teslim edinceye kadar olan sorumluluğunu düzenleyen sözleşme hangisidir?",
+        "siklar":  [
+                       "AETR",
+                       "ADR",
+                       "CMR",
+                       "TIR"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q050"
+    },
+    {
+        "soru":  "CMR Konvansiyonu\u0027na göre taşıyıcının kayıp ve hasar durumundaki sorumluluğu hangi ölçütle sınırlandırılmıştır?",
+        "siklar":  [
+                       "Taşıma bedeli",
+                       "Yükün piyasa değeri",
+                       "Kilogram başına SDR",
+                       "Sabit para cezası"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q051"
+    },
+    {
+        "soru":  "Uluslararası taşımacılıkta kullanılan TIR Karnesi aşağıdaki durumlardan hangisinde kullanılır?",
+        "siklar":  [
+                       "Yurtiçi eşya taşımalarında",
+                       "Gümrük teminatı gerektiren transit taşımalarda",
+                       "Yolcu taşımalarında",
+                       "Şehir içi dağıtımda"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q052"
+    },
+    {
+        "soru":  "TIR Karnesi ile yapılan bir taşımada, karnenin geçerliliği hangi kapsamla sınırlıdır?",
+        "siklar":  [
+                       "Bir yıl boyunca sınırsız sefer",
+                       "Sadece dönüş yolculuğu",
+                       "Tek bir yolculuk",
+                       "Firma faaliyet süresi"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q053"
+    },
+    {
+        "soru":  "TIR Karnesi\u0027nin volet (yaprak) kısımlarını koparma yetkisi kime aittir?",
+        "siklar":  [
+                       "Sürücüye",
+                       "Firma sahibine",
+                       "Gümrük memuruna",
+                       "Sigorta şirketine"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q054"
+    },
+    {
+        "soru":  "U-ETDS sistemine taşıma verilerini girmeyen firmalara her sefer için hangi yaptırım uygulanır?",
+        "siklar":  [
+                       "Para cezası",
+                       "Faaliyetten men",
+                       "Belge iptali",
+                       "Uyarma cezası"
+                   ],
+        "dogruCevap":  "D",
+        "id":  "src3_pratik_q055"
+    },
+    {
+        "soru":  "Yetki belgesi sahibi bir firmanın \u0027kaldırılmamış\u0027 uyarma sayısı kaça ulaştığında faaliyetleri geçici olarak durdurulur?",
+        "siklar":  [
+                       "50",
+                       "100",
+                       "150",
+                       "200"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q056"
+    },
+    {
+        "soru":  "Kesilen idari para cezalarına karşı itiraz mercii aşağıdakilerden hangisidir?",
+        "siklar":  [
+                       "Valilik",
+                       "Emniyet Müdürlüğü",
+                       "Ulaştırma Bakanlığı",
+                       "Sulh Ceza Hakimliği"
+                   ],
+        "dogruCevap":  "D",
+        "id":  "src3_pratik_q057"
+    },
+    {
+        "soru":  "İdari para cezalarına karşı itiraz süresi tebliğ tarihinden itibaren kaç gündür?",
+        "siklar":  [
+                       "7 gün",
+                       "10 gün",
+                       "15 gün",
+                       "30 gün"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q058"
+    },
+    {
+        "soru":  "SRC 3 belgesi almak isteyen sürücüler için belirlenen asgari eğitim düzeyi aşağıdakilerden hangisidir?",
+        "siklar":  [
+                       "İlkokul",
+                       "Ortaokul",
+                       "Lise",
+                       "Üniversite"
+                   ],
+        "dogruCevap":  "A",
+        "id":  "src3_pratik_q059"
+    },
+    {
+        "soru":  "SRC 3 belgesi almak isteyen sürücüler için belirlenen asgari yaş şartı nedir?",
+        "siklar":  [
+                       "18 yaşını doldurmuş olmak",
+                       "19 yaşından gün almış olmak",
+                       "21 yaşını doldurmuş olmak",
+                       "22 yaşından gün almış olmak"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q060"
+    },
+    {
+        "soru":  "Ticari eşya taşımacılığı yapan sürücüler için genel mesleki üst yaş sınırı kaçtır?",
+        "siklar":  [
+                       "63",
+                       "65",
+                       "66",
+                       "69"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q061"
+    },
+    {
+        "soru":  "Sürücülerin zihinsel ve psikomotor yeteneklerini ölçen psikoteknik değerlendirme raporu kaç yılda bir yenilenmelidir?",
+        "siklar":  [
+                       "1 yıl",
+                       "2 yıl",
+                       "3 yıl",
+                       "5 yıl"
+                   ],
+        "dogruCevap":  "D",
+        "id":  "src3_pratik_q062"
+    },
+    {
+        "soru":  "Egzoz gazından (karbonmonoksit) zehirlenen bir kişide ilk yapılması gereken müdahale aşağıdakilerden hangisidir?",
+        "siklar":  [
+                       "Kusturmak",
+                       "Temiz havaya çıkarmak",
+                       "Şekerli su içirmek",
+                       "Kalp masajı yapmak"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q063"
+    },
+    {
+        "soru":  "Solunumu duran bir kişide, oksijensizliğe bağlı kalıcı beyin hasarı yaklaşık kaç dakika sonra başlar?",
+        "siklar":  [
+                       "1–2 dakika",
+                       "3–4 dakika",
+                       "4–6 dakika",
+                       "10–15 dakika"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q064"
+    },
+    {
+        "soru":  "İlk yardımda \u0027Hayat Kurtarma Zinciri\u0027nin ilk halkası hangisidir?",
+        "siklar":  [
+                       "Ambulans ekiplerinin müdahalesi",
+                       "Olay yerinde temel yaşam desteği",
+                       "112\u0027nin aranması",
+                       "Hastane acil servisi"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q065"
+    },
+    {
+        "soru":  "Atardamar kanamasının en belirgin özelliği aşağıdakilerden hangisidir?",
+        "siklar":  [
+                       "Koyu kırmızı renkte sızıntı şeklinde olması",
+                       "Yavaş ve sürekli akması",
+                       "Açık kırmızı renkte ve kalp atımıyla fışkırması",
+                       "Kısa sürede kendiliğinden durması"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q066"
+    },
+    {
+        "soru":  "Durdurulamayan uzuv kanamalarında ilk yardımda hangi uygulama yapılır?",
+        "siklar":  [
+                       "Sargı",
+                       "Soğuk uygulama",
+                       "Turnike",
+                       "Masaj"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q067"
+    },
+    {
+        "soru":  "112 Acil Servis aranırken verilmesi gereken en öncelikli bilgi aşağıdakilerden hangisidir?",
+        "siklar":  [
+                       "Yaralı sayısı",
+                       "Yaralıların kimlik bilgisi",
+                       "Olay yerinin açık adresi",
+                       "Araç plakası"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q068"
+    },
+    {
+        "soru":  "Uluslararası taşımacılıkta trafik sigortasının yurt dışında da geçerli olmasını sağlayan belge hangisidir?",
+        "siklar":  [
+                       "CMR Belgesi",
+                       "Yeşil Kart (Green Card)",
+                       "TIR Karnesi",
+                       "Kasko Poliçesi"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q069"
+    },
+    {
+        "soru":  "Kaçakçılık suçunun mesleki kolaylık kullanılarak işlenmesi halinde ceza nasıl uygulanır?",
+        "siklar":  [
+                       "Değişmez",
+                       "Yarı oranında indirilir",
+                       "Artırılarak uygulanır",
+                       "Paraya çevrilir"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q070"
+    },
+    {
+        "soru":  "Aşağıdaki suçlardan hangisinden hüküm giymiş olmak SRC 3 belgesi alınmasına engeldir?",
+        "siklar":  [
+                       "Hakaret",
+                       "Taksirli yaralama",
+                       "İnsan kaçakçılığı",
+                       "Basit yaralama"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q071"
+    },
+    {
+        "soru":  "Bir ticari aracın yetki belgesine kayıtlı olduğunu gösteren ve araçta aslı bulunması gereken belge hangisidir?",
+        "siklar":  [
+                       "Faaliyet Belgesi",
+                       "Taşıt Kartı",
+                       "Sigorta Poliçesi",
+                       "Oda Sicil Belgesi"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q072"
+    },
+    {
+        "soru":  "Gümrükte \u0027Mavi Hat\u0027 uygulaması genel olarak neyi ifade eder?",
+        "siklar":  [
+                       "Fiziki muayene",
+                       "Sadece X-ray kontrolü",
+                       "Sonradan belge/beyan kontrolü",
+                       "Kontrolsüz geçiş"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q073"
+    },
+    {
+        "soru":  "Gümrükte \u0027Kırmızı Hat\u0027a sevk edilen bir araç için aşağıdakilerden hangisi yapılır?",
+        "siklar":  [
+                       "Kontrol yapılmaz",
+                       "Sadece belge kontrolü yapılır",
+                       "Fiziki muayene yapılır",
+                       "Sonradan kontrol uygulanır"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q074"
+    },
+    {
+        "soru":  "Kış döneminde gümrük idarelerince belirlenen azami güzergâh kat etme süresi kaç saattir?",
+        "siklar":  [
+                       "120",
+                       "150",
+                       "192",
+                       "240"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q075"
+    },
+    {
+        "soru":  "Yetişkin bir insanda dinlenme halindeki normal nabız aralığı hangisidir?",
+        "siklar":  [
+                       "40–60",
+                       "50–80",
+                       "60–100",
+                       "80–120"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q076"
+    },
+    {
+        "soru":  "Yetişkin bir insanda normal solunum sayısı dakikada yaklaşık kaçtır?",
+        "siklar":  [
+                       "10–15",
+                       "15–20",
+                       "20–25",
+                       "25–30"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q077"
+    },
+    {
+        "soru":  "SRC 3 eğitim müfredatında en fazla ders saati ayrılan konu hangisidir?",
+        "siklar":  [
+                       "İlk Yardım",
+                       "Eşya ve Kargo Mevzuatı",
+                       "Trafik Adabı",
+                       "Harita Okuma"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q078"
+    },
+    {
+        "soru":  "SRC belgelerinin geçerlilik süresi aşağıdakilerden hangisidir?",
+        "siklar":  [
+                       "5 yıl",
+                       "10 yıl",
+                       "Ömür boyu (yaş haddine kadar)",
+                       "1 yıl"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q079"
+    },
+    {
+        "soru":  "SRC belgesi olmayan bir sürücüye kesilen idari para cezası, kime kesilen cezadan daha düşüktür?",
+        "siklar":  [
+                       "Yolcuya",
+                       "Sigorta şirketine",
+                       "Araç sahibine (işletene)",
+                       "Trafik polisine"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q080"
+    },
+    {
+        "soru":  "Ticari eşya taşımacılığı yapan bir sürücü, 24 saatlik bir gün içinde en fazla kaç saat araç kullanabilir?",
+        "siklar":  [
+                       "8",
+                       "9",
+                       "10",
+                       "11"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q081"
+    },
+    {
+        "soru":  "9 saatlik günlük sürüş süresi, haftada en fazla kaç kez 10 saate çıkarılabilir?",
+        "siklar":  [
+                       "1",
+                       "2",
+                       "3",
+                       "4"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q082"
+    },
+    {
+        "soru":  "Haftalık sürüş süresi tamamlanan bir sürücü, haftalık dinlenmesini en geç ne zaman başlatmalıdır?",
+        "siklar":  [
+                       "24 saat içinde",
+                       "6 gün sonunda",
+                       "7 gün sonunda",
+                       "14 gün sonunda"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q083"
+    },
+    {
+        "soru":  "Aşağıdakilerden hangisi pasif güvenlik sistemlerine örnektir?",
+        "siklar":  [
+                       "ABS",
+                       "ESP",
+                       "Emniyet kemeri",
+                       "ASR"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q084"
+    },
+    {
+        "soru":  "Aşağıdakilerden hangisi aktif güvenlik sistemidir?",
+        "siklar":  [
+                       "Hava yastığı",
+                       "Emniyet kemeri",
+                       "ABS",
+                       "Kafalık"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q085"
+    },
+    {
+        "soru":  "Dizel motorlarda yakıtın ateşlenmesi nasıl gerçekleşir?",
+        "siklar":  [
+                       "Buji kıvılcımıyla",
+                       "Karbüratör yardımıyla",
+                       "Sıkıştırılmış sıcak hava üzerine püskürtülerek",
+                       "Manyeto ile"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q086"
+    },
+    {
+        "soru":  "Araçta \u0027rot ayarı\u0027 bozuk olduğunda genellikle hangi belirti görülür?",
+        "siklar":  [
+                       "Motor hararet yapar",
+                       "Araç düz yolda sağa veya sola çeker",
+                       "Fren mesafesi uzar",
+                       "Yakıt tüketimi azalır"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q087"
+    },
+    {
+        "soru":  "Lastiklerin tabanının ortadan aşınması hangi duruma işaret eder?",
+        "siklar":  [
+                       "Düşük hava basıncı",
+                       "Yüksek hava basıncı",
+                       "Rot ayarı bozukluğu",
+                       "Aşırı yükleme"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q088"
+    },
+    {
+        "soru":  "Lastiklerin kenar (omuz) kısımlarının aşınması genellikle hangi durumdan kaynaklanır?",
+        "siklar":  [
+                       "Yüksek hava basıncı",
+                       "Düşük hava basıncı",
+                       "Balans bozukluğu",
+                       "Amortisör arızası"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q089"
+    },
+    {
+        "soru":  "Reaksiyon mesafesi ile fren mesafesinin toplamına ne ad verilir?",
+        "siklar":  [
+                       "Takip mesafesi",
+                       "İntikal mesafesi",
+                       "Toplam durma mesafesi",
+                       "Güvenli aralık"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q090"
+    },
+    {
+        "soru":  "Sürücünün tehlikeyi algılayıp frene basıncaya kadar geçen sürede kat ettiği mesafe hangisidir?",
+        "siklar":  [
+                       "Fren mesafesi",
+                       "Reaksiyon mesafesi",
+                       "Duruş mesafesi",
+                       "Takip mesafesi"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q091"
+    },
+    {
+        "soru":  "SRC yazılı sınavında yanlış cevaplar doğru cevapları etkiler mi?",
+        "siklar":  [
+                       "Evet, 4 yanlış 1 doğruyu götürür",
+                       "Evet, 3 yanlış 1 doğruyu götürür",
+                       "Hayır, etkilemez",
+                       "Puan yarıya düşer"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q092"
+    },
+    {
+        "soru":  "SRC sınavlarında (teorik + uygulama) adayların toplam kaç sınav hakkı vardır?",
+        "siklar":  [
+                       "2",
+                       "3",
+                       "4",
+                       "5"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q093"
+    },
+    {
+        "soru":  "SRC 3 teorik (yazılı) sınavında başarılı sayılmak için 100 üzerinden en az kaç puan almak gerekir?",
+        "siklar":  [
+                       "60",
+                       "65",
+                       "70",
+                       "80"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q094"
+    },
+    {
+        "soru":  "SRC 3 uygulama (görsel) sınavında başarılı sayılmak için kaç soruya doğru cevap verilmelidir?",
+        "siklar":  [
+                       "1",
+                       "2",
+                       "3",
+                       "Hepsi"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q095"
+    },
+    {
+        "soru":  "SRC 3 eğitimine katılan bir kursiyerin devamsızlık hakkı toplam ders saatinin yüzde kaçıdır?",
+        "siklar":  [
+                       "%5",
+                       "%10",
+                       "%15",
+                       "%20"
+                   ],
+        "dogruCevap":  "A",
+        "id":  "src3_pratik_q096"
+    },
+    {
+        "soru":  "U-ETDS sisteminin temel amacı aşağıdakilerden hangisidir?",
+        "siklar":  [
+                       "Araç hızını denetlemek",
+                       "Sefer ve taşıma verilerini izlemek",
+                       "Yakıt tüketimini ölçmek",
+                       "Sürücü puanı hesaplamak"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q097"
+    },
+    {
+        "soru":  "SRC 3 belgesiyle aşağıdaki araçlardan hangisi ticari olarak kullanılabilir?",
+        "siklar":  [
+                       "Otobüs",
+                       "Tır / Çekici",
+                       "Yolcu minibüsü",
+                       "Taksi"
+                   ],
+        "dogruCevap":  "B",
+        "id":  "src3_pratik_q098"
+    },
+    {
+        "soru":  "Uluslararası eşya taşımacılığı yapan firmaların aldığı C2 / L2 yetki belgelerinin geçerlilik süresi kaç yıldır?",
+        "siklar":  [
+                       "2 yıl",
+                       "3 yıl",
+                       "5 yıl",
+                       "10 yıl"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q099"
+    },
+    {
+        "soru":  "SRC 3 belgesi sahibi bir sürücü aşağıdaki faaliyetlerden hangisini yapamaz?",
+        "siklar":  [
+                       "Uluslararası eşya taşımacılığı",
+                       "Yurtiçi eşya taşımacılığı",
+                       "Uluslararası yolcu taşımacılığı",
+                       "Kargo dağıtımı"
+                   ],
+        "dogruCevap":  "C",
+        "id":  "src3_pratik_q100"
+    }
 ]

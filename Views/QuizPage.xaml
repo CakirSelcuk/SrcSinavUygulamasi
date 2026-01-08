@@ -36,7 +36,7 @@
 
     <Grid RowDefinitions="Auto, *, Auto" Padding="20,40,20,20">
 
-        <Grid Grid.Row="0" ColumnDefinitions="*, Auto" Margin="0,0,0,20">
+        <Grid Grid.Row="0" ColumnDefinitions="*, Auto, Auto" Margin="0,0,0,20">
             <VerticalStackLayout Spacing="5">
                 <Label Text="SINAV MODU" TextColor="#cbd5e1" FontSize="12" FontAttributes="Bold" CharacterSpacing="1"/>
 
@@ -49,7 +49,17 @@
                              HeightRequest="6" WidthRequest="100" HorizontalOptions="Start" Margin="0,5,0,0"/>
             </VerticalStackLayout>
 
-            <Border Grid.Column="1" Stroke="Transparent" BackgroundColor="#1e293b" StrokeShape="RoundRectangle 12" Padding="15,5">
+            <!-- Timer -->
+            <Border Grid.Column="1" Stroke="Transparent" BackgroundColor="#1e293b" StrokeShape="RoundRectangle 12" Padding="15,5" Margin="0,0,10,0"
+                    IsVisible="{Binding IsTimerVisible}">
+                <VerticalStackLayout HorizontalOptions="Center">
+                    <Label Text="SÜRE" TextColor="#94a3b8" FontSize="10" HorizontalOptions="Center"/>
+                    <Label Text="{Binding TimerText}" TextColor="{Binding TimerColor}" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Puan -->
+            <Border Grid.Column="2" Stroke="Transparent" BackgroundColor="#1e293b" StrokeShape="RoundRectangle 12" Padding="15,5">
                 <VerticalStackLayout HorizontalOptions="Center">
                     <Label Text="PUAN" TextColor="#94a3b8" FontSize="10" HorizontalOptions="Center"/>
                     <Label Text="{Binding Score, StringFormat='{0:F0}'}" TextColor="#4ade80" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center"/>

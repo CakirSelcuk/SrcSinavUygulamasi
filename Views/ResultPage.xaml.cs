@@ -1,10 +1,13 @@
 ﻿using SrcSinavUygulamasi.Models;
+using SrcSinavUygulamasi.Services;
 
 namespace SrcSinavUygulamasi.Views;
 
 public partial class ResultPage : ContentPage
 {
     private QuizResultModel _result;
+    private ExamProgressService _progressService = new();
+    private bool _allExamsCompleted = false;
 
     // Boş constructor (Sigorta)
     public ResultPage()
@@ -21,6 +24,7 @@ public partial class ResultPage : ContentPage
         if (result != null)
         {
             SetupUI();
+            CheckAnalysisButtonState();
         }
     }
 
@@ -43,6 +47,54 @@ public partial class ResultPage : ContentPage
         else
         {
             SetupPracticeExamUI();
+        }
+    }
+
+    /// <summary>
+    /// Analiz butonunun pasif/aktif durumunu kontrol et
+    /// </summary>
+    private async void CheckAnalysisButtonState()
+    {
+        var questionService = new QuestionService();
+        var expectedExamIds = new List<string>();
+
+        // Beklenen sınav ID'lerini hesapla
+        var allQuestions = await questionService.SorulariGetir(_result.CategoryId);
+        int examCount = (int)Math.Ceiling((double)allQuestions.Count / 20);
+        
+        for (int i = 0; i < examCount; i++)
+        {
+            expectedExamIds.Add($"deneme_{i + 1}");
+        }
+
+        // Resimli sorular varsa ekle
+        var imageQuestions = await questionService.ResimliSorulariGetir(_result.CategoryId);
+        if (imageQuestions.Count > 0)
+        {
+            expectedExamIds.Add("image_exam");
+        }
+
+        // Gerçek sınav varsa ekle
+        var realExamQuestions = await questionService.SinavSorulariniGetir(_result.CategoryId);
+        if (realExamQuestions.Count > 0)
+        {
+            expectedExamIds.Add("real_exam");
+        }
+
+        _allExamsCompleted = _progressService.AreAllExamsCompleted(_result.CategoryId, expectedExamIds);
+
+        // Buton durumunu ayarla
+        if (_allExamsCompleted)
+        {
+            BtnAnalysis.IsEnabled = true;
+            BtnAnalysis.BackgroundColor = Color.FromArgb("#2563eb");
+            BtnAnalysis.Text = "📊 Sınav Analizimi Göster";
+        }
+        else
+        {
+            BtnAnalysis.IsEnabled = true; // Tıklanabilir ama uyarı verecek
+            BtnAnalysis.BackgroundColor = Color.FromArgb("#64748b");
+            BtnAnalysis.Text = "📊 Sınav Analizi (Tüm denemeler tamamlanmalı)";
         }
     }
 
@@ -127,6 +179,26 @@ public partial class ResultPage : ContentPage
                 { "TotalExams", _result.TotalExams.ToString() },
                 { "IsRealExam", _result.IsRealExam.ToString() },
                 { "PointsPerQuestion", pointsPerQuestion.ToString(System.Globalization.CultureInfo.InvariantCulture) }
+            });
+    }
+
+    private async void OnAnalysisClicked(object sender, EventArgs e)
+    {
+        if (!_allExamsCompleted)
+        {
+            // Pasif durumda - uyarı göster
+            await DisplayAlert(
+                "Analiz Kullanılamıyor",
+                "Sınav analizini görüntülemek için bu SRC setindeki tüm denemeleri çözmeniz gerekmektedir.",
+                "Tamam");
+            return;
+        }
+
+        // Aktif durumda - Analiz sayfasına git
+        await Shell.Current.GoToAsync($"{nameof(AnalysisPage)}",
+            new Dictionary<string, object>
+            {
+                { "CategoryId", _result.CategoryId }
             });
     }
 

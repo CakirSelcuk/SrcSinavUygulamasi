@@ -1,167 +1,182 @@
-[
+﻿[
     {
-        "soru": "Görseldeki takograf verisine göre, sürücünün yasal olarak yapması gereken ilk işlem nedir?",
-        "siklar": [
-            "Sürüşe devam etmek",
-            "En az 45 dk mola vermek",
-            "Aracı devretmek",
-            "Takografı sıfırlamak"
-        ],
-        "dogruCevap": "B",
-        "resimYolu": "src1_1.png"
+        "soru":  "GÃ¶rseldeki takograf verisine gÃ¶re, sÃ¼rÃ¼cÃ¼nÃ¼n yasal olarak yapmasÄ± gereken ilk iÅŸlem nedir?",
+        "siklar":  [
+                       "SÃ¼rÃ¼ÅŸe devam etmek",
+                       "En az 45 dk mola vermek",
+                       "AracÄ± devretmek",
+                       "TakografÄ± sÄ±fÄ±rlamak"
+                   ],
+        "dogruCevap":  "B",
+        "resimYolu":  "src1_1.png",
+        "id":  "src1_resimli_q001"
     },
     {
-        "soru": "Görseldeki trafik levhasını gören 3.80 metre yüksekliğindeki bir otobüs sürücüsü ne yapmalıdır?",
-        "siklar": [
-            "Yavaşlayarak geçer",
-            "Kornaya basarak geçer",
-            "Dörtlüleri yakar",
-            "Bu yola giremez"
-        ],
-        "dogruCevap": "D",
-        "resimYolu": "src1_2.png"
+        "soru":  "GÃ¶rseldeki trafik levhasÄ±nÄ± gÃ¶ren 3.80 metre yÃ¼ksekliÄŸindeki bir otobÃ¼s sÃ¼rÃ¼cÃ¼sÃ¼ ne yapmalÄ±dÄ±r?",
+        "siklar":  [
+                       "YavaÅŸlayarak geÃ§er",
+                       "Kornaya basarak geÃ§er",
+                       "DÃ¶rtlÃ¼leri yakar",
+                       "Bu yola giremez"
+                   ],
+        "dogruCevap":  "D",
+        "resimYolu":  "src1_2.png",
+        "id":  "src1_resimli_q002"
     },
     {
-        "soru": "Görselde uygulanan ilk yardım pozisyonunun adı nedir?",
-        "siklar": [
-            "Koma pozisyonu",
-            "Yarı oturuş pozisyonu",
-            "Şok pozisyonu",
-            "İyileşme pozisyonu"
-        ],
-        "dogruCevap": "C",
-        "resimYolu": "src1_3.png"
+        "soru":  "GÃ¶rselde uygulanan ilk yardÄ±m pozisyonunun adÄ± nedir?",
+        "siklar":  [
+                       "Koma pozisyonu",
+                       "YarÄ± oturuÅŸ pozisyonu",
+                       "Åžok pozisyonu",
+                       "Ä°yileÅŸme pozisyonu"
+                   ],
+        "dogruCevap":  "C",
+        "resimYolu":  "src1_3.png",
+        "id":  "src1_resimli_q003"
     },
     {
-        "soru": "Seyir halindeyken gösterge panelinde bu ikaz ışığının yanması neyi bildirir?",
-        "siklar": [
-            "Fren sisteminde arıza var",
-            "Balatalar bitmiş",
-            "Lastik havası inik",
-            "El freni çekili"
-        ],
-        "dogruCevap": "A",
-        "resimYolu": "src1_4.png"
+        "soru":  "Seyir halindeyken gÃ¶sterge panelinde bu ikaz Ä±ÅŸÄ±ÄŸÄ±nÄ±n yanmasÄ± neyi bildirir?",
+        "siklar":  [
+                       "Fren sisteminde arÄ±za var",
+                       "Balatalar bitmiÅŸ",
+                       "Lastik havasÄ± inik",
+                       "El freni Ã§ekili"
+                   ],
+        "dogruCevap":  "A",
+        "resimYolu":  "src1_4.png",
+        "id":  "src1_resimli_q004"
     },
     {
-        "soru": "Görseldeki belge, uluslararası taşımacılıkta hangi risklere karşı teminat sağlar?",
-        "siklar": [
-            "Yükün hasar görmesine",
-            "Aracın çalınmasına",
-            "Sürücünün yaralanmasına",
-            "Karşı ülkedeki 3. şahıs hasarına"
-        ],
-        "dogruCevap": "D",
-        "resimYolu": "src1_5.png"
+        "soru":  "GÃ¶rseldeki belge, uluslararasÄ± taÅŸÄ±macÄ±lÄ±kta hangi risklere karÅŸÄ± teminat saÄŸlar?",
+        "siklar":  [
+                       "YÃ¼kÃ¼n hasar gÃ¶rmesine",
+                       "AracÄ±n Ã§alÄ±nmasÄ±na",
+                       "SÃ¼rÃ¼cÃ¼nÃ¼n yaralanmasÄ±na",
+                       "KarÅŸÄ± Ã¼lkedeki 3. ÅŸahÄ±s hasarÄ±na"
+                   ],
+        "dogruCevap":  "D",
+        "resimYolu":  "src1_5.png",
+        "id":  "src1_resimli_q005"
     },
     {
-        "soru": "Kış lastiği veya zincir uygulaması, ticari araçlar için hangi tarihler arasında zorunludur?",
-        "siklar": [
-            "1 Kasım - 1 Mart",
-            "1 Aralık - 1 Nisan",
-            "1 Ocak - 1 Mayıs",
-            "15 Aralık - 15 Mart"
-        ],
-        "dogruCevap": "B",
-        "resimYolu": "src1_6.png"
+        "soru":  "KÄ±ÅŸ lastiÄŸi veya zincir uygulamasÄ±, ticari araÃ§lar iÃ§in hangi tarihler arasÄ±nda zorunludur?",
+        "siklar":  [
+                       "1 KasÄ±m - 1 Mart",
+                       "1 AralÄ±k - 1 Nisan",
+                       "1 Ocak - 1 MayÄ±s",
+                       "15 AralÄ±k - 15 Mart"
+                   ],
+        "dogruCevap":  "B",
+        "resimYolu":  "src1_6.png",
+        "id":  "src1_resimli_q006"
     },
     {
-        "soru": "Bu tabelayı gören bir uluslararası yolcu otobüsü şoförü nereye yaklaşmaktadır?",
-        "siklar": [
-            "Gümrük kapısına",
-            "Dinlenme tesisine",
-            "Otoban gişesine",
-            "Feribot iskelesine"
-        ],
-        "dogruCevap": "A",
-        "resimYolu": "src1_7.png"
+        "soru":  "Bu tabelayÄ± gÃ¶ren bir uluslararasÄ± yolcu otobÃ¼sÃ¼ ÅŸofÃ¶rÃ¼ nereye yaklaÅŸmaktadÄ±r?",
+        "siklar":  [
+                       "GÃ¼mrÃ¼k kapÄ±sÄ±na",
+                       "Dinlenme tesisine",
+                       "Otoban giÅŸesine",
+                       "Feribot iskelesine"
+                   ],
+        "dogruCevap":  "A",
+        "resimYolu":  "src1_7.png",
+        "id":  "src1_resimli_q007"
     },
     {
-        "soru": "Görseldeki ilk yardım manevrası hangi durumda uygulanır?",
-        "siklar": [
-            "Kalp durmasında",
-            "Kanamalarda",
-            "Tam tıkanmada (soluk borusu)",
-            "Kırıklarda"
-        ],
-        "dogruCevap": "C",
-        "resimYolu": "src1_8.png"
+        "soru":  "GÃ¶rseldeki ilk yardÄ±m manevrasÄ± hangi durumda uygulanÄ±r?",
+        "siklar":  [
+                       "Kalp durmasÄ±nda",
+                       "Kanamalarda",
+                       "Tam tÄ±kanmada (soluk borusu)",
+                       "KÄ±rÄ±klarda"
+                   ],
+        "dogruCevap":  "C",
+        "resimYolu":  "src1_8.png",
+        "id":  "src1_resimli_q008"
     },
     {
-        "soru": "Aracın gösterge panelinde bu ışık yandığında sürücü ne yapmalıdır?",
-        "siklar": [
-            "Hemen kontak kapatmalıdır",
-            "Servise başvurmalıdır",
-            "Yakıt almalıdır",
-            "Lastikleri kontrol etmelidir"
-        ],
-        "dogruCevap": "B",
-        "resimYolu": "src1_9.png"
+        "soru":  "AracÄ±n gÃ¶sterge panelinde bu Ä±ÅŸÄ±k yandÄ±ÄŸÄ±nda sÃ¼rÃ¼cÃ¼ ne yapmalÄ±dÄ±r?",
+        "siklar":  [
+                       "Hemen kontak kapatmalÄ±dÄ±r",
+                       "Servise baÅŸvurmalÄ±dÄ±r",
+                       "YakÄ±t almalÄ±dÄ±r",
+                       "Lastikleri kontrol etmelidir"
+                   ],
+        "dogruCevap":  "B",
+        "resimYolu":  "src1_9.png",
+        "id":  "src1_resimli_q009"
     },
     {
-        "soru": "Görseldeki duruma göre, evcil hayvan taşıma kuralı açısından hangisi doğrudur?",
-        "siklar": [
-            "Kafesle bagajda taşınabilir",
-            "Kafesle kucakta taşınabilir",
-            "Asla taşınamaz",
-            "Sadece veterinerle taşınır"
-        ],
-        "dogruCevap": "A",
-        "resimYolu": "src1_10.png"
+        "soru":  "GÃ¶rseldeki duruma gÃ¶re, evcil hayvan taÅŸÄ±ma kuralÄ± aÃ§Ä±sÄ±ndan hangisi doÄŸrudur?",
+        "siklar":  [
+                       "Kafesle bagajda taÅŸÄ±nabilir",
+                       "Kafesle kucakta taÅŸÄ±nabilir",
+                       "Asla taÅŸÄ±namaz",
+                       "Sadece veterinerle taÅŸÄ±nÄ±r"
+                   ],
+        "dogruCevap":  "A",
+        "resimYolu":  "src1_10.png",
+        "id":  "src1_resimli_q010"
     },
     {
-        "soru": "Arıza halinde, bu görseldeki işaret şehirlerarası yolda aracın kaç metre gerisine konulmalıdır?",
-        "siklar": [
-            "30 metre",
-            "50 metre",
-            "150 metre",
-            "100 metre"
-        ],
-        "dogruCevap": "C",
-        "resimYolu": "src1_11.png"
+        "soru":  "ArÄ±za halinde, bu gÃ¶rseldeki iÅŸaret ÅŸehirlerarasÄ± yolda aracÄ±n kaÃ§ metre gerisine konulmalÄ±dÄ±r?",
+        "siklar":  [
+                       "30 metre",
+                       "50 metre",
+                       "150 metre",
+                       "100 metre"
+                   ],
+        "dogruCevap":  "C",
+        "resimYolu":  "src1_11.png",
+        "id":  "src1_resimli_q011"
     },
     {
-        "soru": "Yolcunun veya sürücünün bu hatta girmesi neyi beyan ettiği anlamına gelir?",
-        "siklar": [
-            "Diplomatik pasaportu olduğunu",
-            "Transit geçtiğini",
-            "Gümrüğe tabi eşyası olmadığını",
-            "Gümrüğe tabi eşyası olduğunu"
-        ],
-        "dogruCevap": "D",
-        "resimYolu": "src1_12.png"
+        "soru":  "Yolcunun veya sÃ¼rÃ¼cÃ¼nÃ¼n bu hatta girmesi neyi beyan ettiÄŸi anlamÄ±na gelir?",
+        "siklar":  [
+                       "Diplomatik pasaportu olduÄŸunu",
+                       "Transit geÃ§tiÄŸini",
+                       "GÃ¼mrÃ¼ÄŸe tabi eÅŸyasÄ± olmadÄ±ÄŸÄ±nÄ±",
+                       "GÃ¼mrÃ¼ÄŸe tabi eÅŸyasÄ± olduÄŸunu"
+                   ],
+        "dogruCevap":  "D",
+        "resimYolu":  "src1_12.png",
+        "id":  "src1_resimli_q012"
     },
     {
-        "soru": "Görseldeki ehliyet sınıfına sahip bir sürücü aşağıdaki araçlardan hangisini kullanamaz?",
-        "siklar": [
-            "İş makinesi",
-            "Otobüs",
-            "Minibüs",
-            "Otomobil"
-        ],
-        "dogruCevap": "A",
-        "resimYolu": "src1_13.png"
+        "soru":  "GÃ¶rseldeki ehliyet sÄ±nÄ±fÄ±na sahip bir sÃ¼rÃ¼cÃ¼ aÅŸaÄŸÄ±daki araÃ§lardan hangisini kullanamaz?",
+        "siklar":  [
+                       "Ä°ÅŸ makinesi",
+                       "OtobÃ¼s",
+                       "MinibÃ¼s",
+                       "Otomobil"
+                   ],
+        "dogruCevap":  "A",
+        "resimYolu":  "src1_13.png",
+        "id":  "src1_resimli_q013"
     },
     {
-        "soru": "Otobüslerde yangın söndürme cihazı nerede bulundurulmalıdır?",
-        "siklar": [
-            "Bagajda kilitli halde",
-            "Sürücünün hemen ulaşabileceği yerde",
-            "En arka koltuğun altında",
-            "Motor kaputunun içinde"
-        ],
-        "dogruCevap": "B",
-        "resimYolu": "src1_14.png"
+        "soru":  "OtobÃ¼slerde yangÄ±n sÃ¶ndÃ¼rme cihazÄ± nerede bulundurulmalÄ±dÄ±r?",
+        "siklar":  [
+                       "Bagajda kilitli halde",
+                       "SÃ¼rÃ¼cÃ¼nÃ¼n hemen ulaÅŸabileceÄŸi yerde",
+                       "En arka koltuÄŸun altÄ±nda",
+                       "Motor kaputunun iÃ§inde"
+                   ],
+        "dogruCevap":  "B",
+        "resimYolu":  "src1_14.png",
+        "id":  "src1_resimli_q014"
     },
     {
-        "soru": "Görseldeki taralı alan (kör nokta) kazalarını önlemek için sürücü şerit değiştirirken ne yapmalıdır?",
-        "siklar": [
-            "Sadece iç aynaya bakmalıdır",
-            "Hızını aniden artırmalıdır",
-            "Başını çevirerek omuz üstü bakış yapmalıdır",
-            "Radyonun sesini kısmalıdır"
-        ],
-        "dogruCevap": "C",
-        "resimYolu": "src1_15.png"
+        "soru":  "GÃ¶rseldeki taralÄ± alan (kÃ¶r nokta) kazalarÄ±nÄ± Ã¶nlemek iÃ§in sÃ¼rÃ¼cÃ¼ ÅŸerit deÄŸiÅŸtirirken ne yapmalÄ±dÄ±r?",
+        "siklar":  [
+                       "Sadece iÃ§ aynaya bakmalÄ±dÄ±r",
+                       "HÄ±zÄ±nÄ± aniden artÄ±rmalÄ±dÄ±r",
+                       "BaÅŸÄ±nÄ± Ã§evirerek omuz Ã¼stÃ¼ bakÄ±ÅŸ yapmalÄ±dÄ±r",
+                       "Radyonun sesini kÄ±smalÄ±dÄ±r"
+                   ],
+        "dogruCevap":  "C",
+        "resimYolu":  "src1_15.png",
+        "id":  "src1_resimli_q015"
     }
 ]

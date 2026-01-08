@@ -61,6 +61,12 @@
                     BackgroundColor="#f59e0b" TextColor="White"
                     FontAttributes="Bold" FontSize="16" CornerRadius="16" HeightRequest="55"/>
             
+            <!-- Sınav Analizi butonu -->
+            <Button x:Name="BtnAnalysis" Text="📊 Sınav Analizimi Göster" 
+                    Clicked="OnAnalysisClicked"
+                    BackgroundColor="#2563eb" TextColor="White"
+                    FontAttributes="Bold" FontSize="16" CornerRadius="16" HeightRequest="55"/>
+            
             <!-- Sonraki Deneme butonu -->
             <Button x:Name="BtnNextExam" Text="Sonraki Denemeye Geç" 
                     Clicked="OnNextExamClicked"

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SrcSinavUygulamasi.Views.AboutPage"
+             Title="Hakkında">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#1e3a5f" Offset="0.0" />
+            <GradientStop Color="#0f172a" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid RowDefinitions="Auto, *" Padding="20">
+        
+        <!-- Başlık -->
+        <VerticalStackLayout Grid.Row="0" Spacing="10" Margin="0,20,0,20">
+            <Label Text="📋" FontSize="48" HorizontalOptions="Center"/>
+            <Label Text="Hakkında &amp; KVKK" 
+                   FontSize="24" FontAttributes="Bold" TextColor="White" 
+                   HorizontalOptions="Center"/>
+            <Label Text="SRC Sınav Uygulaması" 
+                   FontSize="14" TextColor="#94a3b8" 
+                   HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+
+        <!-- İçerik -->
+        <Border Grid.Row="1" Stroke="Transparent" BackgroundColor="#1e293b" 
+                StrokeShape="RoundRectangle 16" Padding="20" Margin="0,0,0,20">
+            <ScrollView>
+                <VerticalStackLayout Spacing="20">
+                    
+                    <!-- Hakkında Bölümü -->
+                    <Label Text="📌 HAKKINDA" FontSize="16" FontAttributes="Bold" TextColor="#60a5fa"/>
+                    
+                    <Label TextColor="#e2e8f0" FontSize="14" LineHeight="1.4">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Bu uygulama, SRC (Mesleki Yeterlilik) sınavlarına hazırlık, tekrar ve deneme amacıyla geliştirilmiştir."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="Uygulamada yer alan tüm sorular ve sınav içerikleri; SRC sınav müfredatı ve genel mevzuat bilgileri esas alınarak hazırlanmış örnek ve deneme sorularıdır."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="Bu uygulamanın; T.C. Millî Eğitim Bakanlığı (MEB), Ulaştırma ve Altyapı Bakanlığı veya SRC sınavlarını düzenleyen resmî kurumlar ile doğrudan ya da dolaylı herhangi bir bağlantısı bulunmamaktadır."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="Sunulan deneme sınavları, gerçek sınav formatına benzerlik göstermeyi amaçlar; ancak resmî sınav soruları ile birebir aynı olma garantisi vermez."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="Mevzuat ve sınav uygulamaları zaman içerisinde değişebileceğinden, adayların güncel ve resmî kaynakları takip etme sorumluluğu kendilerine aittir."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="Bu uygulama, resmî sınavın yerine geçmez ve kesin başarı garantisi sunmaz." FontAttributes="Bold"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <BoxView HeightRequest="1" Color="#334155" Margin="0,10"/>
+
+                    <!-- KVKK Bölümü -->
+                    <Label Text="🔐 KVKK (Kişisel Verilerin Korunması Hakkında)" FontSize="16" FontAttributes="Bold" TextColor="#60a5fa"/>
+                    
+                    <Label TextColor="#e2e8f0" FontSize="14" LineHeight="1.4">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Bu uygulama kapsamında;"/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="• Kimlik bilgisi, T.C. kimlik numarası, biyometrik veri veya özel nitelikli kişisel veri toplanmaz."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="• Kullanıcıdan alınan veriler (varsa) yalnızca: uygulama içi ilerleme, deneme sınav sonuçları ve teknik iyileştirme amaçlarıyla kullanılır."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="• Toplanan veriler üçüncü kişilerle paylaşılmaz, satılmaz ve ticari amaçla kullanılmaz."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="• Veriler, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında korunur."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="Kullanıcı, uygulamayı kullanarak:" FontAttributes="Bold"/>
+                                <Span Text="&#10;"/>
+                                <Span Text="✓ İçeriğin bilgilendirme ve deneme amaçlı olduğunu,"/>
+                                <Span Text="&#10;"/>
+                                <Span Text="✓ Kişisel verilerinin yukarıda belirtilen kapsamda işlenmesini,"/>
+                                <Span Text="&#10;"/>
+                                <Span Text="✓ Nihai sorumluluğun kendisine ait olduğunu"/>
+                                <Span Text="&#10;"/>
+                                <Span Text="kabul etmiş sayılır." FontAttributes="Bold"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <BoxView HeightRequest="1" Color="#334155" Margin="0,10"/>
+
+                    <!-- Uygulama Bilgileri -->
+                    <Label Text="ℹ️ Uygulama Bilgileri" FontSize="16" FontAttributes="Bold" TextColor="#60a5fa"/>
+                    
+                    <Grid ColumnDefinitions="Auto, *" RowDefinitions="Auto, Auto, Auto" ColumnSpacing="15" RowSpacing="8">
+                        <Label Grid.Row="0" Grid.Column="0" Text="Sürüm:" TextColor="#94a3b8" FontSize="14"/>
+                        <Label Grid.Row="0" Grid.Column="1" Text="1.0.0" TextColor="White" FontSize="14"/>
+                        
+                        <Label Grid.Row="1" Grid.Column="0" Text="Geliştirici:" TextColor="#94a3b8" FontSize="14"/>
+                        <Label Grid.Row="1" Grid.Column="1" Text="SRC Sınav Ekibi" TextColor="White" FontSize="14"/>
+                        
+                        <Label Grid.Row="2" Grid.Column="0" Text="Kabul Tarihi:" TextColor="#94a3b8" FontSize="14"/>
+                        <Label Grid.Row="2" Grid.Column="1" x:Name="ConsentDateLabel" Text="-" TextColor="White" FontSize="14"/>
+                    </Grid>
+
+                    <BoxView HeightRequest="40" Color="Transparent"/>
+
+                </VerticalStackLayout>
+            </ScrollView>
+        </Border>
+
+    </Grid>
+</ContentPage>

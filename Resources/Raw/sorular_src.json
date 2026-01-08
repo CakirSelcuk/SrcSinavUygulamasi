@@ -1,402 +1,442 @@
 ﻿[
-  {
-    "Soru": "İş kazaları hangi iki faktörün bir araya gelmesi sonucu oluşur?",
-    "Siklar": [
-      "Tehlikeli durum + Uygunsuzluk",
-      "Tehlikeli durum + Bilgisizlik",
-      "Tehlikeli hareket + Bilgisizlik",
-      "Tehlikeli hareket + Tehlikeli durum"
-    ],
-    "DogruCevap": "D"
-  },
-  {
-    "Soru": "İşyerlerinde çalışanların sağlık ve güvenliğini etkileyen en önemli olay nedir?",
-    "Siklar": [
-      "İşçilerin hastalıkları",
-      "İş kazaları",
-      "Trafik kazaları",
-      "İşçilerin fazla mesai yapmaları"
-    ],
-    "DogruCevap": "B"
-  },
-  {
-    "Soru": "Canlılarla etkileşim içinde olan doğal ve fiziksel öğelerden oluşan dış ortama ne denir?",
-    "Siklar": [
-      "İklim",
-      "Atık",
-      "Çevre",
-      "Erezyon"
-    ],
-    "DogruCevap": "C"
-  },
-  {
-    "Soru": "Aşağıdakilerden hangisi fatura ve sevk irsaliyesinin yerine geçerek düzenlenen bir belgedir?",
-    "Siklar": [
-      "Sevk İrsaliyesi",
-      "İrsaliyeli Fatura",
-      "Fatura",
-      "Sevk Mektubu"
-    ],
-    "DogruCevap": "B"
-  },
-  {
-    "Soru": "Ticari araç sürücüsü aracı sefere hazırlarken hangi işlemi yapmak zorunda değildir?",
-    "Siklar": [
-      "Araç lastiklerini kontrol etmek",
-      "Motor yağ ve su seviyesini kontrol etmek",
-      "Kilometre sayacını kontrol etmek",
-      "Lastik hava basıncını kontrol etmek"
-    ],
-    "DogruCevap": "C"
-  },
-  {
-    "Soru": "Karlı yüzeylerde hangi lastik tipi daha etkin tutunma sağlar?",
-    "Siklar": [
-      "Kar tipi dar tabanlı lastik",
-      "Kar tipi geniş tabanlı lastik",
-      "Dar tabanlı düşük basınçlı lastik",
-      "Geniş jantlı modifiye lastik"
-    ],
-    "DogruCevap": "A"
-  },
-  {
-    "Soru": "Aşağıdakilerden hangisi duruş mesafesini etkilemez?",
-    "Siklar": [
-      "Yolun eğimi",
-      "Yük durumu",
-      "Lastik durumu",
-      "ABS"
-    ],
-    "DogruCevap": "D"
-  },
-  {
-    "Soru": "Tek şoför 24 saatlik bir periyotta kaç saat çalışabilir?",
-    "Siklar": [
-      "8 saat",
-      "9 saat",
-      "10 saat",
-      "11 saat"
-    ],
-    "DogruCevap": "B"
-  },
-  {
-    "Soru": "Viraj alımında genelde yapılan en önemli hata nedir?",
-    "Siklar": [
-      "Yolu iyi gözlememek",
-      "Hatalı sollama yapmak",
-      "Viraja fazla hızlı girip fren yapmak",
-      "Öndeki aracı yakından takip etmek"
-    ],
-    "DogruCevap": "C"
-  },
-  {
-    "Soru": "Kara yollarında geceleri seyrederken hangisi yasaktır?",
-    "Siklar": [
-      "Karşılaşmalarda ışıkların söndürülmesi",
-      "Geçme sırasında öndeki aracın ışıkla uyarılması",
-      "Yakından izlerken kısa huzmeli far kullanılması",
-      "Sisli havalarda sis farı kullanılması"
-    ],
-    "DogruCevap": "A"
-  },
-  {
-    "Soru": "Tehlikeli madde taşıyan aracın yerleşim yeri içindeki azami hızı kaç km’dir?",
-    "Siklar": [
-      "30",
-      "50",
-      "70",
-      "80"
-    ],
-    "DogruCevap": "A"
-  },
-  {
-    "Soru": "Trafik mecburiyeti nedeniyle durdurulma hâline ne denir?",
-    "Siklar": [
-      "Durma",
-      "Bekleme",
-      "Duraklama",
-      "Park etme"
-    ],
-    "DogruCevap": "A"
-  },
-  {
-    "Soru": "Gündüzleri araç kornası hangi durumda kullanılır?",
-    "Siklar": [
-      "Bisikletlileri uyarmak",
-      "Yayaları uyarmak",
-      "Kırmızı ışıkta bekleyenleri uyarmak",
-      "Görüşsüz dönemeçte gelişi haber vermek"
-    ],
-    "DogruCevap": "D"
-  },
-  {
-    "Soru": "Karayolları Taşıma Kanununun amaçlarıyla ilgili hangisi yanlıştır?",
-    "Siklar": [
-      "Taşımaları düzenlemek",
-      "Güvenliği sağlamak",
-      "Çalışan haklarını belirlemek",
-      "Deniz taşımacılığını düzenlemek"
-    ],
-    "DogruCevap": "D"
-  },
-  {
-    "Soru": "Takograf cihazı bulundurmak zorunda olan araçlar hangileridir?",
-    "Siklar": [
-      "Belediye araçları",
-      "Özel otomobiller",
-      "Römorklar",
-      "Kamyon, çekici, otobüs"
-    ],
-    "DogruCevap": "D"
-  },
-  {
-    "Soru": "4925 sayılı Karayolu Taşıma Kanununun kapsamı içinde hangisi yer alır?",
-    "Siklar": [
-      "TSK taşıtları",
-      "Terminal işletmeciliği",
-      "Cenaze aracı",
-      "Naklen yayın aracı"
-    ],
-    "DogruCevap": "B"
-  },
-  {
-    "Soru": "Tek şoför haftada kaç kere 9 saat dinlenebilir?",
-    "Siklar": [
-      "1",
-      "En fazla 2",
-      "En fazla 3",
-      "En fazla 4"
-    ],
-    "DogruCevap": "C"
-  },
-  {
-    "Soru": "11 saatlik dinlenme ikiye bölünürse toplam kaç saate çıkar?",
-    "Siklar": [
-      "12",
-      "13",
-      "14",
-      "15"
-    ],
-    "DogruCevap": "A"
-  },
-  {
-    "Soru": "Devamlı yol çizgisi neyi bildirir?",
-    "Siklar": [
-      "Geçilemeyeceğini",
-      "Durulamayacağını",
-      "Bankette durulamayacağını",
-      "Sağ şeritten gidilmeyeceğini"
-    ],
-    "DogruCevap": "A"
-  },
-  {
-    "Soru": "Şehirlerarası yolların yapım ve bakımından kim sorumludur?",
-    "Siklar": [
-      "Çevre Bakanlığı",
-      "Karayolları Genel Müdürlüğü",
-      "Çevre Koruma Genel Müdürlüğü",
-      "Emniyet Müdürlüğü"
-    ],
-    "DogruCevap": "B"
-  },
-  {
-    "Soru": "Takograf kullanımı zorunlu olmayan araç hangisidir?",
-    "Siklar": [
-      "Kamyon",
-      "Otobüs",
-      "İş makinesi",
-      "Çekici"
-    ],
-    "DogruCevap": "C"
-  },
-  {
-    "Soru": "Hangi durumda sürücü trafikten men edilir?",
-    "Siklar": [
-      "Fazla yük",
-      "Uyuşturucu etkisi",
-      "Fazla yolcu",
-      "Sigortasız araç"
-    ],
-    "DogruCevap": "B"
-  },
-  {
-    "Soru": "Trafik yasaklarına bağlı olmamaya ne denir?",
-    "Siklar": [
-      "Geçiş hakkı",
-      "Geçiş kolaylığı",
-      "Geçiş üstünlüğü",
-      "Geçiş önceliği"
-    ],
-    "DogruCevap": "C"
-  },
-  {
-    "Soru": "Hangisi geçiş üstünlüğüne sahiptir?",
-    "Siklar": [
-      "Tarım araçları",
-      "Toplu taşıma",
-      "Gümrük araçları",
-      "Acil hasta taşıyan araçlar"
-    ],
-    "DogruCevap": "D"
-  },
-  {
-    "Soru": "Kavşaklara kaç metre kala şerit değiştirmek yasaktır?",
-    "Siklar": [
-      "30 / 100",
-      "30 / 150",
-      "50 / 100",
-      "50 / 150"
-    ],
-    "DogruCevap": "B"
-  },
-  {
-    "Soru": "3,5 ton üstü ticari araçlarda zorunlu olan nedir?",
-    "Siklar": [
-      "Klima",
-      "Takograf",
-      "Otomatik kapı",
-      "Hava yastığı"
-    ],
-    "DogruCevap": "B"
-  },
-  {
-    "Soru": "Sürücünün fiziksel ve psikolojik yatkınlığına ne denir?",
-    "Siklar": [
-      "Sürüş uygunluğu",
-      "Sürücü nitelikleri",
-      "Sürücü kapasitesi",
-      "Motor becerileri"
-    ],
-    "DogruCevap": "A"
-  },
-  {
-    "Soru": "Sürüş yeteneğini etkileyen fiziksel şartlardan hangisi değildir?",
-    "Siklar": [
-      "Yaş",
-      "İşitme",
-      "Öfke",
-      "Hastalık"
-    ],
-    "DogruCevap": "C"
-  },
-  {
-    "Soru": "Sürüş yeteneğini etkileyen zihinsel şartlardan hangisi değildir?",
-    "Siklar": [
-      "Depresyon",
-      "Stres",
-      "Öfke",
-      "Hastalık"
-    ],
-    "DogruCevap": "D"
-  },
-  {
-    "Soru": "Trafikte sabırsız davranış hangi değerin olmadığını gösterir?",
-    "Siklar": [
-      "Sabır",
-      "Öfke",
-      "İnatlaşma",
-      "Aşırı tepki"
-    ],
-    "DogruCevap": "A"
-  },
-  {
-    "Soru": "GPS ne işe yarar?",
-    "Siklar": [
-      "Konum tespiti",
-      "İnternet",
-      "Acil kod",
-      "Telefon"
-    ],
-    "DogruCevap": "A"
-  },
-  {
-    "Soru": "Haritalarda mavi renk neyi gösterir?",
-    "Siklar": [
-      "Yollar",
-      "Şehirler",
-      "Su detayları",
-      "Turistik yerler"
-    ],
-    "DogruCevap": "C"
-  },
-  {
-    "Soru": "Fiziki haritalarda kahverengi alan neyi ifade eder?",
-    "Siklar": [
-      "Akarsu",
-      "Ova",
-      "Göl",
-      "Dağ"
-    ],
-    "DogruCevap": "D"
-  },
-  {
-    "Soru": "Vergiden muaf eşyayı amacı dışında kullanmak hangi suçtur?",
-    "Siklar": [
-      "Suç değil",
-      "Sahtekarlık",
-      "Vergi usulsüzlüğü",
-      "Kaçakçılık"
-    ],
-    "DogruCevap": "D"
-  },
-  {
-    "Soru": "Sigorta teminatı karşılığı ödenen ücrete ne denir?",
-    "Siklar": [
-      "Teminat",
-      "Hasar",
-      "Prim",
-      "Sürprim"
-    ],
-    "DogruCevap": "C"
-  },
-  {
-    "Soru": "Can ve mal güvenliğini güvence altına alan sistem nedir?",
-    "Siklar": [
-      "Banka",
-      "Kasa",
-      "Sigorta",
-      "Leasing"
-    ],
-    "DogruCevap": "C"
-  },
-  {
-    "Soru": "Sigortacı tazminatı kaç iş günü içinde öder?",
-    "Siklar": [
-      "5",
-      "8",
-      "10",
-      "30"
-    ],
-    "DogruCevap": "B"
-  },
-  {
-    "Soru": "Geçici kanama durdurma yöntemi hangisidir?",
-    "Siklar": [
-      "Tütün basmak",
-      "Tentürdiyot dökmek",
-      "Basınç uygulamak",
-      "Beklemek"
-    ],
-    "DogruCevap": "C"
-  },
-  {
-    "Soru": "Burkulmalar nerede oluşur?",
-    "Siklar": [
-      "Hareketli eklemler",
-      "Hareketsiz eklemler",
-      "Kemikler",
-      "Derinin içi"
-    ],
-    "DogruCevap": "A"
-  },
-  {
-    "Soru": "Düşük motivasyon ifadesi hangisidir?",
-    "Siklar": [
-      "Olumlu bakış",
-      "Sorumluluk",
-      "İşbirliği",
-      "Birbirini engelleme"
-    ],
-    "DogruCevap": "D"
-  }
+    {
+        "Soru":  "İş kazaları hangi iki faktörün bir araya gelmesi sonucu oluşur?",
+        "Siklar":  [
+                       "Tehlikeli durum + Uygunsuzluk",
+                       "Tehlikeli durum + Bilgisizlik",
+                       "Tehlikeli hareket + Bilgisizlik",
+                       "Tehlikeli hareket + Tehlikeli durum"
+                   ],
+        "DogruCevap":  "D",
+        "id":  "src0_pratik_q001"
+    },
+    {
+        "Soru":  "İşyerlerinde çalışanların sağlık ve güvenliğini etkileyen en önemli olay nedir?",
+        "Siklar":  [
+                       "İşçilerin hastalıkları",
+                       "İş kazaları",
+                       "Trafik kazaları",
+                       "İşçilerin fazla mesai yapmaları"
+                   ],
+        "DogruCevap":  "B",
+        "id":  "src0_pratik_q002"
+    },
+    {
+        "Soru":  "Canlılarla etkileşim içinde olan doğal ve fiziksel öğelerden oluşan dış ortama ne denir?",
+        "Siklar":  [
+                       "İklim",
+                       "Atık",
+                       "Çevre",
+                       "Erezyon"
+                   ],
+        "DogruCevap":  "C",
+        "id":  "src0_pratik_q003"
+    },
+    {
+        "Soru":  "Aşağıdakilerden hangisi fatura ve sevk irsaliyesinin yerine geçerek düzenlenen bir belgedir?",
+        "Siklar":  [
+                       "Sevk İrsaliyesi",
+                       "İrsaliyeli Fatura",
+                       "Fatura",
+                       "Sevk Mektubu"
+                   ],
+        "DogruCevap":  "B",
+        "id":  "src0_pratik_q004"
+    },
+    {
+        "Soru":  "Ticari araç sürücüsü aracı sefere hazırlarken hangi işlemi yapmak zorunda değildir?",
+        "Siklar":  [
+                       "Araç lastiklerini kontrol etmek",
+                       "Motor yağ ve su seviyesini kontrol etmek",
+                       "Kilometre sayacını kontrol etmek",
+                       "Lastik hava basıncını kontrol etmek"
+                   ],
+        "DogruCevap":  "C",
+        "id":  "src0_pratik_q005"
+    },
+    {
+        "Soru":  "Karlı yüzeylerde hangi lastik tipi daha etkin tutunma sağlar?",
+        "Siklar":  [
+                       "Kar tipi dar tabanlı lastik",
+                       "Kar tipi geniş tabanlı lastik",
+                       "Dar tabanlı düşük basınçlı lastik",
+                       "Geniş jantlı modifiye lastik"
+                   ],
+        "DogruCevap":  "A",
+        "id":  "src0_pratik_q006"
+    },
+    {
+        "Soru":  "Aşağıdakilerden hangisi duruş mesafesini etkilemez?",
+        "Siklar":  [
+                       "Yolun eğimi",
+                       "Yük durumu",
+                       "Lastik durumu",
+                       "ABS"
+                   ],
+        "DogruCevap":  "D",
+        "id":  "src0_pratik_q007"
+    },
+    {
+        "Soru":  "Tek şoför 24 saatlik bir periyotta kaç saat çalışabilir?",
+        "Siklar":  [
+                       "8 saat",
+                       "9 saat",
+                       "10 saat",
+                       "11 saat"
+                   ],
+        "DogruCevap":  "B",
+        "id":  "src0_pratik_q008"
+    },
+    {
+        "Soru":  "Viraj alımında genelde yapılan en önemli hata nedir?",
+        "Siklar":  [
+                       "Yolu iyi gözlememek",
+                       "Hatalı sollama yapmak",
+                       "Viraja fazla hızlı girip fren yapmak",
+                       "Öndeki aracı yakından takip etmek"
+                   ],
+        "DogruCevap":  "C",
+        "id":  "src0_pratik_q009"
+    },
+    {
+        "Soru":  "Kara yollarında geceleri seyrederken hangisi yasaktır?",
+        "Siklar":  [
+                       "Karşılaşmalarda ışıkların söndürülmesi",
+                       "Geçme sırasında öndeki aracın ışıkla uyarılması",
+                       "Yakından izlerken kısa huzmeli far kullanılması",
+                       "Sisli havalarda sis farı kullanılması"
+                   ],
+        "DogruCevap":  "A",
+        "id":  "src0_pratik_q010"
+    },
+    {
+        "Soru":  "Tehlikeli madde taşıyan aracın yerleşim yeri içindeki azami hızı kaç km’dir?",
+        "Siklar":  [
+                       "30",
+                       "50",
+                       "70",
+                       "80"
+                   ],
+        "DogruCevap":  "A",
+        "id":  "src0_pratik_q011"
+    },
+    {
+        "Soru":  "Trafik mecburiyeti nedeniyle durdurulma hâline ne denir?",
+        "Siklar":  [
+                       "Durma",
+                       "Bekleme",
+                       "Duraklama",
+                       "Park etme"
+                   ],
+        "DogruCevap":  "A",
+        "id":  "src0_pratik_q012"
+    },
+    {
+        "Soru":  "Gündüzleri araç kornası hangi durumda kullanılır?",
+        "Siklar":  [
+                       "Bisikletlileri uyarmak",
+                       "Yayaları uyarmak",
+                       "Kırmızı ışıkta bekleyenleri uyarmak",
+                       "Görüşsüz dönemeçte gelişi haber vermek"
+                   ],
+        "DogruCevap":  "D",
+        "id":  "src0_pratik_q013"
+    },
+    {
+        "Soru":  "Karayolları Taşıma Kanununun amaçlarıyla ilgili hangisi yanlıştır?",
+        "Siklar":  [
+                       "Taşımaları düzenlemek",
+                       "Güvenliği sağlamak",
+                       "Çalışan haklarını belirlemek",
+                       "Deniz taşımacılığını düzenlemek"
+                   ],
+        "DogruCevap":  "D",
+        "id":  "src0_pratik_q014"
+    },
+    {
+        "Soru":  "Takograf cihazı bulundurmak zorunda olan araçlar hangileridir?",
+        "Siklar":  [
+                       "Belediye araçları",
+                       "Özel otomobiller",
+                       "Römorklar",
+                       "Kamyon, çekici, otobüs"
+                   ],
+        "DogruCevap":  "D",
+        "id":  "src0_pratik_q015"
+    },
+    {
+        "Soru":  "4925 sayılı Karayolu Taşıma Kanununun kapsamı içinde hangisi yer alır?",
+        "Siklar":  [
+                       "TSK taşıtları",
+                       "Terminal işletmeciliği",
+                       "Cenaze aracı",
+                       "Naklen yayın aracı"
+                   ],
+        "DogruCevap":  "B",
+        "id":  "src0_pratik_q016"
+    },
+    {
+        "Soru":  "Tek şoför haftada kaç kere 9 saat dinlenebilir?",
+        "Siklar":  [
+                       "1",
+                       "En fazla 2",
+                       "En fazla 3",
+                       "En fazla 4"
+                   ],
+        "DogruCevap":  "C",
+        "id":  "src0_pratik_q017"
+    },
+    {
+        "Soru":  "11 saatlik dinlenme ikiye bölünürse toplam kaç saate çıkar?",
+        "Siklar":  [
+                       "12",
+                       "13",
+                       "14",
+                       "15"
+                   ],
+        "DogruCevap":  "A",
+        "id":  "src0_pratik_q018"
+    },
+    {
+        "Soru":  "Devamlı yol çizgisi neyi bildirir?",
+        "Siklar":  [
+                       "Geçilemeyeceğini",
+                       "Durulamayacağını",
+                       "Bankette durulamayacağını",
+                       "Sağ şeritten gidilmeyeceğini"
+                   ],
+        "DogruCevap":  "A",
+        "id":  "src0_pratik_q019"
+    },
+    {
+        "Soru":  "Şehirlerarası yolların yapım ve bakımından kim sorumludur?",
+        "Siklar":  [
+                       "Çevre Bakanlığı",
+                       "Karayolları Genel Müdürlüğü",
+                       "Çevre Koruma Genel Müdürlüğü",
+                       "Emniyet Müdürlüğü"
+                   ],
+        "DogruCevap":  "B",
+        "id":  "src0_pratik_q020"
+    },
+    {
+        "Soru":  "Takograf kullanımı zorunlu olmayan araç hangisidir?",
+        "Siklar":  [
+                       "Kamyon",
+                       "Otobüs",
+                       "İş makinesi",
+                       "Çekici"
+                   ],
+        "DogruCevap":  "C",
+        "id":  "src0_pratik_q021"
+    },
+    {
+        "Soru":  "Hangi durumda sürücü trafikten men edilir?",
+        "Siklar":  [
+                       "Fazla yük",
+                       "Uyuşturucu etkisi",
+                       "Fazla yolcu",
+                       "Sigortasız araç"
+                   ],
+        "DogruCevap":  "B",
+        "id":  "src0_pratik_q022"
+    },
+    {
+        "Soru":  "Trafik yasaklarına bağlı olmamaya ne denir?",
+        "Siklar":  [
+                       "Geçiş hakkı",
+                       "Geçiş kolaylığı",
+                       "Geçiş üstünlüğü",
+                       "Geçiş önceliği"
+                   ],
+        "DogruCevap":  "C",
+        "id":  "src0_pratik_q023"
+    },
+    {
+        "Soru":  "Hangisi geçiş üstünlüğüne sahiptir?",
+        "Siklar":  [
+                       "Tarım araçları",
+                       "Toplu taşıma",
+                       "Gümrük araçları",
+                       "Acil hasta taşıyan araçlar"
+                   ],
+        "DogruCevap":  "D",
+        "id":  "src0_pratik_q024"
+    },
+    {
+        "Soru":  "Kavşaklara kaç metre kala şerit değiştirmek yasaktır?",
+        "Siklar":  [
+                       "30 / 100",
+                       "30 / 150",
+                       "50 / 100",
+                       "50 / 150"
+                   ],
+        "DogruCevap":  "B",
+        "id":  "src0_pratik_q025"
+    },
+    {
+        "Soru":  "3,5 ton üstü ticari araçlarda zorunlu olan nedir?",
+        "Siklar":  [
+                       "Klima",
+                       "Takograf",
+                       "Otomatik kapı",
+                       "Hava yastığı"
+                   ],
+        "DogruCevap":  "B",
+        "id":  "src0_pratik_q026"
+    },
+    {
+        "Soru":  "Sürücünün fiziksel ve psikolojik yatkınlığına ne denir?",
+        "Siklar":  [
+                       "Sürüş uygunluğu",
+                       "Sürücü nitelikleri",
+                       "Sürücü kapasitesi",
+                       "Motor becerileri"
+                   ],
+        "DogruCevap":  "A",
+        "id":  "src0_pratik_q027"
+    },
+    {
+        "Soru":  "Sürüş yeteneğini etkileyen fiziksel şartlardan hangisi değildir?",
+        "Siklar":  [
+                       "Yaş",
+                       "İşitme",
+                       "Öfke",
+                       "Hastalık"
+                   ],
+        "DogruCevap":  "C",
+        "id":  "src0_pratik_q028"
+    },
+    {
+        "Soru":  "Sürüş yeteneğini etkileyen zihinsel şartlardan hangisi değildir?",
+        "Siklar":  [
+                       "Depresyon",
+                       "Stres",
+                       "Öfke",
+                       "Hastalık"
+                   ],
+        "DogruCevap":  "D",
+        "id":  "src0_pratik_q029"
+    },
+    {
+        "Soru":  "Trafikte sabırsız davranış hangi değerin olmadığını gösterir?",
+        "Siklar":  [
+                       "Sabır",
+                       "Öfke",
+                       "İnatlaşma",
+                       "Aşırı tepki"
+                   ],
+        "DogruCevap":  "A",
+        "id":  "src0_pratik_q030"
+    },
+    {
+        "Soru":  "GPS ne işe yarar?",
+        "Siklar":  [
+                       "Konum tespiti",
+                       "İnternet",
+                       "Acil kod",
+                       "Telefon"
+                   ],
+        "DogruCevap":  "A",
+        "id":  "src0_pratik_q031"
+    },
+    {
+        "Soru":  "Haritalarda mavi renk neyi gösterir?",
+        "Siklar":  [
+                       "Yollar",
+                       "Şehirler",
+                       "Su detayları",
+                       "Turistik yerler"
+                   ],
+        "DogruCevap":  "C",
+        "id":  "src0_pratik_q032"
+    },
+    {
+        "Soru":  "Fiziki haritalarda kahverengi alan neyi ifade eder?",
+        "Siklar":  [
+                       "Akarsu",
+                       "Ova",
+                       "Göl",
+                       "Dağ"
+                   ],
+        "DogruCevap":  "D",
+        "id":  "src0_pratik_q033"
+    },
+    {
+        "Soru":  "Vergiden muaf eşyayı amacı dışında kullanmak hangi suçtur?",
+        "Siklar":  [
+                       "Suç değil",
+                       "Sahtekarlık",
+                       "Vergi usulsüzlüğü",
+                       "Kaçakçılık"
+                   ],
+        "DogruCevap":  "D",
+        "id":  "src0_pratik_q034"
+    },
+    {
+        "Soru":  "Sigorta teminatı karşılığı ödenen ücrete ne denir?",
+        "Siklar":  [
+                       "Teminat",
+                       "Hasar",
+                       "Prim",
+                       "Sürprim"
+                   ],
+        "DogruCevap":  "C",
+        "id":  "src0_pratik_q035"
+    },
+    {
+        "Soru":  "Can ve mal güvenliğini güvence altına alan sistem nedir?",
+        "Siklar":  [
+                       "Banka",
+                       "Kasa",
+                       "Sigorta",
+                       "Leasing"
+                   ],
+        "DogruCevap":  "C",
+        "id":  "src0_pratik_q036"
+    },
+    {
+        "Soru":  "Sigortacı tazminatı kaç iş günü içinde öder?",
+        "Siklar":  [
+                       "5",
+                       "8",
+                       "10",
+                       "30"
+                   ],
+        "DogruCevap":  "B",
+        "id":  "src0_pratik_q037"
+    },
+    {
+        "Soru":  "Geçici kanama durdurma yöntemi hangisidir?",
+        "Siklar":  [
+                       "Tütün basmak",
+                       "Tentürdiyot dökmek",
+                       "Basınç uygulamak",
+                       "Beklemek"
+                   ],
+        "DogruCevap":  "C",
+        "id":  "src0_pratik_q038"
+    },
+    {
+        "Soru":  "Burkulmalar nerede oluşur?",
+        "Siklar":  [
+                       "Hareketli eklemler",
+                       "Hareketsiz eklemler",
+                       "Kemikler",
+                       "Derinin içi"
+                   ],
+        "DogruCevap":  "A",
+        "id":  "src0_pratik_q039"
+    },
+    {
+        "Soru":  "Düşük motivasyon ifadesi hangisidir?",
+        "Siklar":  [
+                       "Olumlu bakış",
+                       "Sorumluluk",
+                       "İşbirliği",
+                       "Birbirini engelleme"
+                   ],
+        "DogruCevap":  "D",
+        "id":  "src0_pratik_q040"
+    }
 ]

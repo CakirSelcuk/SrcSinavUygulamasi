@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SrcSinavUygulamasi.Views.ConsentPage"
+             NavigationPage.HasNavigationBar="False"
+             Shell.NavBarIsVisible="False">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#1e3a5f" Offset="0.0" />
+            <GradientStop Color="#0f172a" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid RowDefinitions="Auto, *, Auto" Padding="20">
+        
+        <!-- Başlık -->
+        <VerticalStackLayout Grid.Row="0" Spacing="10" Margin="0,40,0,20">
+            <Label Text="📋" FontSize="48" HorizontalOptions="Center"/>
+            <Label Text="Bilgilendirme ve Kullanım Koşulları" 
+                   FontSize="22" FontAttributes="Bold" TextColor="White" 
+                   HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+            <Label Text="Devam etmeden önce lütfen aşağıdaki bilgileri okuyunuz" 
+                   FontSize="14" TextColor="#94a3b8" 
+                   HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+
+        <!-- İçerik (Scroll) -->
+        <Border Grid.Row="1" Stroke="Transparent" BackgroundColor="#1e293b" 
+                StrokeShape="RoundRectangle 16" Padding="20" Margin="0,10">
+            <ScrollView>
+                <VerticalStackLayout Spacing="20">
+                    
+                    <!-- Hakkında Bölümü -->
+                    <Label Text="📌 HAKKINDA" FontSize="16" FontAttributes="Bold" TextColor="#60a5fa"/>
+                    
+                    <Label TextColor="#e2e8f0" FontSize="14" LineHeight="1.4">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Bu uygulama, SRC (Mesleki Yeterlilik) sınavlarına hazırlık, tekrar ve deneme amacıyla geliştirilmiştir."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="Uygulamada yer alan tüm sorular ve sınav içerikleri; SRC sınav müfredatı ve genel mevzuat bilgileri esas alınarak hazırlanmış örnek ve deneme sorularıdır."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="Bu uygulamanın; T.C. Millî Eğitim Bakanlığı (MEB), Ulaştırma ve Altyapı Bakanlığı veya SRC sınavlarını düzenleyen resmî kurumlar ile doğrudan ya da dolaylı herhangi bir bağlantısı bulunmamaktadır."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="Sunulan deneme sınavları, gerçek sınav formatına benzerlik göstermeyi amaçlar; ancak resmî sınav soruları ile birebir aynı olma garantisi vermez."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="Mevzuat ve sınav uygulamaları zaman içerisinde değişebileceğinden, adayların güncel ve resmî kaynakları takip etme sorumluluğu kendilerine aittir."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="Bu uygulama, resmî sınavın yerine geçmez ve kesin başarı garantisi sunmaz." FontAttributes="Bold"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <BoxView HeightRequest="1" Color="#334155" Margin="0,10"/>
+
+                    <!-- KVKK Bölümü -->
+                    <Label Text="🔐 KVKK (Kişisel Verilerin Korunması Hakkında)" FontSize="16" FontAttributes="Bold" TextColor="#60a5fa"/>
+                    
+                    <Label TextColor="#e2e8f0" FontSize="14" LineHeight="1.4">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Bu uygulama kapsamında;"/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="• Kimlik bilgisi, T.C. kimlik numarası, biyometrik veri veya özel nitelikli kişisel veri toplanmaz."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="• Kullanıcıdan alınan veriler (varsa) yalnızca: uygulama içi ilerleme, deneme sınav sonuçları ve teknik iyileştirme amaçlarıyla kullanılır."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="• Toplanan veriler üçüncü kişilerle paylaşılmaz, satılmaz ve ticari amaçla kullanılmaz."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="• Veriler, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında korunur."/>
+                                <Span Text="&#10;&#10;"/>
+                                <Span Text="Kullanıcı, uygulamayı kullanarak:" FontAttributes="Bold"/>
+                                <Span Text="&#10;"/>
+                                <Span Text="✓ İçeriğin bilgilendirme ve deneme amaçlı olduğunu,"/>
+                                <Span Text="&#10;"/>
+                                <Span Text="✓ Kişisel verilerinin yukarıda belirtilen kapsamda işlenmesini,"/>
+                                <Span Text="&#10;"/>
+                                <Span Text="✓ Nihai sorumluluğun kendisine ait olduğunu"/>
+                                <Span Text="&#10;"/>
+                                <Span Text="kabul etmiş sayılır." FontAttributes="Bold"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                </VerticalStackLayout>
+            </ScrollView>
+        </Border>
+
+        <!-- Alt Kısım - Checkbox ve Buton -->
+        <VerticalStackLayout Grid.Row="2" Spacing="15" Margin="0,10,0,20">
+            
+            <!-- Checkbox -->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <CheckBox x:Name="AcceptCheckBox" 
+                          Color="#4ade80"
+                          CheckedChanged="OnCheckBoxCheckedChanged"/>
+                <Label Text="Okudum ve Kabul Ediyorum" 
+                       TextColor="White" FontSize="16" 
+                       VerticalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnAcceptLabelTapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </HorizontalStackLayout>
+
+            <!-- Devam Et Butonu -->
+            <Button x:Name="ContinueButton"
+                    Text="Devam Et"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    HeightRequest="55"
+                    CornerRadius="14"
+                    BackgroundColor="#334155"
+                    TextColor="#64748b"
+                    IsEnabled="False"
+                    Clicked="OnContinueClicked">
+                <Button.Shadow>
+                    <Shadow Brush="Black" Offset="0,4" Opacity="0.3"/>
+                </Button.Shadow>
+            </Button>
+
+            <!-- Uyarı Mesajı -->
+            <Label x:Name="WarningLabel"
+                   Text="⚠️ Kabul etmeden devam edemezsiniz"
+                   TextColor="#f87171"
+                   FontSize="13"
+                   HorizontalOptions="Center"
+                   IsVisible="False"/>
+
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentPage>

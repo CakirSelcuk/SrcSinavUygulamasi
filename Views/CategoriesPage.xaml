@@ -14,10 +14,21 @@
 
     <Grid RowDefinitions="Auto, *">
 
-        <VerticalStackLayout Grid.Row="0" Padding="25,40,25,20" Spacing="5">
-            <Label Text="Merhaba," TextColor="#94a3b8" FontSize="16"/>
-            <Label Text="Hangi Sınava Hazırlanıyorsun?" TextColor="White" FontSize="24" FontAttributes="Bold" LineHeight="1.2"/>
-        </VerticalStackLayout>
+        <Grid Grid.Row="0" ColumnDefinitions="*, Auto" Padding="25,40,25,20">
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Merhaba," TextColor="#94a3b8" FontSize="16"/>
+                <Label Text="Hangi Sınava Hazırlanıyorsun?" TextColor="White" FontSize="24" FontAttributes="Bold" LineHeight="1.2"/>
+            </VerticalStackLayout>
+
+            <!-- Hakkında Butonu -->
+            <Border Grid.Column="1" Stroke="Transparent" BackgroundColor="#1e293b" 
+                    StrokeShape="RoundRectangle 12" Padding="12" VerticalOptions="Center">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnAboutTapped"/>
+                </Border.GestureRecognizers>
+                <Label Text="ℹ️" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Border>
+        </Grid>
 
         <CollectionView Grid.Row="1" ItemsSource="{Binding Categories}" Margin="15,0">
             <CollectionView.ItemsLayout>

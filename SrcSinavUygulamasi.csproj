@@ -26,6 +26,16 @@
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 	</PropertyGroup>
 
+	<!-- App Icon -->
+	<ItemGroup>
+		<MauiIcon Include="Resources\Images\appicon.png" />
+	</ItemGroup>
+
+	<!-- Splash Screen -->
+	<ItemGroup>
+		<MauiSplashScreen Include="Resources\Images\appicon.png" Color="#0f172a" BaseSize="128,128" />
+	</ItemGroup>
+
 	<ItemGroup>
 	  <None Remove="Resources\Raw\sorular_src.json" />
 	  <None Remove="Resources\Raw\sorular_src1.json" />
@@ -33,7 +43,10 @@
 	  <None Remove="Resources\Raw\sorular_src1_resimli.json" />
 	  <None Remove="Resources\Raw\sorular_src2.json" />
 	  <None Remove="Resources\Raw\sorular_src3.json" />
-	  <None Remove="Resources\Raw\sorular_src4.json" />
+	  	<None Remove="Resources\Raw\sorular_src4.json" />
+	  <None Remove="Resources\Raw\sorular_src5.json" />
+	  <None Remove="Resources\Raw\sorular_src5_sinav.json" />
+	  <None Remove="Resources\Raw\sorular_src5_resimli.json" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -80,6 +93,7 @@
 	  <MauiImage Include="Resources\Images\src2_*.jpeg" />
 	  <MauiImage Include="Resources\Images\src3_*.jpeg" />
 	  <MauiImage Include="Resources\Images\src4_*.jpeg" />
+	  <MauiImage Include="Resources\Images\src5_*.jpeg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -89,6 +103,9 @@
 	  <EmbeddedResource Include="Resources\Raw\sorular_src4.json" />
 	  <EmbeddedResource Include="Resources\Raw\sorular_src4_sinav.json" />
 	  <EmbeddedResource Include="Resources\Raw\sorular_src4_resimli.json" />
+	  <EmbeddedResource Include="Resources\Raw\sorular_src5.json" />
+	  <EmbeddedResource Include="Resources\Raw\sorular_src5_sinav.json" />
+	  <EmbeddedResource Include="Resources\Raw\sorular_src5_resimli.json" />
 	</ItemGroup>
 
 </Project>
