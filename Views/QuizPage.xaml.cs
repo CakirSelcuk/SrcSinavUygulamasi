@@ -8,6 +8,7 @@ namespace SrcSinavUygulamasi.Views;
 [QueryProperty(nameof(IsRealExam), "IsRealExam")]
 [QueryProperty(nameof(IsImageExam), "IsImageExam")]
 [QueryProperty(nameof(PointsPerQuestion), "PointsPerQuestion")]
+[QueryProperty(nameof(IsMiniExam), "IsMiniExam")]
 public partial class QuizPage : ContentPage
 {
     private QuizViewModel _viewModel;
@@ -16,6 +17,7 @@ public partial class QuizPage : ContentPage
     private int _totalExams = 1;
     private bool _isRealExam = false;
     private bool _isImageExam = false;
+    private bool _isMiniExam = false;
     private double _pointsPerQuestion = 5;
 
     public string KategoriId
@@ -67,6 +69,16 @@ public partial class QuizPage : ContentPage
         }
     }
 
+    public string IsMiniExam
+    {
+        set
+        {
+            if (bool.TryParse(value, out bool isMini))
+                _isMiniExam = isMini;
+            TryLoadExam();
+        }
+    }
+
     public string PointsPerQuestion
     {
         set
@@ -90,7 +102,7 @@ public partial class QuizPage : ContentPage
         // Tüm parametreler ayarlandığında yükle
         if (!string.IsNullOrEmpty(_kategoriId))
         {
-            _viewModel.LoadExam(_kategoriId, _examIndex, _totalExams, _isRealExam, _isImageExam, _pointsPerQuestion);
+            _viewModel.LoadExam(_kategoriId, _examIndex, _totalExams, _isRealExam, _isImageExam, _pointsPerQuestion, _isMiniExam);
         }
     }
 }

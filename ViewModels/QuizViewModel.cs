@@ -51,6 +51,7 @@ namespace SrcSinavUygulamasi.ViewModels
         private int _totalExams = 1;
         private bool _isRealExam = false;
         private bool _isImageExam = false;
+        private bool _isMiniExam = false;
         private double _pointsPerQuestion = 5;
 
         private QuestionService _questionService = new QuestionService();
@@ -72,13 +73,14 @@ namespace SrcSinavUygulamasi.ViewModels
             ThemeColor = Color.FromArgb("#0f172a");
         }
 
-        public async void LoadExam(string categoryId, int examIndex, int totalExams, bool isRealExam = false, bool isImageExam = false, double pointsPerQuestion = 5)
+        public async void LoadExam(string categoryId, int examIndex, int totalExams, bool isRealExam = false, bool isImageExam = false, double pointsPerQuestion = 5, bool isMiniExam = false)
         {
             _categoryId = categoryId?.ToLower() ?? "src3";
             _examIndex = examIndex;
             _totalExams = totalExams;
             _isRealExam = isRealExam;
             _isImageExam = isImageExam;
+            _isMiniExam = isMiniExam;
             _pointsPerQuestion = pointsPerQuestion;
             _correctCount = 0;
             _wrongCount = 0;
@@ -86,7 +88,13 @@ namespace SrcSinavUygulamasi.ViewModels
 
             SetCategoryTheme();
             
-            if (_isRealExam)
+            if (_isMiniExam)
+            {
+                ExamTitle = $"{_categoryTitle} - Mini Sınav";
+                _examId = "mini_exam";
+                ThemeColor = Color.FromArgb("#8B5CF6");  // Mor rengi
+            }
+            else if (_isRealExam)
             {
                 ExamTitle = $"{_categoryTitle} - Gerçek Sınav";
                 _examId = "real_exam";
@@ -140,21 +148,38 @@ namespace SrcSinavUygulamasi.ViewModels
             IsBusy = true;
             try
             {
-                List<QuestionModel> gelenSorular;
+                QuestionLoadResult loadResult;
 
-                // Sınav tipine göre uygun soruları getir
+                // Sınav tipine göre uygun soruları FAIL FAST validasyonu ile getir
                 if (_isImageExam)
                 {
-                    gelenSorular = await _questionService.ResimliSorulariGetir(_categoryId);
+                    loadResult = await _questionService.ResimliSorulariGetirWithValidation(_categoryId);
                 }
                 else if (_isRealExam)
                 {
-                    gelenSorular = await _questionService.SinavSorulariniGetir(_categoryId);
+                    loadResult = await _questionService.SinavSorulariniGetirWithValidation(_categoryId);
                 }
                 else
                 {
-                    gelenSorular = await _questionService.SorulariGetir(_categoryId);
+                    loadResult = await _questionService.SorulariGetirWithValidation(_categoryId);
                 }
+
+                // ═══════════════════════════════════════════════════════════
+                // FAIL FAST: Veri geçersizse sınavı ENGELLE
+                // ═══════════════════════════════════════════════════════════
+                if (!loadResult.IsValid)
+                {
+                    await Application.Current.MainPage.DisplayAlert(
+                        "Sınav Yüklenemedi",
+                        loadResult.ErrorMessage,
+                        "Tamam");
+                    
+                    // Ana menüye geri dön
+                    await Application.Current.MainPage.Navigation.PopToRootAsync();
+                    return;
+                }
+
+                var gelenSorular = loadResult.Questions;
 
                 if (gelenSorular.Count > 0)
                 {
@@ -188,23 +213,38 @@ namespace SrcSinavUygulamasi.ViewModels
                         }
                     }
 
+                    // ═══════════════════════════════════════════════════════════
+                    // FAIL FAST: 20 soruluk ana sınavlarda şık dağılımı kontrolü
+                    // Mini sınavlarda bu kural UYGULANMAZ
+                    // ═══════════════════════════════════════════════════════════
+                    if (_examQuestions.Count == 20 && !_isMiniExam)
+                    {
+                        if (!_questionService.ValidateSikDagilimi(_examQuestions))
+                        {
+                            string errorMsg = _questionService.GetSikDagilimiHataMesaji(_examQuestions);
+                            await Application.Current.MainPage.DisplayAlert(
+                                "Sınav Yüklenemedi",
+                                errorMsg,
+                                "Tamam");
+                            
+                            // Ana menüye geri dön
+                            await Application.Current.MainPage.Navigation.PopToRootAsync();
+                            return;
+                        }
+                    }
+
                     _currentIndex = 0;
                     ShowQuestion();
                 }
                 else
                 {
-                    string dosyaTipi = _isImageExam ? "resimli" : (_isRealExam ? "sinav" : "pratik");
-                    _examQuestions = new List<QuestionModel>
-                    {
-                        new QuestionModel
-                        {
-                            Soru = $"{_categoryTitle} {dosyaTipi} soruları henüz yüklenmedi.",
-                            Siklar = new List<string> { "Tamam", "-", "-", "-" },
-                            DogruCevap = "A"
-                        }
-                    };
-                    _currentIndex = 0;
-                    ShowQuestion();
+                    await Application.Current.MainPage.DisplayAlert(
+                        "Sınav Yüklenemedi",
+                        $"{_categoryTitle} soruları henüz yüklenmedi veya hatalı.",
+                        "Tamam");
+                    
+                    await Application.Current.MainPage.Navigation.PopToRootAsync();
+                    return;
                 }
 
                 // Timer başlat
