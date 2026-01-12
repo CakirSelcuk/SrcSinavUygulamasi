@@ -6,21 +6,41 @@ namespace SrcSinavUygulamasi.Views;
 
 /// <summary>
 /// Result Page - Sınav sonuç ekranı
-/// Kurallar:
-/// 1. "Yeni denemeye geç" sadece aynı SRC içinde sonraki DENEME varsa görünür
-/// 2. "Sınav Sonucu Değerlendirme" tüm denemeler bitene kadar kilitli
-/// 3. Fear Logic: Kritik durum frame'i ile kullanıcıyı uyar
-/// 4. Premium: Yanlışları Çöz butonu için paywall
+/// ═══════════════════════════════════════════════════════════════════════
+/// BUSINESS RULES:
+/// 1. CriticalFrame EN ÜSTTE - kullanıcı puanı görmeden önce "KALDIN" görmeli
+/// 2. % < 70 = Kritik (Kırmızı), % < 85 = Riskli (Turuncu), >= 85 = Başarılı
+/// 3. Yanlışları Çöz = Premium (Paywall ile korumalı)
+/// 4. Subject bazlı progress bar'lar dinamik olarak oluşturulur
+/// ═══════════════════════════════════════════════════════════════════════
 /// </summary>
 public partial class ResultPage : ContentPage
 {
-    private QuizResultModel _result;
-    private ExamProgressService _progressService = new();
-    private ExamAnalysisService _analysisService = new();
-    private PremiumService _premiumService = new();
+    // ═══════════════════════════════════════════════════════════
+    // CONSTANTS
+    // ═══════════════════════════════════════════════════════════
+    private const string COLOR_CRITICAL = "#B00020";      // Kan kırmızısı
+    private const string COLOR_HEADER_FAIL = "#450a0a";   // Dark red header
+    private const string COLOR_HEADER_NORMAL = "#334155"; // Normal blue-gray
+    private const string COLOR_SUCCESS = "#22c55e";       // Yeşil
+    private const string COLOR_WARNING = "#f59e0b";       // Turuncu
+    private const string COLOR_DANGER = "#ef4444";        // Kırmızı
+    
+    private const string PREMIUM_BACKDOOR_CODE = "SRC2024PREMIUM";
+    private const string PREF_KEY_PREMIUM = "IsUserPremium";
+
+    // ═══════════════════════════════════════════════════════════
+    // FIELDS
+    // ═══════════════════════════════════════════════════════════
+    private QuizResultModel? _result;
+    private readonly ExamProgressService _progressService = new();
+    private readonly QuestionService _questionService = new();
     private bool _allPracticeExamsCompleted = false;
     private string? _nextPracticeExamId = null;
 
+    // ═══════════════════════════════════════════════════════════
+    // CONSTRUCTORS
+    // ═══════════════════════════════════════════════════════════
     public ResultPage()
     {
         InitializeComponent();
@@ -33,186 +53,424 @@ public partial class ResultPage : ContentPage
 
         if (result != null)
         {
-            SetupUI();
-            CheckExamState();
-            ShowFearLogicAnalysis();
+            LoadData();
         }
     }
 
-    private void SetupUI()
+    // ═══════════════════════════════════════════════════════════
+    // 1. DATA LOADING & SCORE CALCULATION
+    // ═══════════════════════════════════════════════════════════
+    private async void LoadData()
     {
-        // Verileri ekrana bas
-        LblScore.Text = _result.Score.ToString("F0");
-        LblCorrect.Text = _result.CorrectCount.ToString();
-        LblWrong.Text = _result.WrongCount.ToString();
-        LblEmpty.Text = _result.EmptyCount.ToString();
+        if (_result == null) return;
 
-        // Renkleri ayarla
-        HeaderBox.Color = _result.ThemeColor;
+        // Calculate score (CorrectCount * 2.5 for 40 questions = 100 max)
+        // But we use the Score from result which is already calculated
+        double score = _result.Score;
+        int correctCount = _result.CorrectCount;
+        int wrongCount = _result.WrongCount;
+        int emptyCount = _result.EmptyCount;
 
-        // Başlık - ExamCatalog'dan gelen DisplayTitle kullan
-        string displayTitle = ExamCatalog.GetDisplayTitle(_result.CategoryId, _result.ExamId);
+        // Update UI labels
+        LblScore.Text = score.ToString("F0");
+        LblCorrect.Text = correctCount.ToString();
+        LblWrong.Text = wrongCount.ToString();
+        LblEmpty.Text = emptyCount.ToString();
 
-        // Sınav tipine göre UI ayarla
-        if (_result.IsRealExam || _result.IsImageExam)
+        // ═══════════════════════════════════════════════════════
+        // FEAR LOGIC: Critical State Detection
+        // ═══════════════════════════════════════════════════════
+        ApplyFearLogic(score);
+
+        // Check exam state for navigation buttons
+        CheckExamState();
+
+        // Update Premium button state
+        UpdatePremiumButtonState();
+
+        // Load subject analysis (async)
+        await LoadSubjectAnalysis();
+    }
+
+    /// <summary>
+    /// Fear Logic: Apply psychological pressure based on score
+    /// </summary>
+    private void ApplyFearLogic(double score)
+    {
+        if (score < 70)
         {
-            SetupSpecialExamUI(displayTitle);
+            // ════════════════════════════════════════════════════
+            // CRITICAL STATE: User FAILED
+            // ════════════════════════════════════════════════════
+            CriticalFrame.IsVisible = true;
+            CriticalFrame.BackgroundColor = Color.FromArgb(COLOR_CRITICAL);
+            LblCriticalTitle.Text = "⛔ BAŞARISIZ OLDUN!";
+            LblCriticalMessage.Text = "Bugün sınav olsaydı KALIRDIN!\n70 puan barajını geçemedin. Eksiklerini acilen kapat.";
+
+            // Change header to dark red
+            HeaderBox.Color = Color.FromArgb(COLOR_HEADER_FAIL);
+
+            // Update message labels
+            LblMessage.Text = "Maalesef Kaldınız";
+            LblMessage.TextColor = Color.FromArgb(COLOR_DANGER);
+            LblSubMessage.Text = "70 puan barajını geçemediniz.\nDaha fazla çalışmanız gerekiyor.";
+            LblScore.TextColor = Color.FromArgb(COLOR_DANGER);
+
+            // Show retry button
+            BtnRetry.IsVisible = true;
+            BtnRetry.Text = "Sınavı Tekrarla 🔄";
+        }
+        else if (score < 85)
+        {
+            // ════════════════════════════════════════════════════
+            // WARNING STATE: User passed but risky
+            // ════════════════════════════════════════════════════
+            CriticalFrame.IsVisible = true;
+            CriticalFrame.BackgroundColor = Color.FromArgb(COLOR_WARNING);
+            CriticalFrame.Stroke = Color.FromArgb("#FF8C00");
+            LblCriticalTitle.Text = "⚠️ RİSKLİ BÖLGE";
+            LblCriticalMessage.Text = "Geçtin ama sınırdasın!\nEksiklerini kapatmazsan gerçek sınavda tehlike var.";
+            BtnDismissCritical.BackgroundColor = Colors.White;
+            BtnDismissCritical.TextColor = Color.FromArgb(COLOR_WARNING);
+
+            // Normal header
+            HeaderBox.Color = Color.FromArgb(COLOR_HEADER_NORMAL);
+
+            // Update message labels
+            LblMessage.Text = "Geçtiniz!";
+            LblMessage.TextColor = Color.FromArgb(COLOR_WARNING);
+            LblSubMessage.Text = $"Puanınız: {score:F0}\nEksiklerinizi kapatın.";
+            LblScore.TextColor = Color.FromArgb(COLOR_WARNING);
+
+            // Hide retry
+            BtnRetry.IsVisible = false;
         }
         else
         {
-            SetupPracticeExamUI(displayTitle);
+            // ════════════════════════════════════════════════════
+            // SUCCESS STATE: User is ready
+            // ════════════════════════════════════════════════════
+            CriticalFrame.IsVisible = false;
+
+            // Normal header
+            HeaderBox.Color = Color.FromArgb(COLOR_HEADER_NORMAL);
+
+            // Update message labels
+            LblMessage.Text = "Tebrikler! 🎉";
+            LblMessage.TextColor = Color.FromArgb(COLOR_SUCCESS);
+            LblSubMessage.Text = "Sınava hazırsınız!\nBu performansı koruyun.";
+            LblScore.TextColor = Color.FromArgb(COLOR_SUCCESS);
+
+            // Hide retry
+            BtnRetry.IsVisible = false;
         }
 
-        // Yanlışları Çöz butonu (yanlış varsa göster)
-        if (_result.WrongCount > 0)
+        // Show Solve Wrongs button if there are wrong answers
+        if (_result != null && _result.WrongCount > 0)
         {
             BtnSolveWrongs.IsVisible = true;
-            BtnSolveWrongs.Text = _premiumService.IsUserPremium 
-                ? $"Yanlışları Çöz ({_result.WrongCount})" 
-                : $"🔒 Yanlışları Çöz ({_result.WrongCount})";
         }
     }
 
-    /// <summary>
-    /// Fear Logic: Kritik durum analizi ve gösterimi
-    /// </summary>
-    private void ShowFearLogicAnalysis()
+    // ═══════════════════════════════════════════════════════════
+    // 2. DYNAMIC SUBJECT ANALYSIS (THE HARD PART)
+    // ═══════════════════════════════════════════════════════════
+    private async Task LoadSubjectAnalysis()
     {
-        int totalQuestions = _result.CorrectCount + _result.WrongCount + _result.EmptyCount;
-        var (isCritical, message, color) = _analysisService.GetQuickAnalysis(_result.CorrectCount, totalQuestions);
+        if (_result == null) return;
 
-        if (isCritical)
-        {
-            // Kritik Frame'i göster
-            CriticalFrame.IsVisible = true;
-            CriticalFrame.BackgroundColor = Color.FromArgb(color);
-            LblCriticalTitle.Text = "⛔ DURUM KRİTİK";
-            LblCriticalMessage.Text = message.Replace("⛔ KALDINIZ!", "").Trim();
-        }
-        else if (_result.Score < 85)
-        {
-            // Uyarı Frame'i (turuncu)
-            CriticalFrame.IsVisible = true;
-            CriticalFrame.BackgroundColor = Color.FromArgb("#FF6B00");
-            CriticalFrame.Stroke = Color.FromArgb("#FF8C00");
-            LblCriticalTitle.Text = "⚠️ RİSKLİ BÖLGE";
-            LblCriticalMessage.Text = "Sınava hazır değilsiniz. Eksiklerinizi kapatın.";
-            BtnDismissCritical.BackgroundColor = Colors.White;
-            BtnDismissCritical.TextColor = Color.FromArgb("#FF6B00");
-        }
-
-        // Konu bazlı analiz göster (varsa)
-        ShowSubjectScores();
-    }
-
-    /// <summary>
-    /// Konu bazlı progress bar'ları göster
-    /// </summary>
-    private async void ShowSubjectScores()
-    {
         try
         {
-            // Sınav progress'i al
+            // Get exam progress (contains answers)
             var examProgress = _progressService.GetExamProgress(_result.CategoryId, _result.ExamId);
             if (examProgress == null || examProgress.Answers.Count == 0)
+            {
+#if DEBUG
+                System.Diagnostics.Debug.WriteLine("📊 No exam progress found for subject analysis");
+#endif
                 return;
+            }
 
-            // Analiz yap
-            var analysisResult = await _analysisService.AnalyzeResults(_result.CategoryId, examProgress);
-            
-            if (analysisResult.SubjectScores.Count == 0)
+            // Fetch ALL questions from QuestionService
+            var allQuestions = await _questionService.SorulariGetir(_result.CategoryId);
+            if (allQuestions == null || allQuestions.Count == 0)
+            {
+#if DEBUG
+                System.Diagnostics.Debug.WriteLine("📊 No questions found for subject analysis");
+#endif
                 return;
+            }
+
+            // Auto-tag questions if Subject is missing
+            SubjectTaggerService.AutoTagQuestions(allQuestions);
+
+            // Create question dictionary for quick lookup
+            var questionDict = allQuestions.ToDictionary(q => q.Id, q => q);
+
+            // Group answers by Subject and calculate success per subject
+            var subjectStats = new Dictionary<string, (int Correct, int Wrong)>();
+
+            foreach (var answer in examProgress.Answers)
+            {
+                if (!questionDict.TryGetValue(answer.Key, out var question))
+                    continue;
+
+                var subject = question.Subject ?? "Genel";
+
+                if (!subjectStats.ContainsKey(subject))
+                    subjectStats[subject] = (0, 0);
+
+                var current = subjectStats[subject];
+                bool isCorrect = answer.Value == question.DogruCevap;
+
+                if (isCorrect)
+                    subjectStats[subject] = (current.Correct + 1, current.Wrong);
+                else
+                    subjectStats[subject] = (current.Correct, current.Wrong + 1);
+            }
+
+            // ════════════════════════════════════════════════════
+            // DYNAMIC UI GENERATION
+            // ════════════════════════════════════════════════════
+            if (subjectStats.Count == 0)
+            {
+#if DEBUG
+                System.Diagnostics.Debug.WriteLine("📊 No subject stats to display");
+#endif
+                return;
+            }
 
             SubjectScoresFrame.IsVisible = true;
             SubjectProgressContainer.Children.Clear();
 
-            foreach (var score in analysisResult.SubjectScores.OrderByDescending(s => s.TotalCount))
-            {
-                if (score.TotalCount == 0) continue;
+            // Sort by total count (descending)
+            var sortedStats = subjectStats
+                .Where(s => s.Value.Correct + s.Value.Wrong > 0)
+                .OrderByDescending(s => s.Value.Correct + s.Value.Wrong)
+                .ToList();
 
-                var progressRow = CreateSubjectProgressRow(score);
+            foreach (var stat in sortedStats)
+            {
+                int total = stat.Value.Correct + stat.Value.Wrong;
+                double percentage = total > 0 ? (double)stat.Value.Correct / total * 100 : 0;
+
+                // Create progress row
+                var progressRow = CreateSubjectProgressRow(stat.Key, percentage, stat.Value.Correct, total);
                 SubjectProgressContainer.Children.Add(progressRow);
             }
+
+#if DEBUG
+            System.Diagnostics.Debug.WriteLine($"📊 Subject analysis displayed: {sortedStats.Count} subjects");
+#endif
         }
         catch (Exception ex)
         {
 #if DEBUG
-            System.Diagnostics.Debug.WriteLine($"Subject scores error: {ex.Message}");
+            System.Diagnostics.Debug.WriteLine($"📊 Subject analysis error: {ex.Message}");
 #endif
         }
     }
 
     /// <summary>
-    /// Tek bir konu için progress bar satırı oluştur
+    /// Create a single subject progress row with label and progress bar
     /// </summary>
-    private View CreateSubjectProgressRow(SubjectScoreModel score)
+    private View CreateSubjectProgressRow(string subject, double percentage, int correct, int total)
     {
-        var grid = new Grid
+        // Determine color based on percentage
+        string colorHex;
+        string statusIcon;
+
+        if (percentage < 50)
+        {
+            colorHex = COLOR_DANGER;  // Red
+            statusIcon = "🔴";
+        }
+        else if (percentage < 70)
+        {
+            colorHex = COLOR_WARNING; // Orange
+            statusIcon = "🟠";
+        }
+        else
+        {
+            colorHex = COLOR_SUCCESS; // Green
+            statusIcon = "🟢";
+        }
+
+        var color = Color.FromArgb(colorHex);
+
+        // Create main container
+        var container = new VerticalStackLayout
+        {
+            Spacing = 4
+        };
+
+        // Row 1: Subject name and percentage
+        var labelRow = new Grid
         {
             ColumnDefinitions = new ColumnDefinitionCollection
             {
-                new ColumnDefinition { Width = new GridLength(2, GridUnitType.Star) },
-                new ColumnDefinition { Width = new GridLength(3, GridUnitType.Star) },
+                new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) },
                 new ColumnDefinition { Width = GridLength.Auto }
-            },
-            RowDefinitions = new RowDefinitionCollection
-            {
-                new RowDefinition { Height = GridLength.Auto }
             }
         };
 
-        // Konu adı
-        var lblSubject = new Label
+        var subjectLabel = new Label
         {
-            Text = $"{score.StatusIcon} {score.Subject}",
+            Text = $"{statusIcon} {subject}",
             TextColor = Colors.White,
-            FontSize = 12,
+            FontSize = 13,
             VerticalOptions = LayoutOptions.Center
         };
-        Grid.SetColumn(lblSubject, 0);
+        Grid.SetColumn(subjectLabel, 0);
 
-        // Progress bar container
+        var percentLabel = new Label
+        {
+            Text = $"{correct}/{total} (%{percentage:F0})",
+            TextColor = color,
+            FontSize = 13,
+            FontAttributes = FontAttributes.Bold,
+            VerticalOptions = LayoutOptions.Center,
+            HorizontalOptions = LayoutOptions.End
+        };
+        Grid.SetColumn(percentLabel, 1);
+
+        labelRow.Children.Add(subjectLabel);
+        labelRow.Children.Add(percentLabel);
+
+        // Row 2: Progress bar
         var progressBorder = new Border
         {
             BackgroundColor = Color.FromArgb("#334155"),
-            StrokeShape = new RoundRectangle { CornerRadius = 6 },
-            HeightRequest = 12,
+            StrokeShape = new RoundRectangle { CornerRadius = 4 },
+            HeightRequest = 8,
             Padding = 0
         };
 
-        // Progress bar fill
         var progressFill = new BoxView
         {
-            BackgroundColor = Color.FromArgb(score.StatusColor),
-            CornerRadius = 6,
+            BackgroundColor = color,
+            CornerRadius = 4,
             HorizontalOptions = LayoutOptions.Start,
-            WidthRequest = score.ProgressValue * 100 // Max 100 genişlik
+            WidthRequest = Math.Max(5, percentage * 2) // Scale: 100% = 200px
         };
 
         progressBorder.Content = progressFill;
-        Grid.SetColumn(progressBorder, 1);
 
-        // Yüzde
-        var lblPercentage = new Label
-        {
-            Text = $"%{score.Percentage:F0}",
-            TextColor = Color.FromArgb(score.StatusColor),
-            FontSize = 12,
-            FontAttributes = FontAttributes.Bold,
-            VerticalOptions = LayoutOptions.Center,
-            Margin = new Thickness(8, 0, 0, 0)
-        };
-        Grid.SetColumn(lblPercentage, 2);
+        container.Children.Add(labelRow);
+        container.Children.Add(progressBorder);
 
-        grid.Children.Add(lblSubject);
-        grid.Children.Add(progressBorder);
-        grid.Children.Add(lblPercentage);
-
-        return grid;
+        return container;
     }
 
+    // ═══════════════════════════════════════════════════════════
+    // 3. PAYWALL LOGIC (PREMIUM CHECK)
+    // ═══════════════════════════════════════════════════════════
+    private void UpdatePremiumButtonState()
+    {
+        bool isPremium = Preferences.Get(PREF_KEY_PREMIUM, false);
+
+        if (isPremium)
+        {
+            BtnSolveWrongs.Text = $"✅ Yanlışları Çöz ({_result?.WrongCount ?? 0})";
+            BtnSolveWrongs.BackgroundColor = Color.FromArgb("#22c55e"); // Green
+        }
+        else
+        {
+            BtnSolveWrongs.Text = $"🔒 Yanlışları Çöz ({_result?.WrongCount ?? 0})";
+            BtnSolveWrongs.BackgroundColor = Color.FromArgb("#9333ea"); // Purple
+        }
+    }
+
+    private async void OnSolveWrongsClicked(object sender, EventArgs e)
+    {
+        bool isPremium = Preferences.Get(PREF_KEY_PREMIUM, false);
+
+        if (isPremium)
+        {
+            // ════════════════════════════════════════════════════
+            // PREMIUM USER: Proceed to solve wrongs
+            // ════════════════════════════════════════════════════
+            await DisplayAlert("Yakında", 
+                "Yanlışları çöz özelliği yakında aktif olacak.\nYanlış cevapladığınız sorular mini sınav olarak sunulacak.", 
+                "Tamam");
+            
+            // TODO: Navigate to WrongAnswersQuizPage
+            // await Shell.Current.GoToAsync($"{nameof(WrongAnswersQuizPage)}?CategoryId={_result.CategoryId}");
+        }
+        else
+        {
+            // ════════════════════════════════════════════════════
+            // FREE USER: Show paywall
+            // ════════════════════════════════════════════════════
+            bool wantsToBuy = await DisplayAlert(
+                "🔒 Kilitli Özellik",
+                "Yanlışlarını çözmek ve sınavı GARANTİLEMEK için VIP ol!\n\n" +
+                "✅ Yanlış cevaplarını tekrar çöz\n" +
+                "✅ Konu bazlı detaylı analiz\n" +
+                "✅ Reklamsız deneyim\n\n" +
+                "Fiyat: ₺49.99 (Ömür boyu)",
+                "Satın Al",
+                "Vazgeç");
+
+            if (wantsToBuy)
+            {
+                await HandlePurchase();
+            }
+        }
+    }
+
+    private async Task HandlePurchase()
+    {
+        // Ask for activation code (backdoor for support)
+        string? code = await DisplayPromptAsync(
+            "Aktivasyon Kodu",
+            "Satın alma kodunuz varsa girin.\n(Destek ekibinden aldıysanız)",
+            "Aktifleştir",
+            "İptal",
+            placeholder: "Kod girin...",
+            maxLength: 20);
+
+        if (string.IsNullOrWhiteSpace(code))
+        {
+            // No code entered - simulate store redirect
+            await DisplayAlert("Mağaza",
+                "Uygulama içi satın alma yakında aktif olacak.\n\nDestek için: support@srcsinavapp.com",
+                "Tamam");
+            return;
+        }
+
+        // ════════════════════════════════════════════════════
+        // BACKDOOR CHECK (For support purposes)
+        // ════════════════════════════════════════════════════
+        if (code.Trim().ToUpperInvariant() == PREMIUM_BACKDOOR_CODE)
+        {
+            // Activate premium
+            Preferences.Set(PREF_KEY_PREMIUM, true);
+            Preferences.Set("PremiumActivationDate", DateTime.UtcNow.ToString("o"));
+
+            // Update button
+            BtnSolveWrongs.Text = $"✅ Yanlışları Çöz ({_result?.WrongCount ?? 0})";
+            BtnSolveWrongs.BackgroundColor = Color.FromArgb("#22c55e");
+
+            await DisplayAlert("🎉 Başarılı!",
+                "VIP üyeliğiniz aktifleştirildi!\n\nArtık tüm premium özelliklere erişebilirsiniz.",
+                "Harika!");
+        }
+        else
+        {
+            await DisplayAlert("Geçersiz Kod",
+                "Girdiğiniz kod geçerli değil.\n\nLütfen destek ekibinden doğru kodu alın.",
+                "Tamam");
+        }
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // 4. EXAM STATE & NAVIGATION
+    // ═══════════════════════════════════════════════════════════
     private void CheckExamState()
     {
+        if (_result == null) return;
+
         var completedExamIds = _progressService.GetCompletedExamIds(_result.CategoryId);
 
 #if DEBUG
@@ -223,24 +481,17 @@ public partial class ResultPage : ContentPage
 #endif
 
         _allPracticeExamsCompleted = ExamCatalog.AreAllPracticeExamsCompleted(
-            _result.CategoryId, 
+            _result.CategoryId,
             completedExamIds);
-
-#if DEBUG
-        System.Diagnostics.Debug.WriteLine($"   All Practice Exams Completed: {_allPracticeExamsCompleted}");
-#endif
 
         UpdateAnalysisButtonState();
 
+        // Get next practice exam
         if (!_result.IsRealExam && !_result.IsImageExam)
         {
             _nextPracticeExamId = ExamCatalog.GetNextPracticeExamId(
-                _result.CategoryId, 
+                _result.CategoryId,
                 _result.ExamId);
-
-#if DEBUG
-            System.Diagnostics.Debug.WriteLine($"   Next Practice Exam: {_nextPracticeExamId ?? "null (son deneme)"}");
-#endif
         }
 
         UpdateNextExamButtonState();
@@ -257,7 +508,7 @@ public partial class ResultPage : ContentPage
         }
         else
         {
-            BtnAnalysis.IsEnabled = true;
+            BtnAnalysis.IsEnabled = true; // Still clickable to show message
             BtnAnalysis.BackgroundColor = Color.FromArgb("#64748b");
             BtnAnalysis.Text = "📊 Sınav Sonucu Değerlendirme";
             BtnAnalysis.Opacity = 0.6;
@@ -266,8 +517,11 @@ public partial class ResultPage : ContentPage
 
     private void UpdateNextExamButtonState()
     {
+        if (_result == null) return;
+
         if (_result.IsRealExam || _result.IsImageExam)
         {
+            BtnNextExam.IsVisible = false;
             return;
         }
 
@@ -277,9 +531,9 @@ public partial class ResultPage : ContentPage
         {
             BtnNextExam.IsVisible = true;
             BtnNextExam.IsEnabled = true;
-            BtnNextExam.Text = $"Yeni Denemeye Geç ▶";
-            BtnNextExam.BackgroundColor = _result.IsPassed 
-                ? Color.FromArgb("#22c55e")
+            BtnNextExam.Text = "Yeni Denemeye Geç ▶";
+            BtnNextExam.BackgroundColor = _result.IsPassed
+                ? Color.FromArgb(COLOR_SUCCESS)
                 : Color.FromArgb("#3b82f6");
         }
         else
@@ -288,83 +542,27 @@ public partial class ResultPage : ContentPage
         }
     }
 
-    private void SetupSpecialExamUI(string displayTitle)
-    {
-        if (_result.IsPassed)
-        {
-            LblMessage.Text = "🎉 Tebrikler! Sınavı Geçtiniz!";
-            LblSubMessage.Text = $"{displayTitle} tamamlandı!\n\nArtık gerçek sınava hazırsınız!";
-            LblScore.TextColor = Colors.LightGreen;
-
-            BtnRetry.IsVisible = false;
-            BtnNextExam.Text = "Ana Menüye Dön";
-            BtnNextExam.BackgroundColor = Color.FromArgb("#22c55e");
-            BtnNextExam.IsVisible = true;
-            BtnNextExam.Clicked -= OnNextExamClicked;
-            BtnNextExam.Clicked += OnGoHomeClicked;
-        }
-        else
-        {
-            LblMessage.Text = "❌ Maalesef Başarısız Oldunuz";
-            LblSubMessage.Text = $"70 puan barajını geçemediniz.\nDaha fazla pratik yapmanızı öneriyoruz.";
-            LblScore.TextColor = Colors.OrangeRed;
-
-            BtnRetry.IsVisible = true;
-            BtnRetry.Text = "Sınavı Tekrarla 🔄";
-            BtnNextExam.Text = "Ana Menüye Dön";
-            BtnNextExam.BackgroundColor = Color.FromArgb("#475569");
-            BtnNextExam.IsVisible = true;
-            BtnNextExam.Clicked -= OnNextExamClicked;
-            BtnNextExam.Clicked += OnGoHomeClicked;
-        }
-    }
-
-    private void SetupPracticeExamUI(string displayTitle)
-    {
-        if (_result.IsPassed)
-        {
-            LblMessage.Text = "Tebrikler! 🎉";
-            LblSubMessage.Text = $"{displayTitle} başarıyla tamamlandı.\nDiğer deneme sınavına geçebilirsiniz.";
-            LblScore.TextColor = Colors.LightGreen;
-            BtnRetry.IsVisible = false;
-        }
-        else
-        {
-            LblMessage.Text = "Maalesef Kaldınız";
-            LblSubMessage.Text = $"70 puan barajını geçemediniz.\nSınavı tekrar etmenizi tavsiye ederiz.";
-            LblScore.TextColor = Colors.OrangeRed;
-            BtnRetry.IsVisible = true;
-            BtnRetry.Text = "Sınavı Tekrarla 🔄";
-        }
-    }
-
     // ═══════════════════════════════════════════════════════════
     // EVENT HANDLERS
     // ═══════════════════════════════════════════════════════════
-
-    private void OnDismissCriticalClicked(object sender, EventArgs e)
+    
+    /// <summary>
+    /// Dismiss critical warning frame
+    /// </summary>
+    private void OnDismissCriticalClicked(object? sender, EventArgs e)
     {
-        // Kritik uyarıyı kapat
         CriticalFrame.IsVisible = false;
     }
 
-    private async void OnSolveWrongsClicked(object sender, EventArgs e)
+    /// <summary>
+    /// Retry the same exam
+    /// </summary>
+    private async void OnRetryClicked(object? sender, EventArgs e)
     {
-        // Premium kontrolü
-        if (!_premiumService.IsUserPremium)
-        {
-            await _premiumService.ShowUpsellPopupAsync(PremiumService.Features.WRONG_ANSWERS);
-            return;
-        }
+        if (_result == null) return;
 
-        // TODO: Yanlışları çöz sayfasına git
-        await DisplayAlert("Yakında", "Yanlışları çöz özelliği yakında aktif olacak.", "Tamam");
-    }
-
-    private async void OnRetryClicked(object sender, EventArgs e)
-    {
         double pointsPerQuestion = _result.IsRealExam ? 2.5 : (_result.IsImageExam ? 6.67 : 5);
-        
+
         await Shell.Current.GoToAsync($"../{nameof(QuizPage)}",
             new Dictionary<string, object>
             {
@@ -377,16 +575,22 @@ public partial class ResultPage : ContentPage
             });
     }
 
-    private async void OnAnalysisClicked(object sender, EventArgs e)
+    /// <summary>
+    /// Show analysis page
+    /// </summary>
+    private async void OnAnalysisClicked(object? sender, EventArgs e)
     {
         if (!_allPracticeExamsCompleted)
         {
             await DisplayAlert(
                 "Değerlendirme Kullanılamıyor",
-                "Değerlendirmeyi görmek için bu SRC setindeki tüm denemeleri tamamlamalısınız.",
+                "Tüm deneme sınavlarını tamamlamadan genel değerlendirme yapamazsınız.\n\n" +
+                "Önce bu kategorideki tüm denemeleri bitirin.",
                 "Tamam");
             return;
         }
+
+        if (_result == null) return;
 
         await Shell.Current.GoToAsync($"{nameof(AnalysisPage)}",
             new Dictionary<string, object>
@@ -395,8 +599,13 @@ public partial class ResultPage : ContentPage
             });
     }
 
-    private async void OnNextExamClicked(object sender, EventArgs e)
+    /// <summary>
+    /// Navigate to next practice exam
+    /// </summary>
+    private async void OnNextExamClicked(object? sender, EventArgs e)
     {
+        if (_result == null) return;
+
         if (string.IsNullOrEmpty(_nextPracticeExamId))
         {
             await Navigation.PopToRootAsync();
@@ -418,7 +627,10 @@ public partial class ResultPage : ContentPage
             });
     }
 
-    private async void OnGoHomeClicked(object sender, EventArgs e)
+    /// <summary>
+    /// Navigate to home
+    /// </summary>
+    private async void OnGoHomeClicked(object? sender, EventArgs e)
     {
         await Navigation.PopToRootAsync();
     }
