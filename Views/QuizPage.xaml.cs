@@ -9,6 +9,7 @@ namespace SrcSinavUygulamasi.Views;
 [QueryProperty(nameof(IsImageExam), "IsImageExam")]
 [QueryProperty(nameof(PointsPerQuestion), "PointsPerQuestion")]
 [QueryProperty(nameof(IsMiniExam), "IsMiniExam")]
+[QueryProperty(nameof(MiniExamQuestionIds), "MiniExamQuestionIds")]
 public partial class QuizPage : ContentPage
 {
     private QuizViewModel _viewModel;
@@ -19,6 +20,7 @@ public partial class QuizPage : ContentPage
     private bool _isImageExam = false;
     private bool _isMiniExam = false;
     private double _pointsPerQuestion = 5;
+    private string _miniExamQuestionIds = "";
 
     public string KategoriId
     {
@@ -90,6 +92,19 @@ public partial class QuizPage : ContentPage
         }
     }
 
+    /// <summary>
+    /// Mini sınav için spesifik soru ID'leri (virgülle ayrılmış)
+    /// Örn: "src1_pratik_q001,src1_pratik_q005,src1_pratik_q012"
+    /// </summary>
+    public string MiniExamQuestionIds
+    {
+        set
+        {
+            _miniExamQuestionIds = value ?? "";
+            TryLoadExam();
+        }
+    }
+
     public QuizPage()
     {
         InitializeComponent();
@@ -102,7 +117,17 @@ public partial class QuizPage : ContentPage
         // Tüm parametreler ayarlandığında yükle
         if (!string.IsNullOrEmpty(_kategoriId))
         {
-            _viewModel.LoadExam(_kategoriId, _examIndex, _totalExams, _isRealExam, _isImageExam, _pointsPerQuestion, _isMiniExam);
+            // Mini sınav için spesifik soru ID'leri varsa onları geçir
+            List<string>? specificQuestionIds = null;
+            if (_isMiniExam && !string.IsNullOrEmpty(_miniExamQuestionIds))
+            {
+                specificQuestionIds = _miniExamQuestionIds
+                    .Split(',', StringSplitOptions.RemoveEmptyEntries)
+                    .Select(id => id.Trim())
+                    .ToList();
+            }
+
+            _viewModel.LoadExam(_kategoriId, _examIndex, _totalExams, _isRealExam, _isImageExam, _pointsPerQuestion, _isMiniExam, specificQuestionIds);
         }
     }
 }

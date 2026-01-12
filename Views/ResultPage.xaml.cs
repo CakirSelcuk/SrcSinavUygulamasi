@@ -383,25 +383,51 @@ public partial class ResultPage : ContentPage
 
     private async void OnSolveWrongsClicked(object sender, EventArgs e)
     {
+        if (_result == null) return;
+
         bool isPremium = Preferences.Get(PREF_KEY_PREMIUM, false);
 
         if (isPremium)
         {
-            // ════════════════════════════════════════════════════
-            // PREMIUM USER: Proceed to solve wrongs
-            // ════════════════════════════════════════════════════
-            await DisplayAlert("Yakında", 
-                "Yanlışları çöz özelliği yakında aktif olacak.\nYanlış cevapladığınız sorular mini sınav olarak sunulacak.", 
-                "Tamam");
-            
-            // TODO: Navigate to WrongAnswersQuizPage
-            // await Shell.Current.GoToAsync($"{nameof(WrongAnswersQuizPage)}?CategoryId={_result.CategoryId}");
+            // ════════════════════════════════════════════════════════
+            // PREMIUM USER: Yanlışları Çöz - Mini Sınav navigasyonu
+            // ════════════════════════════════════════════════════════
+            // Bu sınavdaki yanlış soru ID'lerini al
+            var examProgress = _progressService.GetExamProgress(_result.CategoryId, _result.ExamId);
+            if (examProgress == null || examProgress.WrongAnswers.Count == 0)
+            {
+                await DisplayAlert("Bilgi", "Bu sınavda yanlış cevabınız bulunmuyor.", "Tamam");
+                return;
+            }
+
+            // Yanlış soru ID'lerini virgülle ayrılmış string olarak hazırla
+            var wrongQuestionIds = string.Join(",", examProgress.WrongAnswers.Keys);
+
+#if DEBUG
+            System.Diagnostics.Debug.WriteLine($"📝 Yanlışları Çöz navigasyonu:");
+            System.Diagnostics.Debug.WriteLine($"   CategoryId: {_result.CategoryId}");
+            System.Diagnostics.Debug.WriteLine($"   Wrong IDs: {wrongQuestionIds}");
+#endif
+
+            // Mini sınav sayfasına git
+            await Shell.Current.GoToAsync($"{nameof(QuizPage)}",
+                new Dictionary<string, object>
+                {
+                    { "KategoriId", _result.CategoryId },
+                    { "ExamIndex", "0" },
+                    { "TotalExams", "1" },
+                    { "IsRealExam", "False" },
+                    { "IsImageExam", "False" },
+                    { "PointsPerQuestion", "6.67" },
+                    { "IsMiniExam", "True" },
+                    { "MiniExamQuestionIds", wrongQuestionIds }
+                });
         }
         else
         {
-            // ════════════════════════════════════════════════════
+            // ════════════════════════════════════════════════════════
             // FREE USER: Show paywall
-            // ════════════════════════════════════════════════════
+            // ════════════════════════════════════════════════════════
             bool wantsToBuy = await DisplayAlert(
                 "🔒 Kilitli Özellik",
                 "Yanlışlarını çözmek ve sınavı GARANTİLEMEK için VIP ol!\n\n" +
@@ -434,7 +460,7 @@ public partial class ResultPage : ContentPage
         {
             // No code entered - simulate store redirect
             await DisplayAlert("Mağaza",
-                "Uygulama içi satın alma yakında aktif olacak.\n\nDestek için: support@srcsinavapp.com",
+                "Uygulama içi satın alma yakında aktif olacak.\n\nDestek için: srcsinav.destek@gmail.com",
                 "Tamam");
             return;
         }
@@ -484,8 +510,6 @@ public partial class ResultPage : ContentPage
             _result.CategoryId,
             completedExamIds);
 
-        UpdateAnalysisButtonState();
-
         // Get next practice exam
         if (!_result.IsRealExam && !_result.IsImageExam)
         {
@@ -497,23 +521,7 @@ public partial class ResultPage : ContentPage
         UpdateNextExamButtonState();
     }
 
-    private void UpdateAnalysisButtonState()
-    {
-        if (_allPracticeExamsCompleted)
-        {
-            BtnAnalysis.IsEnabled = true;
-            BtnAnalysis.BackgroundColor = Color.FromArgb("#2563eb");
-            BtnAnalysis.Text = "📊 Sınav Analizimi Göster";
-            BtnAnalysis.Opacity = 1.0;
-        }
-        else
-        {
-            BtnAnalysis.IsEnabled = true; // Still clickable to show message
-            BtnAnalysis.BackgroundColor = Color.FromArgb("#64748b");
-            BtnAnalysis.Text = "📊 Sınav Sonucu Değerlendirme";
-            BtnAnalysis.Opacity = 0.6;
-        }
-    }
+
 
     private void UpdateNextExamButtonState()
     {

@@ -53,6 +53,7 @@ namespace SrcSinavUygulamasi.ViewModels
         private bool _isImageExam = false;
         private bool _isMiniExam = false;
         private double _pointsPerQuestion = 5;
+        private List<string>? _specificQuestionIds = null;  // Mini sınav için spesifik soru ID'leri
 
         private QuestionService _questionService = new QuestionService();
         private ExamProgressService _progressService = new ExamProgressService();
@@ -74,7 +75,7 @@ namespace SrcSinavUygulamasi.ViewModels
             ThemeColor = Color.FromArgb("#0f172a");
         }
 
-        public async void LoadExam(string categoryId, int examIndex, int totalExams, bool isRealExam = false, bool isImageExam = false, double pointsPerQuestion = 5, bool isMiniExam = false)
+        public async void LoadExam(string categoryId, int examIndex, int totalExams, bool isRealExam = false, bool isImageExam = false, double pointsPerQuestion = 5, bool isMiniExam = false, List<string>? specificQuestionIds = null)
         {
             _categoryId = categoryId?.ToLower() ?? "src3";
             _examIndex = examIndex;
@@ -83,6 +84,7 @@ namespace SrcSinavUygulamasi.ViewModels
             _isImageExam = isImageExam;
             _isMiniExam = isMiniExam;
             _pointsPerQuestion = pointsPerQuestion;
+            _specificQuestionIds = specificQuestionIds;
             _correctCount = 0;
             _wrongCount = 0;
             Score = 0;
@@ -196,13 +198,29 @@ namespace SrcSinavUygulamasi.ViewModels
                     else if (_isMiniExam)
                     {
                         // ═══════════════════════════════════════════════════════════
-                        // MINI SINAV: 5/5/5/5 kuralı UYGULANMAZ
-                        // Yanlışlardan oluşturulur, farklı mantık
+                        // MINI SINAV: Spesifik ID'ler verilmişse onları kullan
+                        // Verilmemişse rastgele 15 soru seç
                         // ═══════════════════════════════════════════════════════════
-                        _examQuestions = gelenSorular
-                            .OrderBy(x => Guid.NewGuid())
-                            .Take(Math.Min(15, gelenSorular.Count))
-                            .ToList();
+                        if (_specificQuestionIds != null && _specificQuestionIds.Count > 0)
+                        {
+                            // Spesifik ID'lere göre filtrele
+                            var specificIdSet = new HashSet<string>(_specificQuestionIds);
+                            _examQuestions = gelenSorular
+                                .Where(q => specificIdSet.Contains(q.Id))
+                                .OrderBy(x => Guid.NewGuid())
+                                .ToList();
+#if DEBUG
+                            System.Diagnostics.Debug.WriteLine($"📝 Mini sınav: {_specificQuestionIds.Count} ID verildi, {_examQuestions.Count} soru bulundu");
+#endif
+                        }
+                        else
+                        {
+                            // Rastgele 15 soru
+                            _examQuestions = gelenSorular
+                                .OrderBy(x => Guid.NewGuid())
+                                .Take(Math.Min(15, gelenSorular.Count))
+                                .ToList();
+                        }
                     }
                     else
                     {
