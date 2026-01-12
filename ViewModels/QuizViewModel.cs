@@ -56,6 +56,7 @@ namespace SrcSinavUygulamasi.ViewModels
 
         private QuestionService _questionService = new QuestionService();
         private ExamProgressService _progressService = new ExamProgressService();
+        private BalancedExamBuilder _examBuilder = new BalancedExamBuilder();
         private string _examId = "";
 
         private Dictionary<string, (string title, Color color)> _categoryInfo = new()
@@ -90,26 +91,26 @@ namespace SrcSinavUygulamasi.ViewModels
             
             if (_isMiniExam)
             {
-                ExamTitle = $"{_categoryTitle} - Mini Sınav";
-                _examId = "mini_exam";
+                _examId = ExamCatalog.MINI_EXAM_ID;
+                ExamTitle = ExamCatalog.GetDisplayTitle(_categoryId, _examId);
                 ThemeColor = Color.FromArgb("#8B5CF6");  // Mor rengi
             }
             else if (_isRealExam)
             {
-                ExamTitle = $"{_categoryTitle} - Gerçek Sınav";
-                _examId = "real_exam";
+                _examId = ExamCatalog.REAL_EXAM_ID;
+                ExamTitle = ExamCatalog.GetDisplayTitle(_categoryId, _examId);
                 ThemeColor = Color.FromArgb("#FFD700");  // Altın rengi
             }
             else if (_isImageExam)
             {
-                ExamTitle = $"{_categoryTitle} - Resimli Sorular";
-                _examId = "image_exam";
+                _examId = ExamCatalog.IMAGE_EXAM_ID;
+                ExamTitle = ExamCatalog.GetDisplayTitle(_categoryId, _examId);
                 ThemeColor = Color.FromArgb("#E91E63");  // Pembe rengi
             }
             else
             {
-                ExamTitle = $"{_categoryTitle} - Deneme {_examIndex + 1}";
-                _examId = $"deneme_{_examIndex + 1}";
+                _examId = ExamCatalog.GetPracticeExamId(_examIndex);
+                ExamTitle = ExamCatalog.GetDisplayTitle(_categoryId, _examId);
             }
 
             await LoadQuestionsForExam();
@@ -192,32 +193,46 @@ namespace SrcSinavUygulamasi.ViewModels
                             .OrderBy(x => Guid.NewGuid())
                             .ToList();
                     }
+                    else if (_isMiniExam)
+                    {
+                        // ═══════════════════════════════════════════════════════════
+                        // MINI SINAV: 5/5/5/5 kuralı UYGULANMAZ
+                        // Yanlışlardan oluşturulur, farklı mantık
+                        // ═══════════════════════════════════════════════════════════
+                        _examQuestions = gelenSorular
+                            .OrderBy(x => Guid.NewGuid())
+                            .Take(Math.Min(15, gelenSorular.Count))
+                            .ToList();
+                    }
                     else
                     {
-                        // Deneme sınavında 20'şerli gruplara böl
-                        int questionsPerExam = 20;
-                        int startIndex = _examIndex * questionsPerExam;
-                        int count = Math.Min(questionsPerExam, gelenSorular.Count - startIndex);
-
-                        if (startIndex < gelenSorular.Count)
+                        // ═══════════════════════════════════════════════════════════
+                        // ANA DENEME: BalancedExamBuilder ile 5A/5B/5C/5D seçimi
+                        // Deterministik - aynı deneme = aynı sorular
+                        // ═══════════════════════════════════════════════════════════
+                        var balancedResult = _examBuilder.BuildExam(gelenSorular, _categoryId, _examIndex);
+                        
+                        if (!balancedResult.IsValid)
                         {
-                            _examQuestions = gelenSorular
-                                .Skip(startIndex)
-                                .Take(count)
-                                .OrderBy(x => Guid.NewGuid())
-                                .ToList();
+                            // FAIL FAST: Havuzda yeterli soru yok
+                            await Application.Current.MainPage.DisplayAlert(
+                                "Sınav Yüklenemedi",
+                                balancedResult.ErrorMessage,
+                                "Tamam");
+                            
+                            await Application.Current.MainPage.Navigation.PopToRootAsync();
+                            return;
                         }
-                        else
-                        {
-                            _examQuestions = new List<QuestionModel>();
-                        }
+                        
+                        _examQuestions = balancedResult.Questions;
                     }
 
                     // ═══════════════════════════════════════════════════════════
-                    // FAIL FAST: 20 soruluk ana sınavlarda şık dağılımı kontrolü
+                    // FAIL FAST: 20 soruluk ana sınavlarda şık dağılımı doğrula
+                    // (BalancedExamBuilder zaten 5/5/5/5 garanti eder ama double-check)
                     // Mini sınavlarda bu kural UYGULANMAZ
                     // ═══════════════════════════════════════════════════════════
-                    if (_examQuestions.Count == 20 && !_isMiniExam)
+                    if (_examQuestions.Count == 20 && !_isMiniExam && !_isRealExam && !_isImageExam)
                     {
                         if (!_questionService.ValidateSikDagilimi(_examQuestions))
                         {
@@ -227,7 +242,6 @@ namespace SrcSinavUygulamasi.ViewModels
                                 errorMsg,
                                 "Tamam");
                             
-                            // Ana menüye geri dön
                             await Application.Current.MainPage.Navigation.PopToRootAsync();
                             return;
                         }
@@ -339,7 +353,9 @@ namespace SrcSinavUygulamasi.ViewModels
                 ExamIndex = _examIndex,
                 TotalExams = _totalExams,
                 CategoryId = _categoryId,
-                IsRealExam = _isRealExam || _isImageExam
+                ExamId = _examId,
+                IsRealExam = _isRealExam,
+                IsImageExam = _isImageExam
             };
             await Application.Current.MainPage.Navigation.PushAsync(new ResultPage(resultModel));
         }
@@ -456,7 +472,9 @@ namespace SrcSinavUygulamasi.ViewModels
                     ExamIndex = _examIndex,
                     TotalExams = _totalExams,
                     CategoryId = _categoryId,
-                    IsRealExam = _isRealExam || _isImageExam  // Resimli de özel sınav gibi davransın
+                    ExamId = _examId,
+                    IsRealExam = _isRealExam,
+                    IsImageExam = _isImageExam
                 };
                 await Application.Current.MainPage.Navigation.PushAsync(new ResultPage(resultModel));
             }

@@ -72,9 +72,10 @@ namespace SrcSinavUygulamasi.ViewModels
 
                 if (totalQuestions > 0)
                 {
-                    // 20'şerli gruplara böl
+                    // 20'şerli gruplara böl, maksimum 5 deneme sınavı
                     int questionsPerExam = 20;
-                    int examCount = (int)Math.Ceiling((double)totalQuestions / questionsPerExam);
+                    int maxExamCount = 5; // Sabit 5 deneme sınavı
+                    int examCount = Math.Min(maxExamCount, (int)Math.Ceiling((double)totalQuestions / questionsPerExam));
 
                     for (int i = 0; i < examCount; i++)
                     {
@@ -150,6 +151,12 @@ namespace SrcSinavUygulamasi.ViewModels
 
                 // Tüm sınavlar tamamlandı mı kontrol et
                 ShowAnalysisButton = _progressService.AreAllExamsCompleted(_categoryId, _expectedExamIds);
+
+                // ExamCatalog'a kaydet (diğer sayfalarda kullanılacak)
+                int practiceExamCount = Exams.Count(e => !e.IsRealExam && !e.IsImageExam && e.QuestionCount > 0);
+                bool hasImageExam = Exams.Any(e => e.IsImageExam);
+                bool hasRealExam = Exams.Any(e => e.IsRealExam);
+                ExamCatalog.RegisterCategoryExams(_categoryId, practiceExamCount, hasImageExam, hasRealExam);
 
                 // Hazırlık durumu
                 var readiness = _progressService.GetReadinessStatus(_categoryId);

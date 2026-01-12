@@ -1,1102 +1,1124 @@
 ﻿[
     {
-        "soru":  "SRC 1 belgesine sahip sürücü aşağıdakilerden hangisini yapmaya yetkilidir?",
-        "siklar":  [
-                       "Sadece yurtiçi yolcu",
-                       "Uluslararası eşya",
-                       "Tehlikeli madde",
-                       "Yurtiçi+uluslararası yolcu"
-                   ],
-        "dogruCevap":  "D",
-        "id":  "src1_pratik_q001"
-    },
-    {
-        "soru":  "SRC 1 belgesi alan sürücü, mevzuat gereği hangi belgeyi de almış sayılır?",
-        "siklar":  [
-                       "SRC 2",
-                       "SRC 3",
-                       "SRC 4",
-                       "SRC 5"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src1_pratik_q002"
-    },
-    {
-        "soru":  "Tarifeli yolcu taşımacılığında bilet iadesi için hareketten en az kaç saat önce başvuru gerekir?",
-        "siklar":  [
-                       "24",
-                       "12",
-                       "6",
-                       "48"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src1_pratik_q003"
-    },
-    {
-        "soru":  "Hareketten 12 saat öncesine kadar yapılan başvuruda yolcuya verilmesi zorunlu hak hangisidir?",
-        "siklar":  [
-                       "Tam iade",
-                       "%50 kesinti",
-                       "6 ay açık bilet",
-                       "İade yok"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q004"
-    },
-    {
-        "soru":  "Hareketten 24 saat önce yapılan başvuruda uygulanacak işlem hangisidir?",
-        "siklar":  [
-                       "Tam iade",
-                       "Açık bilet",
-                       "İade yok",
-                       "%50 kesinti"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src1_pratik_q005"
-    },
-    {
-        "soru":  "Otobüslerde ücretsiz bagaj hakkı (ağırlık) kaç kg\u0027dır?",
-        "siklar":  [
-                       "30",
-                       "25",
-                       "20",
-                       "15"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src1_pratik_q006"
-    },
-    {
-        "soru":  "Aşağıdakilerden hangisi ücretsiz bagaj hakkı için doğru ifadedir?",
-        "siklar":  [
-                       "Sınırsızdır",
-                       "30 kg\u0027ı geçemez",
-                       "10 kg\u0027ı geçemez",
-                       "Sadece el bagajı"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q007"
-    },
-    {
-        "soru":  "6–12 yaş arası için bilet ücreti üzerinden zorunlu indirim oranı hangisidir?",
-        "siklar":  [
-                       "%10",
-                       "%20",
-                       "%30",
-                       "%50"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q008"
-    },
-    {
-        "soru":  "0–6 yaş çocuklar kucakta seyahat şartıyla hangi ücrete tabidir?",
-        "siklar":  [
-                       "Tam ücret",
-                       "Ücretsiz",
-                       "%30 indirim",
-                       "%50 indirim"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q009"
-    },
-    {
-        "soru":  "%40 ve üzeri engelli kimlik kartı olan yolcuya uygulanacak indirim hangisidir?",
-        "siklar":  [
-                       "%20",
-                       "%30",
-                       "%40",
-                       "%50"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q010"
-    },
-    {
-        "soru":  "Evcil hayvanların (kedi-köpek-kuş) otobüste taşınmasında doğru uygulama hangisidir?",
-        "siklar":  [
-                       "Kucakta serbest",
-                       "Koridorda",
-                       "Özel kafeste bagajda",
-                       "Şoför mahallinde"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q011"
-    },
-    {
-        "soru":  "Uluslararası taşımalarda trafik sigortasının yurtdışında da geçerliliğini sağlayan belge hangisidir?",
-        "siklar":  [
-                       "A.TR",
-                       "TIR Karnesi",
-                       "Yeşil Kart",
-                       "CMR"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q012"
-    },
-    {
-        "soru":  "Yolcuları kaza halinde teminat altına alan sigorta türü hangisidir?",
-        "siklar":  [
-                       "Kasko",
-                       "Koltuk Ferdi Kaza",
-                       "Yeşil Kart",
-                       "Nakliyat"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q013"
-    },
-    {
-        "soru":  "Psikoteknik raporunun yenilenme süresi kaç yıldır?",
-        "siklar":  [
-                       "2",
-                       "3",
-                       "4",
-                       "5"
-                   ],
-        "dogruCevap":  "D",
-        "id":  "src1_pratik_q014"
-    },
-    {
-        "soru":  "AETR\u0027ye göre normal günlük sürüş süresi en fazla kaç saattir?",
-        "siklar":  [
-                       "8",
-                       "9",
-                       "10",
-                       "11"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q015"
-    },
-    {
-        "soru":  "Günlük 9 saatlik sürüş süresi haftada en fazla iki kez kaç saate çıkarılabilir?",
-        "siklar":  [
-                       "10",
-                       "11",
-                       "12",
-                       "13"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src1_pratik_q016"
-    },
-    {
-        "soru":  "AETR\u0027ye göre haftalık toplam sürüş süresi en fazla kaç saattir?",
-        "siklar":  [
-                       "45",
-                       "56",
-                       "60",
-                       "90"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q017"
-    },
-    {
-        "soru":  "AETR\u0027ye göre iki haftalık toplam sürüş süresi en fazla kaç saattir?",
-        "siklar":  [
-                       "80",
-                       "90",
-                       "96",
-                       "100"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q018"
-    },
-    {
-        "soru":  "4,5 saat araç kullanımından sonra verilmesi gereken asgari mola süresi kaç dakikadır?",
-        "siklar":  [
-                       "30",
-                       "45",
-                       "60",
-                       "15"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q019"
-    },
-    {
-        "soru":  "45 dakikalık mola aşağıdaki hangi şekilde parçalı kullanılabilir?",
-        "siklar":  [
-                       "20+25 (sırasız)",
-                       "15+30 (sırayla)",
-                       "10+35 (sırasız)",
-                       "30+15 (tek parça şart)"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q020"
-    },
-    {
-        "soru":  "Günlük kesintisiz dinlenme süresi normalde en az kaç saattir?",
-        "siklar":  [
-                       "8",
-                       "9",
-                       "10",
-                       "11"
-                   ],
-        "dogruCevap":  "D",
-        "id":  "src1_pratik_q021"
-    },
-    {
-        "soru":  "Günlük dinlenme süresi 11 saatten 9 saate indirilebilirse, haftada en fazla kaç kez yapılabilir?",
-        "siklar":  [
-                       "1",
-                       "2",
-                       "3",
-                       "4"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q022"
-    },
-    {
-        "soru":  "Aşağıdakilerden hangisi \"mola\" ile \"dinlenme\" arasındaki doğru ayrımdır?",
-        "siklar":  [
-                       "Mola = gün sonu, Dinlenme = sürüş arası",
-                       "Mola = sürüş arası, Dinlenme = günlük/haftalık",
-                       "İkisi aynı",
-                       "Dinlenme sadece 15 dk\u0027dır"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q023"
-    },
-    {
-        "soru":  "Sürücü 4,5 saat dolmadan mola verirse doğru yaklaşım hangisidir?",
-        "siklar":  [
-                       "Mola sayılmaz",
-                       "45 dk toplam mola kuralına sayılabilir",
-                       "Sadece 60 dk olursa sayılır",
-                       "Sadece gece sayılır"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q024"
-    },
-    {
-        "soru":  "2 sürücülü (ekip) kullanımda günlük dinlenme kuralı için doğru ifade hangisidir?",
-        "siklar":  [
-                       "Dinlenme gerekmez",
-                       "Dinlenme süresi artar",
-                       "Dinlenme düzeni farklı uygulanır",
-                       "Haftalık sürüş 90\u0027a çıkar"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q025"
-    },
-    {
-        "soru":  "Takograf kayıtlarının amacı aşağıdakilerden hangisidir?",
-        "siklar":  [
-                       "Yakıt tüketimi",
-                       "Sürüş–mola–dinlenme sürelerinin denetimi",
-                       "Yolcu sayısı",
-                       "Bilet kesimi"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q026"
-    },
-    {
-        "soru":  "Takograf kullanımı ile ilgili en doğru ifade hangisidir?",
-        "siklar":  [
-                       "İsteğe bağlıdır",
-                       "Sadece şehir içinde zorunludur",
-                       "Denetime esas kayıt oluşturur",
-                       "Sadece minibüste gerekir"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q027"
-    },
-    {
-        "soru":  "Tarifeli taşımacılıkta \"açık bilet\" geçerlilik süresi kaç aydır?",
-        "siklar":  [
-                       "1",
-                       "3",
-                       "6",
-                       "12"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q028"
-    },
-    {
-        "soru":  "Aşağıdakilerden hangisi yolcu taşımacılığında \"tarifeli\" taşımayı tanımlar?",
-        "siklar":  [
-                       "Tur/grup taşıması",
-                       "Düzenli sefer–saat–hat",
-                       "Sadece VIP taşıma",
-                       "Personel servisi"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q029"
-    },
-    {
-        "soru":  "\"Tarifesiz\" yolcu taşımacılığına örnek hangisidir?",
-        "siklar":  [
-                       "Her gün 09:00 İstanbul-Ankara",
-                       "Grup tur taşımacılığı",
-                       "Terminalden biletli sefer",
-                       "Hat bazlı düzenli sefer"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q030"
-    },
-    {
-        "soru":  "Büyük otobüs kullanacak ticari sürücü için alt yaş sınırı kaçtır?",
-        "siklar":  [
-                       "22",
-                       "23",
-                       "24",
-                       "26"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q031"
-    },
-    {
-        "soru":  "Ticari yolcu taşımacılığında üst yaş sınırı (bu yaştan gün almamış olmak) hangisidir?",
-        "siklar":  [
-                       "60",
-                       "63",
-                       "65",
-                       "66"
-                   ],
-        "dogruCevap":  "D",
-        "id":  "src1_pratik_q032"
-    },
-    {
-        "soru":  "SRC belgesi olmadan araç kullanan sürücüye ceza konusu sorulacaksa en \"güncelden bağımsız\" doğru yaklaşım hangisidir?",
-        "siklar":  [
-                       "Kesin TL tutarı",
-                       "Kime daha fazla yansır–işleten sorumluluğu",
-                       "Sadece yolcuya",
-                       "Ceza yok"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q033"
-    },
-    {
-        "soru":  "SRC belgesi olmadan ticari araç kullandırmanın sorumluluğu daha çok kime yansır?",
-        "siklar":  [
-                       "Yolcu",
-                       "Gönderici",
-                       "İşleten/araç sahibi",
-                       "Terminal"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q034"
-    },
-    {
-        "soru":  "Aşağıdakilerden hangisi sürücüde aranan adli sicil şartı değildir?",
-        "siklar":  [
-                       "Terör suçu işlememek",
-                       "Uyuşturucu suçu işlememek",
-                       "Kaçakçılık yapmamış olmak",
-                       "İcra borcu olmamak"
-                   ],
-        "dogruCevap":  "D",
-        "id":  "src1_pratik_q035"
-    },
-    {
-        "soru":  "Gümrükte \"Kırmızı Hat\" neyi ifade eder?",
-        "siklar":  [
-                       "Kontrol yok",
-                       "Sadece belge",
-                       "Fiziki muayene ağırlıklı kontrol",
-                       "Sonradan kontrol"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q036"
-    },
-    {
-        "soru":  "\"Sarı Hat\" hangi kontrol türünü ifade eder?",
-        "siklar":  [
-                       "Sadece belge kontrolü",
-                       "Kontrol yok",
-                       "Sonradan kontrol",
-                       "Transit hattı"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src1_pratik_q037"
-    },
-    {
-        "soru":  "\"Mavi Hat\" genel olarak neyi ifade eder?",
-        "siklar":  [
-                       "Fiziki muayene",
-                       "Belge kontrol",
-                       "Sonradan kontrol (belge/veri)",
-                       "Hiç kontrol"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q038"
-    },
-    {
-        "soru":  "\"Yeşil Hat\" temel olarak neyi ifade eder?",
-        "siklar":  [
-                       "Kontrol yok (beyan esaslı)",
-                       "Mutlaka fiziki muayene",
-                       "Sadece belge",
-                       "Sadece X-ray"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src1_pratik_q039"
-    },
-    {
-        "soru":  "\"Supalan\" işlemi aşağıdakilerden hangisidir?",
-        "siklar":  [
-                       "Eşyanın antrepoya alınması",
-                       "Eşyanın indirilmeden taşıt üzerinde muayene–teslimi",
-                       "Kabın yenilenmesi",
-                       "Transit beyan"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q040"
-    },
-    {
-        "soru":  "\"Elleçleme\" için doğru ifade hangisidir?",
-        "siklar":  [
-                       "Eşyanın niteliklerini değiştiren imalat",
-                       "Eşyanın niteliğini bozmayacak istif–yer değişimi–kabın yenilenmesi",
-                       "Gümrük vergisi ödeme",
-                       "Kaçak sokma"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q041"
-    },
-    {
-        "soru":  "Uluslararası yolcu taşımacılığında sürücünün yanında bulunması gereken en temel belge grubu hangisidir?",
-        "siklar":  [
-                       "Sadece SRC",
-                       "SRC + ehliyet + gerekli taşıma belgeleri",
-                       "Sadece pasaport",
-                       "Sadece bilet koçanı"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q042"
-    },
-    {
-        "soru":  "Aşağıdakilerden hangisi \"yolcu hakları\" kapsamında en çok denetlenen başlıklardandır?",
-        "siklar":  [
-                       "Araç rengi",
-                       "Biletleme/koltuklandırma/ücret iadesi",
-                       "Jant tipi",
-                       "Cam filmi markası"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q043"
-    },
-    {
-        "soru":  "Tarifeli seferde yolcunun koltuk numarası ile seyahat etmesi hangi amaca hizmet eder?",
-        "siklar":  [
-                       "Hız",
-                       "Güvenlik ve kayıt düzeni",
-                       "Motor ömrü",
-                       "Yakıt tasarrufu"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q044"
-    },
-    {
-        "soru":  "Aşağıdakilerden hangisi otobüste emniyet–düzen açısından yanlış davranıştır?",
-        "siklar":  [
-                       "Koridoru boş bırakmak",
-                       "Acil çıkışları kapatmak",
-                       "Bagajı bagaja koymak",
-                       "Koltuk numarasına uymak"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q045"
-    },
-    {
-        "soru":  "Yolcu taşımacılığında \"tarife\" kavramı en çok neyi ifade eder?",
-        "siklar":  [
-                       "Lastik basıncı",
-                       "Sefer saatleri–ücret–hat düzeni",
-                       "Akaryakıt fişi",
-                       "Personel vardiyası"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q046"
-    },
-    {
-        "soru":  "AETR\u0027de \"sürüş süresi\" hangisini ifade eder?",
-        "siklar":  [
-                       "Kontak açık olduğu her an",
-                       "Aracın hareket halinde olduğu kayıtlı süre",
-                       "Yolcunun bindiği süre",
-                       "Terminalde bekleme"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q047"
-    },
-    {
-        "soru":  "AETR\u0027de \"diğer işler\" (work) örneği hangisidir?",
-        "siklar":  [
-                       "Uyku",
-                       "Mola",
-                       "Yükleme/araç kontrol/evrak işi",
-                       "Tatil"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q048"
-    },
-    {
-        "soru":  "AETR\u0027ye göre sürüş molası sırasında sürücü için doğru olan hangisidir?",
-        "siklar":  [
-                       "Araç kullanabilir",
-                       "Serbestçe dinlenme/mola hakkı vardır",
-                       "Yolcu indir-bindirmek zorunda",
-                       "Takograf kapatılır"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q049"
-    },
-    {
-        "soru":  "45 dakikalık mola bölünürken aşağıdakilerden hangisi hatalıdır?",
-        "siklar":  [
-                       "15+30 (sırayla)",
-                       "30+15 (sırayla)",
-                       "20+25",
-                       "Tek parça 45"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q050"
-    },
-    {
-        "soru":  "AETR\u0027ye göre haftalık dinlenme (hafta tatili) kavramı aşağıdakilerden hangisini ifade eder?",
-        "siklar":  [
-                       "15 dk",
-                       "Günlük 9 saat",
-                       "Günlük 11 saat",
-                       "Günleri kapsayan uzun dinlenme"
-                   ],
-        "dogruCevap":  "D",
-        "id":  "src1_pratik_q051"
-    },
-    {
-        "soru":  "Haftalık dinlenme \"azaltılmış\" uygulanırsa alt sınır hangi seçenekte verilir?",
-        "siklar":  [
-                       "9 saat",
-                       "12 saat",
-                       "24 saat",
-                       "36 saat"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q052"
-    },
-    {
-        "soru":  "Sürücü, günlük dinlenmesini 11 saat yerine 9 saat kullanırsa bu hangi türdür?",
-        "siklar":  [
-                       "Tam dinlenme",
-                       "Azaltılmış günlük dinlenme",
-                       "Haftalık dinlenme",
-                       "Mola"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q053"
-    },
-    {
-        "soru":  "\"Azaltılmış günlük dinlenme\" haftada en fazla kaç kez uygulanabilir?",
-        "siklar":  [
-                       "1",
-                       "2",
-                       "3",
-                       "5"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q054"
-    },
-    {
-        "soru":  "Yolcu taşımacılığında sefer öncesi \"araç kontrolü\" en çok hangi riskleri azaltır?",
-        "siklar":  [
-                       "Şikayet sayısı",
-                       "Kaza/arıza ve cezai işlem",
-                       "Bilet fiyatı",
-                       "Terminal yoğunluğu"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q055"
-    },
-    {
-        "soru":  "Sürücü yolcuya karşı iletişimde aşağıdakilerden hangisini önceliklendirmelidir?",
-        "siklar":  [
-                       "Sert üslup",
-                       "Bilgilendirme ve güvenlik",
-                       "Tartışma",
-                       "Umursamazlık"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q056"
-    },
-    {
-        "soru":  "Uluslararası seferlerde \"yeşil kart\" neyi kapsar?",
-        "siklar":  [
-                       "Yolcu biletini",
-                       "Trafik sigortası teminatının yurtdışı geçerliliğini",
-                       "SRC yerine geçer",
-                       "Pasaport yerine geçer"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q057"
-    },
-    {
-        "soru":  "Aşağıdakilerden hangisi yolcu taşımacılığı için \"eşya taşımacılığı\"na özgü bir belgedir (SRC1 dışı)?",
-        "siklar":  [
-                       "Yolcu listesi",
-                       "Sefer evrakı",
-                       "CMR taşıma senedi",
-                       "Bilet koçanı"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q058"
-    },
-    {
-        "soru":  "SRC 1 sınavında CMR yerine daha uygun \"uluslararası yolcu\" odak hangisidir?",
-        "siklar":  [
-                       "Yolcu biletleme/koltuklandırma",
-                       "Palet ölçüsü",
-                       "Konteyner tipi",
-                       "Navlun indirimi"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src1_pratik_q059"
-    },
-    {
-        "soru":  "\"Tarifesiz uluslararası yolcu taşıma\" yapan işletmenin yetki belgesi sorulursa en doğru eşleşme hangisidir?",
-        "siklar":  [
-                       "B2",
-                       "D2",
-                       "K1",
-                       "C2"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src1_pratik_q060"
-    },
-    {
-        "soru":  "\"Sadece yurtiçi tarifeli yolcu taşımacılığı\" yetki belgesi hangisidir?",
-        "siklar":  [
-                       "D",
-                       "B",
-                       "K",
-                       "A"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src1_pratik_q061"
-    },
-    {
-        "soru":  "Aşağıdakilerden hangisi otobüste güvenli tahliye ile ilgilidir?",
-        "siklar":  [
-                       "Acil çıkışların açık/erişilebilir olması",
-                       "Bagajın koridora konması",
-                       "Kapıların kilitlenmesi",
-                       "Yolcunun ayakta seyahati"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src1_pratik_q062"
-    },
-    {
-        "soru":  "Emniyet kemeri olan otobüslerde en doğru uygulama hangisidir?",
-        "siklar":  [
-                       "Takmak zorunlu değildir",
-                       "Yolcuya bilgilendirme yapılır",
-                       "Sadece şehir içinde takılır",
-                       "Sürücü takmaz"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q063"
-    },
-    {
-        "soru":  "Yolcu taşımacılığında \"koltuk sigortası\" aşağıdakilerden hangisini teminat altına alır?",
-        "siklar":  [
-                       "Aracın hasarı",
-                       "Yolcunun kaza kaynaklı zararları",
-                       "Akaryakıt",
-                       "Gümrük vergisi"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q064"
-    },
-    {
-        "soru":  "Aşağıdakilerden hangisi sefer planlamasında AETR\u0027ye uyum açısından en kritik değişkendir?",
-        "siklar":  [
-                       "Yolcu yaşı",
-                       "Sürüş–mola–dinlenme süreleri",
-                       "Koltuk kumaşı",
-                       "Wi-Fi adı"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q065"
-    },
-    {
-        "soru":  "9 saat sürüş + 45 dk mola kuralına göre aşağıdaki planlardan hangisi uygundur?",
-        "siklar":  [
-                       "5 saat sürüş + 10 dk mola + 4 saat sürüş",
-                       "4,5 saat sürüş + 15 dk mola + 30 dk mola + devam",
-                       "4,5 saat sürüş + 45 dk mola + devam",
-                       "9 saat sürüş + mola"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q066"
-    },
-    {
-        "soru":  "45 dk mola bölünmüşse doğru sıra hangisidir?",
-        "siklar":  [
-                       "30 sonra 15",
-                       "15 sonra 30",
-                       "25 sonra 20",
-                       "10 sonra 35"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q067"
-    },
-    {
-        "soru":  "Yolcu iadesinde \"açık bilet\" verilirse geçerlilik süresi hangisidir?",
-        "siklar":  [
-                       "1 ay",
-                       "3 ay",
-                       "6 ay",
-                       "12 ay"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q068"
-    },
-    {
-        "soru":  "Aşağıdakilerden hangisi yolcu taşımacılığında \"en çok şikayet\" doğuran alanlardan biridir?",
-        "siklar":  [
-                       "Koltuk numarası uyuşmazlığı",
-                       "Jant rengi",
-                       "Motor hacmi",
-                       "Anten boyu"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src1_pratik_q069"
-    },
-    {
-        "soru":  "Yolcunun bagajı kaybolursa ilk doğru yaklaşım hangisidir?",
-        "siklar":  [
-                       "Yok saymak",
-                       "Tutanağa bağlamak ve firmaya bildirmek",
-                       "Yolcuyu indirmek",
-                       "Bileti iptal etmek"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q070"
-    },
-    {
-        "soru":  "Terminalde \"yükleme-bindirme\" sırasında sürücünün önceliği hangisidir?",
-        "siklar":  [
-                       "Hız",
-                       "Güvenlik ve düzen",
-                       "Tartışma",
-                       "Müzik seçimi"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q071"
-    },
-    {
-        "soru":  "Uluslararası seferde sınır geçişi gecikirse sürücünün AETR açısından doğru davranışı hangisidir?",
-        "siklar":  [
-                       "Mola/dinlenmeyi yok saymak",
-                       "Planı kayda uygun güncellemek",
-                       "Takografı kapatmak",
-                       "Süreleri uzatmak"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q072"
-    },
-    {
-        "soru":  "Aşağıdakilerden hangisi \"ticari taşıt sürücüsü\" için zorunlu yeterlilik belgesidir?",
-        "siklar":  [
-                       "SRC",
-                       "Üniversite diploması",
-                       "Pasaport",
-                       "VIP kart"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src1_pratik_q073"
-    },
-    {
-        "soru":  "SRC 1 sürücüsü için \"psikoteknik\" neyi doğrular?",
-        "siklar":  [
-                       "Motor gücünü",
-                       "Sürücünün dikkat-algı-reaksiyon yeterliliğini",
-                       "Aracın modelini",
-                       "Bilet fiyatını"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q074"
-    },
-    {
-        "soru":  "Aşağıdakilerden hangisi yolcu taşımacılığında \"tarifesiz\" taşımaya örnektir?",
-        "siklar":  [
-                       "Günlük saatli hat",
-                       "Tur/organizasyon grubu",
-                       "Terminal biletli düzenli hat",
-                       "Hat tarifesi"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q075"
-    },
-    {
-        "soru":  "Tarifeli taşımada \"sefer iptali\" durumunda doğru yaklaşım hangisidir?",
-        "siklar":  [
-                       "Yolcu bilgilendirilmez",
-                       "Yolcu mağduriyeti giderilir/alternatif sunulur",
-                       "Bilet yanar",
-                       "Yolcu indirilir"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q076"
-    },
-    {
-        "soru":  "SRC 1 sınavında \"gümrük hatları\" neden sorulabilir?",
-        "siklar":  [
-                       "Sınır kapısı işlem mantığını ölçmek için",
-                       "Motor bilgisini ölçmek için",
-                       "VIP hizmet için",
-                       "Koltuk seçimi için"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src1_pratik_q077"
-    },
-    {
-        "soru":  "\"Sarı hat\" ile ilgili doğru ifade hangisidir?",
-        "siklar":  [
-                       "Fiziki muayene ağırlıklı",
-                       "Belge kontrol ağırlıklı",
-                       "Kontrol yok",
-                       "Sonradan kontrol"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q078"
-    },
-    {
-        "soru":  "\"Kırmızı hat\" ile ilgili doğru ifade hangisidir?",
-        "siklar":  [
-                       "Kontrol yok",
-                       "Sadece belge",
-                       "Fiziki muayene dahil sıkı kontrol",
-                       "Sonradan kontrol"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q079"
-    },
-    {
-        "soru":  "\"Mavi hat\" ile ilgili doğru ifade hangisidir?",
-        "siklar":  [
-                       "Fiziki muayene",
-                       "Sonradan kontrol",
-                       "Kontrol yok",
-                       "Sadece X-ray"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q080"
-    },
-    {
-        "soru":  "Aşağıdakilerden hangisi SRC 1 (uluslararası yolcu) kapsamına en uygundur?",
-        "siklar":  [
-                       "Navlun hesabı",
-                       "Yolcu biletleme-koltuk-iade kuralları",
-                       "Antrepo rejimi ayrıntıları",
-                       "Konteyner SDR limiti"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q081"
-    },
-    {
-        "soru":  "Uluslararası yolcu taşımacılığında \"seyahat belgesi\" denince ilk akla gelen hangisidir?",
-        "siklar":  [
-                       "Palet fişi",
-                       "Yolcu bileti ve yolcu listesi",
-                       "CMR",
-                       "Stok kartı"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q082"
-    },
-    {
-        "soru":  "Sürücünün yolcuya karşı temel sorumluluğu hangisidir?",
-        "siklar":  [
-                       "Sadece hız",
-                       "Güvenli taşıma ve kurallara uygun hizmet",
-                       "Reklam",
-                       "Eğlence"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q083"
-    },
-    {
-        "soru":  "Aşağıdakilerden hangisi AETR\u0027ye aykırı davranışa örnektir?",
-        "siklar":  [
-                       "4,5 saat sonra mola vermek",
-                       "9 saat sürüş yapmak",
-                       "4,5 saat sürüşten sonra hiç mola vermemek",
-                       "11 saat dinlenmek"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q084"
-    },
-    {
-        "soru":  "Sürücü 2 haftada 92 saat sürüş yapmışsa durum hangisidir?",
-        "siklar":  [
-                       "Uygun",
-                       "Uygun değil (90\u0027ı aşar)",
-                       "Sadece şehir içinde uygundur",
-                       "Ceza yok"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q085"
-    },
-    {
-        "soru":  "Haftalık 58 saat sürüş yapan sürücü için doğru değerlendirme hangisidir?",
-        "siklar":  [
-                       "Uygun",
-                       "Uygun değil (56\u0027yı aşar)",
-                       "Sadece gece uygundur",
-                       "60\u0027a kadar serbest"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q086"
-    },
-    {
-        "soru":  "Günlük sürüş 10 saat uygulanacaksa hangi şart gerekir?",
-        "siklar":  [
-                       "Her gün",
-                       "Haftada en fazla iki kez",
-                       "Ayda bir",
-                       "Hiç uygulanmaz"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q087"
-    },
-    {
-        "soru":  "10 saat sürüş yapan sürücü ertesi gün de 10 saat sürerse durum hangisidir?",
-        "siklar":  [
-                       "Her zaman uygundur",
-                       "Haftalık iki sınır aşılabilir",
-                       "Haftada iki kez şartı ihlal olabilir",
-                       "Ceza olmaz"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q088"
-    },
-    {
-        "soru":  "Günlük dinlenme 9 saate indirildiyse bu hangi türdür?",
-        "siklar":  [
-                       "Haftalık dinlenme",
-                       "Azaltılmış günlük dinlenme",
-                       "Mola",
-                       "Araç bakım"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q089"
-    },
-    {
-        "soru":  "Azaltılmış günlük dinlenmeyi 4 kez yapan sürücü için doğru değerlendirme hangisidir?",
-        "siklar":  [
-                       "Uygun",
-                       "Uygun değil (en fazla 3)",
-                       "Sadece şehir içi uygundur",
-                       "Ceza yok"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q090"
-    },
-    {
-        "soru":  "SRC 1 teorik sınavından geçmek için gereken asgari puan hangisidir?",
-        "siklar":  [
-                       "60",
-                       "70",
-                       "75",
-                       "80"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q091"
-    },
-    {
-        "soru":  "Uygulama (görsel) sınavında 3 sorudan en az kaç doğru gerekir?",
-        "siklar":  [
-                       "1",
-                       "2",
-                       "3",
-                       "0"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q092"
-    },
-    {
-        "soru":  "Uygulama (görsel) sınavında her soru için süre ne kadardır?",
-        "siklar":  [
-                       "30 sn",
-                       "45 sn",
-                       "60 sn",
-                       "90 sn"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q093"
-    },
-    {
-        "soru":  "SRC belgesi alabilmek için asgari eğitim düzeyi hangisidir?",
-        "siklar":  [
-                       "İlkokul",
-                       "Ortaokul",
-                       "Lise",
-                       "Üniversite"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src1_pratik_q094"
-    },
-    {
-        "soru":  "Tarifeli taşımada bilet üzerinde en kritik bilgi hangisidir?",
-        "siklar":  [
-                       "Aracın rengi",
-                       "Sefer tarihi-saati-koltuk no",
-                       "Şoförün boyu",
-                       "Terminalin logosu"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q095"
-    },
-    {
-        "soru":  "Yolcunun taşınmasında \"ücret iadesi / açık bilet\" uygulamaları hangi amaçla getirilmiştir?",
-        "siklar":  [
-                       "Reklam",
-                       "Yolcu mağduriyetini azaltmak",
-                       "Akaryakıt",
-                       "Kasko"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q096"
-    },
-    {
-        "soru":  "Uluslararası yolcu taşımacılığında kaza sonrası ilk öncelik hangisidir?",
-        "siklar":  [
-                       "Bilet kesmek",
-                       "Can güvenliği ve resmi bildirim prosedürleri",
-                       "Bagaj kontrol",
-                       "Reklam"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q097"
-    },
-    {
-        "soru":  "Aşağıdakilerden hangisi \"SRC1\u0027e uygun\" soru konusudur?",
-        "siklar":  [
-                       "Konteyner plombalama",
-                       "Yolcu iadesi ve açık bilet",
-                       "CMR SDR limiti",
-                       "Antrepo rejimi detay"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q098"
-    },
-    {
-        "soru":  "Aşağıdakilerden hangisi \"SRC1 dışı (eşya)\" odaklıdır?",
-        "siklar":  [
-                       "Yolcu indirimi",
-                       "Bagaj hakkı",
-                       "Navlun/CMR",
-                       "Koltuk sigortası"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src1_pratik_q099"
-    },
-    {
-        "soru":  "SRC 1 hazırlıkta en doğru çalışma yaklaşımı hangisidir?",
-        "siklar":  [
-                       "Sadece ezber",
-                       "Mevzuat + senaryo çözümü",
-                       "Sadece video",
-                       "Sadece tahmin"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src1_pratik_q100"
+        "soru": "SRC 1 belgesine sahip sürücü aşağıdakilerden hangisini yapmaya yetkilidir?",
+        "siklar": [
+            "Sadece yurtiçi yolcu",
+            "Uluslararası eşya",
+            "Tehlikeli madde",
+            "Yurtiçi+uluslararası yolcu"
+        ],
+        "dogruCevap": "D",
+        "id": "src1_pratik_q001"
+    },
+    {
+        "soru": "SRC 1 belgesi alan sürücü, mevzuat gereği hangi belgeyi de almış sayılır?",
+        "siklar": [
+            "SRC 2",
+            "SRC 3",
+            "SRC 4",
+            "SRC 5"
+        ],
+        "dogruCevap": "A",
+        "id": "src1_pratik_q002"
+    },
+    {
+        "soru": "Tarifeli yolcu taşımacılığında bilet iadesi için hareketten en az kaç saat önce başvuru gerekir?",
+        "siklar": [
+            "24",
+            "12",
+            "6",
+            "48"
+        ],
+        "dogruCevap": "A",
+        "id": "src1_pratik_q003"
+    },
+    {
+        "soru": "Hareketten 12 saat öncesine kadar yapılan başvuruda yolcuya verilmesi zorunlu hak hangisidir?",
+        "siklar": [
+            "Tam iade",
+            "%50 kesinti",
+            "6 ay açık bilet",
+            "İade yok"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q004"
+    },
+    {
+        "soru": "Hareketten 24 saat önce yapılan başvuruda uygulanacak işlem hangisidir?",
+        "siklar": [
+            "Tam iade",
+            "Açık bilet",
+            "İade yok",
+            "%50 kesinti"
+        ],
+        "dogruCevap": "A",
+        "id": "src1_pratik_q005"
+    },
+    {
+        "soru": "Otobüslerde ücretsiz bagaj hakkı (ağırlık) kaç kg\u0027dır?",
+        "siklar": [
+            "30",
+            "25",
+            "20",
+            "15"
+        ],
+        "dogruCevap": "A",
+        "id": "src1_pratik_q006"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi ücretsiz bagaj hakkı için doğru ifadedir?",
+        "siklar": [
+            "Sınırsızdır",
+            "30 kg\u0027ı geçemez",
+            "10 kg\u0027ı geçemez",
+            "Sadece el bagajı"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q007"
+    },
+    {
+        "soru": "6–12 yaş arası için bilet ücreti üzerinden zorunlu indirim oranı hangisidir?",
+        "siklar": [
+            "%10",
+            "%20",
+            "%30",
+            "%50"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q008"
+    },
+    {
+        "soru": "0–6 yaş çocuklar kucakta seyahat şartıyla hangi ücrete tabidir?",
+        "siklar": [
+            "Tam ücret",
+            "Ücretsiz",
+            "%30 indirim",
+            "%50 indirim"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q009"
+    },
+    {
+        "soru": "%40 ve üzeri engelli kimlik kartı olan yolcuya uygulanacak indirim hangisidir?",
+        "siklar": [
+            "%20",
+            "%30",
+            "%40",
+            "%50"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q010"
+    },
+    {
+        "soru": "Evcil hayvanların (kedi-köpek-kuş) otobüste taşınmasında doğru uygulama hangisidir?",
+        "siklar": [
+            "Kucakta serbest",
+            "Koridorda",
+            "Özel kafeste bagajda",
+            "Şoför mahallinde"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q011"
+    },
+    {
+        "soru": "Uluslararası taşımalarda trafik sigortasının yurtdışında da geçerliliğini sağlayan belge hangisidir?",
+        "siklar": [
+            "A.TR",
+            "TIR Karnesi",
+            "Yeşil Kart",
+            "CMR"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q012"
+    },
+    {
+        "soru": "Yolcuları kaza halinde teminat altına alan sigorta türü hangisidir?",
+        "siklar": [
+            "Kasko",
+            "Koltuk Ferdi Kaza",
+            "Yeşil Kart",
+            "Nakliyat"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q013"
+    },
+    {
+        "soru": "Psikoteknik raporunun yenilenme süresi kaç yıldır?",
+        "siklar": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "dogruCevap": "D",
+        "id": "src1_pratik_q014"
+    },
+    {
+        "soru": "AETR\u0027ye göre normal günlük sürüş süresi en fazla kaç saattir?",
+        "siklar": [
+            "8",
+            "9",
+            "10",
+            "11"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q015"
+    },
+    {
+        "soru": "Günlük 9 saatlik sürüş süresi haftada en fazla iki kez kaç saate çıkarılabilir?",
+        "siklar": [
+            "10",
+            "11",
+            "12",
+            "13"
+        ],
+        "dogruCevap": "A",
+        "id": "src1_pratik_q016"
+    },
+    {
+        "soru": "AETR\u0027ye göre haftalık toplam sürüş süresi en fazla kaç saattir?",
+        "siklar": [
+            "45",
+            "56",
+            "60",
+            "90"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q017"
+    },
+    {
+        "soru": "AETR\u0027ye göre iki haftalık toplam sürüş süresi en fazla kaç saattir?",
+        "siklar": [
+            "80",
+            "90",
+            "96",
+            "100"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q018"
+    },
+    {
+        "soru": "4,5 saat araç kullanımından sonra verilmesi gereken asgari mola süresi kaç dakikadır?",
+        "siklar": [
+            "30",
+            "45",
+            "60",
+            "15"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q019"
+    },
+    {
+        "soru": "45 dakikalık mola aşağıdaki hangi şekilde parçalı kullanılabilir?",
+        "siklar": [
+            "20+25 (sırasız)",
+            "15+30 (sırayla)",
+            "10+35 (sırasız)",
+            "30+15 (tek parça şart)"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q020"
+    },
+    {
+        "soru": "Günlük kesintisiz dinlenme süresi normalde en az kaç saattir?",
+        "siklar": [
+            "8",
+            "9",
+            "10",
+            "11"
+        ],
+        "dogruCevap": "D",
+        "id": "src1_pratik_q021"
+    },
+    {
+        "soru": "Günlük dinlenme süresi 11 saatten 9 saate indirilebilirse, haftada en fazla kaç kez yapılabilir?",
+        "siklar": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q022"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi \"mola\" ile \"dinlenme\" arasındaki doğru ayrımdır?",
+        "siklar": [
+            "Mola = gün sonu, Dinlenme = sürüş arası",
+            "Mola = sürüş arası, Dinlenme = günlük/haftalık",
+            "İkisi aynı",
+            "Dinlenme sadece 15 dk\u0027dır"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q023"
+    },
+    {
+        "soru": "Sürücü 4,5 saat dolmadan mola verirse doğru yaklaşım hangisidir?",
+        "siklar": [
+            "Mola sayılmaz",
+            "45 dk toplam mola kuralına sayılabilir",
+            "Sadece 60 dk olursa sayılır",
+            "Sadece gece sayılır"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q024"
+    },
+    {
+        "soru": "2 sürücülü (ekip) kullanımda günlük dinlenme kuralı için doğru ifade hangisidir?",
+        "siklar": [
+            "Dinlenme gerekmez",
+            "Dinlenme süresi artar",
+            "Dinlenme düzeni farklı uygulanır",
+            "Haftalık sürüş 90\u0027a çıkar"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q025"
+    },
+    {
+        "soru": "Takograf kayıtlarının amacı aşağıdakilerden hangisidir?",
+        "siklar": [
+            "Yakıt tüketimi",
+            "Sürüş–mola–dinlenme sürelerinin denetimi",
+            "Yolcu sayısı",
+            "Bilet kesimi"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q026"
+    },
+    {
+        "soru": "Takograf kullanımı ile ilgili en doğru ifade hangisidir?",
+        "siklar": [
+            "İsteğe bağlıdır",
+            "Sadece şehir içinde zorunludur",
+            "Denetime esas kayıt oluşturur",
+            "Sadece minibüste gerekir"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q027"
+    },
+    {
+        "soru": "Tarifeli taşımacılıkta \"açık bilet\" geçerlilik süresi kaç aydır?",
+        "siklar": [
+            "1",
+            "3",
+            "6",
+            "12"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q028"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi yolcu taşımacılığında \"tarifeli\" taşımayı tanımlar?",
+        "siklar": [
+            "Tur/grup taşıması",
+            "Düzenli sefer–saat–hat",
+            "Sadece VIP taşıma",
+            "Personel servisi"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q029"
+    },
+    {
+        "soru": "\"Tarifesiz\" yolcu taşımacılığına örnek hangisidir?",
+        "siklar": [
+            "Her gün 09:00 İstanbul-Ankara",
+            "Grup tur taşımacılığı",
+            "Terminalden biletli sefer",
+            "Hat bazlı düzenli sefer"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q030"
+    },
+    {
+        "soru": "Büyük otobüs kullanacak ticari sürücü için alt yaş sınırı kaçtır?",
+        "siklar": [
+            "22",
+            "23",
+            "24",
+            "26"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q031"
+    },
+    {
+        "soru": "Ticari yolcu taşımacılığında üst yaş sınırı (bu yaştan gün almamış olmak) hangisidir?",
+        "siklar": [
+            "60",
+            "63",
+            "65",
+            "66"
+        ],
+        "dogruCevap": "D",
+        "id": "src1_pratik_q032"
+    },
+    {
+        "soru": "SRC belgesi olmadan araç kullanan sürücüye ceza konusu sorulacaksa en \"güncelden bağımsız\" doğru yaklaşım hangisidir?",
+        "siklar": [
+            "Kesin TL tutarı",
+            "Kime daha fazla yansır–işleten sorumluluğu",
+            "Sadece yolcuya",
+            "Ceza yok"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q033"
+    },
+    {
+        "soru": "SRC belgesi olmadan ticari araç kullandırmanın sorumluluğu daha çok kime yansır?",
+        "siklar": [
+            "Yolcu",
+            "Gönderici",
+            "İşleten/araç sahibi",
+            "Terminal"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q034"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi sürücüde aranan adli sicil şartı değildir?",
+        "siklar": [
+            "Terör suçu işlememek",
+            "Uyuşturucu suçu işlememek",
+            "Kaçakçılık yapmamış olmak",
+            "İcra borcu olmamak"
+        ],
+        "dogruCevap": "D",
+        "id": "src1_pratik_q035"
+    },
+    {
+        "soru": "Gümrükte \"Kırmızı Hat\" neyi ifade eder?",
+        "siklar": [
+            "Kontrol yok",
+            "Sadece belge",
+            "Fiziki muayene ağırlıklı kontrol",
+            "Sonradan kontrol"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q036"
+    },
+    {
+        "soru": "\"Sarı Hat\" hangi kontrol türünü ifade eder?",
+        "siklar": [
+            "Sadece belge kontrolü",
+            "Kontrol yok",
+            "Sonradan kontrol",
+            "Transit hattı"
+        ],
+        "dogruCevap": "A",
+        "id": "src1_pratik_q037"
+    },
+    {
+        "soru": "\"Mavi Hat\" genel olarak neyi ifade eder?",
+        "siklar": [
+            "Fiziki muayene",
+            "Belge kontrol",
+            "Sonradan kontrol (belge/veri)",
+            "Hiç kontrol"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q038"
+    },
+    {
+        "soru": "\"Yeşil Hat\" temel olarak neyi ifade eder?",
+        "siklar": [
+            "Kontrol yok (beyan esaslı)",
+            "Mutlaka fiziki muayene",
+            "Sadece belge",
+            "Sadece X-ray"
+        ],
+        "dogruCevap": "A",
+        "id": "src1_pratik_q039"
+    },
+    {
+        "soru": "\"Supalan\" işlemi aşağıdakilerden hangisidir?",
+        "siklar": [
+            "Eşyanın antrepoya alınması",
+            "Eşyanın indirilmeden taşıt üzerinde muayene–teslimi",
+            "Kabın yenilenmesi",
+            "Transit beyan"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q040"
+    },
+    {
+        "soru": "\"Elleçleme\" için doğru ifade hangisidir?",
+        "siklar": [
+            "Eşyanın niteliklerini değiştiren imalat",
+            "Eşyanın niteliğini bozmayacak istif–yer değişimi–kabın yenilenmesi",
+            "Gümrük vergisi ödeme",
+            "Kaçak sokma"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q041"
+    },
+    {
+        "soru": "Uluslararası yolcu taşımacılığında sürücünün yanında bulunması gereken en temel belge grubu hangisidir?",
+        "siklar": [
+            "Sadece SRC",
+            "SRC + ehliyet + gerekli taşıma belgeleri",
+            "Sadece pasaport",
+            "Sadece bilet koçanı"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q042"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi \"yolcu hakları\" kapsamında en çok denetlenen başlıklardandır?",
+        "siklar": [
+            "Araç rengi",
+            "Biletleme/koltuklandırma/ücret iadesi",
+            "Jant tipi",
+            "Cam filmi markası"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q043"
+    },
+    {
+        "soru": "Tarifeli seferde yolcunun koltuk numarası ile seyahat etmesi hangi amaca hizmet eder?",
+        "siklar": [
+            "Hız",
+            "Güvenlik ve kayıt düzeni",
+            "Motor ömrü",
+            "Yakıt tasarrufu"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q044"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi otobüste emniyet–düzen açısından yanlış davranıştır?",
+        "siklar": [
+            "Koridoru boş bırakmak",
+            "Acil çıkışları kapatmak",
+            "Bagajı bagaja koymak",
+            "Koltuk numarasına uymak"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q045"
+    },
+    {
+        "soru": "Yolcu taşımacılığında \"tarife\" kavramı en çok neyi ifade eder?",
+        "siklar": [
+            "Lastik basıncı",
+            "Sefer saatleri–ücret–hat düzeni",
+            "Akaryakıt fişi",
+            "Personel vardiyası"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q046"
+    },
+    {
+        "soru": "AETR\u0027de \"sürüş süresi\" hangisini ifade eder?",
+        "siklar": [
+            "Kontak açık olduğu her an",
+            "Aracın hareket halinde olduğu kayıtlı süre",
+            "Yolcunun bindiği süre",
+            "Terminalde bekleme"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q047"
+    },
+    {
+        "soru": "AETR\u0027de \"diğer işler\" (work) örneği hangisidir?",
+        "siklar": [
+            "Uyku",
+            "Mola",
+            "Yükleme/araç kontrol/evrak işi",
+            "Tatil"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q048"
+    },
+    {
+        "soru": "AETR\u0027ye göre sürüş molası sırasında sürücü için doğru olan hangisidir?",
+        "siklar": [
+            "Araç kullanabilir",
+            "Serbestçe dinlenme/mola hakkı vardır",
+            "Yolcu indir-bindirmek zorunda",
+            "Takograf kapatılır"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q049"
+    },
+    {
+        "soru": "45 dakikalık mola bölünürken aşağıdakilerden hangisi hatalıdır?",
+        "siklar": [
+            "15+30 (sırayla)",
+            "30+15 (sırayla)",
+            "20+25",
+            "Tek parça 45"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q050"
+    },
+    {
+        "soru": "AETR\u0027ye göre haftalık dinlenme (hafta tatili) kavramı aşağıdakilerden hangisini ifade eder?",
+        "siklar": [
+            "15 dk",
+            "Günlük 9 saat",
+            "Günlük 11 saat",
+            "Günleri kapsayan uzun dinlenme"
+        ],
+        "dogruCevap": "D",
+        "id": "src1_pratik_q051"
+    },
+    {
+        "soru": "Haftalık dinlenme \"azaltılmış\" uygulanırsa alt sınır hangi seçenekte verilir?",
+        "siklar": [
+            "9 saat",
+            "12 saat",
+            "24 saat",
+            "36 saat"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q052"
+    },
+    {
+        "soru": "Sürücü, günlük dinlenmesini 11 saat yerine 9 saat kullanırsa bu hangi türdür?",
+        "siklar": [
+            "Tam dinlenme",
+            "Azaltılmış günlük dinlenme",
+            "Haftalık dinlenme",
+            "Mola"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q053"
+    },
+    {
+        "soru": "\"Azaltılmış günlük dinlenme\" haftada en fazla kaç kez uygulanabilir?",
+        "siklar": [
+            "1",
+            "2",
+            "3",
+            "5"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q054"
+    },
+    {
+        "soru": "Yolcu taşımacılığında sefer öncesi \"araç kontrolü\" en çok hangi riskleri azaltır?",
+        "siklar": [
+            "Şikayet sayısı",
+            "Kaza/arıza ve cezai işlem",
+            "Bilet fiyatı",
+            "Terminal yoğunluğu"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q055"
+    },
+    {
+        "soru": "Sürücü yolcuya karşı iletişimde aşağıdakilerden hangisini önceliklendirmelidir?",
+        "siklar": [
+            "Sert üslup",
+            "Bilgilendirme ve güvenlik",
+            "Tartışma",
+            "Umursamazlık"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q056"
+    },
+    {
+        "soru": "Uluslararası seferlerde \"yeşil kart\" neyi kapsar?",
+        "siklar": [
+            "Yolcu biletini",
+            "Trafik sigortası teminatının yurtdışı geçerliliğini",
+            "SRC yerine geçer",
+            "Pasaport yerine geçer"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q057"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi yolcu taşımacılığı için \"eşya taşımacılığı\"na özgü bir belgedir (SRC1 dışı)?",
+        "siklar": [
+            "Yolcu listesi",
+            "Sefer evrakı",
+            "CMR taşıma senedi",
+            "Bilet koçanı"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q058"
+    },
+    {
+        "soru": "SRC 1 sınavında CMR yerine daha uygun \"uluslararası yolcu\" odak hangisidir?",
+        "siklar": [
+            "Yolcu biletleme/koltuklandırma",
+            "Palet ölçüsü",
+            "Konteyner tipi",
+            "Navlun indirimi"
+        ],
+        "dogruCevap": "A",
+        "id": "src1_pratik_q059"
+    },
+    {
+        "soru": "\"Tarifesiz uluslararası yolcu taşıma\" yapan işletmenin yetki belgesi sorulursa en doğru eşleşme hangisidir?",
+        "siklar": [
+            "B2",
+            "D2",
+            "K1",
+            "C2"
+        ],
+        "dogruCevap": "A",
+        "id": "src1_pratik_q060"
+    },
+    {
+        "soru": "\"Sadece yurtiçi tarifeli yolcu taşımacılığı\" yetki belgesi hangisidir?",
+        "siklar": [
+            "D",
+            "B",
+            "K",
+            "A"
+        ],
+        "dogruCevap": "A",
+        "id": "src1_pratik_q061"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi otobüste güvenli tahliye ile ilgilidir?",
+        "siklar": [
+            "Acil çıkışların açık/erişilebilir olması",
+            "Bagajın koridora konması",
+            "Kapıların kilitlenmesi",
+            "Yolcunun ayakta seyahati"
+        ],
+        "dogruCevap": "A",
+        "id": "src1_pratik_q062"
+    },
+    {
+        "soru": "Emniyet kemeri olan otobüslerde en doğru uygulama hangisidir?",
+        "siklar": [
+            "Takmak zorunlu değildir",
+            "Yolcuya bilgilendirme yapılır",
+            "Sadece şehir içinde takılır",
+            "Sürücü takmaz"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q063"
+    },
+    {
+        "soru": "Yolcu taşımacılığında \"koltuk sigortası\" aşağıdakilerden hangisini teminat altına alır?",
+        "siklar": [
+            "Aracın hasarı",
+            "Yolcunun kaza kaynaklı zararları",
+            "Akaryakıt",
+            "Gümrük vergisi"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q064"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi sefer planlamasında AETR\u0027ye uyum açısından en kritik değişkendir?",
+        "siklar": [
+            "Yolcu yaşı",
+            "Sürüş–mola–dinlenme süreleri",
+            "Koltuk kumaşı",
+            "Wi-Fi adı"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q065"
+    },
+    {
+        "soru": "9 saat sürüş + 45 dk mola kuralına göre aşağıdaki planlardan hangisi uygundur?",
+        "siklar": [
+            "5 saat sürüş + 10 dk mola + 4 saat sürüş",
+            "4,5 saat sürüş + 15 dk mola + 30 dk mola + devam",
+            "4,5 saat sürüş + 45 dk mola + devam",
+            "9 saat sürüş + mola"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q066"
+    },
+    {
+        "soru": "45 dk mola bölünmüşse doğru sıra hangisidir?",
+        "siklar": [
+            "30 sonra 15",
+            "15 sonra 30",
+            "25 sonra 20",
+            "10 sonra 35"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q067"
+    },
+    {
+        "soru": "Yolcu iadesinde \"açık bilet\" verilirse geçerlilik süresi hangisidir?",
+        "siklar": [
+            "1 ay",
+            "3 ay",
+            "6 ay",
+            "12 ay"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q068"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi yolcu taşımacılığında \"en çok şikayet\" doğuran alanlardan biridir?",
+        "siklar": [
+            "Koltuk numarası uyuşmazlığı",
+            "Jant rengi",
+            "Motor hacmi",
+            "Anten boyu"
+        ],
+        "dogruCevap": "A",
+        "id": "src1_pratik_q069"
+    },
+    {
+        "soru": "Yolcunun bagajı kaybolursa ilk doğru yaklaşım hangisidir?",
+        "siklar": [
+            "Yok saymak",
+            "Tutanağa bağlamak ve firmaya bildirmek",
+            "Yolcuyu indirmek",
+            "Bileti iptal etmek"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q070"
+    },
+    {
+        "soru": "Terminalde \"yükleme-bindirme\" sırasında sürücünün önceliği hangisidir?",
+        "siklar": [
+            "Hız",
+            "Güvenlik ve düzen",
+            "Tartışma",
+            "Müzik seçimi"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q071"
+    },
+    {
+        "soru": "Uluslararası seferde sınır geçişi gecikirse sürücünün AETR açısından doğru davranışı hangisidir?",
+        "siklar": [
+            "Mola/dinlenmeyi yok saymak",
+            "Planı kayda uygun güncellemek",
+            "Takografı kapatmak",
+            "Süreleri uzatmak"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q072"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi \"ticari taşıt sürücüsü\" için zorunlu yeterlilik belgesidir?",
+        "siklar": [
+            "SRC",
+            "Üniversite diploması",
+            "Pasaport",
+            "VIP kart"
+        ],
+        "dogruCevap": "A",
+        "id": "src1_pratik_q073"
+    },
+    {
+        "soru": "SRC 1 sürücüsü için \"psikoteknik\" neyi doğrular?",
+        "siklar": [
+            "Motor gücünü",
+            "Sürücünün dikkat-algı-reaksiyon yeterliliğini",
+            "Aracın modelini",
+            "Bilet fiyatını"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q074"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi yolcu taşımacılığında \"tarifesiz\" taşımaya örnektir?",
+        "siklar": [
+            "Günlük saatli hat",
+            "Tur/organizasyon grubu",
+            "Terminal biletli düzenli hat",
+            "Hat tarifesi"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q075"
+    },
+    {
+        "soru": "Tarifeli taşımada \"sefer iptali\" durumunda doğru yaklaşım hangisidir?",
+        "siklar": [
+            "Yolcu bilgilendirilmez",
+            "Yolcu mağduriyeti giderilir/alternatif sunulur",
+            "Bilet yanar",
+            "Yolcu indirilir"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q076"
+    },
+    {
+        "soru": "SRC 1 sınavında \"gümrük hatları\" neden sorulabilir?",
+        "siklar": [
+            "Sınır kapısı işlem mantığını ölçmek için",
+            "Motor bilgisini ölçmek için",
+            "VIP hizmet için",
+            "Koltuk seçimi için"
+        ],
+        "dogruCevap": "A",
+        "id": "src1_pratik_q077"
+    },
+    {
+        "soru": "\"Sarı hat\" ile ilgili doğru ifade hangisidir?",
+        "siklar": [
+            "Fiziki muayene ağırlıklı",
+            "Belge kontrol ağırlıklı",
+            "Kontrol yok",
+            "Sonradan kontrol"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q078"
+    },
+    {
+        "soru": "\"Kırmızı hat\" ile ilgili doğru ifade hangisidir?",
+        "siklar": [
+            "Kontrol yok",
+            "Sadece belge",
+            "Fiziki muayene dahil sıkı kontrol",
+            "Sonradan kontrol"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q079"
+    },
+    {
+        "soru": "\"Mavi hat\" ile ilgili doğru ifade hangisidir?",
+        "siklar": [
+            "Fiziki muayene",
+            "Sonradan kontrol",
+            "Kontrol yok",
+            "Sadece X-ray"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q080"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi SRC 1 (uluslararası yolcu) kapsamına en uygundur?",
+        "siklar": [
+            "Navlun hesabı",
+            "Yolcu biletleme-koltuk-iade kuralları",
+            "Antrepo rejimi ayrıntıları",
+            "Konteyner SDR limiti"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q081"
+    },
+    {
+        "soru": "Uluslararası yolcu taşımacılığında \"seyahat belgesi\" denince ilk akla gelen hangisidir?",
+        "siklar": [
+            "Palet fişi",
+            "Yolcu bileti ve yolcu listesi",
+            "CMR",
+            "Stok kartı"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q082"
+    },
+    {
+        "soru": "Sürücünün yolcuya karşı temel sorumluluğu hangisidir?",
+        "siklar": [
+            "Sadece hız",
+            "Güvenli taşıma ve kurallara uygun hizmet",
+            "Reklam",
+            "Eğlence"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q083"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi AETR\u0027ye aykırı davranışa örnektir?",
+        "siklar": [
+            "4,5 saat sonra mola vermek",
+            "9 saat sürüş yapmak",
+            "4,5 saat sürüşten sonra hiç mola vermemek",
+            "11 saat dinlenmek"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q084"
+    },
+    {
+        "soru": "Sürücü 2 haftada 92 saat sürüş yapmışsa durum hangisidir?",
+        "siklar": [
+            "Uygun",
+            "Uygun değil (90\u0027ı aşar)",
+            "Sadece şehir içinde uygundur",
+            "Ceza yok"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q085"
+    },
+    {
+        "soru": "Haftalık 58 saat sürüş yapan sürücü için doğru değerlendirme hangisidir?",
+        "siklar": [
+            "Uygun",
+            "Uygun değil (56\u0027yı aşar)",
+            "Sadece gece uygundur",
+            "60\u0027a kadar serbest"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q086"
+    },
+    {
+        "soru": "Günlük sürüş 10 saat uygulanacaksa hangi şart gerekir?",
+        "siklar": [
+            "Her gün",
+            "Haftada en fazla iki kez",
+            "Ayda bir",
+            "Hiç uygulanmaz"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q087"
+    },
+    {
+        "soru": "10 saat sürüş yapan sürücü ertesi gün de 10 saat sürerse durum hangisidir?",
+        "siklar": [
+            "Her zaman uygundur",
+            "Haftalık iki sınır aşılabilir",
+            "Haftada iki kez şartı ihlal olabilir",
+            "Ceza olmaz"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q088"
+    },
+    {
+        "soru": "Günlük dinlenme 9 saate indirildiyse bu hangi türdür?",
+        "siklar": [
+            "Haftalık dinlenme",
+            "Azaltılmış günlük dinlenme",
+            "Mola",
+            "Araç bakım"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q089"
+    },
+    {
+        "soru": "Azaltılmış günlük dinlenmeyi 4 kez yapan sürücü için doğru değerlendirme hangisidir?",
+        "siklar": [
+            "Uygun",
+            "Uygun değil (en fazla 3)",
+            "Sadece şehir içi uygundur",
+            "Ceza yok"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q090"
+    },
+    {
+        "soru": "SRC 1 teorik sınavından geçmek için gereken asgari puan hangisidir?",
+        "siklar": [
+            "60",
+            "70",
+            "75",
+            "80"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q091"
+    },
+    {
+        "soru": "Uygulama (görsel) sınavında 3 sorudan en az kaç doğru gerekir?",
+        "siklar": [
+            "1",
+            "2",
+            "3",
+            "0"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q092"
+    },
+    {
+        "soru": "Uygulama (görsel) sınavında her soru için süre ne kadardır?",
+        "siklar": [
+            "30 sn",
+            "45 sn",
+            "60 sn",
+            "90 sn"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q093"
+    },
+    {
+        "soru": "SRC belgesi alabilmek için asgari eğitim düzeyi hangisidir?",
+        "siklar": [
+            "İlkokul",
+            "Ortaokul",
+            "Lise",
+            "Üniversite"
+        ],
+        "dogruCevap": "A",
+        "id": "src1_pratik_q094"
+    },
+    {
+        "soru": "Tarifeli taşımada bilet üzerinde en kritik bilgi hangisidir?",
+        "siklar": [
+            "Aracın rengi",
+            "Sefer tarihi-saati-koltuk no",
+            "Şoförün boyu",
+            "Terminalin logosu"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q095"
+    },
+    {
+        "soru": "Yolcunun taşınmasında \"ücret iadesi / açık bilet\" uygulamaları hangi amaçla getirilmiştir?",
+        "siklar": [
+            "Reklam",
+            "Yolcu mağduriyetini azaltmak",
+            "Akaryakıt",
+            "Kasko"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q096"
+    },
+    {
+        "soru": "Uluslararası yolcu taşımacılığında kaza sonrası ilk öncelik hangisidir?",
+        "siklar": [
+            "Bilet kesmek",
+            "Can güvenliği ve resmi bildirim prosedürleri",
+            "Bagaj kontrol",
+            "Reklam"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q097"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi \"SRC1\u0027e uygun\" soru konusudur?",
+        "siklar": [
+            "Konteyner plombalama",
+            "Yolcu iadesi ve açık bilet",
+            "CMR SDR limiti",
+            "Antrepo rejimi detay"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q098"
+    },
+    {
+        "soru": "Aşağıdakilerden hangisi \"SRC1 dışı (eşya)\" odaklıdır?",
+        "siklar": [
+            "Yolcu indirimi",
+            "Bagaj hakkı",
+            "Navlun/CMR",
+            "Koltuk sigortası"
+        ],
+        "dogruCevap": "C",
+        "id": "src1_pratik_q099"
+    },
+    {
+        "soru": "SRC 1 hazırlıkta en doğru çalışma yaklaşımı hangisidir?",
+        "siklar": [
+            "Sadece ezber",
+            "Mevzuat + senaryo çözümü",
+            "Sadece video",
+            "Sadece tahmin"
+        ],
+        "dogruCevap": "B",
+        "id": "src1_pratik_q100"
+    },
+    {
+        "soru": "AETR'ye göre normal haftalık dinlenme süresi kaç saattir?",
+        "siklar": [
+            "24",
+            "36",
+            "40",
+            "45"
+        ],
+        "dogruCevap": "D",
+        "id": "src1_pratik_q101"
+    },
+    {
+        "soru": "Uluslararası yolcu taşımacılığında 'çift sürücü' çalışmasının temel avantajı nedir?",
+        "siklar": [
+            "Yakıt tasarrufu",
+            "Daha az mola",
+            "Daha düşük sigorta",
+            "Kesintisiz uzun mesafe taşımacılığı"
+        ],
+        "dogruCevap": "D",
+        "id": "src1_pratik_q102"
     }
 ]

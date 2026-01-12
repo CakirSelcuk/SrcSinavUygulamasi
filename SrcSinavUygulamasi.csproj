@@ -36,6 +36,12 @@
 		<MauiSplashScreen Include="Resources\Images\appicon.png" Color="#0f172a" BaseSize="128,128" />
 	</ItemGroup>
 
+	<!-- Exclude tools folder from build (helper scripts with their own Main) -->
+	<ItemGroup>
+	  <Compile Remove="tools\**" />
+	  <None Include="tools\**" />
+	</ItemGroup>
+
 	<ItemGroup>
 	  <None Remove="Resources\Raw\sorular_src.json" />
 	  <None Remove="Resources\Raw\sorular_src1.json" />

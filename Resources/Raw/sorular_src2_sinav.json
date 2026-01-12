@@ -1,541 +1,552 @@
 ﻿[
     {
-        "soru":  "SRC 2 mesleki yeterlilik belgesi hangi taÅŸÄ±macÄ±lÄ±k tÃ¼rÃ¼nÃ¼ kapsar?",
-        "siklar":  [
-                       "UluslararasÄ± yolcu",
-                       "YurtiÃ§i yolcu",
-                       "UluslararasÄ± eÅŸya",
-                       "YurtiÃ§i kargo"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q001"
+        "soru": "SRC 2 mesleki yeterlilik belgesi hangi taÅŸÄ±macÄ±lÄ±k tÃ¼rÃ¼nÃ¼ kapsar?",
+        "siklar": [
+            "UluslararasÄ± yolcu",
+            "YurtiÃ§i yolcu",
+            "UluslararasÄ± eÅŸya",
+            "YurtiÃ§i kargo"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q001"
     },
     {
-        "soru":  "SRC 2 belgesi ile aÅŸaÄŸÄ±daki araÃ§lardan hangisi ticari amaÃ§la kullanÄ±lamaz?",
-        "siklar":  [
-                       "OtobÃ¼s",
-                       "MinibÃ¼s",
-                       "Personel servisi",
-                       "TÄ±r / Ã§ekici"
-                   ],
-        "dogruCevap":  "D",
-        "id":  "src2_sinav_q002"
+        "soru": "SRC 2 belgesi ile aÅŸaÄŸÄ±daki araÃ§lardan hangisi ticari amaÃ§la kullanÄ±lamaz?",
+        "siklar": [
+            "OtobÃ¼s",
+            "MinibÃ¼s",
+            "Personel servisi",
+            "TÄ±r / Ã§ekici"
+        ],
+        "dogruCevap": "D",
+        "id": "src2_sinav_q002"
     },
     {
-        "soru":  "SRC belgesi almaya engel teÅŸkil eden suÃ§lardan biri hangisidir?",
-        "siklar":  [
-                       "Basit yaralama",
-                       "Hakaret",
-                       "KaÃ§akÃ§Ä±lÄ±k",
-                       "Trafik cezasÄ±"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q003"
+        "soru": "SRC belgesi almaya engel teÅŸkil eden suÃ§lardan biri hangisidir?",
+        "siklar": [
+            "Basit yaralama",
+            "Hakaret",
+            "KaÃ§akÃ§Ä±lÄ±k",
+            "Trafik cezasÄ±"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q003"
     },
     {
-        "soru":  "SRC yazÄ±lÄ± sÄ±navÄ±nda baÅŸarÄ±lÄ± sayÄ±lmak iÃ§in en az kaÃ§ puan alÄ±nmalÄ±dÄ±r?",
-        "siklar":  [
-                       "60",
-                       "65",
-                       "70",
-                       "75"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q004"
+        "soru": "SRC yazÄ±lÄ± sÄ±navÄ±nda baÅŸarÄ±lÄ± sayÄ±lmak iÃ§in en az kaÃ§ puan alÄ±nmalÄ±dÄ±r?",
+        "siklar": [
+            "60",
+            "65",
+            "70",
+            "75"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q004"
     },
     {
-        "soru":  "SRC yazÄ±lÄ± sÄ±navÄ±nda yanlÄ±ÅŸ cevaplar doÄŸru cevaplarÄ± etkiler mi?",
-        "siklar":  [
-                       "4 yanlÄ±ÅŸ 1 doÄŸruyu gÃ¶tÃ¼rÃ¼r",
-                       "3 yanlÄ±ÅŸ 1 doÄŸruyu gÃ¶tÃ¼rÃ¼r",
-                       "2 yanlÄ±ÅŸ 1 doÄŸruyu gÃ¶tÃ¼rÃ¼r",
-                       "HayÄ±r, etkilemez"
-                   ],
-        "dogruCevap":  "D",
-        "id":  "src2_sinav_q005"
+        "soru": "SRC yazÄ±lÄ± sÄ±navÄ±nda yanlÄ±ÅŸ cevaplar doÄŸru cevaplarÄ± etkiler mi?",
+        "siklar": [
+            "4 yanlÄ±ÅŸ 1 doÄŸruyu gÃ¶tÃ¼rÃ¼r",
+            "3 yanlÄ±ÅŸ 1 doÄŸruyu gÃ¶tÃ¼rÃ¼r",
+            "2 yanlÄ±ÅŸ 1 doÄŸruyu gÃ¶tÃ¼rÃ¼r",
+            "HayÄ±r, etkilemez"
+        ],
+        "dogruCevap": "D",
+        "id": "src2_sinav_q005"
     },
     {
-        "soru":  "SRC 2 eÄŸitim programÄ± toplam kaÃ§ ders saatinden oluÅŸur?",
-        "siklar":  [
-                       "28",
-                       "32",
-                       "36",
-                       "40"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q006"
+        "soru": "SRC 2 eÄŸitim programÄ± toplam kaÃ§ ders saatinden oluÅŸur?",
+        "siklar": [
+            "28",
+            "32",
+            "36",
+            "40"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q006"
     },
     {
-        "soru":  "SRC eÄŸitimine katÄ±lan kursiyerlerin devamsÄ±zlÄ±k hakkÄ± toplam ders saatinin yÃ¼zde kaÃ§Ä±nÄ± geÃ§emez?",
-        "siklar":  [
-                       "%5",
-                       "%10",
-                       "%15",
-                       "%20"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src2_sinav_q007"
+        "soru": "SRC eÄŸitimine katÄ±lan kursiyerlerin devamsÄ±zlÄ±k hakkÄ± toplam ders saatinin yÃ¼zde kaÃ§Ä±nÄ± geÃ§emez?",
+        "siklar": [
+            "%5",
+            "%10",
+            "%15",
+            "%20"
+        ],
+        "dogruCevap": "A",
+        "id": "src2_sinav_q007"
     },
     {
-        "soru":  "Psikoteknik deÄŸerlendirme raporunun geÃ§erlilik sÃ¼resi kaÃ§ yÄ±ldÄ±r?",
-        "siklar":  [
-                       "2",
-                       "3",
-                       "4",
-                       "5"
-                   ],
-        "dogruCevap":  "D",
-        "id":  "src2_sinav_q008"
+        "soru": "Psikoteknik deÄŸerlendirme raporunun geÃ§erlilik sÃ¼resi kaÃ§ yÄ±ldÄ±r?",
+        "siklar": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "dogruCevap": "D",
+        "id": "src2_sinav_q008"
     },
     {
-        "soru":  "Ticari yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ± yapan sÃ¼rÃ¼cÃ¼ler iÃ§in standart Ã¼st yaÅŸ sÄ±nÄ±rÄ± kaÃ§tÄ±r?",
-        "siklar":  [
-                       "63",
-                       "65",
-                       "66",
-                       "69"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q009"
+        "soru": "Ticari yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ± yapan sÃ¼rÃ¼cÃ¼ler iÃ§in standart Ã¼st yaÅŸ sÄ±nÄ±rÄ± kaÃ§tÄ±r?",
+        "siklar": [
+            "63",
+            "65",
+            "66",
+            "69"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q009"
     },
     {
-        "soru":  "BÃ¼yÃ¼k otobÃ¼s kullanacak sÃ¼rÃ¼cÃ¼ler iÃ§in belirlenen alt yaÅŸ sÄ±nÄ±rÄ± kaÃ§tÄ±r?",
-        "siklar":  [
-                       "22",
-                       "24",
-                       "25",
-                       "26"
-                   ],
-        "dogruCevap":  "D",
-        "id":  "src2_sinav_q010"
+        "soru": "BÃ¼yÃ¼k otobÃ¼s kullanacak sÃ¼rÃ¼cÃ¼ler iÃ§in belirlenen alt yaÅŸ sÄ±nÄ±rÄ± kaÃ§tÄ±r?",
+        "siklar": [
+            "22",
+            "24",
+            "25",
+            "26"
+        ],
+        "dogruCevap": "D",
+        "id": "src2_sinav_q010"
     },
     {
-        "soru":  "MinibÃ¼s kullanacak ticari sÃ¼rÃ¼cÃ¼ler iÃ§in yasal alt yaÅŸ sÄ±nÄ±rÄ± kaÃ§tÄ±r?",
-        "siklar":  [
-                       "18",
-                       "19",
-                       "21",
-                       "22"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q011"
+        "soru": "MinibÃ¼s kullanacak ticari sÃ¼rÃ¼cÃ¼ler iÃ§in yasal alt yaÅŸ sÄ±nÄ±rÄ± kaÃ§tÄ±r?",
+        "siklar": [
+            "18",
+            "19",
+            "21",
+            "22"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q011"
     },
     {
-        "soru":  "U-ETDS sisteminin temel amacÄ± aÅŸaÄŸÄ±dakilerden hangisidir?",
-        "siklar":  [
-                       "AraÃ§ hÄ±zÄ±nÄ± Ã¶lÃ§mek",
-                       "YakÄ±t tÃ¼ketimini izlemek",
-                       "Sefer ve yolcu bilgilerini kaydetmek",
-                       "Lastik basÄ±ncÄ±nÄ± kontrol etmek"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q012"
+        "soru": "U-ETDS sisteminin temel amacÄ± aÅŸaÄŸÄ±dakilerden hangisidir?",
+        "siklar": [
+            "AraÃ§ hÄ±zÄ±nÄ± Ã¶lÃ§mek",
+            "YakÄ±t tÃ¼ketimini izlemek",
+            "Sefer ve yolcu bilgilerini kaydetmek",
+            "Lastik basÄ±ncÄ±nÄ± kontrol etmek"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q012"
     },
     {
-        "soru":  "U-ETDS kÄ±saltmasÄ±nÄ±n aÃ§Ä±lÄ±mÄ± hangisidir?",
-        "siklar":  [
-                       "UlaÅŸtÄ±rma Elektronik Takip ve Denetim Sistemi",
-                       "UluslararasÄ± Elektronik TaÅŸÄ±ma Sistemi",
-                       "Uydu Entegre Trafik Sistemi",
-                       "UlaÅŸÄ±m Enformasyon Tarife Sistemi"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src2_sinav_q013"
+        "soru": "U-ETDS kÄ±saltmasÄ±nÄ±n aÃ§Ä±lÄ±mÄ± hangisidir?",
+        "siklar": [
+            "UlaÅŸtÄ±rma Elektronik Takip ve Denetim Sistemi",
+            "UluslararasÄ± Elektronik TaÅŸÄ±ma Sistemi",
+            "Uydu Entegre Trafik Sistemi",
+            "UlaÅŸÄ±m Enformasyon Tarife Sistemi"
+        ],
+        "dogruCevap": "A",
+        "id": "src2_sinav_q013"
     },
     {
-        "soru":  "Karayolu TaÅŸÄ±ma Kanunu\u0027nun numarasÄ± kaÃ§tÄ±r?",
-        "siklar":  [
-                       "2918",
-                       "4925",
-                       "5607",
-                       "6136"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q014"
+        "soru": "Karayolu TaÅŸÄ±ma Kanunu\u0027nun numarasÄ± kaÃ§tÄ±r?",
+        "siklar": [
+            "2918",
+            "4925",
+            "5607",
+            "6136"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q014"
     },
     {
-        "soru":  "Yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±nda bilet kesilmesi en geÃ§ ne zaman zorunludur?",
-        "siklar":  [
-                       "Yolculuk sonunda",
-                       "Yolcu araca bindiÄŸinde",
-                       "Ãœcret Ã¶dendiÄŸinde",
-                       "Hareketten Ã¶nce"
-                   ],
-        "dogruCevap":  "D",
-        "id":  "src2_sinav_q015"
+        "soru": "Yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±nda bilet kesilmesi en geÃ§ ne zaman zorunludur?",
+        "siklar": [
+            "Yolculuk sonunda",
+            "Yolcu araca bindiÄŸinde",
+            "Ãœcret Ã¶dendiÄŸinde",
+            "Hareketten Ã¶nce"
+        ],
+        "dogruCevap": "D",
+        "id": "src2_sinav_q015"
     },
     {
-        "soru":  "YurtiÃ§i yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±nda yolcunun Ã¼cretsiz bagaj hakkÄ± kaÃ§ kilogramdÄ±r?",
-        "siklar":  [
-                       "20",
-                       "25",
-                       "30",
-                       "40"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q016"
+        "soru": "YurtiÃ§i yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±nda yolcunun Ã¼cretsiz bagaj hakkÄ± kaÃ§ kilogramdÄ±r?",
+        "siklar": [
+            "20",
+            "25",
+            "30",
+            "40"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q016"
     },
     {
-        "soru":  "AÅŸaÄŸÄ±dakilerden hangisi aktif gÃ¼venlik sistemidir?",
-        "siklar":  [
-                       "Emniyet kemeri",
-                       "Hava yastÄ±ÄŸÄ±",
-                       "ABS",
-                       "KapÄ± iÃ§i Ã§elik bar"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q017"
+        "soru": "AÅŸaÄŸÄ±dakilerden hangisi aktif gÃ¼venlik sistemidir?",
+        "siklar": [
+            "Emniyet kemeri",
+            "Hava yastÄ±ÄŸÄ±",
+            "ABS",
+            "KapÄ± iÃ§i Ã§elik bar"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q017"
     },
     {
-        "soru":  "AÅŸaÄŸÄ±dakilerden hangisi pasif gÃ¼venlik sistemidir?",
-        "siklar":  [
-                       "ESP",
-                       "ASR",
-                       "ABS",
-                       "Emniyet kemeri"
-                   ],
-        "dogruCevap":  "D",
-        "id":  "src2_sinav_q018"
+        "soru": "AÅŸaÄŸÄ±dakilerden hangisi pasif gÃ¼venlik sistemidir?",
+        "siklar": [
+            "ESP",
+            "ASR",
+            "ABS",
+            "Emniyet kemeri"
+        ],
+        "dogruCevap": "D",
+        "id": "src2_sinav_q018"
     },
     {
-        "soru":  "Diferansiyel sisteminin virajlardaki temel gÃ¶revi nedir?",
-        "siklar":  [
-                       "YakÄ±t tasarrufu saÄŸlamak",
-                       "Motoru soÄŸutmak",
-                       "Tekerleklerin farklÄ± hÄ±zda dÃ¶nmesini saÄŸlamak",
-                       "Fren mesafesini kÄ±saltmak"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q019"
+        "soru": "Diferansiyel sisteminin virajlardaki temel gÃ¶revi nedir?",
+        "siklar": [
+            "YakÄ±t tasarrufu saÄŸlamak",
+            "Motoru soÄŸutmak",
+            "Tekerleklerin farklÄ± hÄ±zda dÃ¶nmesini saÄŸlamak",
+            "Fren mesafesini kÄ±saltmak"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q019"
     },
     {
-        "soru":  "Motorun dÃ¶nÃ¼ÅŸ hareketini 90 derece Ã§evirerek akslara ileten parÃ§a hangisidir?",
-        "siklar":  [
-                       "Debriyaj",
-                       "Åžaft",
-                       "Diferansiyel",
-                       "Vites kutusu"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q020"
+        "soru": "Motorun dÃ¶nÃ¼ÅŸ hareketini 90 derece Ã§evirerek akslara ileten parÃ§a hangisidir?",
+        "siklar": [
+            "Debriyaj",
+            "Åžaft",
+            "Diferansiyel",
+            "Vites kutusu"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q020"
     },
     {
-        "soru":  "Dizel motorlarda yakÄ±tÄ±n ateÅŸlenmesi nasÄ±l gerÃ§ekleÅŸir?",
-        "siklar":  [
-                       "Buji kÄ±vÄ±lcÄ±mÄ±yla",
-                       "Manyeto ile",
-                       "SÄ±cak hava Ã¼zerine pÃ¼skÃ¼rtÃ¼lerek",
-                       "Bobin yardÄ±mÄ±yla"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q021"
+        "soru": "Dizel motorlarda yakÄ±tÄ±n ateÅŸlenmesi nasÄ±l gerÃ§ekleÅŸir?",
+        "siklar": [
+            "Buji kÄ±vÄ±lcÄ±mÄ±yla",
+            "Manyeto ile",
+            "SÄ±cak hava Ã¼zerine pÃ¼skÃ¼rtÃ¼lerek",
+            "Bobin yardÄ±mÄ±yla"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q021"
     },
     {
-        "soru":  "ABS sisteminin temel gÃ¶revi nedir?",
-        "siklar":  [
-                       "AracÄ± daha hÄ±zlÄ± durdurmak",
-                       "Tekerleklerin kilitlenmesini Ã¶nlemek",
-                       "Direksiyon sertliÄŸini artÄ±rmak",
-                       "YakÄ±t tÃ¼ketimini azaltmak"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q022"
+        "soru": "ABS sisteminin temel gÃ¶revi nedir?",
+        "siklar": [
+            "AracÄ± daha hÄ±zlÄ± durdurmak",
+            "Tekerleklerin kilitlenmesini Ã¶nlemek",
+            "Direksiyon sertliÄŸini artÄ±rmak",
+            "YakÄ±t tÃ¼ketimini azaltmak"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q022"
     },
     {
-        "soru":  "Tehlikeyi fark edip frene basana kadar geÃ§en sÃ¼rede kat edilen yolun adÄ± nedir?",
-        "siklar":  [
-                       "Fren mesafesi",
-                       "Reaksiyon mesafesi",
-                       "Takip mesafesi",
-                       "Durma mesafesi"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q023"
+        "soru": "Tehlikeyi fark edip frene basana kadar geÃ§en sÃ¼rede kat edilen yolun adÄ± nedir?",
+        "siklar": [
+            "Fren mesafesi",
+            "Reaksiyon mesafesi",
+            "Takip mesafesi",
+            "Durma mesafesi"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q023"
     },
     {
-        "soru":  "Toplam durma mesafesi hangi iki mesafenin toplamÄ±dÄ±r?",
-        "siklar":  [
-                       "Reaksiyon + fren",
-                       "Reaksiyon + takip",
-                       "Fren + takip",
-                       "Ä°ntikal + fren"
-                   ],
-        "dogruCevap":  "A",
-        "id":  "src2_sinav_q024"
+        "soru": "Toplam durma mesafesi hangi iki mesafenin toplamÄ±dÄ±r?",
+        "siklar": [
+            "Reaksiyon + fren",
+            "Reaksiyon + takip",
+            "Fren + takip",
+            "Ä°ntikal + fren"
+        ],
+        "dogruCevap": "A",
+        "id": "src2_sinav_q024"
     },
     {
-        "soru":  "Lastik tabanÄ±nÄ±n ortadan aÅŸÄ±nmasÄ± hangi duruma iÅŸaret eder?",
-        "siklar":  [
-                       "DÃ¼ÅŸÃ¼k hava basÄ±ncÄ±",
-                       "YÃ¼ksek hava basÄ±ncÄ±",
-                       "Rot ayarÄ± bozukluÄŸu",
-                       "AmortisÃ¶r arÄ±zasÄ±"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q025"
+        "soru": "Lastik tabanÄ±nÄ±n ortadan aÅŸÄ±nmasÄ± hangi duruma iÅŸaret eder?",
+        "siklar": [
+            "DÃ¼ÅŸÃ¼k hava basÄ±ncÄ±",
+            "YÃ¼ksek hava basÄ±ncÄ±",
+            "Rot ayarÄ± bozukluÄŸu",
+            "AmortisÃ¶r arÄ±zasÄ±"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q025"
     },
     {
-        "soru":  "Lastiklerin kenar (omuz) kÄ±sÄ±mlarÄ±nÄ±n aÅŸÄ±nmasÄ± genellikle neyin gÃ¶stergesidir?",
-        "siklar":  [
-                       "YÃ¼ksek basÄ±nÃ§",
-                       "DÃ¼ÅŸÃ¼k basÄ±nÃ§",
-                       "Balans bozukluÄŸu",
-                       "Fren ayarÄ±"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q026"
+        "soru": "Lastiklerin kenar (omuz) kÄ±sÄ±mlarÄ±nÄ±n aÅŸÄ±nmasÄ± genellikle neyin gÃ¶stergesidir?",
+        "siklar": [
+            "YÃ¼ksek basÄ±nÃ§",
+            "DÃ¼ÅŸÃ¼k basÄ±nÃ§",
+            "Balans bozukluÄŸu",
+            "Fren ayarÄ±"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q026"
     },
     {
-        "soru":  "Ã–n lastiklerin sadece iÃ§ kÄ±smÄ±nÄ±n aÅŸÄ±nmasÄ± hangi ayarÄ±n bozuk olduÄŸuna iÅŸaret eder?",
-        "siklar":  [
-                       "Balans",
-                       "Rot",
-                       "Far",
-                       "SÃ¼bap"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q027"
+        "soru": "Ã–n lastiklerin sadece iÃ§ kÄ±smÄ±nÄ±n aÅŸÄ±nmasÄ± hangi ayarÄ±n bozuk olduÄŸuna iÅŸaret eder?",
+        "siklar": [
+            "Balans",
+            "Rot",
+            "Far",
+            "SÃ¼bap"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q027"
     },
     {
-        "soru":  "Rot ayarÄ± bozuk bir araÃ§ta aÅŸaÄŸÄ±daki durumlardan hangisi gÃ¶rÃ¼lÃ¼r?",
-        "siklar":  [
-                       "Motor harareti",
-                       "AraÃ§ bir yÃ¶ne Ã§eker",
-                       "Fren tutmaz",
-                       "YakÄ±t biter"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q028"
+        "soru": "Rot ayarÄ± bozuk bir araÃ§ta aÅŸaÄŸÄ±daki durumlardan hangisi gÃ¶rÃ¼lÃ¼r?",
+        "siklar": [
+            "Motor harareti",
+            "AraÃ§ bir yÃ¶ne Ã§eker",
+            "Fren tutmaz",
+            "YakÄ±t biter"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q028"
     },
     {
-        "soru":  "YangÄ±n sÃ¶ndÃ¼rme cihazÄ± araÃ§ iÃ§inde nerede bulunmalÄ±dÄ±r?",
-        "siklar":  [
-                       "Bagajda",
-                       "Motor bÃ¶lÃ¼mÃ¼nde",
-                       "SÃ¼rÃ¼cÃ¼nÃ¼n kolay ulaÅŸabileceÄŸi yerde",
-                       "En arka koltuk altÄ±nda"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q029"
+        "soru": "YangÄ±n sÃ¶ndÃ¼rme cihazÄ± araÃ§ iÃ§inde nerede bulunmalÄ±dÄ±r?",
+        "siklar": [
+            "Bagajda",
+            "Motor bÃ¶lÃ¼mÃ¼nde",
+            "SÃ¼rÃ¼cÃ¼nÃ¼n kolay ulaÅŸabileceÄŸi yerde",
+            "En arka koltuk altÄ±nda"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q029"
     },
     {
-        "soru":  "Turnike uygulamasÄ± hangi durumda yapÄ±lÄ±r?",
-        "siklar":  [
-                       "Burkulmalarda",
-                       "Hafif kanamalarda",
-                       "Durdurulamayan ÅŸiddetli kanamalarda",
-                       "BÃ¶cek sokmalarÄ±nda"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q030"
+        "soru": "Turnike uygulamasÄ± hangi durumda yapÄ±lÄ±r?",
+        "siklar": [
+            "Burkulmalarda",
+            "Hafif kanamalarda",
+            "Durdurulamayan ÅŸiddetli kanamalarda",
+            "BÃ¶cek sokmalarÄ±nda"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q030"
     },
     {
-        "soru":  "SRC belgesi olmayan sÃ¼rÃ¼cÃ¼nÃ¼n kazaya karÄ±ÅŸmasÄ± halinde sigortanÄ±n \"rÃ¼cu\" uygulamasÄ± ne anlama gelir?",
-        "siklar":  [
-                       "HasarÄ± Ã¶dememek",
-                       "Ã–dediÄŸi tazminatÄ± geri istemek",
-                       "PoliÃ§eyi iptal etmek",
-                       "Prim indirimi yapmak"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q031"
+        "soru": "SRC belgesi olmayan sÃ¼rÃ¼cÃ¼nÃ¼n kazaya karÄ±ÅŸmasÄ± halinde sigortanÄ±n \"rÃ¼cu\" uygulamasÄ± ne anlama gelir?",
+        "siklar": [
+            "HasarÄ± Ã¶dememek",
+            "Ã–dediÄŸi tazminatÄ± geri istemek",
+            "PoliÃ§eyi iptal etmek",
+            "Prim indirimi yapmak"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q031"
     },
     {
-        "soru":  "SRC belgesi olmadan araÃ§ kullandÄ±ran iÅŸleten iÃ§in sorumluluk kime daha aÄŸÄ±r yansÄ±r?",
-        "siklar":  [
-                       "Yolcuya",
-                       "SÃ¼rÃ¼cÃ¼ye",
-                       "AraÃ§ sahibine",
-                       "SigortacÄ±ya"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q032"
+        "soru": "SRC belgesi olmadan araÃ§ kullandÄ±ran iÅŸleten iÃ§in sorumluluk kime daha aÄŸÄ±r yansÄ±r?",
+        "siklar": [
+            "Yolcuya",
+            "SÃ¼rÃ¼cÃ¼ye",
+            "AraÃ§ sahibine",
+            "SigortacÄ±ya"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q032"
     },
     {
-        "soru":  "Tarifesiz (grup/turizm) yurtiÃ§i yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ± iÃ§in gerekli yetki belgesi hangisidir?",
-        "siklar":  [
-                       "D1",
-                       "D2",
-                       "B1",
-                       "A1"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q033"
+        "soru": "Tarifesiz (grup/turizm) yurtiÃ§i yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ± iÃ§in gerekli yetki belgesi hangisidir?",
+        "siklar": [
+            "D1",
+            "D2",
+            "B1",
+            "A1"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q033"
     },
     {
-        "soru":  "B1 ve B2 yetki belgeleri hangi taÅŸÄ±macÄ±lÄ±k tÃ¼rÃ¼ iÃ§in verilir?",
-        "siklar":  [
-                       "Kargo",
-                       "OtobÃ¼s ile yolcu",
-                       "Taksi",
-                       "Evden eve"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q034"
+        "soru": "B1 ve B2 yetki belgeleri hangi taÅŸÄ±macÄ±lÄ±k tÃ¼rÃ¼ iÃ§in verilir?",
+        "siklar": [
+            "Kargo",
+            "OtobÃ¼s ile yolcu",
+            "Taksi",
+            "Evden eve"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q034"
     },
     {
-        "soru":  "SRC belgesi almaya engel olmayan suÃ§ hangisidir?",
-        "siklar":  [
-                       "UyuÅŸturucu ticareti",
-                       "Ä°nsan kaÃ§akÃ§Ä±lÄ±ÄŸÄ±",
-                       "KaÃ§akÃ§Ä±lÄ±k",
-                       "Basit yaralama"
-                   ],
-        "dogruCevap":  "D",
-        "id":  "src2_sinav_q035"
+        "soru": "SRC belgesi almaya engel olmayan suÃ§ hangisidir?",
+        "siklar": [
+            "UyuÅŸturucu ticareti",
+            "Ä°nsan kaÃ§akÃ§Ä±lÄ±ÄŸÄ±",
+            "KaÃ§akÃ§Ä±lÄ±k",
+            "Basit yaralama"
+        ],
+        "dogruCevap": "D",
+        "id": "src2_sinav_q035"
     },
     {
-        "soru":  "SRC belgeleri hangi kurum tarafÄ±ndan dÃ¼zenlenir?",
-        "siklar":  [
-                       "MEB",
-                       "Ä°Ã§iÅŸleri BakanlÄ±ÄŸÄ±",
-                       "UlaÅŸtÄ±rma ve AltyapÄ± BakanlÄ±ÄŸÄ±",
-                       "Emniyet Genel MÃ¼dÃ¼rlÃ¼ÄŸÃ¼"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q036"
+        "soru": "SRC belgeleri hangi kurum tarafÄ±ndan dÃ¼zenlenir?",
+        "siklar": [
+            "MEB",
+            "Ä°Ã§iÅŸleri BakanlÄ±ÄŸÄ±",
+            "UlaÅŸtÄ±rma ve AltyapÄ± BakanlÄ±ÄŸÄ±",
+            "Emniyet Genel MÃ¼dÃ¼rlÃ¼ÄŸÃ¼"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q036"
     },
     {
-        "soru":  "SRC belgesi alabilmek iÃ§in adayÄ±n sahip olmasÄ± gereken saÄŸlÄ±k raporu hangisidir?",
-        "siklar":  [
-                       "Aile hekimi raporu",
-                       "SÃ¼rÃ¼cÃ¼ olur raporu",
-                       "Heyet raporu",
-                       "Ä°ÅŸ gÃ¶remezlik raporu"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q037"
+        "soru": "SRC belgesi alabilmek iÃ§in adayÄ±n sahip olmasÄ± gereken saÄŸlÄ±k raporu hangisidir?",
+        "siklar": [
+            "Aile hekimi raporu",
+            "SÃ¼rÃ¼cÃ¼ olur raporu",
+            "Heyet raporu",
+            "Ä°ÅŸ gÃ¶remezlik raporu"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q037"
     },
     {
-        "soru":  "SRC belgeleri hangi sistem Ã¼zerinden sorgulanabilir?",
-        "siklar":  [
-                       "MERNÄ°S",
-                       "SGK",
-                       "U-ETDS",
-                       "e-Devlet"
-                   ],
-        "dogruCevap":  "D",
-        "id":  "src2_sinav_q038"
+        "soru": "SRC belgeleri hangi sistem Ã¼zerinden sorgulanabilir?",
+        "siklar": [
+            "MERNÄ°S",
+            "SGK",
+            "U-ETDS",
+            "e-Devlet"
+        ],
+        "dogruCevap": "D",
+        "id": "src2_sinav_q038"
     },
     {
-        "soru":  "SRC 2 belgesi hangi sÄ±nav tÃ¼rleriyle kazanÄ±lÄ±r?",
-        "siklar":  [
-                       "Sadece yazÄ±lÄ±",
-                       "Sadece uygulama",
-                       "YazÄ±lÄ± + uygulama",
-                       "Direksiyon"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q039"
+        "soru": "SRC 2 belgesi hangi sÄ±nav tÃ¼rleriyle kazanÄ±lÄ±r?",
+        "siklar": [
+            "Sadece yazÄ±lÄ±",
+            "Sadece uygulama",
+            "YazÄ±lÄ± + uygulama",
+            "Direksiyon"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q039"
     },
     {
-        "soru":  "SRC 2 belgesinin kapsamÄ± aÅŸaÄŸÄ±dakilerden hangisidir?",
-        "siklar":  [
-                       "UluslararasÄ± yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
-                       "YurtiÃ§i yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
-                       "YurtiÃ§i eÅŸya taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
-                       "UluslararasÄ± eÅŸya taÅŸÄ±macÄ±lÄ±ÄŸÄ±"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q040"
+        "soru": "SRC 2 belgesinin kapsamÄ± aÅŸaÄŸÄ±dakilerden hangisidir?",
+        "siklar": [
+            "UluslararasÄ± yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
+            "YurtiÃ§i yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
+            "YurtiÃ§i eÅŸya taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
+            "UluslararasÄ± eÅŸya taÅŸÄ±macÄ±lÄ±ÄŸÄ±"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q040"
     },
     {
-        "soru":  "AETR\u0027ye gÃ¶re haftalÄ±k toplam sÃ¼rÃ¼ÅŸ sÃ¼resi en fazla kaÃ§ saattir?",
-        "siklar":  [
-                       "45",
-                       "56",
-                       "60",
-                       "90"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q041"
+        "soru": "AETR\u0027ye gÃ¶re haftalÄ±k toplam sÃ¼rÃ¼ÅŸ sÃ¼resi en fazla kaÃ§ saattir?",
+        "siklar": [
+            "45",
+            "56",
+            "60",
+            "90"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q041"
     },
     {
-        "soru":  "GÃ¼nlÃ¼k 9 saatlik sÃ¼rÃ¼ÅŸ sÃ¼resi haftada en fazla kaÃ§ kez 10 saate Ã§Ä±karÄ±labilir?",
-        "siklar":  [
-                       "1",
-                       "2",
-                       "3",
-                       "4"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q042"
+        "soru": "GÃ¼nlÃ¼k 9 saatlik sÃ¼rÃ¼ÅŸ sÃ¼resi haftada en fazla kaÃ§ kez 10 saate Ã§Ä±karÄ±labilir?",
+        "siklar": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q042"
     },
     {
-        "soru":  "4,5 saat sÃ¼rÃ¼ÅŸten sonra verilmesi gereken mola sÃ¼resi kaÃ§ dakikadÄ±r?",
-        "siklar":  [
-                       "30",
-                       "45",
-                       "60",
-                       "15"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q043"
+        "soru": "4,5 saat sÃ¼rÃ¼ÅŸten sonra verilmesi gereken mola sÃ¼resi kaÃ§ dakikadÄ±r?",
+        "siklar": [
+            "30",
+            "45",
+            "60",
+            "15"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q043"
     },
     {
-        "soru":  "GÃ¼nlÃ¼k kesintisiz dinlenme sÃ¼resi en az kaÃ§ saattir?",
-        "siklar":  [
-                       "8",
-                       "9",
-                       "10",
-                       "11"
-                   ],
-        "dogruCevap":  "D",
-        "id":  "src2_sinav_q044"
+        "soru": "GÃ¼nlÃ¼k kesintisiz dinlenme sÃ¼resi en az kaÃ§ saattir?",
+        "siklar": [
+            "8",
+            "9",
+            "10",
+            "11"
+        ],
+        "dogruCevap": "D",
+        "id": "src2_sinav_q044"
     },
     {
-        "soru":  "AzaltÄ±lmÄ±ÅŸ gÃ¼nlÃ¼k dinlenme haftada en fazla kaÃ§ kez uygulanabilir?",
-        "siklar":  [
-                       "1",
-                       "2",
-                       "3",
-                       "4"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q045"
+        "soru": "AzaltÄ±lmÄ±ÅŸ gÃ¼nlÃ¼k dinlenme haftada en fazla kaÃ§ kez uygulanabilir?",
+        "siklar": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q045"
     },
     {
-        "soru":  "Tarifeli yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±nda aÃ§Ä±k bilet geÃ§erlilik sÃ¼resi kaÃ§ aydÄ±r?",
-        "siklar":  [
-                       "1",
-                       "3",
-                       "6",
-                       "12"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q046"
+        "soru": "Tarifeli yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±nda aÃ§Ä±k bilet geÃ§erlilik sÃ¼resi kaÃ§ aydÄ±r?",
+        "siklar": [
+            "1",
+            "3",
+            "6",
+            "12"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q046"
     },
     {
-        "soru":  "SRC teorik sÄ±navÄ±ndan geÃ§mek iÃ§in gereken asgari puan kaÃ§tÄ±r?",
-        "siklar":  [
-                       "60",
-                       "65",
-                       "70",
-                       "75"
-                   ],
-        "dogruCevap":  "C",
-        "id":  "src2_sinav_q047"
+        "soru": "SRC teorik sÄ±navÄ±ndan geÃ§mek iÃ§in gereken asgari puan kaÃ§tÄ±r?",
+        "siklar": [
+            "60",
+            "65",
+            "70",
+            "75"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q047"
     },
     {
-        "soru":  "Ä°ki haftalÄ±k toplam araÃ§ kullanma sÃ¼resi en fazla kaÃ§ saattir?",
-        "siklar":  [
-                       "80",
-                       "90",
-                       "96",
-                       "100"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q048"
+        "soru": "Ä°ki haftalÄ±k toplam araÃ§ kullanma sÃ¼resi en fazla kaÃ§ saattir?",
+        "siklar": [
+            "80",
+            "90",
+            "96",
+            "100"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q048"
     },
     {
-        "soru":  "Koltuk ferdi kaza sigortasÄ± neyi teminat altÄ±na alÄ±r?",
-        "siklar":  [
-                       "AracÄ±n hasarÄ±nÄ±",
-                       "YolcularÄ±n kaza kaynaklÄ± zararlarÄ±nÄ±",
-                       "Bagaj kaybÄ±nÄ±",
-                       "Gecikme tazminatÄ±nÄ±"
-                   ],
-        "dogruCevap":  "B",
-        "id":  "src2_sinav_q049"
+        "soru": "Koltuk ferdi kaza sigortasÄ± neyi teminat altÄ±na alÄ±r?",
+        "siklar": [
+            "AracÄ±n hasarÄ±nÄ±",
+            "YolcularÄ±n kaza kaynaklÄ± zararlarÄ±nÄ±",
+            "Bagaj kaybÄ±nÄ±",
+            "Gecikme tazminatÄ±nÄ±"
+        ],
+        "dogruCevap": "B",
+        "id": "src2_sinav_q049"
+    },
+    {
+        "soru": "Yolcu taşımacılığında emniyet kemeri olan araçlarda sürücünün temel görevi nedir?",
+        "siklar": [
+            "Kemer takmak zorunlu değildir",
+            "Sadece şehirlerarası yollarda uyarı yapılır",
+            "Yolcuları bilgilendirmek ve kendi kemerini takmak",
+            "Kemer sadece sürücü için zorunludur"
+        ],
+        "dogruCevap": "C",
+        "id": "src2_sinav_q050"
     }
 ]
