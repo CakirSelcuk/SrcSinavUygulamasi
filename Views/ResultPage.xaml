@@ -48,7 +48,7 @@
             <!-- ═══════════════════════════════════════════════════════════ -->
             <!-- HEADER: Puan veya Temizlenen Yanlış Gösterimi             -->
             <!-- ═══════════════════════════════════════════════════════════ -->
-            <Grid HeightRequest="300">
+            <Grid HeightRequest="360">
                 <BoxView x:Name="HeaderBox" 
                          Color="#334155" 
                          VerticalOptions="Fill" 
@@ -149,7 +149,7 @@
                     BackgroundColor="#1e293b" 
                     StrokeShape="RoundRectangle 20" 
                     Padding="24" 
-                    Margin="20,-35,20,16">
+                    Margin="20,-20,20,16">
                 <Border.Shadow>
                     <Shadow Brush="#000000" Offset="0,4" Opacity="0.2" Radius="12"/>
                 </Border.Shadow>
