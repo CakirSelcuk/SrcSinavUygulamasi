@@ -350,6 +350,199 @@ namespace SrcSinavUygulamasi.Services
             return GetAllWrongQuestionsUnique(categoryId).Count;
         }
         #endregion
+
+        #region User Statistics (Analysis Dashboard)
+
+        /// <summary>
+        /// Tüm kategorilerdeki kullanıcı istatistiklerini hesapla
+        /// </summary>
+        public UserStatisticsModel GetUserStatistics()
+        {
+            var stats = new UserStatisticsModel();
+            var allExams = new List<ExamProgressModel>();
+            var subjectStats = new Dictionary<string, (int Correct, int Wrong)>();
+
+            // Tüm kategorilerdeki sınavları topla
+            string[] categories = { "src1", "src2", "src3", "src4", "src5" };
+            
+            foreach (var category in categories)
+            {
+                var categoryExams = GetAllExamProgress(category);
+                allExams.AddRange(categoryExams);
+            }
+
+            if (allExams.Count == 0)
+            {
+                return stats; // Boş istatistik döndür
+            }
+
+            // ═══════════════════════════════════════════════════════════
+            // GENEL İSTATİSTİKLER
+            // ═══════════════════════════════════════════════════════════
+            stats.TotalExams = allExams.Count;
+            
+            double totalScore = 0;
+            int totalQuestions = 0;
+            int passedCount = 0;
+
+            foreach (var exam in allExams)
+            {
+                // Puanı hesapla (Correct / Total * 100)
+                double examScore = exam.TotalQuestionCount > 0 
+                    ? (double)exam.CorrectCount / exam.TotalQuestionCount * 100 
+                    : 0;
+                
+                totalScore += examScore;
+                totalQuestions += exam.TotalQuestionCount;
+
+                if (examScore >= 70)
+                    passedCount++;
+            }
+
+            stats.AverageScore = Math.Round(totalScore / stats.TotalExams, 1);
+            stats.TotalQuestionsSolved = totalQuestions;
+            stats.PassedExams = passedCount;
+            stats.FailedExams = stats.TotalExams - passedCount;
+
+            // ═══════════════════════════════════════════════════════════
+            // SON 5 SINAV GEÇMİŞİ
+            // ═══════════════════════════════════════════════════════════
+            var recentExams = allExams
+                .OrderByDescending(e => e.CompletedDate)
+                .Take(5)
+                .Select(e => new RecentExamModel
+                {
+                    ExamName = ExamCatalog.GetDisplayTitle(e.CategoryId, e.ExamId),
+                    CategoryId = e.CategoryId,
+                    Date = e.CompletedDate,
+                    Score = e.TotalQuestionCount > 0 
+                        ? Math.Round((double)e.CorrectCount / e.TotalQuestionCount * 100, 1) 
+                        : 0
+                })
+                .ToList();
+
+            stats.RecentExamHistory = recentExams;
+
+            // ═══════════════════════════════════════════════════════════
+            // KONU BAZLI ANALİZ (Zayıf konular)
+            // ═══════════════════════════════════════════════════════════
+            // Tüm soruları yükle ve konu analizi yap
+            try
+            {
+                var questionService = new QuestionService();
+                
+                foreach (var category in categories)
+                {
+                    var questions = questionService.SorulariGetir(category).Result;
+                    if (questions == null || questions.Count == 0) continue;
+
+                    SubjectTaggerService.AutoTagQuestions(questions);
+                    var questionDict = questions.ToDictionary(q => q.Id, q => q);
+
+                    var categoryExams = allExams.Where(e => e.CategoryId == category).ToList();
+                    
+                    foreach (var exam in categoryExams)
+                    {
+                        foreach (var answer in exam.Answers)
+                        {
+                            if (!questionDict.TryGetValue(answer.Key, out var question))
+                                continue;
+
+                            string subject = question.Subject ?? "Genel";
+                            
+                            if (!subjectStats.ContainsKey(subject))
+                                subjectStats[subject] = (0, 0);
+
+                            var current = subjectStats[subject];
+                            bool isCorrect = !string.IsNullOrEmpty(answer.Value) && 
+                                           answer.Value == question.DogruCevap;
+
+                            subjectStats[subject] = isCorrect 
+                                ? (current.Correct + 1, current.Wrong) 
+                                : (current.Correct, current.Wrong + 1);
+                        }
+                    }
+                }
+
+                // En zayıf 3 konuyu bul (en düşük başarı oranına göre)
+                var weakestSubjects = subjectStats
+                    .Where(s => s.Value.Correct + s.Value.Wrong >= 3) // En az 3 soru çözülmüş olmalı
+                    .Select(s => new WeakSubjectModel
+                    {
+                        SubjectName = s.Key,
+                        CorrectCount = s.Value.Correct,
+                        WrongCount = s.Value.Wrong
+                    })
+                    .OrderBy(s => s.SuccessRate)
+                    .Take(3)
+                    .ToList();
+
+                stats.WeakestSubjects = weakestSubjects;
+            }
+            catch (Exception ex)
+            {
+#if DEBUG
+                System.Diagnostics.Debug.WriteLine($"📊 Subject analysis error: {ex.Message}");
+#endif
+            }
+
+            return stats;
+        }
+
+        /// <summary>
+        /// Belirli bir kategorideki istatistikleri getir
+        /// </summary>
+        public UserStatisticsModel GetCategoryStatistics(string categoryId)
+        {
+            var stats = new UserStatisticsModel();
+            var categoryExams = GetAllExamProgress(categoryId);
+
+            if (categoryExams.Count == 0)
+                return stats;
+
+            stats.TotalExams = categoryExams.Count;
+            
+            double totalScore = 0;
+            int totalQuestions = 0;
+            int passedCount = 0;
+
+            foreach (var exam in categoryExams)
+            {
+                double examScore = exam.TotalQuestionCount > 0 
+                    ? (double)exam.CorrectCount / exam.TotalQuestionCount * 100 
+                    : 0;
+                
+                totalScore += examScore;
+                totalQuestions += exam.TotalQuestionCount;
+
+                if (examScore >= 70)
+                    passedCount++;
+            }
+
+            stats.AverageScore = Math.Round(totalScore / stats.TotalExams, 1);
+            stats.TotalQuestionsSolved = totalQuestions;
+            stats.PassedExams = passedCount;
+            stats.FailedExams = stats.TotalExams - passedCount;
+
+            // Son 5 sınav
+            stats.RecentExamHistory = categoryExams
+                .OrderByDescending(e => e.CompletedDate)
+                .Take(5)
+                .Select(e => new RecentExamModel
+                {
+                    ExamName = ExamCatalog.GetDisplayTitle(e.CategoryId, e.ExamId),
+                    CategoryId = e.CategoryId,
+                    Date = e.CompletedDate,
+                    Score = e.TotalQuestionCount > 0 
+                        ? Math.Round((double)e.CorrectCount / e.TotalQuestionCount * 100, 1) 
+                        : 0
+                })
+                .ToList();
+
+            return stats;
+        }
+
+        #endregion
     }
 }
 

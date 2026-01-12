@@ -4,21 +4,26 @@ using Microsoft.Maui.Controls.Shapes;
 
 namespace SrcSinavUygulamasi.Views;
 
+/// <summary>
+/// Analiz Dashboard Sayfası
+/// Kullanıcının performans istatistiklerini gösteren "Kokpit"
+/// </summary>
 [QueryProperty(nameof(CategoryId), "CategoryId")]
 public partial class AnalysisPage : ContentPage
 {
-    private string _categoryId = "";
     private ExamProgressService _progressService = new();
-    private QuestionService _questionService = new();
-    private List<string> _wrongQuestionIds = new();
-
-    public string CategoryId
+    private string? _categoryId;
+    
+    public string? CategoryId
     {
         get => _categoryId;
         set
         {
             _categoryId = value;
-            LoadAnalysis();
+            if (!string.IsNullOrEmpty(value))
+            {
+                LblCategoryTitle.Text = $"SRC {value.Replace("src", "").ToUpper()}";
+            }
         }
     }
 
@@ -27,186 +32,400 @@ public partial class AnalysisPage : ContentPage
         InitializeComponent();
     }
 
-    private async void LoadAnalysis()
+    protected override void OnAppearing()
     {
-        if (string.IsNullOrEmpty(_categoryId)) return;
+        base.OnAppearing();
+        LoadStatistics();
+    }
 
-        // Kategori başlığı
-        var categoryTitles = new Dictionary<string, string>
+    // ═══════════════════════════════════════════════════════════
+    // VERİ YÜKLEME
+    // ═══════════════════════════════════════════════════════════
+    private void LoadStatistics()
+    {
+        UserStatisticsModel stats;
+        
+        if (!string.IsNullOrEmpty(_categoryId))
         {
-            { "src1", "SRC 1 - Uluslararası Yolcu" },
-            { "src2", "SRC 2 - Yurtiçi Yolcu" },
-            { "src3", "SRC 3 - Uluslararası Eşya" },
-            { "src4", "SRC 4 - Yurtiçi Eşya" },
-            { "src5", "SRC 5 - Tehlikeli Madde (ADR)" }
-        };
-
-        CategoryLabel.Text = categoryTitles.TryGetValue(_categoryId, out var title) ? title : _categoryId.ToUpper();
-
-        // Hazırlık durumu
-        var readiness = _progressService.GetReadinessStatus(_categoryId);
-        ReadinessLabel.Text = readiness.Label;
-        ReadinessLabel.TextColor = Color.FromArgb(readiness.Color);
-
-        // Tüm yanlış soruları getir
-        var wrongQuestions = _progressService.GetAllWrongQuestionsUnique(_categoryId);
-
-        if (wrongQuestions.Count == 0)
+            stats = _progressService.GetCategoryStatistics(_categoryId);
+        }
+        else
         {
-            // Hiç yanlış yok - tebrik mesajı göster
-            CongratsBorder.IsVisible = true;
-            WrongQuestionsScroll.IsVisible = false;
-            MiniExamButton.IsVisible = false;
+            stats = _progressService.GetUserStatistics();
+        }
+
+        if (!stats.HasData)
+        {
+            ShowEmptyState();
             return;
         }
 
-        // Yanlış sorular var
-        CongratsBorder.IsVisible = false;
-        WrongQuestionsScroll.IsVisible = true;
-        MiniExamButton.IsVisible = true;
-
-        // Soruları yükle (pratik + sınav + resimli)
-        var allQuestions = new List<QuestionModel>();
-        allQuestions.AddRange(await _questionService.SorulariGetir(_categoryId));
-        allQuestions.AddRange(await _questionService.SinavSorulariniGetir(_categoryId));
-        allQuestions.AddRange(await _questionService.ResimliSorulariGetir(_categoryId));
-
-        // Yanlış soruları listele
-        WrongQuestionsStack.Children.Clear();
-        _wrongQuestionIds.Clear();
-
-        int index = 1;
-        foreach (var wrongEntry in wrongQuestions)
-        {
-            var questionId = wrongEntry.Key;
-            var userAnswer = wrongEntry.Value;
-
-            // Soruyu bul
-            var question = allQuestions.FirstOrDefault(q => q.Id == questionId);
-            if (question == null) continue;
-
-            _wrongQuestionIds.Add(questionId);
-
-            // Soru kartı oluştur
-            var card = CreateQuestionCard(index, question, userAnswer);
-            WrongQuestionsStack.Children.Add(card);
-            index++;
-        }
-
-        // Yanlış sayısı bilgisi
-        var infoLabel = new Label
-        {
-            Text = $"Toplam {wrongQuestions.Count} yanlış sorunuz bulunmaktadır.",
-            TextColor = Color.FromArgb("#94a3b8"),
-            FontSize = 14,
-            HorizontalOptions = LayoutOptions.Center,
-            Margin = new Thickness(0, 10, 0, 0)
-        };
-        WrongQuestionsStack.Children.Insert(0, infoLabel);
+        ShowMainContent(stats);
     }
 
-    private Border CreateQuestionCard(int index, QuestionModel question, string userAnswer)
+    // ═══════════════════════════════════════════════════════════
+    // EMPTY STATE
+    // ═══════════════════════════════════════════════════════════
+    private void ShowEmptyState()
     {
-        var card = new Border
+        EmptyStateFrame.IsVisible = true;
+        MainContent.IsVisible = false;
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // ANA İÇERİK
+    // ═══════════════════════════════════════════════════════════
+    private void ShowMainContent(UserStatisticsModel stats)
+    {
+        EmptyStateFrame.IsVisible = false;
+        MainContent.IsVisible = true;
+
+        // Özet kartları
+        LblAverageScore.Text = stats.AverageScore.ToString("F0");
+        LblTotalQuestions.Text = stats.TotalQuestionsSolved.ToString();
+        LblTotalExams.Text = stats.TotalExams.ToString();
+
+        // Başarı oranı rengi
+        if (stats.AverageScore >= 70)
+            LblAverageScore.TextColor = Color.FromArgb("#22c55e");
+        else if (stats.AverageScore >= 50)
+            LblAverageScore.TextColor = Color.FromArgb("#f59e0b");
+        else
+            LblAverageScore.TextColor = Color.FromArgb("#ef4444");
+
+        // Başarı oranı
+        LblSuccessRate.Text = $"%{stats.SuccessRate:F0}";
+        LblPassedCount.Text = $"{stats.PassedExams} Geçti";
+        LblFailedCount.Text = $"{stats.FailedExams} Kaldı";
+
+        // Başarı oranı bar genişliği (animasyonlu)
+        MainThread.BeginInvokeOnMainThread(async () =>
         {
-            Stroke = Colors.Transparent,
-            BackgroundColor = Color.FromArgb("#1e293b"),
-            StrokeShape = new RoundRectangle { CornerRadius = 12 },
-            Padding = new Thickness(15)
+            await Task.Delay(100);
+            double maxWidth = 280;
+            double targetWidth = maxWidth * (stats.SuccessRate / 100);
+            SuccessRateBar.WidthRequest = targetWidth;
+            
+            if (stats.SuccessRate >= 70)
+                SuccessRateBar.BackgroundColor = Color.FromArgb("#22c55e");
+            else if (stats.SuccessRate >= 50)
+                SuccessRateBar.BackgroundColor = Color.FromArgb("#f59e0b");
+            else
+                SuccessRateBar.BackgroundColor = Color.FromArgb("#ef4444");
+        });
+
+        // Bar chart oluştur
+        CreateBarChart(stats.RecentExamHistory);
+
+        // Zayıf konular
+        CreateWeakSubjects(stats.WeakestSubjects);
+
+        // Son aktiviteler
+        CreateRecentExams(stats.RecentExamHistory);
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // NATIVE BAR CHART
+    // ═══════════════════════════════════════════════════════════
+    private void CreateBarChart(List<RecentExamModel> exams)
+    {
+        BarChartContainer.Children.Clear();
+
+        if (exams.Count == 0)
+        {
+            BarChartContainer.Children.Add(new Label
+            {
+                Text = "Henüz sınav verisi yok",
+                TextColor = Color.FromArgb("#94a3b8"),
+                FontSize = 12,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center
+            });
+            Grid.SetColumnSpan((Label)BarChartContainer.Children[0], 5);
+            return;
+        }
+
+        // Son 5 sınavı al (en eski -> en yeni sırada)
+        var chartExams = exams.Take(5).Reverse().ToList();
+        
+        for (int i = 0; i < chartExams.Count; i++)
+        {
+            var exam = chartExams[i];
+            var barContainer = CreateBarColumn(exam, i);
+            Grid.SetColumn(barContainer, i);
+            BarChartContainer.Children.Add(barContainer);
+        }
+
+        // Eksik sütunları doldur
+        for (int i = chartExams.Count; i < 5; i++)
+        {
+            var emptyBar = new VerticalStackLayout
+            {
+                VerticalOptions = LayoutOptions.End,
+                HorizontalOptions = LayoutOptions.Center
+            };
+            Grid.SetColumn(emptyBar, i);
+            BarChartContainer.Children.Add(emptyBar);
+        }
+    }
+
+    private View CreateBarColumn(RecentExamModel exam, int index)
+    {
+        var container = new VerticalStackLayout
+        {
+            VerticalOptions = LayoutOptions.End,
+            HorizontalOptions = LayoutOptions.Center,
+            Spacing = 4
         };
 
-        var stack = new VerticalStackLayout { Spacing = 10 };
-
-        // Soru numarası ve metni
-        stack.Children.Add(new Label
+        // Puan etiketi
+        container.Children.Add(new Label
         {
-            Text = $"Soru {index}",
-            TextColor = Color.FromArgb("#ef4444"),
-            FontSize = 12,
+            Text = $"{exam.Score:F0}",
+            TextColor = Colors.White,
+            FontSize = 11,
+            FontAttributes = FontAttributes.Bold,
+            HorizontalOptions = LayoutOptions.Center
+        });
+
+        // Bar yüksekliği (max 100 puan = 80 piksel)
+        double maxHeight = 80;
+        double barHeight = Math.Max(10, maxHeight * (exam.Score / 100));
+
+        // Bar rengi
+        string barColor = exam.Score >= 70 ? "#22c55e" : (exam.Score >= 50 ? "#f59e0b" : "#ef4444");
+
+        // Bar
+        var bar = new Border
+        {
+            BackgroundColor = Color.FromArgb(barColor),
+            StrokeShape = new RoundRectangle { CornerRadius = new CornerRadius(4, 4, 0, 0) },
+            Stroke = Colors.Transparent,
+            HeightRequest = 0, // Animasyon için başlangıç
+            WidthRequest = 36,
+            HorizontalOptions = LayoutOptions.Center
+        };
+
+        container.Children.Add(bar);
+
+        // 70 puan çizgisi (referans)
+        if (exam.Score >= 70)
+        {
+            container.Children.Add(new BoxView
+            {
+                Color = Color.FromArgb("#f59e0b"),
+                HeightRequest = 2,
+                WidthRequest = 36,
+                HorizontalOptions = LayoutOptions.Center,
+                Margin = new Thickness(0, -2, 0, 0)
+            });
+        }
+
+        // Tarih etiketi
+        container.Children.Add(new Label
+        {
+            Text = exam.Date.ToString("dd.MM"),
+            TextColor = Color.FromArgb("#94a3b8"),
+            FontSize = 9,
+            HorizontalOptions = LayoutOptions.Center
+        });
+
+        // Animasyonlu bar yüksekliği
+        MainThread.BeginInvokeOnMainThread(async () =>
+        {
+            await Task.Delay(100 + (index * 100));
+            bar.HeightRequest = barHeight;
+        });
+
+        return container;
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // ZAYIF KONULAR
+    // ═══════════════════════════════════════════════════════════
+    private void CreateWeakSubjects(List<WeakSubjectModel> weakSubjects)
+    {
+        WeakSubjectsContainer.Children.Clear();
+
+        if (weakSubjects.Count == 0)
+        {
+            WeakSubjectsFrame.IsVisible = false;
+            return;
+        }
+
+        WeakSubjectsFrame.IsVisible = true;
+
+        foreach (var subject in weakSubjects)
+        {
+            var row = CreateWeakSubjectRow(subject);
+            WeakSubjectsContainer.Children.Add(row);
+        }
+    }
+
+    private View CreateWeakSubjectRow(WeakSubjectModel subject)
+    {
+        var container = new VerticalStackLayout { Spacing = 6 };
+
+        // Başlık satırı
+        var headerGrid = new Grid
+        {
+            ColumnDefinitions = new ColumnDefinitionCollection
+            {
+                new ColumnDefinition { Width = GridLength.Star },
+                new ColumnDefinition { Width = GridLength.Auto }
+            }
+        };
+
+        headerGrid.Children.Add(new Label
+        {
+            Text = $"{subject.StatusIcon} {subject.SubjectName}",
+            TextColor = Colors.White,
+            FontSize = 14,
             FontAttributes = FontAttributes.Bold
         });
 
-        stack.Children.Add(new Label
+        var statsLabel = new Label
         {
-            Text = question.Soru,
-            TextColor = Colors.White,
+            Text = $"{subject.CorrectCount}/{subject.TotalQuestions} (%{subject.SuccessRate:F0})",
+            TextColor = Color.FromArgb(subject.StatusColor),
             FontSize = 14,
-            LineHeight = 1.3
+            FontAttributes = FontAttributes.Bold
+        };
+        Grid.SetColumn(statsLabel, 1);
+        headerGrid.Children.Add(statsLabel);
+
+        container.Children.Add(headerGrid);
+
+        // Progress bar
+        var progressGrid = new Grid { HeightRequest = 8 };
+        
+        progressGrid.Children.Add(new Border
+        {
+            BackgroundColor = Color.FromArgb("#374151"),
+            StrokeShape = new RoundRectangle { CornerRadius = 4 },
+            Stroke = Colors.Transparent
         });
 
-        // Kullanıcının cevabı
-        var userAnswerIndex = userAnswer switch
+        var progressFill = new Border
         {
-            "A" => 0,
-            "B" => 1,
-            "C" => 2,
-            "D" => 3,
-            _ => -1
+            BackgroundColor = Color.FromArgb(subject.StatusColor),
+            StrokeShape = new RoundRectangle { CornerRadius = 4 },
+            Stroke = Colors.Transparent,
+            HorizontalOptions = LayoutOptions.Start,
+            WidthRequest = 0
         };
+        progressGrid.Children.Add(progressFill);
 
-        if (userAnswerIndex >= 0 && userAnswerIndex < question.Siklar.Count)
+        container.Children.Add(progressGrid);
+
+        // Animasyon
+        MainThread.BeginInvokeOnMainThread(async () =>
         {
-            stack.Children.Add(new Label
-            {
-                Text = $"Sizin Cevabınız: {userAnswer}) {question.Siklar[userAnswerIndex]}",
-                TextColor = Color.FromArgb("#ef4444"),
-                FontSize = 13
-            });
-        }
+            await Task.Delay(150);
+            double maxWidth = 270;
+            progressFill.WidthRequest = maxWidth * (subject.SuccessRate / 100);
+        });
 
-        // Doğru cevap
-        var correctIndex = question.DogruCevap switch
-        {
-            "A" => 0,
-            "B" => 1,
-            "C" => 2,
-            "D" => 3,
-            _ => -1
-        };
-
-        if (correctIndex >= 0 && correctIndex < question.Siklar.Count)
-        {
-            stack.Children.Add(new Label
-            {
-                Text = $"Doğru Cevap: {question.DogruCevap}) {question.Siklar[correctIndex]}",
-                TextColor = Color.FromArgb("#22c55e"),
-                FontSize = 13,
-                FontAttributes = FontAttributes.Bold
-            });
-        }
-
-        card.Content = stack;
-        return card;
+        return container;
     }
 
-    private async void OnMiniExamClicked(object sender, EventArgs e)
+    // ═══════════════════════════════════════════════════════════
+    // SON AKTİVİTELER
+    // ═══════════════════════════════════════════════════════════
+    private void CreateRecentExams(List<RecentExamModel> exams)
     {
-        // Mini sınav için soru ID'lerini al
-        var miniExamQuestionIds = _progressService.BuildMiniExamQuestionIds(_categoryId, 15);
+        RecentExamsContainer.Children.Clear();
 
-        if (miniExamQuestionIds.Count == 0)
+        if (exams.Count == 0)
         {
-            await DisplayAlert("Bilgi", "Mini sınav için uygun soru bulunamadı.", "Tamam");
+            RecentExamsFrame.IsVisible = false;
             return;
         }
 
-        // Mini sınav sayfasına git
-        await Shell.Current.GoToAsync($"{nameof(QuizPage)}",
-            new Dictionary<string, object>
-            {
-                { "KategoriId", _categoryId },
-                { "ExamIndex", "0" },
-                { "TotalExams", "1" },
-                { "IsRealExam", "False" },
-                { "IsImageExam", "False" },
-                { "PointsPerQuestion", "6.67" },
-                { "IsMiniExam", "True" },
-                { "MiniExamQuestionIds", string.Join(",", miniExamQuestionIds) }
-            });
+        RecentExamsFrame.IsVisible = true;
+
+        foreach (var exam in exams)
+        {
+            var row = CreateRecentExamRow(exam);
+            RecentExamsContainer.Children.Add(row);
+        }
     }
 
+    private View CreateRecentExamRow(RecentExamModel exam)
+    {
+        var container = new Border
+        {
+            BackgroundColor = Color.FromArgb("#374151"),
+            StrokeShape = new RoundRectangle { CornerRadius = 10 },
+            Stroke = Colors.Transparent,
+            Padding = new Thickness(14, 10)
+        };
+
+        var grid = new Grid
+        {
+            ColumnDefinitions = new ColumnDefinitionCollection
+            {
+                new ColumnDefinition { Width = GridLength.Star },
+                new ColumnDefinition { Width = GridLength.Auto },
+                new ColumnDefinition { Width = GridLength.Auto }
+            },
+            ColumnSpacing = 12
+        };
+
+        // Sınav adı ve tarih
+        var infoStack = new VerticalStackLayout { Spacing = 2 };
+        infoStack.Children.Add(new Label
+        {
+            Text = exam.ExamName,
+            TextColor = Colors.White,
+            FontSize = 13,
+            FontAttributes = FontAttributes.Bold
+        });
+        infoStack.Children.Add(new Label
+        {
+            Text = exam.FormattedDate,
+            TextColor = Color.FromArgb("#94a3b8"),
+            FontSize = 10
+        });
+        grid.Children.Add(infoStack);
+
+        // Puan
+        var scoreLabel = new Label
+        {
+            Text = $"{exam.Score:F0}",
+            TextColor = Color.FromArgb(exam.StatusColor),
+            FontSize = 20,
+            FontAttributes = FontAttributes.Bold,
+            VerticalOptions = LayoutOptions.Center
+        };
+        Grid.SetColumn(scoreLabel, 1);
+        grid.Children.Add(scoreLabel);
+
+        // Durum
+        var statusLabel = new Label
+        {
+            Text = exam.StatusText,
+            TextColor = Color.FromArgb(exam.StatusColor),
+            FontSize = 11,
+            VerticalOptions = LayoutOptions.Center
+        };
+        Grid.SetColumn(statusLabel, 2);
+        grid.Children.Add(statusLabel);
+
+        container.Content = grid;
+        return container;
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // EVENT HANDLERS
+    // ═══════════════════════════════════════════════════════════
     private async void OnBackClicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("//CategoriesPage");
+        await Navigation.PopAsync();
+    }
+
+    private async void OnStartExamClicked(object sender, EventArgs e)
+    {
+        await Navigation.PopToRootAsync();
     }
 }
