@@ -8,6 +8,13 @@
             <!-- Converters -->
             <converters:InverseBoolConverter x:Key="InverseBoolConverter"/>
             <converters:ProgressConverter x:Key="ProgressConverter"/>
+            <converters:CriticalStateColorConverter x:Key="CriticalStateColorConverter"/>
+            <converters:PercentageToColorConverter x:Key="PercentageToColorConverter"/>
+            <converters:StringToColorConverter x:Key="StringToColorConverter"/>
+            
+            <!-- Fear Logic Colors -->
+            <Color x:Key="CriticalColor">#B00020</Color>
+            <Color x:Key="WarningColor">#FF6B00</Color>
             
             <!-- Colors -->
             <Color x:Key="PrimaryColor">#6366F1</Color>

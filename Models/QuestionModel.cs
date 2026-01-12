@@ -16,6 +16,12 @@ namespace SrcSinavUygulamasi.Models
 
         public string DogruCevap { get; set; } = "";
         
+        /// <summary>
+        /// Konu kategorisi - JSON'dan gelir veya auto-tag edilir
+        /// Değerler: "Araç Tekniği", "İlkyardım", "Trafik Mevzuatı", "Ulaştırma Mevzuatı", "Genel"
+        /// </summary>
+        public string Subject { get; set; } = "Genel";
+        
         // Resimli sorular için görsel yolu (örn: "src1_1.png")
         public string ResimYolu { get; set; } = "";
         
