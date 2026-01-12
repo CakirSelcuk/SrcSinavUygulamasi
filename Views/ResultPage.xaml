@@ -6,11 +6,11 @@
              BackgroundColor="#0f172a">
 
     <ScrollView>
-        <VerticalStackLayout Spacing="0" Padding="0,0,0,20">
+        <VerticalStackLayout Spacing="0" Padding="0,0,0,30">
 
             <!-- ═══════════════════════════════════════════════════════════ -->
-            <!-- FEAR LOGIC: Kritik Durum Frame'i - EN ÜSTTE, PUAN'DAN ÖNCE -->
-            <!-- Kullanıcı skorunu görmeden ÖNCE "KALDIN" yazısını görmeli! -->
+            <!-- FEAR LOGIC: Kritik Durum Frame'i - EN ÜSTTE               -->
+            <!-- Kullanıcı skorunu görmeden ÖNCE kritik mesajı görmeli!    -->
             <!-- ═══════════════════════════════════════════════════════════ -->
             <Border x:Name="CriticalFrame" 
                     IsVisible="False"
@@ -18,144 +18,246 @@
                     Stroke="#FF0000"
                     StrokeThickness="3"
                     StrokeShape="RoundRectangle 0"
-                    Padding="20" Margin="0">
-                <VerticalStackLayout Spacing="12">
+                    Padding="24" Margin="0">
+                <VerticalStackLayout Spacing="16">
                     <Label x:Name="LblCriticalTitle" 
                            Text="⛔ DURUM KRİTİK" 
                            TextColor="White" 
-                           FontSize="24" 
+                           FontSize="26" 
                            FontAttributes="Bold" 
                            HorizontalOptions="Center"/>
                     <Label x:Name="LblCriticalMessage" 
                            Text="Bugün sınav olsaydı KALIRDINIZ!" 
                            TextColor="White" 
-                           FontSize="18" 
+                           FontSize="16" 
                            HorizontalTextAlignment="Center"
-                           LineBreakMode="WordWrap"/>
+                           LineBreakMode="WordWrap"
+                           LineHeight="1.3"/>
                     <Button x:Name="BtnDismissCritical"
                             Text="Anladım, Çalışmaya Devam Et"
                             BackgroundColor="White"
                             TextColor="#B00020"
                             FontAttributes="Bold"
-                            CornerRadius="10"
-                            HeightRequest="50"
+                            FontSize="14"
+                            CornerRadius="12"
+                            HeightRequest="48"
                             Clicked="OnDismissCriticalClicked"/>
                 </VerticalStackLayout>
             </Border>
 
-            <!-- Puan Başlık Alanı -->
-            <Grid HeightRequest="280">
-                <BoxView x:Name="HeaderBox" Color="#334155" 
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <!-- HEADER: Puan veya Temizlenen Yanlış Gösterimi             -->
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <Grid HeightRequest="300">
+                <BoxView x:Name="HeaderBox" 
+                         Color="#334155" 
                          VerticalOptions="Fill" 
-                         CornerRadius="0,0,40,40"/>
+                         CornerRadius="0,0,40,40">
+                    <BoxView.Shadow>
+                        <Shadow Brush="#000000" Offset="0,8" Opacity="0.3" Radius="16"/>
+                    </BoxView.Shadow>
+                </BoxView>
 
                 <VerticalStackLayout VerticalOptions="Center" 
-                                     HorizontalOptions="Center" Spacing="15" Margin="20,30,20,0">
+                                     HorizontalOptions="Center" 
+                                     Spacing="16" 
+                                     Margin="20,40,20,0">
 
-                    <!-- Normal Sınav: Puan Gösterimi -->
+                    <!-- NORMAL SINAV: Puan Gösterimi -->
                     <Border x:Name="ScoreBorder" 
-                            Stroke="White" StrokeThickness="4" BackgroundColor="#1e293b"
-                            HeightRequest="160" WidthRequest="160"
-                            StrokeShape="RoundRectangle 80">
+                            IsVisible="True"
+                            Stroke="White" 
+                            StrokeThickness="5" 
+                            BackgroundColor="#1e293b"
+                            HeightRequest="150" 
+                            WidthRequest="150"
+                            StrokeShape="RoundRectangle 75">
                         <Border.Shadow>
-                            <Shadow Brush="Black" Offset="0,10" Opacity="0.4" Radius="20"/>
+                            <Shadow Brush="#000000" Offset="0,12" Opacity="0.5" Radius="24"/>
                         </Border.Shadow>
-                        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                            <Label x:Name="LblScoreTitle" Text="PUAN" TextColor="#94a3b8" FontSize="12" HorizontalOptions="Center" FontAttributes="Bold"/>
-                            <Label x:Name="LblScore" Text="85" TextColor="White" FontSize="48" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="2">
+                            <Label x:Name="LblScoreTitle" 
+                                   Text="PUAN" 
+                                   TextColor="#94a3b8" 
+                                   FontSize="11" 
+                                   HorizontalOptions="Center" 
+                                   FontAttributes="Bold"/>
+                            <Label x:Name="LblScore" 
+                                   Text="85" 
+                                   TextColor="White" 
+                                   FontSize="52" 
+                                   FontAttributes="Bold" 
+                                   HorizontalOptions="Center"/>
                         </VerticalStackLayout>
                     </Border>
 
-                    <!-- Mini Sınav: Temizlenen Yanlış Sayısı (Normal sınavda gizli) -->
+                    <!-- MİNİ SINAV (LAUNDRY): Temizlenen Yanlış Gösterimi -->
                     <Border x:Name="ClearedBorder" 
                             IsVisible="False"
-                            Stroke="#22c55e" StrokeThickness="4" BackgroundColor="#1e293b"
-                            HeightRequest="160" WidthRequest="160"
-                            StrokeShape="RoundRectangle 80">
+                            Stroke="#22c55e" 
+                            StrokeThickness="5" 
+                            BackgroundColor="#1e293b"
+                            HeightRequest="150" 
+                            WidthRequest="150"
+                            StrokeShape="RoundRectangle 75">
                         <Border.Shadow>
-                            <Shadow Brush="Black" Offset="0,10" Opacity="0.4" Radius="20"/>
+                            <Shadow Brush="#000000" Offset="0,12" Opacity="0.5" Radius="24"/>
                         </Border.Shadow>
-                        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                            <Label Text="TEMİZLENEN" TextColor="#22c55e" FontSize="10" HorizontalOptions="Center" FontAttributes="Bold"/>
-                            <Label x:Name="LblClearedCount" Text="10/14" TextColor="White" FontSize="36" FontAttributes="Bold" HorizontalOptions="Center"/>
-                            <Label Text="YANLIŞ" TextColor="#94a3b8" FontSize="10" HorizontalOptions="Center"/>
+                        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="0">
+                            <Label Text="TEMİZLENEN" 
+                                   TextColor="#22c55e" 
+                                   FontSize="9" 
+                                   HorizontalOptions="Center" 
+                                   FontAttributes="Bold"/>
+                            <Label x:Name="LblClearedCount" 
+                                   Text="10/14" 
+                                   TextColor="White" 
+                                   FontSize="38" 
+                                   FontAttributes="Bold" 
+                                   HorizontalOptions="Center"/>
+                            <Label Text="YANLIŞ" 
+                                   TextColor="#94a3b8" 
+                                   FontSize="9" 
+                                   HorizontalOptions="Center"/>
                         </VerticalStackLayout>
                     </Border>
 
-                    <Label x:Name="LblMessage" Text="Tebrikler!" TextColor="White" FontSize="22" 
-                           FontAttributes="Bold" HorizontalOptions="Center"/>
-                    <Label x:Name="LblSubMessage" Text="Sınavı başarıyla tamamladın." TextColor="#cbd5e1" 
-                           FontSize="14" HorizontalOptions="Center" HorizontalTextAlignment="Center"
-                           Margin="20,0"/>
+                    <!-- Durum Mesajları -->
+                    <Label x:Name="LblMessage" 
+                           Text="Tebrikler!" 
+                           TextColor="White" 
+                           FontSize="24" 
+                           FontAttributes="Bold" 
+                           HorizontalOptions="Center"/>
+                    <Label x:Name="LblSubMessage" 
+                           Text="Sınavı başarıyla tamamladınız." 
+                           TextColor="#cbd5e1" 
+                           FontSize="14" 
+                           HorizontalOptions="Center" 
+                           HorizontalTextAlignment="Center"
+                           Margin="20,0"
+                           LineHeight="1.2"/>
 
                 </VerticalStackLayout>
             </Grid>
 
-            <!-- Doğru/Yanlış/Boş Sayaçları -->
-            <Border x:Name="StatsFrame" Stroke="Transparent" BackgroundColor="#1e293b" StrokeShape="RoundRectangle 20" 
-                    Padding="20" Margin="20,-30,20,10">
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <!-- İSTATİSTİKLER: Doğru / Yanlış / Boş                        -->
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <Border x:Name="StatsFrame" 
+                    Stroke="Transparent" 
+                    BackgroundColor="#1e293b" 
+                    StrokeShape="RoundRectangle 20" 
+                    Padding="24" 
+                    Margin="20,-35,20,16">
+                <Border.Shadow>
+                    <Shadow Brush="#000000" Offset="0,4" Opacity="0.2" Radius="12"/>
+                </Border.Shadow>
                 <Grid ColumnDefinitions="*, *, *">
-                    <VerticalStackLayout Grid.Column="0" HorizontalOptions="Center">
-                        <Label Text="Doğru" TextColor="#94a3b8" FontSize="12"/>
-                        <Label x:Name="LblCorrect" Text="18" TextColor="#4ade80" FontSize="22" FontAttributes="Bold"/>
+                    <VerticalStackLayout Grid.Column="0" HorizontalOptions="Center" Spacing="4">
+                        <Label Text="✓ Doğru" TextColor="#4ade80" FontSize="12" FontAttributes="Bold"/>
+                        <Label x:Name="LblCorrect" Text="18" TextColor="#4ade80" FontSize="28" FontAttributes="Bold"/>
                     </VerticalStackLayout>
 
-                    <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center">
-                        <Label Text="Yanlış" TextColor="#94a3b8" FontSize="12"/>
-                        <Label x:Name="LblWrong" Text="2" TextColor="#f87171" FontSize="22" FontAttributes="Bold"/>
+                    <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center" Spacing="4">
+                        <Label Text="✗ Yanlış" TextColor="#f87171" FontSize="12" FontAttributes="Bold"/>
+                        <Label x:Name="LblWrong" Text="2" TextColor="#f87171" FontSize="28" FontAttributes="Bold"/>
                     </VerticalStackLayout>
 
-                    <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center">
-                        <Label Text="Boş" TextColor="#94a3b8" FontSize="12"/>
-                        <Label x:Name="LblEmpty" Text="0" TextColor="#fbbf24" FontSize="22" FontAttributes="Bold"/>
+                    <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center" Spacing="4">
+                        <Label Text="○ Boş" TextColor="#fbbf24" FontSize="12" FontAttributes="Bold"/>
+                        <Label x:Name="LblEmpty" Text="0" TextColor="#fbbf24" FontSize="28" FontAttributes="Bold"/>
                     </VerticalStackLayout>
                 </Grid>
             </Border>
 
             <!-- ═══════════════════════════════════════════════════════════ -->
-            <!-- KONU BAZLI BAŞARI (Subject Scores) -->
+            <!-- KONU BAZLI ANALİZ (Subject Scores)                         -->
+            <!-- Dinamik olarak code-behind'dan doldurulur                  -->
             <!-- ═══════════════════════════════════════════════════════════ -->
             <Border x:Name="SubjectScoresFrame"
                     IsVisible="False"
                     BackgroundColor="#1e293b"
                     StrokeShape="RoundRectangle 16"
-                    Padding="16" Margin="20,10,20,10">
-                <VerticalStackLayout Spacing="12">
-                    <Label Text="📊 Konu Bazlı Analiz" TextColor="White" FontSize="16" FontAttributes="Bold"/>
+                    Stroke="Transparent"
+                    Padding="20" 
+                    Margin="20,0,20,16">
+                <Border.Shadow>
+                    <Shadow Brush="#000000" Offset="0,4" Opacity="0.2" Radius="12"/>
+                </Border.Shadow>
+                <VerticalStackLayout Spacing="14">
+                    <Label Text="📊 Konu Bazlı Performans" 
+                           TextColor="White" 
+                           FontSize="17" 
+                           FontAttributes="Bold"/>
                     
-                    <!-- Subject progress bars dinamik olarak code-behind'dan eklenir -->
-                    <VerticalStackLayout x:Name="SubjectProgressContainer" Spacing="8"/>
+                    <!-- Dinamik progress bar'lar buraya eklenir -->
+                    <VerticalStackLayout x:Name="SubjectProgressContainer" Spacing="10"/>
                     
                 </VerticalStackLayout>
             </Border>
 
-            <!-- Butonlar -->
-            <VerticalStackLayout Spacing="12" Margin="20,10,20,10">
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <!-- BUTONLAR                                                   -->
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <VerticalStackLayout Spacing="12" Margin="20,4,20,0">
                 
-                <!-- Yanlışları Çöz butonu (Premium) -->
-                <Button x:Name="BtnSolveWrongs" Text="🔒 Yanlışları Çöz" 
+                <!-- Premium: Yanlışları Çöz -->
+                <Button x:Name="BtnSolveWrongs" 
+                        Text="🔒 Yanlışları Çöz" 
                         Clicked="OnSolveWrongsClicked"
-                        BackgroundColor="#9333ea" TextColor="White"
-                        FontAttributes="Bold" FontSize="16" CornerRadius="16" HeightRequest="55"
-                        IsVisible="False"/>
+                        BackgroundColor="#9333ea" 
+                        TextColor="White"
+                        FontAttributes="Bold" 
+                        FontSize="16" 
+                        CornerRadius="16" 
+                        HeightRequest="56"
+                        IsVisible="False">
+                    <Button.Shadow>
+                        <Shadow Brush="#9333ea" Offset="0,4" Opacity="0.4" Radius="8"/>
+                    </Button.Shadow>
+                </Button>
                 
-                <!-- Sınavı Tekrarla butonu -->
-                <Button x:Name="BtnRetry" Text="Sınavı Tekrarla" 
+                <!-- Sınavı Tekrarla -->
+                <Button x:Name="BtnRetry" 
+                        Text="🔄 Sınavı Tekrarla" 
                         Clicked="OnRetryClicked"
-                        BackgroundColor="#f59e0b" TextColor="White"
-                        FontAttributes="Bold" FontSize="16" CornerRadius="16" HeightRequest="55"/>
+                        BackgroundColor="#f59e0b" 
+                        TextColor="White"
+                        FontAttributes="Bold" 
+                        FontSize="16" 
+                        CornerRadius="16" 
+                        HeightRequest="56">
+                    <Button.Shadow>
+                        <Shadow Brush="#f59e0b" Offset="0,4" Opacity="0.3" Radius="8"/>
+                    </Button.Shadow>
+                </Button>
                 
-                <!-- Sonraki Deneme butonu -->
-                <Button x:Name="BtnNextExam" Text="Sonraki Denemeye Geç" 
+                <!-- Sonraki Deneme -->
+                <Button x:Name="BtnNextExam" 
+                        Text="Sonraki Denemeye Geç ▶" 
                         Clicked="OnNextExamClicked"
-                        BackgroundColor="#22c55e" TextColor="White"
-                        FontAttributes="Bold" FontSize="16" CornerRadius="16" HeightRequest="55"/>
+                        BackgroundColor="#22c55e" 
+                        TextColor="White"
+                        FontAttributes="Bold" 
+                        FontSize="16" 
+                        CornerRadius="16" 
+                        HeightRequest="56"
+                        IsVisible="False">
+                    <Button.Shadow>
+                        <Shadow Brush="#22c55e" Offset="0,4" Opacity="0.3" Radius="8"/>
+                    </Button.Shadow>
+                </Button>
                 
                 <!-- Ana Menüye Dön -->
-                <Button Text="Ana Menüye Dön" 
+                <Button Text="🏠 Ana Menüye Dön" 
                         Clicked="OnGoHomeClicked"
-                        BackgroundColor="#475569" TextColor="White"
-                        FontAttributes="Bold" FontSize="14" CornerRadius="16" HeightRequest="50"/>
+                        BackgroundColor="#475569" 
+                        TextColor="White"
+                        FontAttributes="Bold" 
+                        FontSize="14" 
+                        CornerRadius="16" 
+                        HeightRequest="50"/>
                         
             </VerticalStackLayout>
 
