@@ -1,182 +1,197 @@
 ﻿[
-    {
-        "soru":  "AraÃ§ Ã¼zerine veya ambalaja yapÄ±ÅŸtÄ±rÄ±lan bu etiket, taÅŸÄ±nan maddenin hangi sÄ±nÄ±fa ait olduÄŸunu gÃ¶sterir?",
-        "siklar":  [
-                       "SÄ±nÄ±f 2.1 (YanÄ±cÄ± Gaz)",
-                       "SÄ±nÄ±f 3 (YanÄ±cÄ± SÄ±vÄ±)",
-                       "SÄ±nÄ±f 4.1 (YanÄ±cÄ± KatÄ±)",
-                       "SÄ±nÄ±f 5.1 (Oksitleyici)"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src5_1.jpeg",
-        "id":  "src5_resimli_q001"
-    },
-    {
-        "soru":  "GÃ¶rseldeki turuncu plakada Ã¼stte yer alan \"33\" rakamÄ± neyi ifade eder?",
-        "siklar":  [
-                       "Maddenin BirleÅŸmiÅŸ Milletler (UN) numarasÄ±nÄ±",
-                       "Maddenin benzin olduÄŸunu",
-                       "Maddenin \"Ã‡ok YanÄ±cÄ± SÄ±vÄ±\" olduÄŸunu (Tehlike tanÄ±mlama numarasÄ±)",
-                       "Maddenin radyoaktif olduÄŸunu"
-                   ],
-        "dogruCevap":  "C",
-        "resimYolu":  "src5_2.jpeg",
-        "id":  "src5_resimli_q002"
-    },
-    {
-        "soru":  "Bu etiket (SÄ±nÄ±f 4.3), taÅŸÄ±nan maddenin hangi Ã¶zelliÄŸe sahip olduÄŸunu bildirir?",
-        "siklar":  [
-                       "Kendi kendine yanan madde",
-                       "Su ile temas ettiÄŸinde yanÄ±cÄ± gaz Ã§Ä±karan madde",
-                       "Zehirli madde",
-                       "Ã‡evreye zararlÄ± madde"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src5_3.jpeg",
-        "id":  "src5_resimli_q003"
-    },
-    {
-        "soru":  "Bu etiketi taÅŸÄ±yan bir araÃ§ kaza yaptÄ±ÄŸÄ±nda, sÃ¼rÃ¼cÃ¼ veya acil durum ekipleri iÃ§in birincil tehlike nedir?",
-        "siklar":  [
-                       "Patlama riski",
-                       "Zehirlenme riski (Solunum veya temas yoluyla)",
-                       "Radyasyon yayÄ±lÄ±mÄ±",
-                       "AÅŸÄ±rÄ± sÄ±caklÄ±k"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src5_4.jpeg",
-        "id":  "src5_resimli_q004"
-    },
-    {
-        "soru":  "Bir kamyonun Ã¶nÃ¼nde ve arkasÄ±nda bu plaka takÄ±lÄ±ysa, araÃ§ ne taÅŸÄ±yor olabilir?",
-        "siklar":  [
-                       "Sadece bir tÃ¼r tehlikeli maddeyi dÃ¶kme olarak (Tanker)",
-                       "AmbalajlÄ± (paketli) tehlikeli maddeleri veya karÄ±ÅŸÄ±k yÃ¼kleri",
-                       "Radyoaktif maddeyi",
-                       "BoÅŸ ve temizlenmiÅŸ tankeri"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src5_5.jpeg",
-        "id":  "src5_resimli_q005"
-    },
-    {
-        "soru":  "Ambalaj veya tanker Ã¼zerindeki bu iÅŸaretin anlamÄ± nedir?",
-        "siklar":  [
-                       "Ã‡evreye ZararlÄ± (Kirletici) Madde",
-                       "BulaÅŸÄ±cÄ± Madde",
-                       "Deniz yoluyla gelen madde",
-                       "GÄ±da maddesi"
-                   ],
-        "dogruCevap":  "A",
-        "resimYolu":  "src5_6.jpeg",
-        "id":  "src5_resimli_q006"
-    },
-    {
-        "soru":  "Bu etiket hangi tehlikeli madde sÄ±nÄ±fÄ±nÄ± ifade eder?",
-        "siklar":  [
-                       "BulaÅŸÄ±cÄ± Maddeler",
-                       "Organik Peroksitler",
-                       "Radyoaktif Maddeler",
-                       "Korozif (AÅŸÄ±ndÄ±rÄ±cÄ±) Maddeler"
-                   ],
-        "dogruCevap":  "C",
-        "resimYolu":  "src5_7.jpeg",
-        "id":  "src5_resimli_q007"
-    },
-    {
-        "soru":  "Tanker Ã¼zerinde bu iÅŸareti gÃ¶ren bir sÃ¼rÃ¼cÃ¼ veya gÃ¶revli neyi anlamalÄ±dÄ±r?",
-        "siklar":  [
-                       "Maddenin dondurularak taÅŸÄ±ndÄ±ÄŸÄ±nÄ±",
-                       "Maddenin \"YÃ¼ksek SÄ±caklÄ±kta\" (SÄ±vÄ± halde 100Â°C, katÄ± halde 240Â°C Ã¼zeri) taÅŸÄ±ndÄ±ÄŸÄ±nÄ±",
-                       "Maddenin oda sÄ±caklÄ±ÄŸÄ±nda olduÄŸunu",
-                       "AracÄ±n klimasÄ±nÄ±n bozuk olduÄŸunu"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src5_8.jpeg",
-        "id":  "src5_resimli_q008"
-    },
-    {
-        "soru":  "Bu etiketin bulunduÄŸu madde (AÅŸÄ±ndÄ±rÄ±cÄ±/Korozif) vÃ¼cuda temas ederse ne yapar?",
-        "siklar":  [
-                       "Zehirler",
-                       "Yakar ve doku hasarÄ± verir (AÅŸÄ±ndÄ±rÄ±r)",
-                       "Radyasyon yayar",
-                       "Dondurur"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src5_9.jpeg",
-        "id":  "src5_resimli_q009"
-    },
-    {
-        "soru":  "ADR\u0027ye gÃ¶re araÃ§ta bulunmasÄ± zorunlu olan bu ekipman, kaza anÄ±nda hangi amaÃ§la kullanÄ±lÄ±r?",
-        "siklar":  [
-                       "YaralÄ±nÄ±n Ã¼zerini Ã¶rtmek iÃ§in",
-                       "DÃ¶kÃ¼len tehlikeli maddenin kanalizasyona veya su kaynaklarÄ±na karÄ±ÅŸmasÄ±nÄ± Ã¶nlemek iÃ§in (RÃ¶garlarÄ± kapatmak)",
-                       "GÃ¼neÅŸten korunmak iÃ§in",
-                       "KÄ±rÄ±lan camlarÄ± kapatmak iÃ§in"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src5_10.jpeg",
-        "id":  "src5_resimli_q010"
-    },
-    {
-        "soru":  "Tehlikeli madde taÅŸÄ±yan (iÅŸaretli) bir araÃ§ sÃ¼rÃ¼cÃ¼sÃ¼ bu levhayÄ± gÃ¶rdÃ¼ÄŸÃ¼nde ne yapmalÄ±dÄ±r?",
-        "siklar":  [
-                       "HÄ±zÄ±nÄ± artÄ±rarak tÃ¼nelden geÃ§melidir",
-                       "EÄŸer aracÄ± ADR kapsamÄ±ndaysa bu tÃ¼nelden geÃ§memelidir (En kÄ±sÄ±tlÄ± tÃ¼nel)",
-                       "Sadece gece geÃ§melidir",
-                       "DÃ¶rtlÃ¼leri yakarak geÃ§melidir"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src5_11.jpeg",
-        "id":  "src5_resimli_q011"
-    },
-    {
-        "soru":  "Bu belge, kaza veya acil durumda sÃ¼rÃ¼cÃ¼ye ne konuda rehberlik eder?",
-        "siklar":  [
-                       "YÃ¼kÃ¼n kime teslim edileceÄŸi konusunda",
-                       "NasÄ±l ilk yardÄ±m yapacaÄŸÄ± ve yangÄ±na/sÄ±zÄ±ntÄ±ya nasÄ±l mÃ¼dahale edeceÄŸi konusunda",
-                       "GÃ¼mrÃ¼k iÅŸlemlerinin nasÄ±l yapÄ±lacaÄŸÄ± konusunda",
-                       "AracÄ±n en fazla kaÃ§ km hÄ±z yapabileceÄŸi konusunda"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src5_12.jpeg",
-        "id":  "src5_resimli_q012"
-    },
-    {
-        "soru":  "Bu etiket hangi gaz tÃ¼rÃ¼nÃ¼ ifade eder?",
-        "siklar":  [
-                       "YanÄ±cÄ± Gaz",
-                       "Zehirli Gaz",
-                       "BoÄŸucu Gaz (Alevlenmeyen, Zehirli Olmayan)",
-                       "Radyoaktif Gaz"
-                   ],
-        "dogruCevap":  "C",
-        "resimYolu":  "src5_13.jpeg",
-        "id":  "src5_resimli_q013"
-    },
-    {
-        "soru":  "AraÃ§ta bulunmasÄ± zorunlu olan bu sÄ±vÄ± hangi durumda kullanÄ±lÄ±r?",
-        "siklar":  [
-                       "Ã–n camÄ± temizlemek iÃ§in",
-                       "GÃ¶zlere tehlikeli madde sÄ±Ã§ramasÄ± durumunda gÃ¶zÃ¼ yÄ±kamak iÃ§in",
-                       "RadyatÃ¶re su eklemek iÃ§in",
-                       "Elleri yÄ±kamak iÃ§in"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src5_14.jpeg",
-        "id":  "src5_resimli_q014"
-    },
-    {
-        "soru":  "Bir koli veya araÃ§ Ã¼zerinde sadece bu iÅŸaret varsa, bunun anlamÄ± nedir?",
-        "siklar":  [
-                       "Radyoaktif madde taÅŸÄ±ndÄ±ÄŸÄ±",
-                       "\"SÄ±nÄ±rlÄ± Miktar\" muafiyeti kapsamÄ±nda tehlikeli madde taÅŸÄ±ndÄ±ÄŸÄ±",
-                       "BoÅŸ ambalaj olduÄŸu",
-                       "Tehlikesiz madde olduÄŸu"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src5_15.jpeg",
-        "id":  "src5_resimli_q015"
-    }
+  {
+    "soru": "AraÃ§ Ã¼zerine veya ambalaja yapÄ±ÅŸtÄ±rÄ±lan bu etiket, taÅŸÄ±nan maddenin hangi sÄ±nÄ±fa ait olduÄŸunu gÃ¶sterir?",
+    "siklar": [
+      "SÄ±nÄ±f 2.1 (YanÄ±cÄ± Gaz)",
+      "SÄ±nÄ±f 3 (YanÄ±cÄ± SÄ±vÄ±)",
+      "SÄ±nÄ±f 4.1 (YanÄ±cÄ± KatÄ±)",
+      "SÄ±nÄ±f 5.1 (Oksitleyici)"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src5_1.jpeg",
+    "id": "src5_resimli_q001",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "GÃ¶rseldeki turuncu plakada Ã¼stte yer alan \"33\" rakamÄ± neyi ifade eder?",
+    "siklar": [
+      "Maddenin BirleÅŸmiÅŸ Milletler (UN) numarasÄ±nÄ±",
+      "Maddenin benzin olduÄŸunu",
+      "Maddenin \"Ã‡ok YanÄ±cÄ± SÄ±vÄ±\" olduÄŸunu (Tehlike tanÄ±mlama numarasÄ±)",
+      "Maddenin radyoaktif olduÄŸunu"
+    ],
+    "dogruCevap": "C",
+    "resimYolu": "src5_2.jpeg",
+    "id": "src5_resimli_q002",
+    "Subject": "Trafik Mevzuatı"
+  },
+  {
+    "soru": "Bu etiket (SÄ±nÄ±f 4.3), taÅŸÄ±nan maddenin hangi Ã¶zelliÄŸe sahip olduÄŸunu bildirir?",
+    "siklar": [
+      "Kendi kendine yanan madde",
+      "Su ile temas ettiÄŸinde yanÄ±cÄ± gaz Ã§Ä±karan madde",
+      "Zehirli madde",
+      "Ã‡evreye zararlÄ± madde"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src5_3.jpeg",
+    "id": "src5_resimli_q003",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "Bu etiketi taÅŸÄ±yan bir araÃ§ kaza yaptÄ±ÄŸÄ±nda, sÃ¼rÃ¼cÃ¼ veya acil durum ekipleri iÃ§in birincil tehlike nedir?",
+    "siklar": [
+      "Patlama riski",
+      "Zehirlenme riski (Solunum veya temas yoluyla)",
+      "Radyasyon yayÄ±lÄ±mÄ±",
+      "AÅŸÄ±rÄ± sÄ±caklÄ±k"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src5_4.jpeg",
+    "id": "src5_resimli_q004",
+    "Subject": "İlkyardım"
+  },
+  {
+    "soru": "Bir kamyonun Ã¶nÃ¼nde ve arkasÄ±nda bu plaka takÄ±lÄ±ysa, araÃ§ ne taÅŸÄ±yor olabilir?",
+    "siklar": [
+      "Sadece bir tÃ¼r tehlikeli maddeyi dÃ¶kme olarak (Tanker)",
+      "AmbalajlÄ± (paketli) tehlikeli maddeleri veya karÄ±ÅŸÄ±k yÃ¼kleri",
+      "Radyoaktif maddeyi",
+      "BoÅŸ ve temizlenmiÅŸ tankeri"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src5_5.jpeg",
+    "id": "src5_resimli_q005",
+    "Subject": "Trafik Mevzuatı"
+  },
+  {
+    "soru": "Ambalaj veya tanker Ã¼zerindeki bu iÅŸaretin anlamÄ± nedir?",
+    "siklar": [
+      "Ã‡evreye ZararlÄ± (Kirletici) Madde",
+      "BulaÅŸÄ±cÄ± Madde",
+      "Deniz yoluyla gelen madde",
+      "GÄ±da maddesi"
+    ],
+    "dogruCevap": "A",
+    "resimYolu": "src5_6.jpeg",
+    "id": "src5_resimli_q006",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "Bu etiket hangi tehlikeli madde sÄ±nÄ±fÄ±nÄ± ifade eder?",
+    "siklar": [
+      "BulaÅŸÄ±cÄ± Maddeler",
+      "Organik Peroksitler",
+      "Radyoaktif Maddeler",
+      "Korozif (AÅŸÄ±ndÄ±rÄ±cÄ±) Maddeler"
+    ],
+    "dogruCevap": "C",
+    "resimYolu": "src5_7.jpeg",
+    "id": "src5_resimli_q007",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "Tanker Ã¼zerinde bu iÅŸareti gÃ¶ren bir sÃ¼rÃ¼cÃ¼ veya gÃ¶revli neyi anlamalÄ±dÄ±r?",
+    "siklar": [
+      "Maddenin dondurularak taÅŸÄ±ndÄ±ÄŸÄ±nÄ±",
+      "Maddenin \"YÃ¼ksek SÄ±caklÄ±kta\" (SÄ±vÄ± halde 100Â°C, katÄ± halde 240Â°C Ã¼zeri) taÅŸÄ±ndÄ±ÄŸÄ±nÄ±",
+      "Maddenin oda sÄ±caklÄ±ÄŸÄ±nda olduÄŸunu",
+      "AracÄ±n klimasÄ±nÄ±n bozuk olduÄŸunu"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src5_8.jpeg",
+    "id": "src5_resimli_q008",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "Bu etiketin bulunduÄŸu madde (AÅŸÄ±ndÄ±rÄ±cÄ±/Korozif) vÃ¼cuda temas ederse ne yapar?",
+    "siklar": [
+      "Zehirler",
+      "Yakar ve doku hasarÄ± verir (AÅŸÄ±ndÄ±rÄ±r)",
+      "Radyasyon yayar",
+      "Dondurur"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src5_9.jpeg",
+    "id": "src5_resimli_q009",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "ADR'ye gÃ¶re araÃ§ta bulunmasÄ± zorunlu olan bu ekipman, kaza anÄ±nda hangi amaÃ§la kullanÄ±lÄ±r?",
+    "siklar": [
+      "YaralÄ±nÄ±n Ã¼zerini Ã¶rtmek iÃ§in",
+      "DÃ¶kÃ¼len tehlikeli maddenin kanalizasyona veya su kaynaklarÄ±na karÄ±ÅŸmasÄ±nÄ± Ã¶nlemek iÃ§in (RÃ¶garlarÄ± kapatmak)",
+      "GÃ¼neÅŸten korunmak iÃ§in",
+      "KÄ±rÄ±lan camlarÄ± kapatmak iÃ§in"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src5_10.jpeg",
+    "id": "src5_resimli_q010",
+    "Subject": "İlkyardım"
+  },
+  {
+    "soru": "Tehlikeli madde taÅŸÄ±yan (iÅŸaretli) bir araÃ§ sÃ¼rÃ¼cÃ¼sÃ¼ bu levhayÄ± gÃ¶rdÃ¼ÄŸÃ¼nde ne yapmalÄ±dÄ±r?",
+    "siklar": [
+      "HÄ±zÄ±nÄ± artÄ±rarak tÃ¼nelden geÃ§melidir",
+      "EÄŸer aracÄ± ADR kapsamÄ±ndaysa bu tÃ¼nelden geÃ§memelidir (En kÄ±sÄ±tlÄ± tÃ¼nel)",
+      "Sadece gece geÃ§melidir",
+      "DÃ¶rtlÃ¼leri yakarak geÃ§melidir"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src5_11.jpeg",
+    "id": "src5_resimli_q011",
+    "Subject": "Trafik Mevzuatı"
+  },
+  {
+    "soru": "Bu belge, kaza veya acil durumda sÃ¼rÃ¼cÃ¼ye ne konuda rehberlik eder?",
+    "siklar": [
+      "YÃ¼kÃ¼n kime teslim edileceÄŸi konusunda",
+      "NasÄ±l ilk yardÄ±m yapacaÄŸÄ± ve yangÄ±na/sÄ±zÄ±ntÄ±ya nasÄ±l mÃ¼dahale edeceÄŸi konusunda",
+      "GÃ¼mrÃ¼k iÅŸlemlerinin nasÄ±l yapÄ±lacaÄŸÄ± konusunda",
+      "AracÄ±n en fazla kaÃ§ km hÄ±z yapabileceÄŸi konusunda"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src5_12.jpeg",
+    "id": "src5_resimli_q012",
+    "Subject": "İlkyardım"
+  },
+  {
+    "soru": "Bu etiket hangi gaz tÃ¼rÃ¼nÃ¼ ifade eder?",
+    "siklar": [
+      "YanÄ±cÄ± Gaz",
+      "Zehirli Gaz",
+      "BoÄŸucu Gaz (Alevlenmeyen, Zehirli Olmayan)",
+      "Radyoaktif Gaz"
+    ],
+    "dogruCevap": "C",
+    "resimYolu": "src5_13.jpeg",
+    "id": "src5_resimli_q013",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "AraÃ§ta bulunmasÄ± zorunlu olan bu sÄ±vÄ± hangi durumda kullanÄ±lÄ±r?",
+    "siklar": [
+      "Ã–n camÄ± temizlemek iÃ§in",
+      "GÃ¶zlere tehlikeli madde sÄ±Ã§ramasÄ± durumunda gÃ¶zÃ¼ yÄ±kamak iÃ§in",
+      "RadyatÃ¶re su eklemek iÃ§in",
+      "Elleri yÄ±kamak iÃ§in"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src5_14.jpeg",
+    "id": "src5_resimli_q014",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "Bir koli veya araÃ§ Ã¼zerinde sadece bu iÅŸaret varsa, bunun anlamÄ± nedir?",
+    "siklar": [
+      "Radyoaktif madde taÅŸÄ±ndÄ±ÄŸÄ±",
+      "\"SÄ±nÄ±rlÄ± Miktar\" muafiyeti kapsamÄ±nda tehlikeli madde taÅŸÄ±ndÄ±ÄŸÄ±",
+      "BoÅŸ ambalaj olduÄŸu",
+      "Tehlikesiz madde olduÄŸu"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src5_15.jpeg",
+    "id": "src5_resimli_q015",
+    "Subject": "Genel"
+  }
 ]

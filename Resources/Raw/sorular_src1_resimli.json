@@ -1,182 +1,197 @@
 ﻿[
-    {
-        "soru":  "GÃ¶rseldeki takograf verisine gÃ¶re, sÃ¼rÃ¼cÃ¼nÃ¼n yasal olarak yapmasÄ± gereken ilk iÅŸlem nedir?",
-        "siklar":  [
-                       "SÃ¼rÃ¼ÅŸe devam etmek",
-                       "En az 45 dk mola vermek",
-                       "AracÄ± devretmek",
-                       "TakografÄ± sÄ±fÄ±rlamak"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src1_1.png",
-        "id":  "src1_resimli_q001"
-    },
-    {
-        "soru":  "GÃ¶rseldeki trafik levhasÄ±nÄ± gÃ¶ren 3.80 metre yÃ¼ksekliÄŸindeki bir otobÃ¼s sÃ¼rÃ¼cÃ¼sÃ¼ ne yapmalÄ±dÄ±r?",
-        "siklar":  [
-                       "YavaÅŸlayarak geÃ§er",
-                       "Kornaya basarak geÃ§er",
-                       "DÃ¶rtlÃ¼leri yakar",
-                       "Bu yola giremez"
-                   ],
-        "dogruCevap":  "D",
-        "resimYolu":  "src1_2.png",
-        "id":  "src1_resimli_q002"
-    },
-    {
-        "soru":  "GÃ¶rselde uygulanan ilk yardÄ±m pozisyonunun adÄ± nedir?",
-        "siklar":  [
-                       "Koma pozisyonu",
-                       "YarÄ± oturuÅŸ pozisyonu",
-                       "Åžok pozisyonu",
-                       "Ä°yileÅŸme pozisyonu"
-                   ],
-        "dogruCevap":  "C",
-        "resimYolu":  "src1_3.png",
-        "id":  "src1_resimli_q003"
-    },
-    {
-        "soru":  "Seyir halindeyken gÃ¶sterge panelinde bu ikaz Ä±ÅŸÄ±ÄŸÄ±nÄ±n yanmasÄ± neyi bildirir?",
-        "siklar":  [
-                       "Fren sisteminde arÄ±za var",
-                       "Balatalar bitmiÅŸ",
-                       "Lastik havasÄ± inik",
-                       "El freni Ã§ekili"
-                   ],
-        "dogruCevap":  "A",
-        "resimYolu":  "src1_4.png",
-        "id":  "src1_resimli_q004"
-    },
-    {
-        "soru":  "GÃ¶rseldeki belge, uluslararasÄ± taÅŸÄ±macÄ±lÄ±kta hangi risklere karÅŸÄ± teminat saÄŸlar?",
-        "siklar":  [
-                       "YÃ¼kÃ¼n hasar gÃ¶rmesine",
-                       "AracÄ±n Ã§alÄ±nmasÄ±na",
-                       "SÃ¼rÃ¼cÃ¼nÃ¼n yaralanmasÄ±na",
-                       "KarÅŸÄ± Ã¼lkedeki 3. ÅŸahÄ±s hasarÄ±na"
-                   ],
-        "dogruCevap":  "D",
-        "resimYolu":  "src1_5.png",
-        "id":  "src1_resimli_q005"
-    },
-    {
-        "soru":  "KÄ±ÅŸ lastiÄŸi veya zincir uygulamasÄ±, ticari araÃ§lar iÃ§in hangi tarihler arasÄ±nda zorunludur?",
-        "siklar":  [
-                       "1 KasÄ±m - 1 Mart",
-                       "1 AralÄ±k - 1 Nisan",
-                       "1 Ocak - 1 MayÄ±s",
-                       "15 AralÄ±k - 15 Mart"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src1_6.png",
-        "id":  "src1_resimli_q006"
-    },
-    {
-        "soru":  "Bu tabelayÄ± gÃ¶ren bir uluslararasÄ± yolcu otobÃ¼sÃ¼ ÅŸofÃ¶rÃ¼ nereye yaklaÅŸmaktadÄ±r?",
-        "siklar":  [
-                       "GÃ¼mrÃ¼k kapÄ±sÄ±na",
-                       "Dinlenme tesisine",
-                       "Otoban giÅŸesine",
-                       "Feribot iskelesine"
-                   ],
-        "dogruCevap":  "A",
-        "resimYolu":  "src1_7.png",
-        "id":  "src1_resimli_q007"
-    },
-    {
-        "soru":  "GÃ¶rseldeki ilk yardÄ±m manevrasÄ± hangi durumda uygulanÄ±r?",
-        "siklar":  [
-                       "Kalp durmasÄ±nda",
-                       "Kanamalarda",
-                       "Tam tÄ±kanmada (soluk borusu)",
-                       "KÄ±rÄ±klarda"
-                   ],
-        "dogruCevap":  "C",
-        "resimYolu":  "src1_8.png",
-        "id":  "src1_resimli_q008"
-    },
-    {
-        "soru":  "AracÄ±n gÃ¶sterge panelinde bu Ä±ÅŸÄ±k yandÄ±ÄŸÄ±nda sÃ¼rÃ¼cÃ¼ ne yapmalÄ±dÄ±r?",
-        "siklar":  [
-                       "Hemen kontak kapatmalÄ±dÄ±r",
-                       "Servise baÅŸvurmalÄ±dÄ±r",
-                       "YakÄ±t almalÄ±dÄ±r",
-                       "Lastikleri kontrol etmelidir"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src1_9.png",
-        "id":  "src1_resimli_q009"
-    },
-    {
-        "soru":  "GÃ¶rseldeki duruma gÃ¶re, evcil hayvan taÅŸÄ±ma kuralÄ± aÃ§Ä±sÄ±ndan hangisi doÄŸrudur?",
-        "siklar":  [
-                       "Kafesle bagajda taÅŸÄ±nabilir",
-                       "Kafesle kucakta taÅŸÄ±nabilir",
-                       "Asla taÅŸÄ±namaz",
-                       "Sadece veterinerle taÅŸÄ±nÄ±r"
-                   ],
-        "dogruCevap":  "A",
-        "resimYolu":  "src1_10.png",
-        "id":  "src1_resimli_q010"
-    },
-    {
-        "soru":  "ArÄ±za halinde, bu gÃ¶rseldeki iÅŸaret ÅŸehirlerarasÄ± yolda aracÄ±n kaÃ§ metre gerisine konulmalÄ±dÄ±r?",
-        "siklar":  [
-                       "30 metre",
-                       "50 metre",
-                       "150 metre",
-                       "100 metre"
-                   ],
-        "dogruCevap":  "C",
-        "resimYolu":  "src1_11.png",
-        "id":  "src1_resimli_q011"
-    },
-    {
-        "soru":  "Yolcunun veya sÃ¼rÃ¼cÃ¼nÃ¼n bu hatta girmesi neyi beyan ettiÄŸi anlamÄ±na gelir?",
-        "siklar":  [
-                       "Diplomatik pasaportu olduÄŸunu",
-                       "Transit geÃ§tiÄŸini",
-                       "GÃ¼mrÃ¼ÄŸe tabi eÅŸyasÄ± olmadÄ±ÄŸÄ±nÄ±",
-                       "GÃ¼mrÃ¼ÄŸe tabi eÅŸyasÄ± olduÄŸunu"
-                   ],
-        "dogruCevap":  "D",
-        "resimYolu":  "src1_12.png",
-        "id":  "src1_resimli_q012"
-    },
-    {
-        "soru":  "GÃ¶rseldeki ehliyet sÄ±nÄ±fÄ±na sahip bir sÃ¼rÃ¼cÃ¼ aÅŸaÄŸÄ±daki araÃ§lardan hangisini kullanamaz?",
-        "siklar":  [
-                       "Ä°ÅŸ makinesi",
-                       "OtobÃ¼s",
-                       "MinibÃ¼s",
-                       "Otomobil"
-                   ],
-        "dogruCevap":  "A",
-        "resimYolu":  "src1_13.png",
-        "id":  "src1_resimli_q013"
-    },
-    {
-        "soru":  "OtobÃ¼slerde yangÄ±n sÃ¶ndÃ¼rme cihazÄ± nerede bulundurulmalÄ±dÄ±r?",
-        "siklar":  [
-                       "Bagajda kilitli halde",
-                       "SÃ¼rÃ¼cÃ¼nÃ¼n hemen ulaÅŸabileceÄŸi yerde",
-                       "En arka koltuÄŸun altÄ±nda",
-                       "Motor kaputunun iÃ§inde"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src1_14.png",
-        "id":  "src1_resimli_q014"
-    },
-    {
-        "soru":  "GÃ¶rseldeki taralÄ± alan (kÃ¶r nokta) kazalarÄ±nÄ± Ã¶nlemek iÃ§in sÃ¼rÃ¼cÃ¼ ÅŸerit deÄŸiÅŸtirirken ne yapmalÄ±dÄ±r?",
-        "siklar":  [
-                       "Sadece iÃ§ aynaya bakmalÄ±dÄ±r",
-                       "HÄ±zÄ±nÄ± aniden artÄ±rmalÄ±dÄ±r",
-                       "BaÅŸÄ±nÄ± Ã§evirerek omuz Ã¼stÃ¼ bakÄ±ÅŸ yapmalÄ±dÄ±r",
-                       "Radyonun sesini kÄ±smalÄ±dÄ±r"
-                   ],
-        "dogruCevap":  "C",
-        "resimYolu":  "src1_15.png",
-        "id":  "src1_resimli_q015"
-    }
+  {
+    "soru": "GÃ¶rseldeki takograf verisine gÃ¶re, sÃ¼rÃ¼cÃ¼nÃ¼n yasal olarak yapmasÄ± gereken ilk iÅŸlem nedir?",
+    "siklar": [
+      "SÃ¼rÃ¼ÅŸe devam etmek",
+      "En az 45 dk mola vermek",
+      "AracÄ± devretmek",
+      "TakografÄ± sÄ±fÄ±rlamak"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src1_1.png",
+    "id": "src1_resimli_q001",
+    "Subject": "Ulaştırma Mevzuatı"
+  },
+  {
+    "soru": "GÃ¶rseldeki trafik levhasÄ±nÄ± gÃ¶ren 3.80 metre yÃ¼ksekliÄŸindeki bir otobÃ¼s sÃ¼rÃ¼cÃ¼sÃ¼ ne yapmalÄ±dÄ±r?",
+    "siklar": [
+      "YavaÅŸlayarak geÃ§er",
+      "Kornaya basarak geÃ§er",
+      "DÃ¶rtlÃ¼leri yakar",
+      "Bu yola giremez"
+    ],
+    "dogruCevap": "D",
+    "resimYolu": "src1_2.png",
+    "id": "src1_resimli_q002",
+    "Subject": "Trafik Mevzuatı"
+  },
+  {
+    "soru": "GÃ¶rselde uygulanan ilk yardÄ±m pozisyonunun adÄ± nedir?",
+    "siklar": [
+      "Koma pozisyonu",
+      "YarÄ± oturuÅŸ pozisyonu",
+      "Åžok pozisyonu",
+      "Ä°yileÅŸme pozisyonu"
+    ],
+    "dogruCevap": "C",
+    "resimYolu": "src1_3.png",
+    "id": "src1_resimli_q003",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "Seyir halindeyken gÃ¶sterge panelinde bu ikaz Ä±ÅŸÄ±ÄŸÄ±nÄ±n yanmasÄ± neyi bildirir?",
+    "siklar": [
+      "Fren sisteminde arÄ±za var",
+      "Balatalar bitmiÅŸ",
+      "Lastik havasÄ± inik",
+      "El freni Ã§ekili"
+    ],
+    "dogruCevap": "A",
+    "resimYolu": "src1_4.png",
+    "id": "src1_resimli_q004",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "GÃ¶rseldeki belge, uluslararasÄ± taÅŸÄ±macÄ±lÄ±kta hangi risklere karÅŸÄ± teminat saÄŸlar?",
+    "siklar": [
+      "YÃ¼kÃ¼n hasar gÃ¶rmesine",
+      "AracÄ±n Ã§alÄ±nmasÄ±na",
+      "SÃ¼rÃ¼cÃ¼nÃ¼n yaralanmasÄ±na",
+      "KarÅŸÄ± Ã¼lkedeki 3. ÅŸahÄ±s hasarÄ±na"
+    ],
+    "dogruCevap": "D",
+    "resimYolu": "src1_5.png",
+    "id": "src1_resimli_q005",
+    "Subject": "Ulaştırma Mevzuatı"
+  },
+  {
+    "soru": "KÄ±ÅŸ lastiÄŸi veya zincir uygulamasÄ±, ticari araÃ§lar iÃ§in hangi tarihler arasÄ±nda zorunludur?",
+    "siklar": [
+      "1 KasÄ±m - 1 Mart",
+      "1 AralÄ±k - 1 Nisan",
+      "1 Ocak - 1 MayÄ±s",
+      "15 AralÄ±k - 15 Mart"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src1_6.png",
+    "id": "src1_resimli_q006",
+    "Subject": "Ulaştırma Mevzuatı"
+  },
+  {
+    "soru": "Bu tabelayÄ± gÃ¶ren bir uluslararasÄ± yolcu otobÃ¼sÃ¼ ÅŸofÃ¶rÃ¼ nereye yaklaÅŸmaktadÄ±r?",
+    "siklar": [
+      "GÃ¼mrÃ¼k kapÄ±sÄ±na",
+      "Dinlenme tesisine",
+      "Otoban giÅŸesine",
+      "Feribot iskelesine"
+    ],
+    "dogruCevap": "A",
+    "resimYolu": "src1_7.png",
+    "id": "src1_resimli_q007",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "GÃ¶rseldeki ilk yardÄ±m manevrasÄ± hangi durumda uygulanÄ±r?",
+    "siklar": [
+      "Kalp durmasÄ±nda",
+      "Kanamalarda",
+      "Tam tÄ±kanmada (soluk borusu)",
+      "KÄ±rÄ±klarda"
+    ],
+    "dogruCevap": "C",
+    "resimYolu": "src1_8.png",
+    "id": "src1_resimli_q008",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "AracÄ±n gÃ¶sterge panelinde bu Ä±ÅŸÄ±k yandÄ±ÄŸÄ±nda sÃ¼rÃ¼cÃ¼ ne yapmalÄ±dÄ±r?",
+    "siklar": [
+      "Hemen kontak kapatmalÄ±dÄ±r",
+      "Servise baÅŸvurmalÄ±dÄ±r",
+      "YakÄ±t almalÄ±dÄ±r",
+      "Lastikleri kontrol etmelidir"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src1_9.png",
+    "id": "src1_resimli_q009",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "GÃ¶rseldeki duruma gÃ¶re, evcil hayvan taÅŸÄ±ma kuralÄ± aÃ§Ä±sÄ±ndan hangisi doÄŸrudur?",
+    "siklar": [
+      "Kafesle bagajda taÅŸÄ±nabilir",
+      "Kafesle kucakta taÅŸÄ±nabilir",
+      "Asla taÅŸÄ±namaz",
+      "Sadece veterinerle taÅŸÄ±nÄ±r"
+    ],
+    "dogruCevap": "A",
+    "resimYolu": "src1_10.png",
+    "id": "src1_resimli_q010",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "ArÄ±za halinde, bu gÃ¶rseldeki iÅŸaret ÅŸehirlerarasÄ± yolda aracÄ±n kaÃ§ metre gerisine konulmalÄ±dÄ±r?",
+    "siklar": [
+      "30 metre",
+      "50 metre",
+      "150 metre",
+      "100 metre"
+    ],
+    "dogruCevap": "C",
+    "resimYolu": "src1_11.png",
+    "id": "src1_resimli_q011",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "Yolcunun veya sÃ¼rÃ¼cÃ¼nÃ¼n bu hatta girmesi neyi beyan ettiÄŸi anlamÄ±na gelir?",
+    "siklar": [
+      "Diplomatik pasaportu olduÄŸunu",
+      "Transit geÃ§tiÄŸini",
+      "GÃ¼mrÃ¼ÄŸe tabi eÅŸyasÄ± olmadÄ±ÄŸÄ±nÄ±",
+      "GÃ¼mrÃ¼ÄŸe tabi eÅŸyasÄ± olduÄŸunu"
+    ],
+    "dogruCevap": "D",
+    "resimYolu": "src1_12.png",
+    "id": "src1_resimli_q012",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "GÃ¶rseldeki ehliyet sÄ±nÄ±fÄ±na sahip bir sÃ¼rÃ¼cÃ¼ aÅŸaÄŸÄ±daki araÃ§lardan hangisini kullanamaz?",
+    "siklar": [
+      "Ä°ÅŸ makinesi",
+      "OtobÃ¼s",
+      "MinibÃ¼s",
+      "Otomobil"
+    ],
+    "dogruCevap": "A",
+    "resimYolu": "src1_13.png",
+    "id": "src1_resimli_q013",
+    "Subject": "Trafik Mevzuatı"
+  },
+  {
+    "soru": "OtobÃ¼slerde yangÄ±n sÃ¶ndÃ¼rme cihazÄ± nerede bulundurulmalÄ±dÄ±r?",
+    "siklar": [
+      "Bagajda kilitli halde",
+      "SÃ¼rÃ¼cÃ¼nÃ¼n hemen ulaÅŸabileceÄŸi yerde",
+      "En arka koltuÄŸun altÄ±nda",
+      "Motor kaputunun iÃ§inde"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src1_14.png",
+    "id": "src1_resimli_q014",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "GÃ¶rseldeki taralÄ± alan (kÃ¶r nokta) kazalarÄ±nÄ± Ã¶nlemek iÃ§in sÃ¼rÃ¼cÃ¼ ÅŸerit deÄŸiÅŸtirirken ne yapmalÄ±dÄ±r?",
+    "siklar": [
+      "Sadece iÃ§ aynaya bakmalÄ±dÄ±r",
+      "HÄ±zÄ±nÄ± aniden artÄ±rmalÄ±dÄ±r",
+      "BaÅŸÄ±nÄ± Ã§evirerek omuz Ã¼stÃ¼ bakÄ±ÅŸ yapmalÄ±dÄ±r",
+      "Radyonun sesini kÄ±smalÄ±dÄ±r"
+    ],
+    "dogruCevap": "C",
+    "resimYolu": "src1_15.png",
+    "id": "src1_resimli_q015",
+    "Subject": "İlkyardım"
+  }
 ]

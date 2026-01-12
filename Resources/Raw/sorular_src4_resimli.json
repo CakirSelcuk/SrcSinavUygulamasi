@@ -1,182 +1,197 @@
 ﻿[
-    {
-        "soru":  "KarayollarÄ± Trafik YÃ¶netmeliÄŸi\u0027ne gÃ¶re, yÃ¼kÃ¼n araÃ§ kasasÄ±ndan arkaya doÄŸru en fazla kaÃ§ metre taÅŸmasÄ±na izin verilir?",
-        "siklar":  [
-                       "1 metre",
-                       "2 metre",
-                       "3 metre",
-                       "2.5 metre"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src4_1.jpeg",
-        "id":  "src4_resimli_q001"
-    },
-    {
-        "soru":  "YurtiÃ§i eÅŸya taÅŸÄ±macÄ±lÄ±ÄŸÄ± yapan bir araÃ§ta, denetim sÄ±rasÄ±nda gÃ¶rseldeki belgenin (Sevk Ä°rsaliyesi) ibraz edilmesi neden zorunludur?",
-        "siklar":  [
-                       "AracÄ±n sigortalÄ± olduÄŸunu gÃ¶stermek iÃ§in",
-                       "MalÄ±n cinsi, miktarÄ± ve kime ait olduÄŸunu kanÄ±tlamak iÃ§in",
-                       "SÃ¼rÃ¼cÃ¼nÃ¼n ehliyetini doÄŸrulamak iÃ§in",
-                       "AracÄ±n muayenesini gÃ¶stermek iÃ§in"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src4_2.jpeg",
-        "id":  "src4_resimli_q002"
-    },
-    {
-        "soru":  "SRC 4 belgeli bir sÃ¼rÃ¼cÃ¼, seyir halindeyken bu levhayÄ± gÃ¶rdÃ¼ÄŸÃ¼nde ne yapmalÄ±dÄ±r?",
-        "siklar":  [
-                       "YÃ¼kÃ¼nÃ¼ boÅŸaltÄ±p girmelidir",
-                       "Bu yola veya gÃ¼zergaha girmemelidir",
-                       "Sadece gece saatlerinde girmelidir",
-                       "HÄ±zÄ±nÄ± azaltarak girmelidir"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src4_3.jpeg",
-        "id":  "src4_resimli_q003"
-    },
-    {
-        "soru":  "GÃ¶rseldeki lastiÄŸin sadece orta kÄ±smÄ±nÄ±n aÅŸÄ±nmÄ±ÅŸ olmasÄ±nÄ±n teknik sebebi nedir?",
-        "siklar":  [
-                       "DÃ¼ÅŸÃ¼k hava basÄ±ncÄ±",
-                       "Bozuk rot ayarÄ±",
-                       "YÃ¼ksek hava basÄ±ncÄ± (LastiÄŸin ÅŸiÅŸkin olmasÄ±)",
-                       "Ani fren yapÄ±lmasÄ±"
-                   ],
-        "dogruCevap":  "C",
-        "resimYolu":  "src4_4.jpeg",
-        "id":  "src4_resimli_q004"
-    },
-    {
-        "soru":  "Mevzuata gÃ¶re, azami aÄŸÄ±rlÄ±ÄŸÄ± 12 tonun Ã¼zerinde olan kamyon ve Ã§ekicilerde yangÄ±n sÃ¶ndÃ¼rme cihazÄ± bulundurma zorunluluÄŸu nasÄ±ldÄ±r?",
-        "siklar":  [
-                       "1 adet 1 kg",
-                       "2 adet 1 kg",
-                       "1 adet 6 kg",
-                       "1 adet 2 kg"
-                   ],
-        "dogruCevap":  "C",
-        "resimYolu":  "src4_5.jpeg",
-        "id":  "src4_resimli_q005"
-    },
-    {
-        "soru":  "YÃ¼k taÅŸÄ±yan bir araÃ§ta seyir halindeyken hararet gÃ¶stergesi kÄ±rmÄ±zÄ±ya gelirse sÃ¼rÃ¼cÃ¼ ne yapmalÄ±dÄ±r?",
-        "siklar":  [
-                       "Vitesi boÅŸa alÄ±p devam etmelidir",
-                       "KlimayÄ± aÃ§Ä±p devam etmelidir",
-                       "Kurallara uygun ÅŸekilde derhal durmalÄ± ve motoru rÃ¶lantide Ã§alÄ±ÅŸtÄ±rÄ±p soÄŸumasÄ±nÄ± beklemelidir",
-                       "HÄ±zlanarak motoru soÄŸutmalÄ±dÄ±r"
-                   ],
-        "dogruCevap":  "C",
-        "resimYolu":  "src4_6.jpeg",
-        "id":  "src4_resimli_q006"
-    },
-    {
-        "soru":  "YÃ¼klÃ¼ bir kamyon sÃ¼rÃ¼cÃ¼sÃ¼ bu levhayÄ± gÃ¶rdÃ¼ÄŸÃ¼nde direksiyon hakimiyetini kaybetmemek iÃ§in ne yapmalÄ±dÄ±r?",
-        "siklar":  [
-                       "Ani fren yapmalÄ±dÄ±r",
-                       "Ani direksiyon hareketlerinden kaÃ§Ä±nmalÄ± ve hÄ±zÄ±nÄ± azaltmalÄ±dÄ±r",
-                       "Vitesi boÅŸa almalÄ±dÄ±r",
-                       "Gaza basarak hÄ±zlÄ± geÃ§melidir"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src4_7.jpeg",
-        "id":  "src4_resimli_q007"
-    },
-    {
-        "soru":  "GÃ¶rseldeki ekipmanÄ±n (Spanset) temel kullanÄ±m amacÄ± nedir?",
-        "siklar":  [
-                       "YÃ¼kÃ¼ yaÄŸmurdan korumak",
-                       "YÃ¼kÃ¼n araÃ§ iÃ§inde savrulmasÄ±nÄ± ve devrilmesini Ã¶nlemek (Sabitleme)",
-                       "YÃ¼kleme iÅŸlemini hÄ±zlandÄ±rmak",
-                       "YÃ¼kÃ¼n aÄŸÄ±rlÄ±ÄŸÄ±nÄ± azaltmak"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src4_8.jpeg",
-        "id":  "src4_resimli_q008"
-    },
-    {
-        "soru":  "Kamyon sÃ¼rÃ¼cÃ¼sÃ¼ geri manevra yaparken kÃ¶r noktada kalan bir cismi veya kiÅŸiyi gÃ¶remeyebilir. Bu riski en aza indirmek iÃ§in ne yapÄ±lmalÄ±dÄ±r?",
-        "siklar":  [
-                       "Sadece dikiz aynasÄ±na bakÄ±lmalÄ±dÄ±r",
-                       "MÃ¼mkÃ¼nse bir gÃ¶zcÃ¼den yardÄ±m alÄ±nmalÄ±dÄ±r",
-                       "HÄ±zlÄ±ca geri gidilmelidir",
-                       "Kornaya basÄ±p geri gidilmelidir"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src4_9.jpeg",
-        "id":  "src4_resimli_q009"
-    },
-    {
-        "soru":  "GÃ¶rseldeki yetki belgesine sahip olan bir firma hangi tÃ¼r taÅŸÄ±macÄ±lÄ±k faaliyetinde bulunabilir?",
-        "siklar":  [
-                       "UluslararasÄ± yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
-                       "YurtiÃ§i ticari eÅŸya taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
-                       "UluslararasÄ± evden eve nakliyat",
-                       "YurtiÃ§i kargo daÄŸÄ±tÄ±mÄ±"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src4_10.jpeg",
-        "id":  "src4_resimli_q010"
-    },
-    {
-        "soru":  "Trafik kazasÄ± sonrasÄ± bir yaralÄ±ya gÃ¶rseldeki \"Boyunluk\" takÄ±lmasÄ±nÄ±n temel amacÄ± nedir?",
-        "siklar":  [
-                       "YaralÄ±nÄ±n Ã¼ÅŸÃ¼mesini engellemek",
-                       "Solunum yolunu aÃ§mak",
-                       "OlasÄ± omurilik felcini Ã¶nlemek iÃ§in boynu sabitlemek",
-                       "YaralÄ±nÄ±n uyumasÄ±nÄ± saÄŸlamak"
-                   ],
-        "dogruCevap":  "C",
-        "resimYolu":  "src4_11.jpeg",
-        "id":  "src4_resimli_q011"
-    },
-    {
-        "soru":  "Dizel motorlu bir kamyonda yakÄ±t tamamen biterse ne olur?",
-        "siklar":  [
-                       "Motor hava yapar ve tekrar Ã§alÄ±ÅŸtÄ±rÄ±lmasÄ± zorlaÅŸÄ±r",
-                       "Motor daha performanslÄ± Ã§alÄ±ÅŸÄ±r",
-                       "HiÃ§bir ÅŸey olmaz, yakÄ±t konunca hemen Ã§alÄ±ÅŸÄ±r",
-                       "AkÃ¼ biter"
-                   ],
-        "dogruCevap":  "A",
-        "resimYolu":  "src4_12.jpeg",
-        "id":  "src4_resimli_q012"
-    },
-    {
-        "soru":  "Bu levhayÄ± gÃ¶ren yÃ¼klÃ¼ bir kamyon sÃ¼rÃ¼cÃ¼sÃ¼ neyi kontrol etmelidir?",
-        "siklar":  [
-                       "AracÄ±n toplam yÃ¼ksekliÄŸini",
-                       "AracÄ±n dingil aÄŸÄ±rlÄ±klarÄ±nÄ±n levhadaki sÄ±nÄ±rdan fazla olup olmadÄ±ÄŸÄ±nÄ±",
-                       "AracÄ±n geniÅŸliÄŸini",
-                       "AracÄ±n hÄ±zÄ±nÄ±"
-                   ],
-        "dogruCevap":  "B",
-        "resimYolu":  "src4_13.jpeg",
-        "id":  "src4_resimli_q013"
-    },
-    {
-        "soru":  "ÅžehirlerarasÄ± yolda arÄ±zalanan bir kamyonun arkasÄ±na konulan reflektÃ¶r, diÄŸer sÃ¼rÃ¼cÃ¼ler tarafÄ±ndan en az kaÃ§ metreden gÃ¶rÃ¼lebilmelidir?",
-        "siklar":  [
-                       "50 metre",
-                       "100 metre",
-                       "150 metre",
-                       "200 metre"
-                   ],
-        "dogruCevap":  "C",
-        "resimYolu":  "src4_14.jpeg",
-        "id":  "src4_resimli_q014"
-    },
-    {
-        "soru":  "SRC 4 sÄ±navÄ±nda veya trafik denetiminde, araÃ§ ruhsatÄ±ndaki bilgiler ile araÃ§ Ã¼zerindeki bu numaranÄ±n uyuÅŸmamasÄ± ne anlama gelir?",
-        "siklar":  [
-                       "AracÄ±n \"change\" (deÄŸiÅŸtirilmiÅŸ/Ã§alÄ±ntÄ±) veya motor/ÅŸasi deÄŸiÅŸikliÄŸinin iÅŸlenmemiÅŸ olduÄŸunu",
-                       "AracÄ±n yeni model olduÄŸunu",
-                       "AracÄ±n muayenesinin tam olduÄŸunu",
-                       "AracÄ±n sigortalÄ± olduÄŸunu"
-                   ],
-        "dogruCevap":  "A",
-        "resimYolu":  "src4_15.jpeg",
-        "id":  "src4_resimli_q015"
-    }
+  {
+    "soru": "KarayollarÄ± Trafik YÃ¶netmeliÄŸi'ne gÃ¶re, yÃ¼kÃ¼n araÃ§ kasasÄ±ndan arkaya doÄŸru en fazla kaÃ§ metre taÅŸmasÄ±na izin verilir?",
+    "siklar": [
+      "1 metre",
+      "2 metre",
+      "3 metre",
+      "2.5 metre"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src4_1.jpeg",
+    "id": "src4_resimli_q001",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "YurtiÃ§i eÅŸya taÅŸÄ±macÄ±lÄ±ÄŸÄ± yapan bir araÃ§ta, denetim sÄ±rasÄ±nda gÃ¶rseldeki belgenin (Sevk Ä°rsaliyesi) ibraz edilmesi neden zorunludur?",
+    "siklar": [
+      "AracÄ±n sigortalÄ± olduÄŸunu gÃ¶stermek iÃ§in",
+      "MalÄ±n cinsi, miktarÄ± ve kime ait olduÄŸunu kanÄ±tlamak iÃ§in",
+      "SÃ¼rÃ¼cÃ¼nÃ¼n ehliyetini doÄŸrulamak iÃ§in",
+      "AracÄ±n muayenesini gÃ¶stermek iÃ§in"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src4_2.jpeg",
+    "id": "src4_resimli_q002",
+    "Subject": "Ulaştırma Mevzuatı"
+  },
+  {
+    "soru": "SRC 4 belgeli bir sÃ¼rÃ¼cÃ¼, seyir halindeyken bu levhayÄ± gÃ¶rdÃ¼ÄŸÃ¼nde ne yapmalÄ±dÄ±r?",
+    "siklar": [
+      "YÃ¼kÃ¼nÃ¼ boÅŸaltÄ±p girmelidir",
+      "Bu yola veya gÃ¼zergaha girmemelidir",
+      "Sadece gece saatlerinde girmelidir",
+      "HÄ±zÄ±nÄ± azaltarak girmelidir"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src4_3.jpeg",
+    "id": "src4_resimli_q003",
+    "Subject": "Trafik Mevzuatı"
+  },
+  {
+    "soru": "GÃ¶rseldeki lastiÄŸin sadece orta kÄ±smÄ±nÄ±n aÅŸÄ±nmÄ±ÅŸ olmasÄ±nÄ±n teknik sebebi nedir?",
+    "siklar": [
+      "DÃ¼ÅŸÃ¼k hava basÄ±ncÄ±",
+      "Bozuk rot ayarÄ±",
+      "YÃ¼ksek hava basÄ±ncÄ± (LastiÄŸin ÅŸiÅŸkin olmasÄ±)",
+      "Ani fren yapÄ±lmasÄ±"
+    ],
+    "dogruCevap": "C",
+    "resimYolu": "src4_4.jpeg",
+    "id": "src4_resimli_q004",
+    "Subject": "Araç Tekniği"
+  },
+  {
+    "soru": "Mevzuata gÃ¶re, azami aÄŸÄ±rlÄ±ÄŸÄ± 12 tonun Ã¼zerinde olan kamyon ve Ã§ekicilerde yangÄ±n sÃ¶ndÃ¼rme cihazÄ± bulundurma zorunluluÄŸu nasÄ±ldÄ±r?",
+    "siklar": [
+      "1 adet 1 kg",
+      "2 adet 1 kg",
+      "1 adet 6 kg",
+      "1 adet 2 kg"
+    ],
+    "dogruCevap": "C",
+    "resimYolu": "src4_5.jpeg",
+    "id": "src4_resimli_q005",
+    "Subject": "Ulaştırma Mevzuatı"
+  },
+  {
+    "soru": "YÃ¼k taÅŸÄ±yan bir araÃ§ta seyir halindeyken hararet gÃ¶stergesi kÄ±rmÄ±zÄ±ya gelirse sÃ¼rÃ¼cÃ¼ ne yapmalÄ±dÄ±r?",
+    "siklar": [
+      "Vitesi boÅŸa alÄ±p devam etmelidir",
+      "KlimayÄ± aÃ§Ä±p devam etmelidir",
+      "Kurallara uygun ÅŸekilde derhal durmalÄ± ve motoru rÃ¶lantide Ã§alÄ±ÅŸtÄ±rÄ±p soÄŸumasÄ±nÄ± beklemelidir",
+      "HÄ±zlanarak motoru soÄŸutmalÄ±dÄ±r"
+    ],
+    "dogruCevap": "C",
+    "resimYolu": "src4_6.jpeg",
+    "id": "src4_resimli_q006",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "YÃ¼klÃ¼ bir kamyon sÃ¼rÃ¼cÃ¼sÃ¼ bu levhayÄ± gÃ¶rdÃ¼ÄŸÃ¼nde direksiyon hakimiyetini kaybetmemek iÃ§in ne yapmalÄ±dÄ±r?",
+    "siklar": [
+      "Ani fren yapmalÄ±dÄ±r",
+      "Ani direksiyon hareketlerinden kaÃ§Ä±nmalÄ± ve hÄ±zÄ±nÄ± azaltmalÄ±dÄ±r",
+      "Vitesi boÅŸa almalÄ±dÄ±r",
+      "Gaza basarak hÄ±zlÄ± geÃ§melidir"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src4_7.jpeg",
+    "id": "src4_resimli_q007",
+    "Subject": "Araç Tekniği"
+  },
+  {
+    "soru": "GÃ¶rseldeki ekipmanÄ±n (Spanset) temel kullanÄ±m amacÄ± nedir?",
+    "siklar": [
+      "YÃ¼kÃ¼ yaÄŸmurdan korumak",
+      "YÃ¼kÃ¼n araÃ§ iÃ§inde savrulmasÄ±nÄ± ve devrilmesini Ã¶nlemek (Sabitleme)",
+      "YÃ¼kleme iÅŸlemini hÄ±zlandÄ±rmak",
+      "YÃ¼kÃ¼n aÄŸÄ±rlÄ±ÄŸÄ±nÄ± azaltmak"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src4_8.jpeg",
+    "id": "src4_resimli_q008",
+    "Subject": "Genel"
+  },
+  {
+    "soru": "Kamyon sÃ¼rÃ¼cÃ¼sÃ¼ geri manevra yaparken kÃ¶r noktada kalan bir cismi veya kiÅŸiyi gÃ¶remeyebilir. Bu riski en aza indirmek iÃ§in ne yapÄ±lmalÄ±dÄ±r?",
+    "siklar": [
+      "Sadece dikiz aynasÄ±na bakÄ±lmalÄ±dÄ±r",
+      "MÃ¼mkÃ¼nse bir gÃ¶zcÃ¼den yardÄ±m alÄ±nmalÄ±dÄ±r",
+      "HÄ±zlÄ±ca geri gidilmelidir",
+      "Kornaya basÄ±p geri gidilmelidir"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src4_9.jpeg",
+    "id": "src4_resimli_q009",
+    "Subject": "Trafik Mevzuatı"
+  },
+  {
+    "soru": "GÃ¶rseldeki yetki belgesine sahip olan bir firma hangi tÃ¼r taÅŸÄ±macÄ±lÄ±k faaliyetinde bulunabilir?",
+    "siklar": [
+      "UluslararasÄ± yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
+      "YurtiÃ§i ticari eÅŸya taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
+      "UluslararasÄ± evden eve nakliyat",
+      "YurtiÃ§i kargo daÄŸÄ±tÄ±mÄ±"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src4_10.jpeg",
+    "id": "src4_resimli_q010",
+    "Subject": "Ulaştırma Mevzuatı"
+  },
+  {
+    "soru": "Trafik kazasÄ± sonrasÄ± bir yaralÄ±ya gÃ¶rseldeki \"Boyunluk\" takÄ±lmasÄ±nÄ±n temel amacÄ± nedir?",
+    "siklar": [
+      "YaralÄ±nÄ±n Ã¼ÅŸÃ¼mesini engellemek",
+      "Solunum yolunu aÃ§mak",
+      "OlasÄ± omurilik felcini Ã¶nlemek iÃ§in boynu sabitlemek",
+      "YaralÄ±nÄ±n uyumasÄ±nÄ± saÄŸlamak"
+    ],
+    "dogruCevap": "C",
+    "resimYolu": "src4_11.jpeg",
+    "id": "src4_resimli_q011",
+    "Subject": "İlkyardım"
+  },
+  {
+    "soru": "Dizel motorlu bir kamyonda yakÄ±t tamamen biterse ne olur?",
+    "siklar": [
+      "Motor hava yapar ve tekrar Ã§alÄ±ÅŸtÄ±rÄ±lmasÄ± zorlaÅŸÄ±r",
+      "Motor daha performanslÄ± Ã§alÄ±ÅŸÄ±r",
+      "HiÃ§bir ÅŸey olmaz, yakÄ±t konunca hemen Ã§alÄ±ÅŸÄ±r",
+      "AkÃ¼ biter"
+    ],
+    "dogruCevap": "A",
+    "resimYolu": "src4_12.jpeg",
+    "id": "src4_resimli_q012",
+    "Subject": "Araç Tekniği"
+  },
+  {
+    "soru": "Bu levhayÄ± gÃ¶ren yÃ¼klÃ¼ bir kamyon sÃ¼rÃ¼cÃ¼sÃ¼ neyi kontrol etmelidir?",
+    "siklar": [
+      "AracÄ±n toplam yÃ¼ksekliÄŸini",
+      "AracÄ±n dingil aÄŸÄ±rlÄ±klarÄ±nÄ±n levhadaki sÄ±nÄ±rdan fazla olup olmadÄ±ÄŸÄ±nÄ±",
+      "AracÄ±n geniÅŸliÄŸini",
+      "AracÄ±n hÄ±zÄ±nÄ±"
+    ],
+    "dogruCevap": "B",
+    "resimYolu": "src4_13.jpeg",
+    "id": "src4_resimli_q013",
+    "Subject": "Trafik Mevzuatı"
+  },
+  {
+    "soru": "ÅžehirlerarasÄ± yolda arÄ±zalanan bir kamyonun arkasÄ±na konulan reflektÃ¶r, diÄŸer sÃ¼rÃ¼cÃ¼ler tarafÄ±ndan en az kaÃ§ metreden gÃ¶rÃ¼lebilmelidir?",
+    "siklar": [
+      "50 metre",
+      "100 metre",
+      "150 metre",
+      "200 metre"
+    ],
+    "dogruCevap": "C",
+    "resimYolu": "src4_14.jpeg",
+    "id": "src4_resimli_q014",
+    "Subject": "Ulaştırma Mevzuatı"
+  },
+  {
+    "soru": "SRC 4 sÄ±navÄ±nda veya trafik denetiminde, araÃ§ ruhsatÄ±ndaki bilgiler ile araÃ§ Ã¼zerindeki bu numaranÄ±n uyuÅŸmamasÄ± ne anlama gelir?",
+    "siklar": [
+      "AracÄ±n \"change\" (deÄŸiÅŸtirilmiÅŸ/Ã§alÄ±ntÄ±) veya motor/ÅŸasi deÄŸiÅŸikliÄŸinin iÅŸlenmemiÅŸ olduÄŸunu",
+      "AracÄ±n yeni model olduÄŸunu",
+      "AracÄ±n muayenesinin tam olduÄŸunu",
+      "AracÄ±n sigortalÄ± olduÄŸunu"
+    ],
+    "dogruCevap": "A",
+    "resimYolu": "src4_15.jpeg",
+    "id": "src4_resimli_q015",
+    "Subject": "Ulaştırma Mevzuatı"
+  }
 ]
