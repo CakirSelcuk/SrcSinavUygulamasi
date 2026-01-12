@@ -11,4 +11,9 @@ public partial class CategoriesPage : ContentPage
 	{
 		await Navigation.PushAsync(new AboutPage());
 	}
+
+	private async void OnProfileTapped(object sender, EventArgs e)
+	{
+		await Shell.Current.GoToAsync(nameof(ProfilePage));
+	}
 }

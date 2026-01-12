@@ -542,6 +542,71 @@ namespace SrcSinavUygulamasi.Services
             return stats;
         }
 
+
+        #endregion
+
+        #region Reset & Cleanup
+
+        /// <summary>
+        /// Tüm ilerlemeyi sıfırla (Premium statüsü HARİÇ)
+        /// FABRİKA AYARLARINA DÖNDÜRÜR
+        /// </summary>
+        public void ResetAllProgress()
+        {
+            string[] categories = { "src1", "src2", "src3", "src4", "src5" };
+            
+            // Premium statüsünü sakla
+            bool isPremium = Preferences.Get("IsUserPremium", false);
+            string? activationDate = Preferences.Get("PremiumActivationDate", null);
+
+            // Tüm kategorilerdeki sınav verilerini sil
+            foreach (var category in categories)
+            {
+                string examKey = EXAM_PROGRESS_PREFIX + category;
+                string questionKey = QUESTION_PROGRESS_PREFIX + category;
+                
+                Preferences.Remove(examKey);
+                Preferences.Remove(questionKey);
+            }
+
+            // Diğer ayarları temizle (bildirimler, titreşim vb. HARİÇ - bunlar kullanıcı tercihi)
+            // Sadece sınav verilerini siliyoruz
+
+            // Premium statüsünü geri yükle
+            if (isPremium)
+            {
+                Preferences.Set("IsUserPremium", true);
+                if (!string.IsNullOrEmpty(activationDate))
+                {
+                    Preferences.Set("PremiumActivationDate", activationDate);
+                }
+            }
+
+#if DEBUG
+            System.Diagnostics.Debug.WriteLine("🗑️ Tüm ilerleme sıfırlandı (Premium korundu)");
+#endif
+        }
+
+        /// <summary>
+        /// Toplam çözülen soru sayısını getir (tüm kategoriler)
+        /// </summary>
+        public int GetTotalSolvedQuestions()
+        {
+            int total = 0;
+            string[] categories = { "src1", "src2", "src3", "src4", "src5" };
+            
+            foreach (var category in categories)
+            {
+                var exams = GetAllExamProgress(category);
+                foreach (var exam in exams)
+                {
+                    total += exam.TotalQuestionCount;
+                }
+            }
+            
+            return total;
+        }
+
         #endregion
     }
 }

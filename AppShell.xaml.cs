@@ -13,6 +13,7 @@ namespace SrcSinavUygulamasi
             Routing.RegisterRoute(nameof(QuizPage), typeof(QuizPage));
             Routing.RegisterRoute(nameof(ResultPage), typeof(ResultPage));
             Routing.RegisterRoute(nameof(AnalysisPage), typeof(AnalysisPage));
+            Routing.RegisterRoute(nameof(ProfilePage), typeof(ProfilePage));
         }
     }
 }

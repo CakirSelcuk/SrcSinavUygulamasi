@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SrcSinavUygulamasi.Views.ProfilePage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#0f172a">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="16" Padding="0,0,0,30">
+
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <!-- HEADER                                                      -->
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <Grid HeightRequest="80" Padding="20,50,20,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Button Text="←" 
+                        FontSize="24" 
+                        BackgroundColor="Transparent" 
+                        TextColor="White"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        Clicked="OnBackClicked"/>
+                
+                <Label Grid.Column="1" 
+                       Text="⚙️ Profil ve Ayarlar" 
+                       TextColor="White" 
+                       FontSize="22" 
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"/>
+            </Grid>
+
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <!-- KULLANICI KARTI                                             -->
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <Border BackgroundColor="#1e293b" 
+                    StrokeShape="RoundRectangle 20"
+                    Stroke="Transparent"
+                    Padding="20" 
+                    Margin="20,10,20,0">
+                <Border.Shadow>
+                    <Shadow Brush="#000" Offset="0,4" Opacity="0.2" Radius="8"/>
+                </Border.Shadow>
+                <Grid ColumnDefinitions="80, *">
+                    <!-- Avatar -->
+                    <Border Grid.Column="0" 
+                            WidthRequest="70" 
+                            HeightRequest="70"
+                            StrokeShape="RoundRectangle 35"
+                            Stroke="#3b82f6"
+                            StrokeThickness="3"
+                            BackgroundColor="#334155">
+                        <Label Text="👤" 
+                               FontSize="36" 
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Center"/>
+                    </Border>
+                    
+                    <!-- Kullanıcı Bilgisi -->
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="6" Padding="15,0,0,0">
+                        <Label x:Name="LblUserName" 
+                               Text="Misafir Kullanıcı" 
+                               TextColor="White" 
+                               FontSize="18" 
+                               FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="6">
+                            <Label Text="📝" FontSize="12"/>
+                            <Label x:Name="LblTotalQuestions" 
+                                   Text="Toplam: 0 Soru Çözüldü" 
+                                   TextColor="#94a3b8" 
+                                   FontSize="13"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Grid>
+            </Border>
+
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <!-- PREMIUM BANNER (Sadece Free kullanıcılar)                  -->
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <Border x:Name="PremiumBanner"
+                    IsVisible="True"
+                    BackgroundColor="#7c3aed"
+                    StrokeShape="RoundRectangle 16"
+                    Stroke="#a855f7"
+                    StrokeThickness="2"
+                    Padding="20" 
+                    Margin="20,0,20,0">
+                <Border.Shadow>
+                    <Shadow Brush="#7c3aed" Offset="0,6" Opacity="0.4" Radius="12"/>
+                </Border.Shadow>
+                <Grid ColumnDefinitions="*, Auto">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="👑 Premium'a Yükselt!" 
+                               TextColor="White" 
+                               FontSize="18" 
+                               FontAttributes="Bold"/>
+                        <VerticalStackLayout Spacing="2">
+                            <Label Text="✓ Reklamsız deneyim" TextColor="#e2e8f0" FontSize="12"/>
+                            <Label Text="✓ Tüm sorulara erişim" TextColor="#e2e8f0" FontSize="12"/>
+                            <Label Text="✓ Detaylı analiz" TextColor="#e2e8f0" FontSize="12"/>
+                        </VerticalStackLayout>
+                    </VerticalStackLayout>
+                    <Button Grid.Column="1" 
+                            Text="Satın Al" 
+                            BackgroundColor="#fbbf24"
+                            TextColor="#1e293b"
+                            FontAttributes="Bold"
+                            CornerRadius="12"
+                            Padding="16,10"
+                            VerticalOptions="Center"
+                            Clicked="OnPremiumClicked"/>
+                </Grid>
+            </Border>
+
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <!-- AYARLAR MENÜSÜ                                              -->
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <Border BackgroundColor="#1e293b" 
+                    StrokeShape="RoundRectangle 16"
+                    Stroke="Transparent"
+                    Padding="0" 
+                    Margin="20,0,20,0">
+                <Border.Shadow>
+                    <Shadow Brush="#000" Offset="0,4" Opacity="0.2" Radius="8"/>
+                </Border.Shadow>
+                <VerticalStackLayout>
+                    
+                    <!-- Bildirimler -->
+                    <Grid Padding="20,16" ColumnDefinitions="Auto, *, Auto">
+                        <Label Text="🔔" FontSize="20" VerticalOptions="Center"/>
+                        <Label Grid.Column="1" 
+                               Text="Bildirimler" 
+                               TextColor="White" 
+                               FontSize="15" 
+                               VerticalOptions="Center"
+                               Padding="12,0,0,0"/>
+                        <Switch x:Name="SwitchNotifications" 
+                                Grid.Column="2" 
+                                IsToggled="True"
+                                OnColor="#22c55e"
+                                Toggled="OnNotificationToggled"/>
+                    </Grid>
+                    <BoxView Color="#334155" HeightRequest="1" Margin="20,0"/>
+                    
+                    <!-- Titreşim -->
+                    <Grid Padding="20,16" ColumnDefinitions="Auto, *, Auto">
+                        <Label Text="📳" FontSize="20" VerticalOptions="Center"/>
+                        <Label Grid.Column="1" 
+                               Text="Titreşim" 
+                               TextColor="White" 
+                               FontSize="15" 
+                               VerticalOptions="Center"
+                               Padding="12,0,0,0"/>
+                        <Switch x:Name="SwitchVibration" 
+                                Grid.Column="2" 
+                                IsToggled="True"
+                                OnColor="#22c55e"
+                                Toggled="OnVibrationToggled"/>
+                    </Grid>
+                    <BoxView Color="#334155" HeightRequest="1" Margin="20,0"/>
+                    
+                    <!-- Bize Ulaşın -->
+                    <Grid Padding="20,16" ColumnDefinitions="Auto, *, Auto">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnContactClicked"/>
+                        </Grid.GestureRecognizers>
+                        <Label Text="✉️" FontSize="20" VerticalOptions="Center"/>
+                        <Label Grid.Column="1" 
+                               Text="Bize Ulaşın / Hata Bildir" 
+                               TextColor="White" 
+                               FontSize="15" 
+                               VerticalOptions="Center"
+                               Padding="12,0,0,0"/>
+                        <Label Grid.Column="2" 
+                               Text="▶" 
+                               TextColor="#475569" 
+                               FontSize="14" 
+                               VerticalOptions="Center"/>
+                    </Grid>
+                    <BoxView Color="#334155" HeightRequest="1" Margin="20,0"/>
+                    
+                    <!-- Uygulamayı Puanla -->
+                    <Grid Padding="20,16" ColumnDefinitions="Auto, *, Auto">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnRateAppClicked"/>
+                        </Grid.GestureRecognizers>
+                        <Label Text="⭐" FontSize="20" VerticalOptions="Center"/>
+                        <Label Grid.Column="1" 
+                               Text="Uygulamayı Puanla" 
+                               TextColor="White" 
+                               FontSize="15" 
+                               VerticalOptions="Center"
+                               Padding="12,0,0,0"/>
+                        <Label Grid.Column="2" 
+                               Text="▶" 
+                               TextColor="#475569" 
+                               FontSize="14" 
+                               VerticalOptions="Center"/>
+                    </Grid>
+                    <BoxView Color="#334155" HeightRequest="1" Margin="20,0"/>
+                    
+                    <!-- Gizlilik Politikası -->
+                    <Grid Padding="20,16" ColumnDefinitions="Auto, *, Auto">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnPrivacyClicked"/>
+                        </Grid.GestureRecognizers>
+                        <Label Text="📄" FontSize="20" VerticalOptions="Center"/>
+                        <Label Grid.Column="1" 
+                               Text="Gizlilik Politikası" 
+                               TextColor="White" 
+                               FontSize="15" 
+                               VerticalOptions="Center"
+                               Padding="12,0,0,0"/>
+                        <Label Grid.Column="2" 
+                               Text="▶" 
+                               TextColor="#475569" 
+                               FontSize="14" 
+                               VerticalOptions="Center"/>
+                    </Grid>
+                    
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <!-- TEHLİKELİ BÖLGE VE DESTEK                                    -->
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <VerticalStackLayout Spacing="12" Margin="20,8,20,0">
+                
+                <!-- Satın Alımları Geri Yükle -->
+                <Button Text="🔄 Satın Alımları Geri Yükle" 
+                        BackgroundColor="Transparent"
+                        TextColor="#94a3b8"
+                        FontSize="14"
+                        HeightRequest="44"
+                        Clicked="OnRestorePurchaseClicked"/>
+                
+                <!-- İlerlemeyi Sıfırla -->
+                <Border BackgroundColor="Transparent"
+                        Stroke="#ef4444"
+                        StrokeThickness="2"
+                        StrokeShape="RoundRectangle 12"
+                        Padding="0">
+                    <Button Text="🗑️ Tüm İlerlemeyi Sıfırla" 
+                            BackgroundColor="Transparent"
+                            TextColor="#ef4444"
+                            FontAttributes="Bold"
+                            FontSize="15"
+                            HeightRequest="50"
+                            Clicked="OnResetProgressClicked"/>
+                </Border>
+                
+            </VerticalStackLayout>
+
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <!-- VERSİYON BİLGİSİ                                            -->
+            <!-- ═══════════════════════════════════════════════════════════ -->
+            <VerticalStackLayout Margin="0,20,0,0" HorizontalOptions="Center" Spacing="4">
+                <Label Text="SRC Sınav Uygulaması" 
+                       TextColor="#64748b" 
+                       FontSize="12" 
+                       HorizontalOptions="Center"/>
+                <Label Text="v1.0.0" 
+                       TextColor="#475569" 
+                       FontSize="11" 
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
