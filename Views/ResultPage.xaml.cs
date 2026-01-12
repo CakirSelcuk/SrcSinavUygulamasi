@@ -72,15 +72,43 @@ public partial class ResultPage : ContentPage
         int emptyCount = _result.EmptyCount;
 
         // Update UI labels
-        LblScore.Text = score.ToString("F0");
         LblCorrect.Text = correctCount.ToString();
         LblWrong.Text = wrongCount.ToString();
         LblEmpty.Text = emptyCount.ToString();
 
         // ═══════════════════════════════════════════════════════
-        // FEAR LOGIC: Critical State Detection
+        // MINI SINAV (LAUNDRY) MODU
         // ═══════════════════════════════════════════════════════
-        ApplyFearLogic(score);
+        if (_result.IsMiniExam)
+        {
+            // Puan yerine temizlenen yanlış sayısını göster
+            ScoreBorder.IsVisible = false;
+            ClearedBorder.IsVisible = true;
+            LblClearedCount.Text = $"{_result.ClearedCount}/{_result.TotalWrongsBefore}";
+
+            // Doğru cevaplanan soruları WrongAnswers listelerinden sil (LAUNDRY)
+            if (_result.ClearedQuestionIds.Count > 0)
+            {
+                _progressService.ClearCorrectAnswersFromWrongList(_result.CategoryId, _result.ClearedQuestionIds);
+            }
+
+            // Kalan yanlış sayısını kontrol et
+            int remainingWrongs = _progressService.GetTotalWrongCount(_result.CategoryId);
+            _result.RemainingWrongs = remainingWrongs;
+
+            // Fear Logic yerine mini sınav sonuç mesajları
+            ApplyMiniExamResults(remainingWrongs);
+        }
+        else
+        {
+            // Normal sınav modu
+            ScoreBorder.IsVisible = true;
+            ClearedBorder.IsVisible = false;
+            LblScore.Text = score.ToString("F0");
+
+            // FEAR LOGIC: Critical State Detection
+            ApplyFearLogic(score);
+        }
 
         // Check exam state for navigation buttons
         CheckExamState();
@@ -88,8 +116,56 @@ public partial class ResultPage : ContentPage
         // Update Premium button state
         UpdatePremiumButtonState();
 
-        // Load subject analysis (async)
-        await LoadSubjectAnalysis();
+        // Load subject analysis (async) - sadece normal sınavlarda
+        if (!_result.IsMiniExam)
+        {
+            await LoadSubjectAnalysis();
+        }
+    }
+
+    /// <summary>
+    /// Mini sınav sonuç mesajlarını ayarla
+    /// </summary>
+    private void ApplyMiniExamResults(int remainingWrongs)
+    {
+        // Critical frame'i mini sınavda kullanma
+        CriticalFrame.IsVisible = false;
+
+        // Header rengi mor (mini sınav rengi)
+        HeaderBox.Color = Color.FromArgb("#8B5CF6");
+
+        if (remainingWrongs == 0)
+        {
+            // ════════════════════════════════════════════════════
+            // TÜM YANLIŞ TEMİZLENDİ!
+            // ════════════════════════════════════════════════════
+            LblMessage.Text = "🎉 Mükemmel!";
+            LblMessage.TextColor = Color.FromArgb(COLOR_SUCCESS);
+            LblSubMessage.Text = "Tüm eksiklerini kapattın!\nArtık bu konularda hatasızsın.";
+            
+            // Yanlışları çöz butonu gizle
+            BtnSolveWrongs.IsVisible = false;
+            
+            // Retry butonu gizle veya metni değiştir
+            BtnRetry.IsVisible = false;
+        }
+        else
+        {
+            // ════════════════════════════════════════════════════
+            // HALA YANLIŞ VAR
+            // ════════════════════════════════════════════════════
+            LblMessage.Text = $"Kalan: {remainingWrongs} Yanlış";
+            LblMessage.TextColor = Color.FromArgb(COLOR_WARNING);
+            LblSubMessage.Text = "Hala eksiklerin var.\nTamamlamak için tekrarla.";
+            
+            // Yanlışları çöz butonunu güncelle
+            BtnSolveWrongs.IsVisible = true;
+            BtnSolveWrongs.Text = $"🔄 Kalan {remainingWrongs} Yanlışı Tekrar Dene";
+            BtnSolveWrongs.BackgroundColor = Color.FromArgb("#f59e0b"); // Turuncu
+            
+            // Retry'ı gizle (yerine yanlışları çöz var)
+            BtnRetry.IsVisible = false;
+        }
     }
 
     /// <summary>

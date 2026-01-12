@@ -19,5 +19,23 @@ namespace SrcSinavUygulamasi.Models
         public bool IsPassed => Score >= 70;     // 70+ geçti mi?
         public bool IsRealExam { get; set; }     // Gerçek sınav simülasyonu mu?
         public bool IsImageExam { get; set; }    // Resimli sorular mı?
+
+        // ═══════════════════════════════════════════════════════════
+        // MINI SINAV (LAUNDRY MODE) için alanlar
+        // ═══════════════════════════════════════════════════════════
+        public bool IsMiniExam { get; set; }         // Mini sınav (yanlışları çöz) modu mu?
+        public int TotalWrongsBefore { get; set; }   // Mini sınav başlamadan önceki toplam yanlış sayısı
+        public int ClearedCount { get; set; }        // Bu sınavda temizlenen (doğru cevaplanan) yanlış sayısı
+        public int RemainingWrongs { get; set; }     // Kalan yanlış sayısı (TotalWrongsBefore - ClearedCount)
+        
+        /// <summary>
+        /// Mini sınavda tüm yanlışlar temizlendi mi?
+        /// </summary>
+        public bool AllCleaned => IsMiniExam && RemainingWrongs == 0;
+        
+        /// <summary>
+        /// Mini sınavda doğru cevaplanan soru ID'leri
+        /// </summary>
+        public List<string> ClearedQuestionIds { get; set; } = new();
     }
 }

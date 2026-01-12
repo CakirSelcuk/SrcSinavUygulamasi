@@ -52,15 +52,33 @@
                 <VerticalStackLayout VerticalOptions="Center" 
                                      HorizontalOptions="Center" Spacing="15" Margin="20,30,20,0">
 
-                    <Border Stroke="White" StrokeThickness="4" BackgroundColor="#1e293b"
+                    <!-- Normal Sınav: Puan Gösterimi -->
+                    <Border x:Name="ScoreBorder" 
+                            Stroke="White" StrokeThickness="4" BackgroundColor="#1e293b"
                             HeightRequest="160" WidthRequest="160"
                             StrokeShape="RoundRectangle 80">
                         <Border.Shadow>
                             <Shadow Brush="Black" Offset="0,10" Opacity="0.4" Radius="20"/>
                         </Border.Shadow>
                         <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                            <Label Text="PUAN" TextColor="#94a3b8" FontSize="12" HorizontalOptions="Center" FontAttributes="Bold"/>
+                            <Label x:Name="LblScoreTitle" Text="PUAN" TextColor="#94a3b8" FontSize="12" HorizontalOptions="Center" FontAttributes="Bold"/>
                             <Label x:Name="LblScore" Text="85" TextColor="White" FontSize="48" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <!-- Mini Sınav: Temizlenen Yanlış Sayısı (Normal sınavda gizli) -->
+                    <Border x:Name="ClearedBorder" 
+                            IsVisible="False"
+                            Stroke="#22c55e" StrokeThickness="4" BackgroundColor="#1e293b"
+                            HeightRequest="160" WidthRequest="160"
+                            StrokeShape="RoundRectangle 80">
+                        <Border.Shadow>
+                            <Shadow Brush="Black" Offset="0,10" Opacity="0.4" Radius="20"/>
+                        </Border.Shadow>
+                        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                            <Label Text="TEMİZLENEN" TextColor="#22c55e" FontSize="10" HorizontalOptions="Center" FontAttributes="Bold"/>
+                            <Label x:Name="LblClearedCount" Text="10/14" TextColor="White" FontSize="36" FontAttributes="Bold" HorizontalOptions="Center"/>
+                            <Label Text="YANLIŞ" TextColor="#94a3b8" FontSize="10" HorizontalOptions="Center"/>
                         </VerticalStackLayout>
                     </Border>
 
@@ -74,7 +92,7 @@
             </Grid>
 
             <!-- Doğru/Yanlış/Boş Sayaçları -->
-            <Border Stroke="Transparent" BackgroundColor="#1e293b" StrokeShape="RoundRectangle 20" 
+            <Border x:Name="StatsFrame" Stroke="Transparent" BackgroundColor="#1e293b" StrokeShape="RoundRectangle 20" 
                     Padding="20" Margin="20,-30,20,10">
                 <Grid ColumnDefinitions="*, *, *">
                     <VerticalStackLayout Grid.Column="0" HorizontalOptions="Center">

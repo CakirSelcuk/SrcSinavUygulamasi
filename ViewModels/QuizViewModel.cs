@@ -54,6 +54,8 @@ namespace SrcSinavUygulamasi.ViewModels
         private bool _isMiniExam = false;
         private double _pointsPerQuestion = 5;
         private List<string>? _specificQuestionIds = null;  // Mini sınav için spesifik soru ID'leri
+        private List<string> _miniExamClearedIds = new();     // Mini sınavda doğru cevaplanan soru ID'leri
+        private int _miniExamTotalWrongsBefore = 0;           // Mini sınav başlamadan önceki toplam yanlış sayısı
 
         private QuestionService _questionService = new QuestionService();
         private ExamProgressService _progressService = new ExamProgressService();
@@ -96,6 +98,10 @@ namespace SrcSinavUygulamasi.ViewModels
                 _examId = ExamCatalog.MINI_EXAM_ID;
                 ExamTitle = ExamCatalog.GetDisplayTitle(_categoryId, _examId);
                 ThemeColor = Color.FromArgb("#8B5CF6");  // Mor rengi
+                
+                // Mini sınav başlamadan önceki toplam yanlış sayısını kaydet
+                _miniExamTotalWrongsBefore = _progressService.GetTotalWrongCount(_categoryId);
+                _miniExamClearedIds.Clear();
             }
             else if (_isRealExam)
             {
@@ -373,7 +379,13 @@ namespace SrcSinavUygulamasi.ViewModels
                 CategoryId = _categoryId,
                 ExamId = _examId,
                 IsRealExam = _isRealExam,
-                IsImageExam = _isImageExam
+                IsImageExam = _isImageExam,
+                // Mini sınav (Laundry) alanları
+                IsMiniExam = _isMiniExam,
+                TotalWrongsBefore = _miniExamTotalWrongsBefore,
+                ClearedCount = _miniExamClearedIds.Count,
+                RemainingWrongs = _miniExamTotalWrongsBefore - _miniExamClearedIds.Count,
+                ClearedQuestionIds = new List<string>(_miniExamClearedIds)
             };
             await Application.Current.MainPage.Navigation.PushAsync(new ResultPage(resultModel));
         }
@@ -492,7 +504,13 @@ namespace SrcSinavUygulamasi.ViewModels
                     CategoryId = _categoryId,
                     ExamId = _examId,
                     IsRealExam = _isRealExam,
-                    IsImageExam = _isImageExam
+                    IsImageExam = _isImageExam,
+                    // Mini sınav (Laundry) alanları
+                    IsMiniExam = _isMiniExam,
+                    TotalWrongsBefore = _miniExamTotalWrongsBefore,
+                    ClearedCount = _miniExamClearedIds.Count,
+                    RemainingWrongs = _miniExamTotalWrongsBefore - _miniExamClearedIds.Count,
+                    ClearedQuestionIds = new List<string>(_miniExamClearedIds)
                 };
                 await Application.Current.MainPage.Navigation.PushAsync(new ResultPage(resultModel));
             }
@@ -549,6 +567,12 @@ namespace SrcSinavUygulamasi.ViewModels
                 
                 // Doğru cevabı progress service'e kaydet
                 _progressService.MarkQuestionCorrect(_categoryId, CurrentQuestion.Id);
+                
+                // Mini sınavda doğru cevaplanan soruyu izle (laundry için)
+                if (_isMiniExam && !string.IsNullOrEmpty(CurrentQuestion.Id))
+                {
+                    _miniExamClearedIds.Add(CurrentQuestion.Id);
+                }
             }
 
             await Task.Delay(1200);

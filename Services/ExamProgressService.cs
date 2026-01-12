@@ -299,17 +299,57 @@ namespace SrcSinavUygulamasi.Services
 
         #endregion
 
-        #region Utilities
+        #region Mini Exam (Laundry) Logic
 
         /// <summary>
-        /// Bir kategorinin tüm verilerini sil (test amaçlı)
+        /// Mini sınavda doğru cevaplanan soruları TÜM sınavların WrongAnswers listesinden sil.
+        /// Bu "çamaşır" mantığıdır - doğru cevaplanan sorular artık yanlış değildir.
         /// </summary>
-        public void ClearCategoryData(string categoryId)
+        /// <param name="categoryId">Kategori ID</param>
+        /// <param name="clearedQuestionIds">Doğru cevaplanan soru ID'leri</param>
+        /// <returns>Toplam temizlenen soru sayısı</returns>
+        public int ClearCorrectAnswersFromWrongList(string categoryId, List<string> clearedQuestionIds)
         {
-            Preferences.Remove(EXAM_PROGRESS_PREFIX + categoryId.ToLower());
-            Preferences.Remove(QUESTION_PROGRESS_PREFIX + categoryId.ToLower());
+            if (clearedQuestionIds == null || clearedQuestionIds.Count == 0)
+                return 0;
+
+            var allProgress = GetAllExamProgress(categoryId);
+            int totalCleared = 0;
+
+            foreach (var exam in allProgress)
+            {
+                int before = exam.WrongAnswers.Count;
+                
+                // Doğru cevaplanan soruları WrongAnswers'dan kaldır
+                foreach (var questionId in clearedQuestionIds)
+                {
+                    if (exam.WrongAnswers.ContainsKey(questionId))
+                    {
+                        exam.WrongAnswers.Remove(questionId);
+                    }
+                }
+                
+                totalCleared += (before - exam.WrongAnswers.Count);
+            }
+
+            // Güncellenmiş verileri kaydet
+            SaveAllExamProgress(categoryId, allProgress);
+
+#if DEBUG
+            System.Diagnostics.Debug.WriteLine($"🧺 Laundry: {clearedQuestionIds.Count} ID temizlendi, toplam {totalCleared} kayıt silindi");
+#endif
+
+            return totalCleared;
         }
 
+        /// <summary>
+        /// Kategorideki toplam yanlış soru sayısını getir (tekrarsız)
+        /// </summary>
+        public int GetTotalWrongCount(string categoryId)
+        {
+            return GetAllWrongQuestionsUnique(categoryId).Count;
+        }
         #endregion
     }
 }
+

@@ -150,7 +150,7 @@ namespace SrcSinavUygulamasi.Services
                     return new QuestionLoadResult(new List<QuestionModel>(), false, "Soru dosyası bulunamadı.");
                 }
 
-                using var reader = new StreamReader(stream);
+                using var reader = new StreamReader(stream, System.Text.Encoding.UTF8);
                 string jsonIcerik = await reader.ReadToEndAsync();
 
                 var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
