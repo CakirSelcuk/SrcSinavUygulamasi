@@ -149,8 +149,9 @@ namespace SrcSinavUygulamasi.ViewModels
                     });
                 }
 
-                // Tüm sınavlar tamamlandı mı kontrol et
-                ShowAnalysisButton = _progressService.AreAllExamsCompleted(_categoryId, _expectedExamIds);
+                // En az 1 sınav tamamlandı mı kontrol et (Analiz butonu için)
+                var completedExams = _progressService.GetCompletedExamIds(_categoryId);
+                ShowAnalysisButton = completedExams.Count > 0;
 
                 // ExamCatalog'a kaydet (diğer sayfalarda kullanılacak)
                 int practiceExamCount = Exams.Count(e => !e.IsRealExam && !e.IsImageExam && e.QuestionCount > 0);
