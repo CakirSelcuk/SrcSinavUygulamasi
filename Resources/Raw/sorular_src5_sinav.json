@@ -1,18 +1,18 @@
-﻿[
+[
   {
-    "soru": "YurtiÃ§i eÅŸya taÅŸÄ±macÄ±lÄ±ÄŸÄ± yapan firmalarÄ±n, kullandÄ±klarÄ± Ã¶zmal taÅŸÄ±tlar iÃ§in genel kural olarak uygulanan yaÅŸ sÄ±nÄ±rÄ± aÅŸaÄŸÄ±dakilerden hangisidir?",
+    "soru": "Yurtiçi eşya taşımacılığı yapan firmaların, kullandıkları özmal taşıtlar için genel kural olarak uygulanan yaş sınırı aşağıdakilerden hangisidir?",
     "siklar": [
-      "En fazla 10 yaÅŸ",
-      "En fazla 15 yaÅŸ",
-      "En fazla 20 yaÅŸ",
-      "YaÅŸ sÄ±nÄ±rÄ± yoktur"
+      "En fazla 10 yaş",
+      "En fazla 15 yaş",
+      "En fazla 20 yaş",
+      "Yaş sınırı yoktur"
     ],
     "dogruCevap": "D",
     "id": "src5_sinav_q001",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Karayolu TaÅŸÄ±ma YÃ¶netmeliÄŸi'ne gÃ¶re K1 yetki belgesi almak isteyen gerÃ§ek kiÅŸilerin sahip olmasÄ± gereken asgari istiap haddi kaÃ§ tondur?",
+    "soru": "Karayolu Taşıma Yönetmeliği'ne göre K1 yetki belgesi almak isteyen gerçek kişilerin sahip olması gereken asgari istiap haddi kaç tondur?",
     "siklar": [
       "25 Ton",
       "30 Ton",
@@ -21,10 +21,10 @@
     ],
     "dogruCevap": "A",
     "id": "src5_sinav_q002",
-    "Subject": "Trafik Mevzuatı"
+    "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Ticari araÃ§ sÃ¼rÃ¼cÃ¼lerinin 24 saatlik sÃ¼re iÃ§inde kesintisiz araÃ§ kullanabileceÄŸi azami sÃ¼re kaÃ§ saattir?",
+    "soru": "Ticari araç sürücülerinin 24 saatlik süre içinde kesintisiz araç kullanabileceği azami süre kaç saattir?",
     "siklar": [
       "4 saat",
       "4,5 saat",
@@ -48,7 +48,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Tehlikeli madde taÅŸÄ±yan araÃ§larÄ±n otoyollardaki azami hÄ±z sÄ±nÄ±rÄ± kaÃ§ km/s'tir?",
+    "soru": "Tehlikeli madde taşıyan araçların otoyollardaki azami hız sınırı kaç km/s'tir?",
     "siklar": [
       "50",
       "60",
@@ -60,31 +60,31 @@
     "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "SRC 4 belgesi almak isteyen sÃ¼rÃ¼cÃ¼ler iÃ§in belirlenen asgari yaÅŸ ÅŸartÄ± hangisidir?",
+    "soru": "SRC 4 belgesi almak isteyen sürücüler için belirlenen asgari yaş şartı hangisidir?",
     "siklar": [
-      "18 yaÅŸÄ±nÄ± doldurmuÅŸ olmak",
-      "20 yaÅŸÄ±ndan gÃ¼n almÄ±ÅŸ olmak",
-      "19 yaÅŸÄ±ndan gÃ¼n almÄ±ÅŸ olmak",
-      "22 yaÅŸÄ±nÄ± doldurmuÅŸ olmak"
+      "18 yaşını doldurmuş olmak",
+      "20 yaşından gün almış olmak",
+      "19 yaşından gün almış olmak",
+      "22 yaşını doldurmuş olmak"
     ],
     "dogruCevap": "C",
     "id": "src5_sinav_q006",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "GÃ¼venli sÃ¼rÃ¼ÅŸte takip mesafesi hesabÄ±nda kullanÄ±lan \"88â€“89 kuralÄ±\" neyi ifade eder?",
+    "soru": "Güvenli sürüşte takip mesafesi hesabında kullanılan \"88–89 kuralı\" neyi ifade eder?",
     "siklar": [
-      "1 saniyelik takip sÃ¼resini",
-      "2 saniyelik takip sÃ¼resini",
-      "3 saniyelik takip sÃ¼resini",
-      "AraÃ§ boyu kuralÄ±nÄ±"
+      "1 saniyelik takip süresini",
+      "2 saniyelik takip süresini",
+      "3 saniyelik takip süresini",
+      "Araç boyu kuralını"
     ],
     "dogruCevap": "B",
     "id": "src5_sinav_q007",
-    "Subject": "Genel"
+    "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "Bir sÃ¼rÃ¼cÃ¼nÃ¼n iki haftalÄ±k (14 gÃ¼n) toplam araÃ§ kullanma sÃ¼resi en fazla kaÃ§ saat olabilir?",
+    "soru": "Bir sürücünün iki haftalık (14 gün) toplam araç kullanma süresi en fazla kaç saat olabilir?",
     "siklar": [
       "80",
       "90",
@@ -93,10 +93,10 @@
     ],
     "dogruCevap": "B",
     "id": "src5_sinav_q008",
-    "Subject": "Genel"
+    "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Kendi eÅŸyasÄ±nÄ± kendi aracÄ±yla taÅŸÄ±yan (hususi taÅŸÄ±macÄ±lÄ±k yapan) firmalarÄ±n almasÄ± gereken yetki belgesi hangisidir?",
+    "soru": "Kendi eşyasını kendi aracıyla taşıyan (hususi taşımacılık yapan) firmaların alması gereken yetki belgesi hangisidir?",
     "siklar": [
       "K1",
       "K2",
@@ -108,43 +108,43 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Heimlich ManevrasÄ± hangi durumda uygulanÄ±r?",
+    "soru": "Heimlich Manevrası hangi durumda uygulanır?",
     "siklar": [
-      "Kalp durmasÄ±nda",
-      "Åžiddetli kanamalarda",
-      "Soluk borusu tam tÄ±kandÄ±ÄŸÄ±nda",
-      "KÄ±rÄ±k ve Ã§Ä±kÄ±klarda"
+      "Kalp durmasında",
+      "Şiddetli kanamalarda",
+      "Soluk borusu tam tıkandığında",
+      "Kırık ve çıkıklarda"
     ],
     "dogruCevap": "C",
     "id": "src5_sinav_q010",
-    "Subject": "Genel"
+    "Subject": "İlkyardım"
   },
   {
-    "soru": "Karayolunda yan yana Ã§izilmiÅŸ iki devamlÄ± yol Ã§izgisi ne anlama gelir?",
+    "soru": "Karayolunda yan yana çizilmiş iki devamlı yol çizgisi ne anlama gelir?",
     "siklar": [
-      "Sollama yapÄ±labilir",
-      "Yol bÃ¶lÃ¼nmÃ¼ÅŸ yoldur",
-      "Park yapÄ±labilir",
-      "Gece geÃ§ilebilir"
+      "Sollama yapılabilir",
+      "Yol bölünmüş yoldur",
+      "Park yapılabilir",
+      "Gece geçilebilir"
     ],
     "dogruCevap": "B",
     "id": "src5_sinav_q011",
     "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "SRC 4 belgesine sahip bir sÃ¼rÃ¼cÃ¼ aÅŸaÄŸÄ±daki belgelerden hangisine otomatik olarak sahip sayÄ±lmaz?",
+    "soru": "SRC 4 belgesine sahip bir sürücü aşağıdaki belgelerden hangisine otomatik olarak sahip sayılmaz?",
     "siklar": [
       "SRC 1",
       "SRC 2",
       "SRC 3",
-      "HiÃ§biri"
+      "Hiçbiri"
     ],
     "dogruCevap": "D",
     "id": "src5_sinav_q012",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "AraÃ§ yÃ¼klenirken yÃ¼kÃ¼n aracÄ±n arkasÄ±ndan en fazla kaÃ§ metre taÅŸmasÄ±na izin verilir?",
+    "soru": "Araç yüklenirken yükün aracın arkasından en fazla kaç metre taşmasına izin verilir?",
     "siklar": [
       "1 m",
       "2 m",
@@ -153,10 +153,10 @@
     ],
     "dogruCevap": "B",
     "id": "src5_sinav_q013",
-    "Subject": "Genel"
+    "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Yetki belgesi sahipleri faaliyetleri sÄ±rasÄ±nda meydana gelen kazalarÄ± kaÃ§ gÃ¼n iÃ§inde BakanlÄ±ÄŸa bildirmek zorundadÄ±r?",
+    "soru": "Yetki belgesi sahipleri faaliyetleri sırasında meydana gelen kazaları kaç gün içinde Bakanlığa bildirmek zorundadır?",
     "siklar": [
       "7",
       "15",
@@ -165,22 +165,22 @@
     ],
     "dogruCevap": "C",
     "id": "src5_sinav_q014",
-    "Subject": "İlkyardım"
+    "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Atardamar kanamalarÄ±nÄ±n en belirgin Ã¶zelliÄŸi hangisidir?",
+    "soru": "Atardamar kanamalarının en belirgin özelliği hangisidir?",
     "siklar": [
-      "Koyu kÄ±rmÄ±zÄ± ve yavaÅŸ akmasÄ±",
-      "AÃ§Ä±k kÄ±rmÄ±zÄ± ve fÄ±ÅŸkÄ±rÄ±r tarzda olmasÄ±",
-      "KÄ±sa sÃ¼rede pÄ±htÄ±laÅŸmasÄ±",
-      "SÄ±zÄ±ntÄ± ÅŸeklinde olmasÄ±"
+      "Koyu kırmızı ve yavaş akması",
+      "Açık kırmızı ve fışkırır tarzda olması",
+      "Kısa sürede pıhtılaşması",
+      "Sızıntı şeklinde olması"
     ],
     "dogruCevap": "B",
     "id": "src5_sinav_q015",
     "Subject": "İlkyardım"
   },
   {
-    "soru": "AraÃ§ta iki sÃ¼rÃ¼cÃ¼ bulunmasÄ± durumunda, her 30 saatlik sÃ¼rede her bir sÃ¼rÃ¼cÃ¼nÃ¼n kesintisiz dinlenme sÃ¼resi en az kaÃ§ saattir?",
+    "soru": "Araçta iki sürücü bulunması durumunda, her 30 saatlik sürede her bir sürücünün kesintisiz dinlenme süresi en az kaç saattir?",
     "siklar": [
       "8",
       "9",
@@ -192,31 +192,31 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "TaÅŸÄ±ma Ä°ÅŸleri OrganizatÃ¶rlÃ¼ÄŸÃ¼ yapan firmalara verilen yetki belgesi hangisidir?",
+    "soru": "Taşıma İşleri Organizatörlüğü yapan firmalara verilen yetki belgesi hangisidir?",
     "siklar": [
-      "M TÃ¼rÃ¼",
-      "R TÃ¼rÃ¼",
-      "P TÃ¼rÃ¼",
-      "L TÃ¼rÃ¼"
+      "M Türü",
+      "R Türü",
+      "P Türü",
+      "L Türü"
     ],
     "dogruCevap": "B",
     "id": "src5_sinav_q017",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Lastik hava basÄ±ncÄ±nÄ±n dÃ¼ÅŸÃ¼k olmasÄ± hangi sonuca yol aÃ§ar?",
+    "soru": "Lastik hava basıncının düşük olması hangi sonuca yol açar?",
     "siklar": [
-      "YakÄ±t tÃ¼ketimi azalÄ±r",
-      "Lastik ortadan aÅŸÄ±nÄ±r",
-      "YakÄ±t tÃ¼ketimi artar, lastik kenarlardan aÅŸÄ±nÄ±r",
-      "Fren mesafesi kÄ±salÄ±r"
+      "Yakıt tüketimi azalır",
+      "Lastik ortadan aşınır",
+      "Yakıt tüketimi artar, lastik kenarlardan aşınır",
+      "Fren mesafesi kısalır"
     ],
     "dogruCevap": "C",
     "id": "src5_sinav_q018",
     "Subject": "Araç Tekniği"
   },
   {
-    "soru": "SRC 4 sÄ±navÄ±nda baÅŸarÄ±lÄ± olmak iÃ§in en az kaÃ§ doÄŸru yapÄ±lmalÄ±dÄ±r?",
+    "soru": "SRC 4 sınavında başarılı olmak için en az kaç doğru yapılmalıdır?",
     "siklar": [
       "25",
       "28",
@@ -228,7 +228,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "\"Bakâ€“Dinleâ€“Hisset\" yÃ¶ntemi solunum kontrolÃ¼ iÃ§in kaÃ§ saniye uygulanÄ±r?",
+    "soru": "\"Bak–Dinle–Hisset\" yöntemi solunum kontrolü için kaç saniye uygulanır?",
     "siklar": [
       "5",
       "10",
@@ -240,7 +240,7 @@
     "Subject": "İlkyardım"
   },
   {
-    "soru": "C2 yetki belgesi almak isteyen firmalarÄ±n sahip olmasÄ± gereken asgari kapasite kaÃ§ tondur?",
+    "soru": "C2 yetki belgesi almak isteyen firmaların sahip olması gereken asgari kapasite kaç tondur?",
     "siklar": [
       "150",
       "200",
@@ -252,7 +252,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "GÃ¼nlÃ¼k 11 saatlik dinlenme sÃ¼resi haftada en fazla kaÃ§ kez 9 saate indirilebilir?",
+    "soru": "Günlük 11 saatlik dinlenme süresi haftada en fazla kaç kez 9 saate indirilebilir?",
     "siklar": [
       "1",
       "2",
@@ -264,43 +264,43 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Ticari araÃ§larda yangÄ±n sÃ¶ndÃ¼rme cihazÄ± nerede bulunmalÄ±dÄ±r?",
+    "soru": "Ticari araçlarda yangın söndürme cihazı nerede bulunmalıdır?",
     "siklar": [
       "Bagajda",
-      "Arka koltuk altÄ±nda",
-      "SÃ¼rÃ¼cÃ¼nÃ¼n kolay ulaÅŸabileceÄŸi yerde",
-      "Yedek lastik yanÄ±nda"
+      "Arka koltuk altında",
+      "Sürücünün kolay ulaşabileceği yerde",
+      "Yedek lastik yanında"
     ],
     "dogruCevap": "C",
     "id": "src5_sinav_q023",
-    "Subject": "Ulaştırma Mevzuatı"
-  },
-  {
-    "soru": "Ticari araÃ§lar iÃ§in kÄ±ÅŸ lastiÄŸi uygulamasÄ± hangi tarihler arasÄ±nda zorunludur?",
-    "siklar": [
-      "1 KasÄ±m â€“ 1 Nisan",
-      "1 AralÄ±k â€“ 1 Nisan",
-      "15 AralÄ±k â€“ 15 Mart",
-      "1 Ocak â€“ 1 Mart"
-    ],
-    "dogruCevap": "B",
-    "id": "src5_sinav_q024",
-    "Subject": "Ulaştırma Mevzuatı"
-  },
-  {
-    "soru": "Rentek ManevrasÄ± hangi durumda uygulanmalÄ±dÄ±r?",
-    "siklar": [
-      "YaralÄ± bilinci aÃ§Ä±kken",
-      "AraÃ§ta yangÄ±n veya patlama riski varsa",
-      "YaralÄ± yÃ¼rÃ¼yebiliyorsa",
-      "Sadece kÄ±rÄ±k varsa"
-    ],
-    "dogruCevap": "B",
-    "id": "src5_sinav_q025",
     "Subject": "Genel"
   },
   {
-    "soru": "90 km/s hÄ±zla giden bir araÃ§ iÃ§in takip mesafesi en az kaÃ§ metredir?",
+    "soru": "Ticari araçlar için kış lastiği uygulaması hangi tarihler arasında zorunludur?",
+    "siklar": [
+      "1 Kasım – 1 Nisan",
+      "1 Aralık – 1 Nisan",
+      "15 Aralık – 15 Mart",
+      "1 Ocak – 1 Mart"
+    ],
+    "dogruCevap": "B",
+    "id": "src5_sinav_q024",
+    "Subject": "Trafik Mevzuatı"
+  },
+  {
+    "soru": "Rentek Manevrası hangi durumda uygulanmalıdır?",
+    "siklar": [
+      "Yaralı bilinci açıkken",
+      "Araçta yangın veya patlama riski varsa",
+      "Yaralı yürüyebiliyorsa",
+      "Sadece kırık varsa"
+    ],
+    "dogruCevap": "B",
+    "id": "src5_sinav_q025",
+    "Subject": "İlkyardım"
+  },
+  {
+    "soru": "90 km/s hızla giden bir araç için takip mesafesi en az kaç metredir?",
     "siklar": [
       "35",
       "40",
@@ -309,10 +309,10 @@
     ],
     "dogruCevap": "C",
     "id": "src5_sinav_q026",
-    "Subject": "Genel"
+    "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "AraÃ§larÄ±n azami yÃ¼ksekliÄŸi (gabari) en fazla kaÃ§ metredir?",
+    "soru": "Araçların azami yüksekliği (gabari) en fazla kaç metredir?",
     "siklar": [
       "3,80",
       "4,20",
@@ -321,22 +321,22 @@
     ],
     "dogruCevap": "C",
     "id": "src5_sinav_q027",
-    "Subject": "Genel"
+    "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "SRC belgesi olmayan sÃ¼rÃ¼cÃ¼ ve araÃ§ sahibine uygulanan yaptÄ±rÄ±m hangisidir?",
+    "soru": "SRC belgesi olmayan sürücü ve araç sahibine uygulanan yaptırım hangisidir?",
     "siklar": [
-      "Hapis cezasÄ±",
+      "Hapis cezası",
       "Ehliyete el koyma",
-      "Ä°dari para cezasÄ±",
-      "UyarÄ±"
+      "İdari para cezası",
+      "Uyarı"
     ],
     "dogruCevap": "C",
     "id": "src5_sinav_q028",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Lojistik iÅŸletmeciliÄŸi yapan firmalar hangi yetki belgesini almalÄ±dÄ±r?",
+    "soru": "Lojistik işletmeciliği yapan firmalar hangi yetki belgesini almalıdır?",
     "siklar": [
       "K",
       "M",
@@ -348,19 +348,19 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Toplam durma mesafesi hangi iki mesafenin toplamÄ±dÄ±r?",
+    "soru": "Toplam durma mesafesi hangi iki mesafenin toplamıdır?",
     "siklar": [
       "Reaksiyon + Fren",
-      "Fren + DuruÅŸ",
-      "Reaksiyon + Ä°ntikal",
+      "Fren + Duruş",
+      "Reaksiyon + İntikal",
       "Takip + Fren"
     ],
     "dogruCevap": "A",
     "id": "src5_sinav_q030",
-    "Subject": "Genel"
+    "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "Åžok pozisyonunda kazazedenin bacaklarÄ± yerden yaklaÅŸÄ±k kaÃ§ cm yukarÄ± kaldÄ±rÄ±lÄ±r?",
+    "soru": "Şok pozisyonunda kazazedenin bacakları yerden yaklaşık kaç cm yukarı kaldırılır?",
     "siklar": [
       "15",
       "30",
@@ -372,19 +372,19 @@
     "Subject": "İlkyardım"
   },
   {
-    "soru": "Kamyon ve tÄ±r gibi aÄŸÄ±r taÅŸÄ±tlar Ã§ok ÅŸeritli yollarda hangi ÅŸeridi kullanmalÄ±dÄ±r?",
+    "soru": "Kamyon ve tır gibi ağır taşıtlar çok şeritli yollarda hangi şeridi kullanmalıdır?",
     "siklar": [
       "Sol",
       "Orta",
       "Emniyet",
-      "En saÄŸ"
+      "En sağ"
     ],
     "dogruCevap": "D",
     "id": "src5_sinav_q032",
-    "Subject": "Ulaştırma Mevzuatı"
+    "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "Sigorta ÅŸirketleri tazminatÄ± en geÃ§ kaÃ§ iÅŸ gÃ¼nÃ¼ iÃ§inde Ã¶demek zorundadÄ±r?",
+    "soru": "Sigorta şirketleri tazminatı en geç kaç iş günü içinde ödemek zorundadır?",
     "siklar": [
       "8",
       "15",
@@ -393,46 +393,46 @@
     ],
     "dogruCevap": "A",
     "id": "src5_sinav_q033",
-    "Subject": "Ulaştırma Mevzuatı"
+    "Subject": "Genel"
   },
   {
-    "soru": "K1 yetki belgesi iÃ§in araÃ§ yaÅŸÄ± ile ilgili genel kural hangisidir?",
+    "soru": "K1 yetki belgesi için araç yaşı ile ilgili genel kural hangisidir?",
     "siklar": [
-      "10 yaÅŸ sÄ±nÄ±rÄ± vardÄ±r",
-      "15 yaÅŸ sÄ±nÄ±rÄ± vardÄ±r",
-      "20 yaÅŸ sÄ±nÄ±rÄ± vardÄ±r",
-      "YaÅŸ sÄ±nÄ±rÄ± yoktur"
+      "10 yaş sınırı vardır",
+      "15 yaş sınırı vardır",
+      "20 yaş sınırı vardır",
+      "Yaş sınırı yoktur"
     ],
     "dogruCevap": "D",
     "id": "src5_sinav_q034",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "KarlÄ± ve buzlu yolda direksiyon hakimiyetini korumak iÃ§in ne yapÄ±lmalÄ±dÄ±r?",
+    "soru": "Karlı ve buzlu yolda direksiyon hakimiyetini korumak için ne yapılmalıdır?",
     "siklar": [
-      "Ani fren yapÄ±lmalÄ±",
-      "Ani direksiyon hareketlerinden kaÃ§Ä±nÄ±lmalÄ±",
-      "Vites boÅŸa alÄ±nmalÄ±",
-      "Gaza ani basÄ±lmalÄ±"
+      "Ani fren yapılmalı",
+      "Ani direksiyon hareketlerinden kaçınılmalı",
+      "Vites boşa alınmalı",
+      "Gaza ani basılmalı"
     ],
     "dogruCevap": "B",
     "id": "src5_sinav_q035",
-    "Subject": "Araç Tekniği"
+    "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "Emniyet kemerinin kaza anÄ±ndaki temel faydasÄ± hangisidir?",
+    "soru": "Emniyet kemerinin kaza anındaki temel faydası hangisidir?",
     "siklar": [
-      "Fren mesafesini kÄ±saltÄ±r",
-      "YangÄ±nÄ± Ã¶nler",
-      "AraÃ§tan fÄ±rlamayÄ± engeller",
-      "KazayÄ± Ã¶nler"
+      "Fren mesafesini kısaltır",
+      "Yangını önler",
+      "Araçtan fırlamayı engeller",
+      "Kazayı önler"
     ],
     "dogruCevap": "C",
     "id": "src5_sinav_q036",
-    "Subject": "İlkyardım"
+    "Subject": "Genel"
   },
   {
-    "soru": "TÄ±r ve kamyonlarda bulunmasÄ± gereken yangÄ±n sÃ¶ndÃ¼rme cihazÄ± standardÄ± hangisidir?",
+    "soru": "Tır ve kamyonlarda bulunması gereken yangın söndürme cihazı standardı hangisidir?",
     "siklar": [
       "1 kg",
       "2 kg",
@@ -441,162 +441,42 @@
     ],
     "dogruCevap": "C",
     "id": "src5_sinav_q037",
-    "Subject": "Ulaştırma Mevzuatı"
+    "Subject": "Genel"
   },
   {
-    "soru": "Arkadan Ã§arpmalÄ± kazalarÄ±n en yaygÄ±n nedeni hangisidir?",
+    "soru": "Arkadan çarpmalı kazaların en yaygın nedeni hangisidir?",
     "siklar": [
-      "HÄ±z",
+      "Hız",
       "Takip mesafesine uymamak",
-      "Lastik patlamasÄ±",
-      "Yol bozukluÄŸu"
+      "Lastik patlaması",
+      "Yol bozukluğu"
     ],
     "dogruCevap": "B",
     "id": "src5_sinav_q038",
-    "Subject": "İlkyardım"
+    "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "SRC 4 sÄ±navÄ±nda yanlÄ±ÅŸ cevaplarÄ±n puanlamaya etkisi nasÄ±ldÄ±r?",
+    "soru": "SRC 4 sınavında yanlış cevapların puanlamaya etkisi nasıldır?",
     "siklar": [
-      "3 yanlÄ±ÅŸ 1 doÄŸruyu gÃ¶tÃ¼rÃ¼r",
-      "4 yanlÄ±ÅŸ 1 doÄŸruyu gÃ¶tÃ¼rÃ¼r",
-      "YanlÄ±ÅŸlar doÄŸruyu etkilemez",
-      "Her yanlÄ±ÅŸ puan siler"
+      "3 yanlış 1 doğruyu götürür",
+      "4 yanlış 1 doğruyu götürür",
+      "Yanlışlar doğruyu etkilemez",
+      "Her yanlış puan siler"
     ],
     "dogruCevap": "C",
     "id": "src5_sinav_q039",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "DÃ¶ner kavÅŸakta, aksine iÅŸaret yoksa geÃ§iÅŸ hakkÄ± kime aittir?",
+    "soru": "Döner kavşakta, aksine işaret yoksa geçiş hakkı kime aittir?",
     "siklar": [
-      "SaÄŸdan gelen araca",
-      "Ä°lk gelene",
-      "HÄ±zlÄ± olana",
-      "KavÅŸak iÃ§indeki araca"
+      "Sağdan gelen araca",
+      "İlk gelene",
+      "Hızlı olana",
+      "Kavşak içindeki araca"
     ],
     "dogruCevap": "D",
     "id": "src5_sinav_q040",
-    "Subject": "Genel"
-  },
-  {
-    "soru": "AETR'ye gÃ¶re haftalÄ±k toplam sÃ¼rÃ¼ÅŸ sÃ¼resi en fazla kaÃ§ saattir?",
-    "siklar": [
-      "45",
-      "56",
-      "60",
-      "90"
-    ],
-    "dogruCevap": "B",
-    "id": "src5_sinav_q041",
-    "Subject": "Ulaştırma Mevzuatı"
-  },
-  {
-    "soru": "GÃ¼nlÃ¼k 9 saatlik sÃ¼rÃ¼ÅŸ sÃ¼resi haftada en fazla kaÃ§ kez 10 saate Ã§Ä±karÄ±labilir?",
-    "siklar": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "dogruCevap": "B",
-    "id": "src5_sinav_q042",
-    "Subject": "Genel"
-  },
-  {
-    "soru": "Psikoteknik deÄŸerlendirme raporunun geÃ§erlilik sÃ¼resi kaÃ§ yÄ±ldÄ±r?",
-    "siklar": [
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
-    "dogruCevap": "D",
-    "id": "src5_sinav_q043",
-    "Subject": "Araç Tekniği"
-  },
-  {
-    "soru": "YetiÅŸkin bir hastaya temel yaÅŸam desteÄŸinde kalp masajÄ± ve suni solunum oranÄ± kaÃ§tÄ±r?",
-    "siklar": [
-      "15:2",
-      "30:2",
-      "30:1",
-      "5:1"
-    ],
-    "dogruCevap": "B",
-    "id": "src5_sinav_q044",
-    "Subject": "İlkyardım"
-  },
-  {
-    "soru": "Turnike uygulamasÄ± vÃ¼cudun hangi bÃ¶lgesine yapÄ±lmalÄ±dÄ±r?",
-    "siklar": [
-      "Eklem yerleri",
-      "Tek kemikli bÃ¶lgeler (uyluk/pazu)",
-      "Boyun bÃ¶lgesi",
-      "Ã‡ift kemikli bÃ¶lgeler"
-    ],
-    "dogruCevap": "B",
-    "id": "src5_sinav_q045",
-    "Subject": "İlkyardım"
-  },
-  {
-    "soru": "Dizel motorlarda yakÄ±tÄ±n ateÅŸlenmesi nasÄ±l gerÃ§ekleÅŸir?",
-    "siklar": [
-      "Buji kÄ±vÄ±lcÄ±mÄ±yla",
-      "Manyeto ile",
-      "SÄ±cak hava Ã¼zerine pÃ¼skÃ¼rtÃ¼lerek",
-      "Bobin yardÄ±mÄ±yla"
-    ],
-    "dogruCevap": "C",
-    "id": "src5_sinav_q046",
-    "Subject": "Araç Tekniği"
-  },
-  {
-    "soru": "ABS sisteminin temel gÃ¶revi nedir?",
-    "siklar": [
-      "AracÄ± daha hÄ±zlÄ± durdurmak",
-      "Tekerleklerin kilitlenmesini Ã¶nlemek",
-      "Direksiyon sertliÄŸini artÄ±rmak",
-      "YakÄ±t tÃ¼ketimini azaltmak"
-    ],
-    "dogruCevap": "B",
-    "id": "src5_sinav_q047",
-    "Subject": "Genel"
-  },
-  {
-    "soru": "Kamyon ve Ã§ekici tÃ¼rÃ¼ araÃ§larÄ±n otoyollardaki azami hÄ±z sÄ±nÄ±rÄ± kaÃ§tÄ±r?",
-    "siklar": [
-      "80 km/s",
-      "85 km/s",
-      "90 km/s",
-      "100 km/s"
-    ],
-    "dogruCevap": "C",
-    "id": "src5_sinav_q048",
     "Subject": "Trafik Mevzuatı"
-  },
-  {
-    "soru": "Defansif (savunmacÄ±) sÃ¼rÃ¼ÅŸ kurallarÄ±ndan biri hangisidir?",
-    "siklar": [
-      "SÃ¼rekli sol ÅŸeritte gitmek",
-      "DiÄŸer sÃ¼rÃ¼cÃ¼lerin hata yapabileceÄŸini Ã¶ngÃ¶rmek",
-      "YakÄ±n takip yapmak",
-      "GeÃ§iÅŸ hakkÄ±nÄ± her zaman zorlamak"
-    ],
-    "dogruCevap": "B",
-    "id": "src5_sinav_q049",
-    "Subject": "Genel"
-  },
-  {
-    "soru": "YanÄ±klarda ilk mÃ¼dahale olarak ne yapÄ±lmalÄ±dÄ±r?",
-    "siklar": [
-      "YoÄŸurt sÃ¼rÃ¼lÃ¼r",
-      "Buz direkt uygulanÄ±r",
-      "En az 20 dakika soÄŸuk su altÄ±nda tutulur",
-      "DiÅŸ macunu sÃ¼rÃ¼lÃ¼r"
-    ],
-    "dogruCevap": "C",
-    "id": "src5_sinav_q050",
-    "Subject": "Genel"
   }
 ]

@@ -1,18 +1,18 @@
-﻿[
+[
   {
-    "soru": "SRC 1 belgesine sahip bir sÃ¼rÃ¼cÃ¼nÃ¼n yasal olarak yapabileceÄŸi taÅŸÄ±macÄ±lÄ±k tÃ¼rÃ¼ hangisidir?",
+    "soru": "SRC 1 belgesine sahip bir sürücünün yasal olarak yapabileceği taşımacılık türü hangisidir?",
     "siklar": [
-      "Yurt iÃ§i eÅŸya",
-      "UluslararasÄ± eÅŸya",
-      "Yurt iÃ§i yolcu",
-      "UluslararasÄ± ve yurt iÃ§i yolcu"
+      "Yurt içi eşya",
+      "Uluslararası eşya",
+      "Yurt içi yolcu",
+      "Uluslararası ve yurt içi yolcu"
     ],
     "dogruCevap": "D",
     "id": "src1_sinav_q001",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "SRC 1 belgesi alan bir sÃ¼rÃ¼cÃ¼, mevzuat gereÄŸi aÅŸaÄŸÄ±daki belgelerden hangisini de almÄ±ÅŸ sayÄ±lÄ±r?",
+    "soru": "SRC 1 belgesi alan bir sürücü, mevzuat gereği aşağıdaki belgelerden hangisini de almış sayılır?",
     "siklar": [
       "SRC 3",
       "SRC 4",
@@ -24,7 +24,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "BÃ¼yÃ¼k otobÃ¼s kullanacak ticari sÃ¼rÃ¼cÃ¼ler iÃ§in belirlenen alt yaÅŸ sÄ±nÄ±rÄ± kaÃ§tÄ±r?",
+    "soru": "Büyük otobüs kullanacak ticari sürücüler için belirlenen alt yaş sınırı kaçtır?",
     "siklar": [
       "22",
       "23",
@@ -36,19 +36,19 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Ticari yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ± yapan sÃ¼rÃ¼cÃ¼ler iÃ§in mesleki Ã¼st yaÅŸ sÄ±nÄ±rÄ± hangisidir?",
+    "soru": "Ticari yolcu taşımacılığı yapan sürücüler için mesleki üst yaş sınırı hangisidir?",
     "siklar": [
-      "63 yaÅŸÄ±ndan gÃ¼n almamÄ±ÅŸ olmak",
-      "65 yaÅŸÄ±nÄ± doldurmuÅŸ olmak",
-      "66 yaÅŸÄ±ndan gÃ¼n almamÄ±ÅŸ olmak",
-      "60 yaÅŸÄ±nÄ± doldurmuÅŸ olmak"
+      "63 yaşından gün almamış olmak",
+      "65 yaşını doldurmuş olmak",
+      "66 yaşından gün almamış olmak",
+      "60 yaşını doldurmuş olmak"
     ],
     "dogruCevap": "C",
     "id": "src1_sinav_q004",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Tarifeli yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±nda, bilet Ã¼creti iadesi iÃ§in hareketten en az kaÃ§ saat Ã¶nce baÅŸvuru yapÄ±lmalÄ±dÄ±r?",
+    "soru": "Tarifeli yolcu taşımacılığında, bilet ücreti iadesi için hareketten en az kaç saat önce başvuru yapılmalıdır?",
     "siklar": [
       "12",
       "24",
@@ -60,31 +60,31 @@
     "Subject": "Genel"
   },
   {
-    "soru": "Hareket saatinden 12 saat Ã¶ncesine kadar yapÄ±lan baÅŸvurularda yolcuya hangi hak tanÄ±nÄ±r?",
+    "soru": "Hareket saatinden 12 saat öncesine kadar yapılan başvurularda yolcuya hangi hak tanınır?",
     "siklar": [
-      "Ãœcretin tamamÄ± iade edilir",
-      "%50 kesintili iade yapÄ±lÄ±r",
-      "6 ay geÃ§erli aÃ§Ä±k bilet verilir",
-      "Ä°ade yapÄ±lmaz"
+      "Ãœcretin tamamı iade edilir",
+      "%50 kesintili iade yapılır",
+      "6 ay geçerli açık bilet verilir",
+      "İade yapılmaz"
     ],
     "dogruCevap": "C",
     "id": "src1_sinav_q006",
     "Subject": "Genel"
   },
   {
-    "soru": "Hareketten 24 saat Ã¶nce yapÄ±lan bilet iade talebinde uygulanacak iÅŸlem hangisidir?",
+    "soru": "Hareketten 24 saat önce yapılan bilet iade talebinde uygulanacak işlem hangisidir?",
     "siklar": [
-      "AÃ§Ä±k bilet",
+      "Açık bilet",
       "%50 kesinti",
-      "Ä°ade yapÄ±lmaz",
-      "Ãœcretin tamamÄ± iade edilir"
+      "İade yapılmaz",
+      "Ãœcretin tamamı iade edilir"
     ],
     "dogruCevap": "D",
     "id": "src1_sinav_q007",
     "Subject": "Genel"
   },
   {
-    "soru": "OtobÃ¼sle seyahat eden her yolcunun Ã¼cretsiz bagaj hakkÄ± en fazla kaÃ§ kilogramdÄ±r?",
+    "soru": "Otobüsle seyahat eden her yolcunun ücretsiz bagaj hakkı en fazla kaç kilogramdır?",
     "siklar": [
       "20",
       "25",
@@ -96,19 +96,19 @@
     "Subject": "Genel"
   },
   {
-    "soru": "AÅŸaÄŸÄ±daki yaÅŸ gruplarÄ±ndan hangisine bilet Ã¼creti Ã¼zerinden %30 indirim uygulanmasÄ± zorunludur?",
+    "soru": "Aşağıdaki yaş gruplarından hangisine bilet ücreti üzerinden %30 indirim uygulanması zorunludur?",
     "siklar": [
-      "0â€“6 yaÅŸ",
-      "6â€“12 yaÅŸ",
-      "12â€“18 yaÅŸ",
-      "65 yaÅŸ Ã¼stÃ¼"
+      "0â€“6 yaş",
+      "6â€“12 yaş",
+      "12â€“18 yaş",
+      "65 yaş üstü"
     ],
     "dogruCevap": "B",
     "id": "src1_sinav_q009",
     "Subject": "Genel"
   },
   {
-    "soru": "Kucakta seyahat etmek ÅŸartÄ±yla Ã¼cretsiz taÅŸÄ±nan Ã§ocuk yaÅŸ grubu hangisidir?",
+    "soru": "Kucakta seyahat etmek şartıyla ücretsiz taşınan çocuk yaş grubu hangisidir?",
     "siklar": [
       "0â€“3",
       "0â€“5",
@@ -120,7 +120,7 @@
     "Subject": "Genel"
   },
   {
-    "soru": "%40 ve Ã¼zeri engelli kimlik kartÄ±na sahip yolculara uygulanacak zorunlu indirim oranÄ± nedir?",
+    "soru": "%40 ve üzeri engelli kimlik kartına sahip yolculara uygulanacak zorunlu indirim oranı nedir?",
     "siklar": [
       "%20",
       "%25",
@@ -132,23 +132,23 @@
     "Subject": "Genel"
   },
   {
-    "soru": "Evcil hayvanlarÄ±n (kedi, kÃ¶pek, kuÅŸ) otobÃ¼slerde taÅŸÄ±nmasÄ±yla ilgili doÄŸru uygulama hangisidir?",
+    "soru": "Evcil hayvanların (kedi, köpek, kuş) otobüslerde taşınmasıyla ilgili doğru uygulama hangisidir?",
     "siklar": [
       "Kucakta",
       "Koridorda kafesle",
       "Ã–zel kafeste bagajda",
-      "Yan koltuk satÄ±n alÄ±narak"
+      "Yan koltuk satın alınarak"
     ],
     "dogruCevap": "C",
     "id": "src1_sinav_q012",
     "Subject": "Genel"
   },
   {
-    "soru": "UluslararasÄ± yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±nda trafik sigortasÄ±nÄ±n yurtdÄ±ÅŸÄ±nda da geÃ§erli olmasÄ±nÄ± saÄŸlayan belge hangisidir?",
+    "soru": "Uluslararası yolcu taşımacılığında trafik sigortasının yurtdışında da geçerli olmasını sağlayan belge hangisidir?",
     "siklar": [
       "A.TR",
       "TIR Karnesi",
-      "YeÅŸil Kart",
+      "Yeşil Kart",
       "CMR"
     ],
     "dogruCevap": "C",
@@ -156,19 +156,19 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "YolcularÄ± kaza durumunda teminat altÄ±na alan sigorta tÃ¼rÃ¼ hangisidir?",
+    "soru": "Yolcuları kaza durumunda teminat altına alan sigorta türü hangisidir?",
     "siklar": [
       "Kasko",
-      "Trafik SigortasÄ±",
+      "Trafik Sigortası",
       "Koltuk Ferdi Kaza",
-      "YeÅŸil Kart"
+      "Yeşil Kart"
     ],
     "dogruCevap": "C",
     "id": "src1_sinav_q014",
     "Subject": "İlkyardım"
   },
   {
-    "soru": "Psikoteknik deÄŸerlendirme raporunun geÃ§erlilik sÃ¼resi kaÃ§ yÄ±ldÄ±r?",
+    "soru": "Psikoteknik değerlendirme raporunun geçerlilik süresi kaç yıldır?",
     "siklar": [
       "2",
       "3",
@@ -180,7 +180,7 @@
     "Subject": "Araç Tekniği"
   },
   {
-    "soru": "AETR'ye gÃ¶re normal ÅŸartlarda gÃ¼nlÃ¼k araÃ§ kullanma sÃ¼resi en fazla kaÃ§ saattir?",
+    "soru": "AETR'ye göre normal şartlarda günlük araç kullanma süresi en fazla kaç saattir?",
     "siklar": [
       "8",
       "9",
@@ -192,7 +192,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "GÃ¼nlÃ¼k 9 saat olan sÃ¼rÃ¼ÅŸ sÃ¼resi, haftada en fazla iki kez kaÃ§ saate Ã§Ä±karÄ±labilir?",
+    "soru": "Günlük 9 saat olan sürüş süresi, haftada en fazla iki kez kaç saate çıkarılabilir?",
     "siklar": [
       "10",
       "11",
@@ -204,7 +204,7 @@
     "Subject": "Genel"
   },
   {
-    "soru": "AETR'ye gÃ¶re haftalÄ±k toplam araÃ§ kullanma sÃ¼resi en fazla kaÃ§ saattir?",
+    "soru": "AETR'ye göre haftalık toplam araç kullanma süresi en fazla kaç saattir?",
     "siklar": [
       "45",
       "56",
@@ -216,7 +216,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Ä°ki haftalÄ±k toplam araÃ§ kullanma sÃ¼resi en fazla kaÃ§ saati geÃ§emez?",
+    "soru": "İki haftalık toplam araç kullanma süresi en fazla kaç saati geçemez?",
     "siklar": [
       "80",
       "90",
@@ -228,7 +228,7 @@
     "Subject": "Genel"
   },
   {
-    "soru": "SÃ¼rekli olarak 4,5 saat araÃ§ kullanan bir sÃ¼rÃ¼cÃ¼nÃ¼n vermesi gereken zorunlu mola sÃ¼resi ne kadardÄ±r?",
+    "soru": "Sürekli olarak 4,5 saat araç kullanan bir sürücünün vermesi gereken zorunlu mola süresi ne kadardır?",
     "siklar": [
       "30 dk",
       "45 dk",
@@ -240,11 +240,11 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "45 dakikalÄ±k mola aÅŸaÄŸÄ±daki hangi ÅŸekilde bÃ¶lÃ¼nebilir?",
+    "soru": "45 dakikalık mola aşağıdaki hangi şekilde bölünebilir?",
     "siklar": [
       "20 + 25",
-      "30 + 15 (sÄ±rasÄ±z)",
-      "15 + 30 (sÄ±rayla)",
+      "30 + 15 (sırasız)",
+      "15 + 30 (sırayla)",
       "10 + 35"
     ],
     "dogruCevap": "C",
@@ -252,7 +252,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "AETR'ye gÃ¶re gÃ¼nlÃ¼k kesintisiz dinlenme sÃ¼resi normalde kaÃ§ saattir?",
+    "soru": "AETR'ye göre günlük kesintisiz dinlenme süresi normalde kaç saattir?",
     "siklar": [
       "8",
       "9",
@@ -264,7 +264,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "GÃ¼nlÃ¼k dinlenme sÃ¼resi 11 saatten 9 saate indirilebilirse, haftada en fazla kaÃ§ kez uygulanabilir?",
+    "soru": "Günlük dinlenme süresi 11 saatten 9 saate indirilebilirse, haftada en fazla kaç kez uygulanabilir?",
     "siklar": [
       "1",
       "2",
@@ -276,59 +276,59 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "AÅŸaÄŸÄ±dakilerden hangisi \"mola\" kavramÄ±nÄ± en doÄŸru ÅŸekilde tanÄ±mlar?",
+    "soru": "Aşağıdakilerden hangisi \"mola\" kavramını en doğru şekilde tanımlar?",
     "siklar": [
-      "GÃ¼nlÃ¼k dinlenme sÃ¼resi",
-      "HaftalÄ±k dinlenme sÃ¼resi",
-      "SÃ¼rÃ¼ÅŸ aralarÄ±nda verilen kÄ±sa dinlenme",
-      "GÃ¼n sonu istirahati"
+      "Günlük dinlenme süresi",
+      "Haftalık dinlenme süresi",
+      "Sürüş aralarında verilen kısa dinlenme",
+      "Gün sonu istirahati"
     ],
     "dogruCevap": "C",
     "id": "src1_sinav_q024",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Takograf cihazÄ±nÄ±n temel amacÄ± aÅŸaÄŸÄ±dakilerden hangisidir?",
+    "soru": "Takograf cihazının temel amacı aşağıdakilerden hangisidir?",
     "siklar": [
-      "YakÄ±t tÃ¼ketimini Ã¶lÃ§mek",
-      "Yolcu sayÄ±sÄ±nÄ± belirlemek",
-      "SÃ¼rÃ¼ÅŸ, mola ve dinlenme sÃ¼relerini kaydetmek",
-      "AraÃ§ hÄ±zÄ±nÄ± sabitlemek"
+      "Yakıt tüketimini ölçmek",
+      "Yolcu sayısını belirlemek",
+      "Sürüş, mola ve dinlenme sürelerini kaydetmek",
+      "Araç hızını sabitlemek"
     ],
     "dogruCevap": "C",
     "id": "src1_sinav_q025",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "SRC belgesi olmadan ticari araÃ§ kullandÄ±rmanÄ±n idari sorumluluÄŸu daha Ã§ok kime yansÄ±r?",
+    "soru": "SRC belgesi olmadan ticari araç kullandırmanın idari sorumluluğu daha çok kime yansır?",
     "siklar": [
       "Yolcuya",
-      "SÃ¼rÃ¼cÃ¼ye",
-      "AraÃ§ sahibine / iÅŸletene",
-      "Terminal iÅŸletmesine"
+      "Sürücüye",
+      "Araç sahibine / işletene",
+      "Terminal işletmesine"
     ],
     "dogruCevap": "C",
     "id": "src1_sinav_q026",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "AÅŸaÄŸÄ±dakilerden hangisi sÃ¼rÃ¼cÃ¼de aranan adli sicil ÅŸartlarÄ±ndan biri deÄŸildir?",
+    "soru": "Aşağıdakilerden hangisi sürücüde aranan adli sicil şartlarından biri değildir?",
     "siklar": [
-      "TerÃ¶r suÃ§u iÅŸlememek",
-      "UyuÅŸturucu suÃ§u iÅŸlememek",
-      "KaÃ§akÃ§Ä±lÄ±k yapmamÄ±ÅŸ olmak",
-      "Ä°cra borcu olmamak"
+      "Terör suçu işlememek",
+      "Uyuşturucu suçu işlememek",
+      "Kaçakçılık yapmamış olmak",
+      "İcra borcu olmamak"
     ],
     "dogruCevap": "D",
     "id": "src1_sinav_q027",
     "Subject": "Genel"
   },
   {
-    "soru": "GÃ¼mrÃ¼k kapÄ±larÄ±nda \"KÄ±rmÄ±zÄ± Hat\" uygulamasÄ± neyi ifade eder?",
+    "soru": "Gümrük kapılarında \"Kırmızı Hat\" uygulaması neyi ifade eder?",
     "siklar": [
-      "Kontrol yapÄ±lmamasÄ±",
-      "Sadece belge kontrolÃ¼",
-      "Fiziki muayene dahil sÄ±kÄ± kontrol",
+      "Kontrol yapılmaması",
+      "Sadece belge kontrolü",
+      "Fiziki muayene dahil sıkı kontrol",
       "Sonradan kontrol"
     ],
     "dogruCevap": "C",
@@ -336,10 +336,10 @@
     "Subject": "Genel"
   },
   {
-    "soru": "\"SarÄ± Hat\" uygulamasÄ±nÄ±n temel Ã¶zelliÄŸi hangisidir?",
+    "soru": "\"Sarı Hat\" uygulamasının temel özelliği hangisidir?",
     "siklar": [
       "Fiziki muayene",
-      "Sadece belge kontrolÃ¼",
+      "Sadece belge kontrolü",
       "Kontrol yok",
       "Sonradan kontrol"
     ],
@@ -348,47 +348,47 @@
     "Subject": "Genel"
   },
   {
-    "soru": "\"Mavi Hat\" uygulamasÄ± aÅŸaÄŸÄ±dakilerden hangisini ifade eder?",
+    "soru": "\"Mavi Hat\" uygulaması aşağıdakilerden hangisini ifade eder?",
     "siklar": [
       "Fiziki muayene",
-      "Belge kontrolÃ¼",
+      "Belge kontrolü",
       "Sonradan kontrol",
-      "HiÃ§ kontrol yapÄ±lmamasÄ±"
+      "Hiç kontrol yapılmaması"
     ],
     "dogruCevap": "C",
     "id": "src1_sinav_q030",
     "Subject": "Genel"
   },
   {
-    "soru": "\"YeÅŸil Hat\" uygulamasÄ±nÄ±n temel iÅŸlevi hangisidir?",
+    "soru": "\"Yeşil Hat\" uygulamasının temel işlevi hangisidir?",
     "siklar": [
       "Fiziki muayene",
-      "Sadece belge kontrolÃ¼",
+      "Sadece belge kontrolü",
       "Sonradan kontrol",
-      "Kontrol yapÄ±lmamasÄ± (beyan esaslÄ±)"
+      "Kontrol yapılmaması (beyan esaslı)"
     ],
     "dogruCevap": "D",
     "id": "src1_sinav_q031",
     "Subject": "Genel"
   },
   {
-    "soru": "EÅŸyanÄ±n gÃ¼mrÃ¼k sahasÄ±na indirilmeden taÅŸÄ±t Ã¼zerinde muayene edilerek teslim edilmesine ne ad verilir?",
+    "soru": "Eşyanın gümrük sahasına indirilmeden taşıt üzerinde muayene edilerek teslim edilmesine ne ad verilir?",
     "siklar": [
       "Transit",
       "Antrepo",
       "Supalan",
-      "ElleÃ§leme"
+      "Elleçleme"
     ],
     "dogruCevap": "C",
     "id": "src1_sinav_q032",
     "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "GÃ¼mrÃ¼kte eÅŸyanÄ±n niteliÄŸi bozulmadan istiflenmesi veya yerinin deÄŸiÅŸtirilmesine ne ad verilir?",
+    "soru": "Gümrükte eşyanın niteliği bozulmadan istiflenmesi veya yerinin değiştirilmesine ne ad verilir?",
     "siklar": [
       "Transit",
       "Supalan",
-      "ElleÃ§leme",
+      "Elleçleme",
       "Sevkiyat"
     ],
     "dogruCevap": "C",
@@ -396,23 +396,23 @@
     "Subject": "Genel"
   },
   {
-    "soru": "SRC 1 sÄ±navÄ±nda gÃ¼mrÃ¼k hatlarÄ± sorularÄ±nÄ±n sorulma amacÄ± hangisidir?",
+    "soru": "SRC 1 sınavında gümrük hatları sorularının sorulma amacı hangisidir?",
     "siklar": [
-      "EÅŸya taÅŸÄ±macÄ±lÄ±ÄŸÄ±nÄ± Ã¶lÃ§mek",
-      "SÄ±nÄ±r kapÄ±sÄ± iÅŸlem mantÄ±ÄŸÄ±nÄ± Ã¶lÃ§mek",
-      "Motor bilgisini Ã¶lÃ§mek",
-      "Antrepo bilgisi Ã¶lÃ§mek"
+      "Eşya taşımacılığını ölçmek",
+      "Sınır kapısı işlem mantığını ölçmek",
+      "Motor bilgisini ölçmek",
+      "Antrepo bilgisi ölçmek"
     ],
     "dogruCevap": "B",
     "id": "src1_sinav_q034",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Tarifeli yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±nda \"tarife\" kavramÄ± neyi ifade eder?",
+    "soru": "Tarifeli yolcu taşımacılığında \"tarife\" kavramı neyi ifade eder?",
     "siklar": [
-      "AraÃ§ modeli",
-      "Sefer saatleri, hat ve Ã¼cret dÃ¼zeni",
-      "Yolcu sayÄ±sÄ±",
+      "Araç modeli",
+      "Sefer saatleri, hat ve ücret düzeni",
+      "Yolcu sayısı",
       "Bagaj kapasitesi"
     ],
     "dogruCevap": "B",
@@ -420,31 +420,31 @@
     "Subject": "Genel"
   },
   {
-    "soru": "Tarifesiz yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±na Ã¶rnek hangisidir?",
+    "soru": "Tarifesiz yolcu taşımacılığına örnek hangisidir?",
     "siklar": [
-      "GÃ¼nlÃ¼k saatli hat seferi",
+      "Günlük saatli hat seferi",
       "Terminalden biletli sefer",
-      "Tur ve organizasyon taÅŸÄ±malarÄ±",
-      "Belediye hattÄ±"
+      "Tur ve organizasyon taşımaları",
+      "Belediye hattı"
     ],
     "dogruCevap": "C",
     "id": "src1_sinav_q036",
     "Subject": "Genel"
   },
   {
-    "soru": "Uygulama (gÃ¶rsel) sÄ±navÄ±nda adaylarÄ±n baÅŸarÄ±lÄ± sayÄ±lmasÄ± iÃ§in kaÃ§ soruya doÄŸru cevap vermesi gerekir?",
+    "soru": "Uygulama (görsel) sınavında adayların başarılı sayılması için kaç soruya doğru cevap vermesi gerekir?",
     "siklar": [
       "1",
       "2",
       "3",
-      "TÃ¼mÃ¼ne"
+      "Tümüne"
     ],
     "dogruCevap": "B",
     "id": "src1_sinav_q037",
     "Subject": "Genel"
   },
   {
-    "soru": "Uygulama (gÃ¶rsel) sÄ±navÄ±nda her soru iÃ§in tanÄ±nan sÃ¼re ne kadardÄ±r?",
+    "soru": "Uygulama (görsel) sınavında her soru için tanınan süre ne kadardır?",
     "siklar": [
       "30 sn",
       "45 sn",
@@ -456,7 +456,7 @@
     "Subject": "Genel"
   },
   {
-    "soru": "SRC teorik sÄ±navÄ±ndan baÅŸarÄ±lÄ± sayÄ±lmak iÃ§in en az kaÃ§ puan alÄ±nmalÄ±dÄ±r?",
+    "soru": "SRC teorik sınavından başarılı sayılmak için en az kaç puan alınmalıdır?",
     "siklar": [
       "60",
       "65",
@@ -468,23 +468,23 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "AÅŸaÄŸÄ±dakilerden hangisi SRC 1 (UluslararasÄ± Yolcu) kapsamÄ±na uygun olmayan bir konudur?",
+    "soru": "Aşağıdakilerden hangisi SRC 1 (Uluslararası Yolcu) kapsamına uygun olmayan bir konudur?",
     "siklar": [
-      "Yolcu bilet iade kurallarÄ±",
-      "AETR sÃ¼rÃ¼ÅŸâ€“dinlenme sÃ¼releri",
-      "CMR taÅŸÄ±yÄ±cÄ± sorumluluÄŸu",
-      "Yolcu indirim uygulamalarÄ±"
+      "Yolcu bilet iade kuralları",
+      "AETR sürüşâ€“dinlenme süreleri",
+      "CMR taşıyıcı sorumluluğu",
+      "Yolcu indirim uygulamaları"
     ],
     "dogruCevap": "C",
     "id": "src1_sinav_q040",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Takograf kayÄ±tlarÄ±nÄ±n amacÄ± aÅŸaÄŸÄ±dakilerden hangisidir?",
+    "soru": "Takograf kayıtlarının amacı aşağıdakilerden hangisidir?",
     "siklar": [
-      "YakÄ±t tÃ¼ketimi",
-      "SÃ¼rÃ¼ÅŸâ€“molaâ€“dinlenme sÃ¼relerinin denetimi",
-      "Yolcu sayÄ±sÄ±",
+      "Yakıt tüketimi",
+      "Sürüşâ€“molaâ€“dinlenme sürelerinin denetimi",
+      "Yolcu sayısı",
       "Bilet kesimi"
     ],
     "dogruCevap": "B",
@@ -492,7 +492,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Tarifeli taÅŸÄ±macÄ±lÄ±kta 'aÃ§Ä±k bilet' geÃ§erlilik sÃ¼resi kaÃ§ aydÄ±r?",
+    "soru": "Tarifeli taşımacılıkta 'açık bilet' geçerlilik süresi kaç aydır?",
     "siklar": [
       "1",
       "3",
@@ -504,10 +504,10 @@
     "Subject": "Genel"
   },
   {
-    "soru": "Yolcunun bagajÄ± kaybolursa ilk doÄŸru yaklaÅŸÄ±m hangisidir?",
+    "soru": "Yolcunun bagajı kaybolursa ilk doğru yaklaşım hangisidir?",
     "siklar": [
       "Yok saymak",
-      "TutanaÄŸa baÄŸlamak ve firmaya bildirmek",
+      "Tutanağa bağlamak ve firmaya bildirmek",
       "Yolcuyu indirmek",
       "Bileti iptal etmek"
     ],
@@ -516,35 +516,35 @@
     "Subject": "Genel"
   },
   {
-    "soru": "UluslararasÄ± seferde sÄ±nÄ±r geÃ§iÅŸi gecikirse sÃ¼rÃ¼cÃ¼nÃ¼n AETR aÃ§Ä±sÄ±ndan doÄŸru davranÄ±ÅŸÄ± hangisidir?",
+    "soru": "Uluslararası seferde sınır geçişi gecikirse sürücünün AETR açısından doğru davranışı hangisidir?",
     "siklar": [
       "Mola/dinlenmeyi yok saymak",
-      "PlanÄ± kayda uygun gÃ¼ncellemek",
-      "TakografÄ± kapatmak",
-      "SÃ¼releri uzatmak"
+      "Planı kayda uygun güncellemek",
+      "Takografı kapatmak",
+      "Süreleri uzatmak"
     ],
     "dogruCevap": "B",
     "id": "src1_sinav_q044",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "SRC 1 sÃ¼rÃ¼cÃ¼sÃ¼ iÃ§in 'psikoteknik' neyi doÄŸrular?",
+    "soru": "SRC 1 sürücüsü için 'psikoteknik' neyi doğrular?",
     "siklar": [
-      "Motor gÃ¼cÃ¼nÃ¼",
-      "SÃ¼rÃ¼cÃ¼nÃ¼n dikkat-algÄ±-reaksiyon yeterliliÄŸini",
-      "AracÄ±n modelini",
-      "Bilet fiyatÄ±nÄ±"
+      "Motor gücünü",
+      "Sürücünün dikkat-algı-reaksiyon yeterliliğini",
+      "Aracın modelini",
+      "Bilet fiyatını"
     ],
     "dogruCevap": "B",
     "id": "src1_sinav_q045",
     "Subject": "Araç Tekniği"
   },
   {
-    "soru": "SÃ¼rÃ¼cÃ¼ 2 haftada 92 saat sÃ¼rÃ¼ÅŸ yapmÄ±ÅŸsa durum hangisidir?",
+    "soru": "Sürücü 2 haftada 92 saat sürüş yapmışsa durum hangisidir?",
     "siklar": [
       "Uygun",
-      "Uygun deÄŸil (90'Ä± aÅŸar)",
-      "Sadece ÅŸehir iÃ§inde uygundur",
+      "Uygun değil (90'ı aşar)",
+      "Sadece şehir içinde uygundur",
       "Ceza yok"
     ],
     "dogruCevap": "B",
@@ -552,10 +552,10 @@
     "Subject": "Genel"
   },
   {
-    "soru": "HaftalÄ±k 58 saat sÃ¼rÃ¼ÅŸ yapan sÃ¼rÃ¼cÃ¼ iÃ§in doÄŸru deÄŸerlendirme hangisidir?",
+    "soru": "Haftalık 58 saat sürüş yapan sürücü için doğru değerlendirme hangisidir?",
     "siklar": [
       "Uygun",
-      "Uygun deÄŸil (56'yÄ± aÅŸar)",
+      "Uygun değil (56'yı aşar)",
       "Sadece gece uygundur",
       "60'a kadar serbest"
     ],
@@ -564,9 +564,9 @@
     "Subject": "Genel"
   },
   {
-    "soru": "SRC belgesi alabilmek iÃ§in asgari eÄŸitim dÃ¼zeyi hangisidir?",
+    "soru": "SRC belgesi alabilmek için asgari eğitim düzeyi hangisidir?",
     "siklar": [
-      "Ä°lkokul",
+      "İlkokul",
       "Ortaokul",
       "Lise",
       "Ãœniversite"
@@ -576,10 +576,10 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "UluslararasÄ± yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±nda kaza sonrasÄ± ilk Ã¶ncelik hangisidir?",
+    "soru": "Uluslararası yolcu taşımacılığında kaza sonrası ilk öncelik hangisidir?",
     "siklar": [
       "Bilet kesmek",
-      "Can gÃ¼venliÄŸi ve resmi bildirim prosedÃ¼rleri",
+      "Can güvenliği ve resmi bildirim prosedürleri",
       "Bagaj kontrol",
       "Reklam"
     ],

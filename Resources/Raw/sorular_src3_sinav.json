@@ -1,21 +1,21 @@
-﻿[
+[
   {
-    "soru": "SRC 3 belgesine sahip bir sÃ¼rÃ¼cÃ¼, yasal olarak aÅŸaÄŸÄ±daki faaliyetlerden hangisini yapmaya yetkilidir?",
+    "soru": "SRC 3 belgesine sahip bir sürücü, yasal olarak aşağıdaki faaliyetlerden hangisini yapmaya yetkilidir?",
     "siklar": [
-      "YalnÄ±z yurtiÃ§i yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
-      "UluslararasÄ± ve yurtiÃ§i eÅŸya/kargo taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
-      "UluslararasÄ± yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
-      "Tehlikeli madde taÅŸÄ±macÄ±lÄ±ÄŸÄ± (ADR)"
+      "Yalnız yurtiçi yolcu taşımacılığı",
+      "Uluslararası ve yurtiçi eşya/kargo taşımacılığı",
+      "Uluslararası yolcu taşımacılığı",
+      "Tehlikeli madde taşımacılığı (ADR)"
     ],
     "dogruCevap": "B",
     "id": "src3_sinav_q001",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "UluslararasÄ± karayolu taÅŸÄ±malarÄ±nda taÅŸÄ±ma sÃ¶zleÅŸmesini ve yÃ¼kÃ¼n teslim ÅŸartlarÄ±nÄ± gÃ¶steren 'taÅŸÄ±ma senedi' aÅŸaÄŸÄ±dakilerden hangisidir?",
+    "soru": "Uluslararası karayolu taşımalarında taşıma sözleşmesini ve yükün teslim şartlarını gösteren 'taşıma senedi' aşağıdakilerden hangisidir?",
     "siklar": [
       "TIR Karnesi",
-      "GeÃ§iÅŸ Belgesi",
+      "Geçiş Belgesi",
       "CMR Belgesi",
       "A.TR Belgesi"
     ],
@@ -24,7 +24,7 @@
     "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "AETR kurallarÄ±na gÃ¶re bir sÃ¼rÃ¼cÃ¼, aralÄ±ksÄ±z araÃ§ kullanÄ±mÄ± sonunda mola vermek zorundadÄ±r. Bu 'aralÄ±ksÄ±z sÃ¼rÃ¼ÅŸ' sÃ¼resi en fazla kaÃ§ saattir?",
+    "soru": "AETR kurallarına göre bir sürücü, aralıksız araç kullanımı sonunda mola vermek zorundadır. Bu 'aralıksız sürüş' süresi en fazla kaç saattir?",
     "siklar": [
       "4,5 saat",
       "6 saat",
@@ -36,19 +36,19 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "SRC 3 belgesi almak isteyen sÃ¼rÃ¼cÃ¼ler iÃ§in (genel kural olarak) mesleki Ã¼st yaÅŸ sÄ±nÄ±rÄ± aÅŸaÄŸÄ±dakilerden hangisidir?",
+    "soru": "SRC 3 belgesi almak isteyen sürücüler için (genel kural olarak) mesleki üst yaş sınırı aşağıdakilerden hangisidir?",
     "siklar": [
-      "63 yaÅŸÄ±ndan gÃ¼n almamÄ±ÅŸ olmak",
-      "65 yaÅŸÄ±nÄ± doldurmamÄ±ÅŸ olmak",
-      "69 yaÅŸÄ±ndan gÃ¼n almamÄ±ÅŸ olmak",
-      "66 yaÅŸÄ±ndan gÃ¼n almamÄ±ÅŸ olmak"
+      "63 yaşından gün almamış olmak",
+      "65 yaşını doldurmamış olmak",
+      "69 yaşından gün almamış olmak",
+      "66 yaşından gün almamış olmak"
     ],
     "dogruCevap": "D",
     "id": "src3_sinav_q004",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "EÅŸya taÅŸÄ±macÄ±lÄ±ÄŸÄ± yapan firmalar, sefer/taÅŸÄ±ma verilerini U-ETDS sistemine araÃ§ hareket ettikten sonra en geÃ§ ne kadar sÃ¼re iÃ§inde girmelidir?",
+    "soru": "Eşya taşımacılığı yapan firmalar, sefer/taşıma verilerini U-ETDS sistemine araç hareket ettikten sonra en geç ne kadar süre içinde girmelidir?",
     "siklar": [
       "1 saat",
       "6 saat",
@@ -60,19 +60,19 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "TIR Karnesi, uluslararasÄ± transit taÅŸÄ±mada aÄŸÄ±rlÄ±klÄ± olarak hangi ihtiyacÄ±n yerine geÃ§er?",
+    "soru": "TIR Karnesi, uluslararası transit taşımada ağırlıklı olarak hangi ihtiyacın yerine geçer?",
     "siklar": [
-      "GÃ¼mrÃ¼k teminatÄ±",
-      "Zorunlu trafik sigortasÄ±",
-      "SÃ¼rÃ¼cÃ¼ belgesi (ehliyet)",
-      "AraÃ§ ruhsatÄ±"
+      "Gümrük teminatı",
+      "Zorunlu trafik sigortası",
+      "Sürücü belgesi (ehliyet)",
+      "Araç ruhsatı"
     ],
     "dogruCevap": "A",
     "id": "src3_sinav_q006",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "AETR'ye gÃ¶re 'haftalÄ±k toplam sÃ¼rÃ¼ÅŸ sÃ¼resi' kural olarak en fazla kaÃ§ saattir?",
+    "soru": "AETR'ye göre 'haftalık toplam sürüş süresi' kural olarak en fazla kaç saattir?",
     "siklar": [
       "45 saat",
       "50 saat",
@@ -84,7 +84,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "AETR'ye gÃ¶re 'iki haftalÄ±k (14 gÃ¼n) toplam sÃ¼rÃ¼ÅŸ sÃ¼resi' en fazla kaÃ§ saat olabilir?",
+    "soru": "AETR'ye göre 'iki haftalık (14 gün) toplam sürüş süresi' en fazla kaç saat olabilir?",
     "siklar": [
       "80 saat",
       "85 saat",
@@ -96,19 +96,19 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "CMR Belgesi kaÃ§ nÃ¼sha olarak dÃ¼zenlenir?",
+    "soru": "CMR Belgesi kaç nüsha olarak düzenlenir?",
     "siklar": [
-      "3 nÃ¼sha",
-      "2 nÃ¼sha",
-      "4 nÃ¼sha",
-      "5 nÃ¼sha"
+      "3 nüsha",
+      "2 nüsha",
+      "4 nüsha",
+      "5 nüsha"
     ],
     "dogruCevap": "A",
     "id": "src3_sinav_q009",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "4,5 saatlik sÃ¼rÃ¼ÅŸ sonrasÄ±nda verilmesi gereken zorunlu mola sÃ¼resi en az kaÃ§ dakikadÄ±r?",
+    "soru": "4,5 saatlik sürüş sonrasında verilmesi gereken zorunlu mola süresi en az kaç dakikadır?",
     "siklar": [
       "30 dk",
       "45 dk",
@@ -120,47 +120,47 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "4,5 saatlik sÃ¼rÃ¼ÅŸten sonra kullanÄ±lacak 45 dakikalÄ±k mola, en az hangi parÃ§alar halinde bÃ¶lÃ¼nebilir?",
+    "soru": "4,5 saatlik sürüşten sonra kullanılacak 45 dakikalık mola, en az hangi parçalar halinde bölünebilir?",
     "siklar": [
       "10 + 35",
       "20 + 25",
       "15 + 30",
-      "30 + 15 (tek parÃ§a ÅŸartÄ±nÄ± saÄŸlamaz)"
+      "30 + 15 (tek parça şartını sağlamaz)"
     ],
     "dogruCevap": "C",
     "id": "src3_sinav_q011",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Ä°dari para cezalarÄ±na karÅŸÄ± tebliÄŸ tarihinden itibaren kaÃ§ gÃ¼n iÃ§inde Sulh Ceza HakimliÄŸine itiraz edilebilir?",
+    "soru": "İdari para cezalarına karşı tebliğ tarihinden itibaren kaç gün içinde Sulh Ceza Hakimliğine itiraz edilebilir?",
     "siklar": [
-      "7 gÃ¼n",
-      "10 gÃ¼n",
-      "30 gÃ¼n",
-      "15 gÃ¼n"
+      "7 gün",
+      "10 gün",
+      "30 gün",
+      "15 gün"
     ],
     "dogruCevap": "D",
     "id": "src3_sinav_q012",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "'Teslim tesellÃ¼m belgesi'nin en temel iÅŸlevi aÅŸaÄŸÄ±dakilerden hangisidir?",
+    "soru": "'Teslim tesellüm belgesi'nin en temel işlevi aşağıdakilerden hangisidir?",
     "siklar": [
-      "TaÅŸÄ±ma Ã¼cretini gÃ¶stermek",
-      "YÃ¼kÃ¼n alÄ±cÄ±ya teslim edildiÄŸini ispatlamak",
-      "TaÅŸÄ±ma gÃ¼zergÃ¢hÄ±nÄ± belirlemek",
-      "Sigorta teminatÄ±nÄ± baÅŸlatmak"
+      "Taşıma ücretini göstermek",
+      "Yükün alıcıya teslim edildiğini ispatlamak",
+      "Taşıma güzergâhını belirlemek",
+      "Sigorta teminatını başlatmak"
     ],
     "dogruCevap": "B",
     "id": "src3_sinav_q013",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "'SatÄ±lan malÄ±n bedelini gÃ¶steren ticari vesika' ifadesi hangi belgeyi tanÄ±mlar?",
+    "soru": "'Satılan malın bedelini gösteren ticari vesika' ifadesi hangi belgeyi tanımlar?",
     "siklar": [
       "Sevk irsaliyesi",
       "Fatura",
-      "TaÅŸÄ±t kartÄ±",
+      "Taşıt kartı",
       "TIR Karnesi"
     ],
     "dogruCevap": "B",
@@ -168,7 +168,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "UluslararasÄ± lojistik iÅŸletmeciliÄŸi yapacak firmalara verilen yetki belgesi hangisidir?",
+    "soru": "Uluslararası lojistik işletmeciliği yapacak firmalara verilen yetki belgesi hangisidir?",
     "siklar": [
       "K1",
       "C2",
@@ -180,7 +180,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Yetki belgesi sahibi firmalarda 'kaldÄ±rÄ±lmamÄ±ÅŸ uyarma' sayÄ±sÄ± kaÃ§a ulaÅŸÄ±rsa faaliyet geÃ§ici olarak durdurulur?",
+    "soru": "Yetki belgesi sahibi firmalarda 'kaldırılmamış uyarma' sayısı kaça ulaşırsa faaliyet geçici olarak durdurulur?",
     "siklar": [
       "100",
       "75",
@@ -192,11 +192,11 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "KBK (Korumaâ€“Bildirmeâ€“Kurtarma) ifadesi aÅŸaÄŸÄ±daki alanlardan hangisinin temel uygulamalarÄ±dÄ±r?",
+    "soru": "KBK (Koruma-Bildirme-Kurtarma) ifadesi aşağıdaki alanlardan hangisinin temel uygulamalarıdır?",
     "siklar": [
-      "Ä°lk yardÄ±m",
-      "GÃ¼mrÃ¼k mevzuatÄ±",
-      "AraÃ§ bakÄ±m-onarÄ±m",
+      "İlk yardım",
+      "Gümrük mevzuatı",
+      "Araç bakım-onarım",
       "Harita okuma"
     ],
     "dogruCevap": "A",
@@ -204,10 +204,10 @@
     "Subject": "İlkyardım"
   },
   {
-    "soru": "AÅŸaÄŸÄ±daki suÃ§lardan hangisi SRC 3 belgesi alÄ±nmasÄ±na engel teÅŸkil eder?",
+    "soru": "Aşağıdaki suçlardan hangisi SRC 3 belgesi alınmasına engel teşkil eder?",
     "siklar": [
       "Hakaret",
-      "Ä°nsan kaÃ§akÃ§Ä±lÄ±ÄŸÄ±",
+      "İnsan kaçakçılığı",
       "Taksirli yaralama",
       "Basit trafik ihlali"
     ],
@@ -216,23 +216,23 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Bir aracÄ±n firmanÄ±n yetki belgesine kayÄ±tlÄ± olduÄŸunu ve ticari faaliyette kullanÄ±labildiÄŸini gÃ¶steren belge hangisidir?",
+    "soru": "Bir aracın firmanın yetki belgesine kayıtlı olduğunu ve ticari faaliyette kullanılabildiğini gösteren belge hangisidir?",
     "siklar": [
-      "Kasko poliÃ§esi",
+      "Kasko poliçesi",
       "Uygunluk belgesi",
-      "SÃ¼rÃ¼cÃ¼ belgesi",
-      "TaÅŸÄ±t kartÄ±"
+      "Sürücü belgesi",
+      "Taşıt kartı"
     ],
     "dogruCevap": "D",
     "id": "src3_sinav_q019",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "SRC 3 eÄŸitim mÃ¼fredatÄ±nda en yoÄŸun ders saati (8 saat) genellikle hangi konu baÅŸlÄ±ÄŸÄ±ndadÄ±r?",
+    "soru": "SRC 3 eğitim müfredatında en yoğun ders saati (8 saat) genellikle hangi konu başlığındadır?",
     "siklar": [
-      "Ä°lk yardÄ±m",
-      "Trafik adabÄ±",
-      "EÅŸya/kargo mevzuatÄ±",
+      "İlk yardım",
+      "Trafik adabı",
+      "Eşya/kargo mevzuatı",
       "Harita okuma"
     ],
     "dogruCevap": "C",
@@ -240,131 +240,131 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "GÃ¼mrÃ¼k iÅŸlemlerinde 'Mavi Hat' genel olarak neyi ifade eder?",
+    "soru": "Gümrük işlemlerinde 'Mavi Hat' genel olarak neyi ifade eder?",
     "siklar": [
-      "Sonradan kontrol (belge/veri kontrolÃ¼)",
+      "Sonradan kontrol (belge/veri kontrolü)",
       "Fiziki muayene",
-      "HiÃ§ kontrol yapÄ±lmamasÄ±",
-      "Sadece X-ray kontrolÃ¼"
+      "Hiç kontrol yapılmaması",
+      "Sadece X-ray kontrolü"
     ],
     "dogruCevap": "A",
     "id": "src3_sinav_q021",
     "Subject": "Genel"
   },
   {
-    "soru": "GÃ¼mrÃ¼kte 'KÄ±rmÄ±zÄ± Hat'a sevk edilen taÅŸÄ±t iÃ§in temel iÅŸlem hangisidir?",
+    "soru": "Gümrükte 'Kırmızı Hat'a sevk edilen taşıt için temel işlem hangisidir?",
     "siklar": [
-      "Kontrol yapÄ±lmaz",
-      "Fiziki muayene yapÄ±lÄ±r",
-      "Sonradan kontrol yapÄ±lÄ±r",
-      "Sadece belge kontrolÃ¼ yapÄ±lÄ±r"
+      "Kontrol yapılmaz",
+      "Fiziki muayene yapılır",
+      "Sonradan kontrol yapılır",
+      "Sadece belge kontrolü yapılır"
     ],
     "dogruCevap": "B",
     "id": "src3_sinav_q022",
     "Subject": "Genel"
   },
   {
-    "soru": "TIR Karnesi ile yapÄ±lan taÅŸÄ±malarda, karnenin geÃ§erliliÄŸi aÅŸaÄŸÄ±dakilerden hangisidir?",
+    "soru": "TIR Karnesi ile yapılan taşımalarda, karnenin geçerliliği aşağıdakilerden hangisidir?",
     "siklar": [
-      "1 yÄ±l boyunca sÄ±nÄ±rsÄ±z sefer",
-      "Sadece dÃ¶nÃ¼ÅŸ yolunda",
-      "Tek bir yolculuk iÃ§in",
-      "Sadece yurtiÃ§i taÅŸÄ±malarda"
+      "1 yıl boyunca sınırsız sefer",
+      "Sadece dönüş yolunda",
+      "Tek bir yolculuk için",
+      "Sadece yurtiçi taşımalarda"
     ],
     "dogruCevap": "C",
     "id": "src3_sinav_q023",
     "Subject": "Genel"
   },
   {
-    "soru": "TIR Karnesi'nin volet (yaprak) kÄ±smÄ±nÄ± koparma yetkisi kimdedir?",
+    "soru": "TIR Karnesi'nin volet (yaprak) kısmını koparma yetkisi kimdedir?",
     "siklar": [
-      "SÃ¼rÃ¼cÃ¼",
-      "GÃ¼mrÃ¼k memuru",
+      "Sürücü",
+      "Gümrük memuru",
       "Firma sahibi",
-      "Sigorta gÃ¶revlisi"
+      "Sigorta görevlisi"
     ],
     "dogruCevap": "B",
     "id": "src3_sinav_q024",
     "Subject": "Genel"
   },
   {
-    "soru": "Egzoz gazÄ± (karbonmonoksit) zehirlenmesi ÅŸÃ¼phesinde ilk yapÄ±lmasÄ± gereken en doÄŸru iÅŸlem hangisidir?",
+    "soru": "Egzoz gazı (karbonmonoksit) zehirlenmesi şüphesinde ilk yapılması gereken en doğru işlem hangisidir?",
     "siklar": [
-      "KiÅŸiyi temiz havaya Ã§Ä±karmak",
+      "Kişiyi temiz havaya çıkarmak",
       "Kusturmak",
-      "Åžekerli su iÃ§irmek",
-      "KoÅŸarak yÃ¼rÃ¼tmek"
+      "Åžekerli su içirmek",
+      "Koşarak yürütmek"
     ],
     "dogruCevap": "A",
     "id": "src3_sinav_q025",
     "Subject": "Araç Tekniği"
   },
   {
-    "soru": "YetiÅŸkin bir insanda dinlenme halindeki normal nabÄ±z aralÄ±ÄŸÄ± yaklaÅŸÄ±k kaÃ§tÄ±r?",
+    "soru": "Yetişkin bir insanda dinlenme halindeki normal nabız aralığı yaklaşık kaçtır?",
     "siklar": [
-      "40â€“60",
-      "50â€“80",
-      "60â€“100",
-      "80â€“120"
+      "40-60",
+      "50-80",
+      "60-100",
+      "80-120"
     ],
     "dogruCevap": "C",
     "id": "src3_sinav_q026",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "YetiÅŸkin bir insanda dinlenme halindeki normal solunum sayÄ±sÄ± yaklaÅŸÄ±k kaÃ§tÄ±r?",
+    "soru": "Yetişkin bir insanda dinlenme halindeki normal solunum sayısı yaklaşık kaçtır?",
     "siklar": [
-      "20â€“25",
-      "15â€“20",
-      "25â€“30",
-      "10â€“15"
+      "20-25",
+      "15-20",
+      "25-30",
+      "10-15"
     ],
     "dogruCevap": "B",
     "id": "src3_sinav_q027",
     "Subject": "İlkyardım"
   },
   {
-    "soru": "Solunumu duran bir kiÅŸide oksijensizliÄŸe baÄŸlÄ± beyin hasarÄ± yaklaÅŸÄ±k ne kadar sÃ¼rede baÅŸlayabilir?",
+    "soru": "Solunumu duran bir kişide oksijensizliğe bağlı beyin hasarı yaklaşık ne kadar sürede başlayabilir?",
     "siklar": [
-      "10â€“15 dk",
+      "10-15 dk",
       "20 dk",
-      "1â€“2 dk",
-      "4â€“6 dk"
+      "1-2 dk",
+      "4-6 dk"
     ],
     "dogruCevap": "D",
     "id": "src3_sinav_q028",
     "Subject": "İlkyardım"
   },
   {
-    "soru": "112 arandÄ±ÄŸÄ±nda ilk verilmesi gereken en kritik bilgi aÅŸaÄŸÄ±dakilerden hangisidir?",
+    "soru": "112 arandığında ilk verilmesi gereken en kritik bilgi aşağıdakilerden hangisidir?",
     "siklar": [
-      "YaralÄ±nÄ±n kimliÄŸi",
-      "Olay yerinin aÃ§Ä±k adresi",
-      "YaralÄ±nÄ±n kan grubu",
-      "AracÄ±n plakasÄ±"
+      "Yaralının kimliği",
+      "Olay yerinin açık adresi",
+      "Yaralının kan grubu",
+      "Aracın plakası"
     ],
     "dogruCevap": "B",
     "id": "src3_sinav_q029",
     "Subject": "İlkyardım"
   },
   {
-    "soru": "Atardamar kanamasÄ±nÄ±n tipik Ã¶zelliÄŸi hangisidir?",
+    "soru": "Atardamar kanamasının tipik özelliği hangisidir?",
     "siklar": [
-      "AÃ§Ä±k kÄ±rmÄ±zÄ± renkte, kalp atÄ±mÄ±yla fÄ±ÅŸkÄ±rÄ±r ÅŸekilde olur",
-      "Koyu kÄ±rmÄ±zÄ±, sÄ±zÄ±ntÄ± ÅŸeklinde olur",
-      "Ã‡ok yavaÅŸ akar",
-      "KÄ±sa sÃ¼rede kendiliÄŸinden durur"
+      "Açık kırmızı renkte, kalp atımıyla fışkırır şekilde olur",
+      "Koyu kırmızı, sızıntı şeklinde olur",
+      "Ã‡ok yavaş akar",
+      "Kısa sürede kendiliğinden durur"
     ],
     "dogruCevap": "A",
     "id": "src3_sinav_q030",
     "Subject": "İlkyardım"
   },
   {
-    "soru": "UluslararasÄ± taÅŸÄ±macÄ±lÄ±kta trafik sigortasÄ±nÄ±n yurt dÄ±ÅŸÄ±nda da geÃ§erliliÄŸini saÄŸlayan belge hangisidir?",
+    "soru": "Uluslararası taşımacılıkta trafik sigortasının yurt dışında da geçerliliğini sağlayan belge hangisidir?",
     "siklar": [
       "A.TR",
       "CMR",
-      "YeÅŸil Kart (Green Card)",
+      "Yeşil Kart (Green Card)",
       "TIR Karnesi"
     ],
     "dogruCevap": "C",
@@ -372,11 +372,11 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "KaÃ§akÃ§Ä±lÄ±k suÃ§unun 'mesleki kolaylÄ±k' kullanÄ±larak (ÅŸofÃ¶rlÃ¼k mesleÄŸini kullanarak) iÅŸlenmesi halinde ceza aÃ§Ä±sÄ±ndan temel yaklaÅŸÄ±m hangisidir?",
+    "soru": "Kaçakçılık suçunun 'mesleki kolaylık' kullanılarak (şoförlük mesleğini kullanarak) işlenmesi halinde ceza açısından temel yaklaşım hangisidir?",
     "siklar": [
-      "Ceza yarÄ±ya iner",
-      "Ceza artÄ±rÄ±larak uygulanÄ±r",
-      "Sadece idari para cezasÄ± verilir",
+      "Ceza yarıya iner",
+      "Ceza artırılarak uygulanır",
+      "Sadece idari para cezası verilir",
       "Ceza verilmez"
     ],
     "dogruCevap": "B",
@@ -384,31 +384,31 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Lastik hava basÄ±ncÄ±nÄ±n normalden fazla olmasÄ± genellikle hangi aÅŸÄ±nma tipine yol aÃ§ar?",
+    "soru": "Lastik hava basıncının normalden fazla olması genellikle hangi aşınma tipine yol açar?",
     "siklar": [
-      "Omuzlarda aÅŸÄ±nma",
-      "Yanaklarda aÅŸÄ±nma",
-      "DÃ¼zensiz parÃ§alÄ± aÅŸÄ±nma",
-      "TabanÄ±n ortasÄ±nda aÅŸÄ±nma"
+      "Omuzlarda aşınma",
+      "Yanaklarda aşınma",
+      "Düzensiz parçalı aşınma",
+      "Tabanın ortasında aşınma"
     ],
     "dogruCevap": "D",
     "id": "src3_sinav_q033",
     "Subject": "Araç Tekniği"
   },
   {
-    "soru": "Lastik hava basÄ±ncÄ±nÄ±n normalden dÃ¼ÅŸÃ¼k olmasÄ± genellikle hangi aÅŸÄ±nma tipine yol aÃ§ar?",
+    "soru": "Lastik hava basıncının normalden düşük olması genellikle hangi aşınma tipine yol açar?",
     "siklar": [
-      "TabanÄ±n kenarlarÄ±nda (omuzlarda) aÅŸÄ±nma",
-      "TabanÄ±n ortasÄ±nda aÅŸÄ±nma",
-      "HiÃ§ aÅŸÄ±nma olmaz",
-      "Jant eÄŸilmesi olur"
+      "Tabanın kenarlarında (omuzlarda) aşınma",
+      "Tabanın ortasında aşınma",
+      "Hiç aşınma olmaz",
+      "Jant eğilmesi olur"
     ],
     "dogruCevap": "A",
     "id": "src3_sinav_q034",
     "Subject": "Araç Tekniği"
   },
   {
-    "soru": "SRC 3 belgesini alan bir sÃ¼rÃ¼cÃ¼, yasal mevzuat gereÄŸi hangi belgeye de sahip sayÄ±lÄ±r?",
+    "soru": "SRC 3 belgesini alan bir sürücü, yasal mevzuat gereği hangi belgeye de sahip sayılır?",
     "siklar": [
       "SRC 1",
       "SRC 4",
@@ -420,7 +420,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "SRC 3 belgesi iÃ§in genel kural olarak belirlenen mesleki Ã¼st yaÅŸ sÄ±nÄ±rÄ± hangisidir?",
+    "soru": "SRC 3 belgesi için genel kural olarak belirlenen mesleki üst yaş sınırı hangisidir?",
     "siklar": [
       "63",
       "65",
@@ -432,7 +432,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "SRC 3 eÄŸitim mÃ¼fredatÄ± toplam kaÃ§ saattir?",
+    "soru": "SRC 3 eğitim müfredatı toplam kaç saattir?",
     "siklar": [
       "41 saat",
       "36 saat",
@@ -444,31 +444,31 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "TIR Karnesi ile yapÄ±lan taÅŸÄ±mada bu belgenin temel iÅŸlevi hangisine karÅŸÄ±lÄ±k gelir?",
+    "soru": "TIR Karnesi ile yapılan taşımada bu belgenin temel işlevi hangisine karşılık gelir?",
     "siklar": [
-      "SÃ¼rÃ¼cÃ¼nÃ¼n psikoteknik belgesi",
-      "Zorunlu trafik sigortasÄ±",
-      "GÃ¼mrÃ¼k teminatÄ±",
-      "AraÃ§ muayenesi"
+      "Sürücünün psikoteknik belgesi",
+      "Zorunlu trafik sigortası",
+      "Gümrük teminatı",
+      "Araç muayenesi"
     ],
     "dogruCevap": "C",
     "id": "src3_sinav_q038",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "U-ETDS'ye taÅŸÄ±ma verisini sÃ¼resinde girmeyen firmaya sefer baÅŸÄ±na uygulanan yaptÄ±rÄ±m tipi hangisidir?",
+    "soru": "U-ETDS'ye taşıma verisini süresinde girmeyen firmaya sefer başına uygulanan yaptırım tipi hangisidir?",
     "siklar": [
-      "Hapis cezasÄ±",
+      "Hapis cezası",
       "Belge iptali",
-      "AraÃ§ baÄŸlama",
-      "Uyarma cezasÄ±"
+      "Araç bağlama",
+      "Uyarma cezası"
     ],
     "dogruCevap": "D",
     "id": "src3_sinav_q039",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "AETR'ye gÃ¶re sÃ¼rÃ¼cÃ¼nÃ¼n 'gÃ¼nlÃ¼k toplam sÃ¼rÃ¼ÅŸ sÃ¼resi' normal ÅŸartlarda en fazla kaÃ§ saattir?",
+    "soru": "AETR'ye göre sürücünün 'günlük toplam sürüş süresi' normal şartlarda en fazla kaç saattir?",
     "siklar": [
       "9 saat",
       "10 saat",
@@ -480,19 +480,19 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "UluslararasÄ± TaÅŸÄ±macÄ±lÄ±kta CMR taÅŸÄ±ma belgesinin taÅŸÄ±yÄ±cÄ±ya verdiÄŸi temel sorumluluk hangisidir?",
+    "soru": "Uluslararası Taşımacılıkta CMR taşıma belgesinin taşıyıcıya verdiği temel sorumluluk hangisidir?",
     "siklar": [
-      "YakÄ±t maliyetlerini karÅŸÄ±lamak",
-      "YÃ¼kÃ¼ zarar gÃ¶rmeden teslim etmek",
-      "GÃ¼mrÃ¼k vergilerini Ã¶demek",
-      "Sigorta primlerini karÅŸÄ±lamak"
+      "Yakıt maliyetlerini karşılamak",
+      "Yükü zarar görmeden teslim etmek",
+      "Gümrük vergilerini ödemek",
+      "Sigorta primlerini karşılamak"
     ],
     "dogruCevap": "B",
     "id": "src3_sinav_q041",
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "GÃ¼nlÃ¼k 9 saatlik sÃ¼rÃ¼ÅŸ sÃ¼resi haftada en fazla kaÃ§ kez 10 saate Ã§Ä±karÄ±labilir?",
+    "soru": "Günlük 9 saatlik sürüş süresi haftada en fazla kaç kez 10 saate çıkarılabilir?",
     "siklar": [
       "1",
       "2",
@@ -504,7 +504,7 @@
     "Subject": "Genel"
   },
   {
-    "soru": "AETR'ye gÃ¶re gÃ¼nlÃ¼k kesintisiz dinlenme sÃ¼resi normalde en az kaÃ§ saattir?",
+    "soru": "AETR'ye göre günlük kesintisiz dinlenme süresi normalde en az kaç saattir?",
     "siklar": [
       "8",
       "9",
@@ -516,7 +516,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "AzaltÄ±lmÄ±ÅŸ gÃ¼nlÃ¼k dinlenme (9 saat) haftada en fazla kaÃ§ kez uygulanabilir?",
+    "soru": "Azaltılmış günlük dinlenme (9 saat) haftada en fazla kaç kez uygulanabilir?",
     "siklar": [
       "1",
       "2",
@@ -528,7 +528,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Psikoteknik deÄŸerlendirme raporunun geÃ§erlilik sÃ¼resi kaÃ§ yÄ±ldÄ±r?",
+    "soru": "Psikoteknik değerlendirme raporunun geçerlilik süresi kaç yıldır?",
     "siklar": [
       "2",
       "3",
@@ -540,7 +540,7 @@
     "Subject": "Araç Tekniği"
   },
   {
-    "soru": "SRC sÄ±navÄ±nda baÅŸarÄ±lÄ± olmak iÃ§in gereken asgari puan kaÃ§tÄ±r?",
+    "soru": "SRC sınavında başarılı olmak için gereken asgari puan kaçtır?",
     "siklar": [
       "60",
       "65",
@@ -552,7 +552,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Temel yaÅŸam desteÄŸinde kalp masajÄ± ve suni solunum oranÄ± yetiÅŸkinlerde kaÃ§tÄ±r?",
+    "soru": "Temel yaşam desteğinde kalp masajı ve suni solunum oranı yetişkinlerde kaçtır?",
     "siklar": [
       "15:2",
       "30:2",
@@ -564,7 +564,7 @@
     "Subject": "İlkyardım"
   },
   {
-    "soru": "Åžok pozisyonunda kazazedenin bacaklarÄ± yerden yaklaÅŸÄ±k kaÃ§ cm yÃ¼kseltilir?",
+    "soru": "Åžok pozisyonunda kazazedenin bacakları yerden yaklaşık kaç cm yükseltilir?",
     "siklar": [
       "15",
       "30",
@@ -576,7 +576,7 @@
     "Subject": "İlkyardım"
   },
   {
-    "soru": "AraÃ§larÄ±n azami yÃ¼ksekliÄŸi (gabari) kaÃ§ metredir?",
+    "soru": "Araçların azami yüksekliği (gabari) kaç metredir?",
     "siklar": [
       "3,80",
       "4,00",
@@ -588,7 +588,7 @@
     "Subject": "Genel"
   },
   {
-    "soru": "YÃ¼kÃ¼n aracÄ±n arka kÄ±smÄ±ndan en fazla kaÃ§ metre taÅŸmasÄ±na izin verilir?",
+    "soru": "Yükün aracın arka kısmından en fazla kaç metre taşmasına izin verilir?",
     "siklar": [
       "1",
       "2",

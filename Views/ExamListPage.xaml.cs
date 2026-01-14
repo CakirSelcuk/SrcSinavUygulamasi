@@ -2,14 +2,20 @@ using SrcSinavUygulamasi.ViewModels;
 
 namespace SrcSinavUygulamasi.Views;
 
-[QueryProperty(nameof(KategoriId), "KategoriId")]
+[QueryProperty(nameof(CategoryId), "CategoryId")]
 public partial class ExamListPage : ContentPage
 {
     private ExamListViewModel _viewModel;
 
-    public string KategoriId
+    public string CategoryId
     {
-        set => _viewModel?.LoadExams(value);
+        set
+        {
+            if (!string.IsNullOrEmpty(value))
+            {
+                _viewModel?.LoadExams(value);
+            }
+        }
     }
 
     public ExamListPage()

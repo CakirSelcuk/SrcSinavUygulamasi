@@ -1,11 +1,11 @@
-﻿[
+[
   {
-    "soru": "SRC 3 belgesine sahip bir sÃ¼rÃ¼cÃ¼, mevzuata gÃ¶re aÅŸaÄŸÄ±daki taÅŸÄ±macÄ±lÄ±k faaliyetlerinden hangisini yapmaya yetkilidir?",
+    "soru": "SRC 3 belgesine sahip bir sürücü, mevzuata göre aşağıdaki taşımacılık faaliyetlerinden hangisini yapmaya yetkilidir?",
     "siklar": [
-      "Sadece uluslararasÄ± eÅŸya taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
-      "UluslararasÄ± ve yurtiÃ§i eÅŸya/kargo taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
-      "UluslararasÄ± yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
-      "Sadece yurtiÃ§i kargo daÄŸÄ±tÄ±mÄ±"
+      "Sadece uluslararası eşya taşımacılığı",
+      "Uluslararası ve yurtiçi eşya/kargo taşımacılığı",
+      "Uluslararası yolcu taşımacılığı",
+      "Sadece yurtiçi kargo dağıtımı"
     ],
     "dogruCevap": "B",
     "resimYolu": "src3_1.jpeg",
@@ -13,12 +13,12 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "UluslararasÄ± karayolu eÅŸya taÅŸÄ±malarÄ±nda, taÅŸÄ±ma sÃ¶zleÅŸmesinin ve yÃ¼k bilgilerinin yazÄ±lÄ± olarak dÃ¼zenlendiÄŸi 'taÅŸÄ±ma senedi' hangisidir?",
+    "soru": "Uluslararası karayolu eşya taşımalarında, taşıma sözleşmesinin ve yük bilgilerinin yazılı olarak düzenlendiği 'taşıma senedi' hangisidir?",
     "siklar": [
       "TIR Karnesi",
-      "Sevk Ä°rsaliyesi",
+      "Sevk İrsaliyesi",
       "CMR Belgesi",
-      "GeÃ§iÅŸ Belgesi"
+      "Geçiş Belgesi"
     ],
     "dogruCevap": "C",
     "resimYolu": "src3_2.jpeg",
@@ -26,7 +26,7 @@
     "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "AETR kurallarÄ±na gÃ¶re sÃ¼rÃ¼cÃ¼, aralÄ±ksÄ±z araÃ§ kullanÄ±mÄ±ndan sonra mola vermek zorundadÄ±r. Bu aralÄ±ksÄ±z sÃ¼rÃ¼ÅŸ sÃ¼resi en fazla kaÃ§ saattir?",
+    "soru": "AETR kurallarına göre sürücü, aralıksız araç kullanımından sonra mola vermek zorundadır. Bu aralıksız sürüş süresi en fazla kaç saattir?",
     "siklar": [
       "4 saat",
       "4,5 saat",
@@ -39,12 +39,12 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "SRC 3 belgesi almak isteyen sÃ¼rÃ¼cÃ¼ler iÃ§in genel kural olarak belirlenen mesleki Ã¼st yaÅŸ sÄ±nÄ±rÄ± aÅŸaÄŸÄ±dakilerden hangisidir?",
+    "soru": "SRC 3 belgesi almak isteyen sürücüler için genel kural olarak belirlenen mesleki üst yaş sınırı aşağıdakilerden hangisidir?",
     "siklar": [
-      "63 yaÅŸÄ±ndan gÃ¼n almamÄ±ÅŸ olmak",
-      "65 yaÅŸÄ±nÄ± doldurmamÄ±ÅŸ olmak",
-      "66 yaÅŸÄ±ndan gÃ¼n almamÄ±ÅŸ olmak",
-      "69 yaÅŸÄ±ndan gÃ¼n almamÄ±ÅŸ olmak"
+      "63 yaşından gün almamış olmak",
+      "65 yaşını doldurmamış olmak",
+      "66 yaşından gün almamış olmak",
+      "69 yaşından gün almamış olmak"
     ],
     "dogruCevap": "C",
     "resimYolu": "src3_4.jpeg",
@@ -52,7 +52,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "EÅŸya taÅŸÄ±macÄ±lÄ±ÄŸÄ± yapan bir firma, U-ETDS sistemine sefer/taÅŸÄ±ma bilgisini araÃ§ hareket ettikten sonra en geÃ§ hangi sÃ¼rede girmek zorundadÄ±r?",
+    "soru": "Eşya taşımacılığı yapan bir firma, U-ETDS sistemine sefer/taşıma bilgisini araç hareket ettikten sonra en geç hangi sürede girmek zorundadır?",
     "siklar": [
       "1 saat",
       "3 saat",
@@ -65,12 +65,12 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "TIR Karnesi kapsamÄ±nda yapÄ±lan uluslararasÄ± transit taÅŸÄ±malarda bu belge, uygulamada en Ã§ok hangi iÅŸlemin yerine geÃ§er?",
+    "soru": "TIR Karnesi kapsamında yapılan uluslararası transit taşımalarda bu belge, uygulamada en çok hangi işlemin yerine geçer?",
     "siklar": [
-      "GÃ¼mrÃ¼k teminatÄ±",
-      "Zorunlu trafik sigortasÄ±",
-      "AraÃ§ ruhsatÄ±",
-      "SÃ¼rÃ¼cÃ¼ ehliyeti"
+      "Gümrük teminatı",
+      "Zorunlu trafik sigortası",
+      "Araç ruhsatı",
+      "Sürücü ehliyeti"
     ],
     "dogruCevap": "A",
     "resimYolu": "src3_6.jpeg",
@@ -78,7 +78,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "AETR'ye gÃ¶re haftalÄ±k dinlenme sÃ¼resi normal ÅŸartlarda kaÃ§ saat olmalÄ±dÄ±r?",
+    "soru": "AETR'ye göre haftalık dinlenme süresi normal şartlarda kaç saat olmalıdır?",
     "siklar": [
       "45 saat",
       "36 saat",
@@ -91,7 +91,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "AETR'de 'azaltÄ±lmÄ±ÅŸ haftalÄ±k dinlenme' uygulanacaksa, haftalÄ±k dinlenme en az kaÃ§ saate indirilebilir?",
+    "soru": "AETR'de 'azaltılmış haftalık dinlenme' uygulanacaksa, haftalık dinlenme en az kaç saate indirilebilir?",
     "siklar": [
       "24 saat",
       "36 saat",
@@ -104,12 +104,12 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "AÅŸaÄŸÄ±dakilerden hangisi Karayolu TaÅŸÄ±ma Kanunu kapsamÄ± dÄ±ÅŸÄ±nda Ã¶rnek olarak gÃ¶sterilebilir?",
+    "soru": "Aşağıdakilerden hangisi Karayolu Taşıma Kanunu kapsamı dışında örnek olarak gösterilebilir?",
     "siklar": [
-      "Ticari kamyonetle eÅŸya taÅŸÄ±nmasÄ±",
-      "Kargo ÅŸirketi aracÄ±yla daÄŸÄ±tÄ±m yapÄ±lmasÄ±",
-      "Resmi plakalÄ± TSK aracÄ±yla yapÄ±lan taÅŸÄ±ma",
-      "UluslararasÄ± evden eve nakliyat"
+      "Ticari kamyonetle eşya taşınması",
+      "Kargo şirketi aracıyla dağıtım yapılması",
+      "Resmi plakalı TSK aracıyla yapılan taşıma",
+      "Uluslararası evden eve nakliyat"
     ],
     "dogruCevap": "C",
     "resimYolu": "src3_9.jpeg",
@@ -117,12 +117,12 @@
     "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "C tÃ¼rÃ¼ yetki belgesi genel olarak hangi faaliyetleri kapsar?",
+    "soru": "C türü yetki belgesi genel olarak hangi faaliyetleri kapsar?",
     "siklar": [
-      "UluslararasÄ± ve yurtiÃ§i eÅŸya taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
-      "ÅžehirlerarasÄ± otobÃ¼s iÅŸletmeciliÄŸi",
-      "UluslararasÄ± yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
-      "Terminal iÅŸletmeciliÄŸi"
+      "Uluslararası ve yurtiçi eşya taşımacılığı",
+      "Åžehirlerarası otobüs işletmeciliği",
+      "Uluslararası yolcu taşımacılığı",
+      "Terminal işletmeciliği"
     ],
     "dogruCevap": "A",
     "resimYolu": "src3_10.jpeg",
@@ -130,12 +130,12 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "CMR taÅŸÄ±ma senedi uluslararasÄ± taÅŸÄ±mada kaÃ§ nÃ¼sha olarak dÃ¼zenlenir?",
+    "soru": "CMR taşıma senedi uluslararası taşımada kaç nüsha olarak düzenlenir?",
     "siklar": [
-      "2 nÃ¼sha",
-      "3 nÃ¼sha",
-      "4 nÃ¼sha",
-      "5 nÃ¼sha"
+      "2 nüsha",
+      "3 nüsha",
+      "4 nüsha",
+      "5 nüsha"
     ],
     "dogruCevap": "B",
     "resimYolu": "src3_11.jpeg",
@@ -143,12 +143,12 @@
     "Subject": "Genel"
   },
   {
-    "soru": "CMR belgesinin 1. nÃ¼shasÄ± kural olarak kimde kalÄ±r?",
+    "soru": "CMR belgesinin 1. nüshası kural olarak kimde kalır?",
     "siklar": [
-      "GÃ¶ndericide",
-      "AlÄ±cÄ±da",
-      "TaÅŸÄ±macÄ±da",
-      "GÃ¼mrÃ¼kte"
+      "Göndericide",
+      "Alıcıda",
+      "Taşımacıda",
+      "Gümrükte"
     ],
     "dogruCevap": "A",
     "resimYolu": "src3_12.jpeg",
@@ -156,12 +156,12 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "CMR belgesinin 2. nÃ¼shasÄ± genellikle nasÄ±l iÅŸlem gÃ¶rÃ¼r?",
+    "soru": "CMR belgesinin 2. nüshası genellikle nasıl işlem görür?",
     "siklar": [
-      "GÃ¶ndericide kalÄ±r",
-      "YÃ¼kle birlikte alÄ±cÄ±ya gider",
-      "GÃ¼mrÃ¼kte dosyalanÄ±r",
-      "Sigorta ÅŸirketine verilir"
+      "Göndericide kalır",
+      "Yükle birlikte alıcıya gider",
+      "Gümrükte dosyalanır",
+      "Sigorta şirketine verilir"
     ],
     "dogruCevap": "B",
     "resimYolu": "src3_13.jpeg",
@@ -169,12 +169,12 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "CMR belgesinin 3. nÃ¼shasÄ± kural olarak kimde kalÄ±r?",
+    "soru": "CMR belgesinin 3. nüshası kural olarak kimde kalır?",
     "siklar": [
-      "GÃ¶nderici",
-      "AlÄ±cÄ±",
-      "TaÅŸÄ±macÄ±",
-      "GÃ¼mrÃ¼k"
+      "Gönderici",
+      "Alıcı",
+      "Taşımacı",
+      "Gümrük"
     ],
     "dogruCevap": "C",
     "resimYolu": "src3_14.jpeg",
@@ -182,7 +182,7 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "SÃ¼rÃ¼cÃ¼, 4,5 saatlik sÃ¼rÃ¼ÅŸ sÃ¼resini tamamladÄ±ktan sonra en az kaÃ§ dakika mola vermek zorundadÄ±r?",
+    "soru": "Sürücü, 4,5 saatlik sürüş süresini tamamladıktan sonra en az kaç dakika mola vermek zorundadır?",
     "siklar": [
       "15 dk",
       "30 dk",

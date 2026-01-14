@@ -1,4 +1,5 @@
 using SrcSinavUygulamasi.Services;
+using SrcSinavUygulamasi.Constants;
 
 namespace SrcSinavUygulamasi.Views;
 
@@ -8,16 +9,17 @@ namespace SrcSinavUygulamasi.Views;
 /// </summary>
 public partial class ProfilePage : ContentPage
 {
-    private const string PREF_KEY_PREMIUM = "IsUserPremium";
     private const string PREF_KEY_NOTIFICATIONS = "NotificationsEnabled";
     private const string PREF_KEY_VIBRATION = "VibrationEnabled";
-    private const string PREMIUM_BACKDOOR_CODE = "SRC2024PREMIUM";
     
-    private ExamProgressService _progressService = new();
+    private readonly ExamProgressService _progressService = new();
+    private readonly PurchaseService _purchaseService;
 
     public ProfilePage()
     {
         InitializeComponent();
+        _purchaseService = Application.Current?.Handler?.MauiContext?.Services.GetService<PurchaseService>() 
+                          ?? new PurchaseService();
     }
 
     // ═══════════════════════════════════════════════════════════
@@ -35,7 +37,7 @@ public partial class ProfilePage : ContentPage
     // ═══════════════════════════════════════════════════════════
     private void LoadUserData()
     {
-        bool isPremium = Preferences.Get(PREF_KEY_PREMIUM, false);
+        bool isPremium = _purchaseService.IsPremium;
         int totalQuestions = _progressService.GetTotalSolvedQuestions();
 
         if (isPremium)
@@ -74,10 +76,11 @@ public partial class ProfilePage : ContentPage
     }
 
     // ═══════════════════════════════════════════════════════════
-    // PREMIUM
+    // PREMIUM SATIN ALMA
     // ═══════════════════════════════════════════════════════════
     private async void OnPremiumClicked(object sender, EventArgs e)
     {
+        // Yüklenirken göster
         bool wantsToBuy = await DisplayAlert(
             "🔒 Premium'a Yükselt",
             "VIP üyelikle tüm özelliklere eriş!\n\n" +
@@ -96,38 +99,51 @@ public partial class ProfilePage : ContentPage
 
     private async Task HandlePurchase()
     {
-        string? code = await DisplayPromptAsync(
-            "Aktivasyon Kodu",
-            "Satın alma kodunuz varsa girin.\n(Destek ekibinden aldıysanız)",
-            "Aktifleştir",
-            "İptal",
-            placeholder: "Kod girin...",
-            maxLength: 20);
-
-        if (string.IsNullOrWhiteSpace(code))
+        try
         {
-            await DisplayAlert("Mağaza",
-                "Uygulama içi satın alma yakında aktif olacak.\n\nDestek için: srcsinav.destek@gmail.com",
-                "Tamam");
-            return;
+            // Loading göster
+            await DisplayAlert("Bekleniyor", "Mağazaya bağlanılıyor...", "Tamam");
+            
+            // Offerings'leri getir
+            var offerings = await _purchaseService.GetOfferingsAsync();
+            
+            if (offerings == null || offerings.Count == 0)
+            {
+                await DisplayAlert("Bilgi", 
+                    "Şu an satın alma yapılamıyor.\n\nLütfen daha sonra tekrar deneyin.", 
+                    "Tamam");
+                return;
+            }
+
+            // İlk ürünü göster (ömür boyu premium)
+            var product = offerings.First();
+            
+            bool confirm = await DisplayAlert(
+                "Satın Almayı Onayla",
+                $"{product.Title}\n\n{product.Description}\n\nFiyat: {product.FormattedPrice}",
+                "Satın Al",
+                "İptal");
+
+            if (confirm)
+            {
+                var result = await _purchaseService.PurchaseAsync(product.ProductId);
+                
+                if (result.Success)
+                {
+                    await DisplayAlert("🎉 Başarılı!", 
+                        "VIP üyeliğiniz aktifleştirildi!\n\nArtık tüm premium özelliklere erişebilirsiniz.", 
+                        "Harika!");
+                    LoadUserData();
+                }
+                else
+                {
+                    await DisplayAlert("Bilgi", result.Message, "Tamam");
+                }
+            }
         }
-
-        if (code.Trim().ToUpperInvariant() == PREMIUM_BACKDOOR_CODE)
+        catch (Exception ex)
         {
-            Preferences.Set(PREF_KEY_PREMIUM, true);
-            Preferences.Set("PremiumActivationDate", DateTime.UtcNow.ToString("o"));
-
-            await DisplayAlert("🎉 Başarılı!",
-                "VIP üyeliğiniz aktifleştirildi!\n\nArtık tüm premium özelliklere erişebilirsiniz.",
-                "Harika!");
-
-            LoadUserData(); // UI güncelle
-        }
-        else
-        {
-            await DisplayAlert("Geçersiz Kod",
-                "Girdiğiniz kod geçerli değil.\n\nLütfen destek ekibinden doğru kodu alın.",
-                "Tamam");
+            await DisplayAlert("Hata", $"Satın alma hatası: {ex.Message}", "Tamam");
         }
     }
 
@@ -136,10 +152,26 @@ public partial class ProfilePage : ContentPage
     // ═══════════════════════════════════════════════════════════
     private async void OnRestorePurchaseClicked(object sender, EventArgs e)
     {
-        // Simülasyon - İleride RevenueCat bağlanacak
-        await DisplayAlert("Geri Yükleme",
-            "Satın alımlar kontrol ediliyor...\n\nMevcut satın alım bulunamadı.\n\n(Eğer daha önce satın aldıysanız destek ekibiyle iletişime geçin)",
-            "Tamam");
+        try
+        {
+            await DisplayAlert("Bekleniyor", "Satın alımlar kontrol ediliyor...", "Tamam");
+            
+            var result = await _purchaseService.RestorePurchasesAsync();
+            
+            if (result.HasActivePurchase)
+            {
+                await DisplayAlert("🎉 Başarılı!", result.Message, "Harika!");
+                LoadUserData();
+            }
+            else
+            {
+                await DisplayAlert("Bilgi", result.Message, "Tamam");
+            }
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Hata", $"Geri yükleme hatası: {ex.Message}", "Tamam");
+        }
     }
 
     // ═══════════════════════════════════════════════════════════
@@ -173,7 +205,7 @@ public partial class ProfilePage : ContentPage
                     "Tüm ilerlemeniz başarıyla silindi.\n\nUygulama sıfırdan başlamaya hazır!",
                     "Tamam");
 
-                LoadUserData(); // UI güncelle
+                LoadUserData();
             }
         }
     }
@@ -200,7 +232,6 @@ public partial class ProfilePage : ContentPage
     {
         try
         {
-            // Android için Play Store, iOS için App Store
 #if ANDROID
             var uri = new Uri("market://details?id=com.srcsinav.app");
 #elif IOS

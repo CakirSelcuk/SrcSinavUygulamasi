@@ -224,7 +224,7 @@ public partial class AnalysisPage : ContentPage
         // Tarih etiketi
         container.Children.Add(new Label
         {
-            Text = exam.Date.ToString("HH:mm"),
+            Text = exam.Date.ToLocalTime().ToString("HH:mm"),
             TextColor = Color.FromArgb("#94a3b8"),
             FontSize = 9,
             HorizontalOptions = LayoutOptions.Center

@@ -1,10 +1,10 @@
-﻿[
+[
   {
-    "soru": "Seyir halindeyken otobÃ¼sÃ¼n gÃ¶sterge panelinde bu ikaz Ä±ÅŸÄ±ÄŸÄ± yanarsa sÃ¼rÃ¼cÃ¼ ne yapmalÄ±dÄ±r?",
+    "soru": "Seyir halindeyken otobüsün gösterge panelinde bu ikaz ışığı yanarsa sürücü ne yapmalıdır?",
     "siklar": [
-      "HÄ±zÄ±nÄ± azaltÄ±p servise gitmelidir",
-      "YaÄŸ ekleyip devam etmelidir",
-      "AracÄ± gÃ¼venli bir yere Ã§ekip kontaÄŸÄ± hemen kapatmalÄ±dÄ±r",
+      "Hızını azaltıp servise gitmelidir",
+      "Yağ ekleyip devam etmelidir",
+      "Aracı güvenli bir yere çekip kontağı hemen kapatmalıdır",
       "Bir sonraki mola yerine kadar gitmelidir"
     ],
     "dogruCevap": "C",
@@ -13,12 +13,12 @@
     "Subject": "Genel"
   },
   {
-    "soru": "GÃ¶rseldeki taÅŸÄ±ma tekniÄŸi (Rentek ManevrasÄ±) hangi durumda uygulanÄ±r?",
+    "soru": "Görseldeki taşıma tekniği (Rentek Manevrası) hangi durumda uygulanır?",
     "siklar": [
-      "YaralÄ±nÄ±n kolu veya bacaÄŸÄ± kÄ±rÄ±ksa",
-      "YaralÄ± araÃ§ iÃ§inde sÄ±kÄ±ÅŸmamÄ±ÅŸsa",
-      "AraÃ§ta yangÄ±n veya patlama tehlikesi varsa",
-      "YaralÄ±nÄ±n bilinci yerindeyse"
+      "Yaralının kolu veya bacağı kırıksa",
+      "Yaralı araç içinde sıkışmamışsa",
+      "Araçta yangın veya patlama tehlikesi varsa",
+      "Yaralının bilinci yerindeyse"
     ],
     "dogruCevap": "C",
     "resimYolu": "src2_2.jpeg",
@@ -26,11 +26,11 @@
     "Subject": "Genel"
   },
   {
-    "soru": "SRC 2 belgeli bir sÃ¼rÃ¼cÃ¼, kullandÄ±ÄŸÄ± yolcu otobÃ¼sÃ¼yle seyrederken bu levhayÄ± gÃ¶rÃ¼rse ne yapmalÄ±dÄ±r?",
+    "soru": "SRC 2 belgeli bir sürücü, kullandığı yolcu otobüsüyle seyrederken bu levhayı görürse ne yapmalıdır?",
     "siklar": [
       "Yolcu indirip devam etmelidir",
       "Bu yola girmemelidir",
-      "HÄ±zÄ±nÄ± azaltarak girmelidir",
+      "Hızını azaltarak girmelidir",
       "Sadece gece saatlerinde girmelidir"
     ],
     "dogruCevap": "B",
@@ -39,12 +39,12 @@
     "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "Karayolu TaÅŸÄ±ma YÃ¶netmeliÄŸi'ne gÃ¶re, ÅŸehirlerarasÄ± otobÃ¼slerde yolcularÄ±n emniyet kemeri takmasÄ± ile ilgili kural nedir?",
+    "soru": "Karayolu Taşıma Yönetmeliği'ne göre, şehirlerarası otobüslerde yolcuların emniyet kemeri takması ile ilgili kural nedir?",
     "siklar": [
-      "Sadece en Ã¶n koltuktakiler takmalÄ±dÄ±r",
-      "Sadece ÅŸofÃ¶r takmalÄ±dÄ±r",
-      "TÃ¼m yolcularÄ±n takmasÄ± zorunludur",
-      "Ä°steÄŸe baÄŸlÄ±dÄ±r"
+      "Sadece en ön koltuktakiler takmalıdır",
+      "Sadece şoför takmalıdır",
+      "Tüm yolcuların takması zorunludur",
+      "İsteğe bağlıdır"
     ],
     "dogruCevap": "C",
     "resimYolu": "src2_4.jpeg",
@@ -52,12 +52,12 @@
     "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "ÅžehirlerarasÄ± yolcu taÅŸÄ±yan araÃ§larda bu lastik tÃ¼rÃ¼nÃ¼n (kÄ±ÅŸ lastiÄŸi) kullanÄ±mÄ± hangi tarihler arasÄ±nda zorunludur?",
+    "soru": "Åžehirlerarası yolcu taşıyan araçlarda bu lastik türünün (kış lastiği) kullanımı hangi tarihler arasında zorunludur?",
     "siklar": [
-      "1 KasÄ±m - 1 Mart",
+      "1 Kasım - 1 Mart",
       "1 Ocak - 1 Nisan",
-      "1 AralÄ±k - 1 Nisan",
-      "15 AralÄ±k - 15 Mart"
+      "1 Aralık - 1 Nisan",
+      "15 Aralık - 15 Mart"
     ],
     "dogruCevap": "C",
     "resimYolu": "src2_5.jpeg",
@@ -65,12 +65,12 @@
     "Subject": "Araç Tekniği"
   },
   {
-    "soru": "GÃ¶rseldeki 'Koma Pozisyonu' hangi durumdaki kazazedeye verilir?",
+    "soru": "Görseldeki 'Koma Pozisyonu' hangi durumdaki kazazedeye verilir?",
     "siklar": [
-      "Bilinci kapalÄ± ama solunumu olan",
-      "Solunumu ve kalbi durmuÅŸ olan",
-      "Omurga kÄ±rÄ±ÄŸÄ± ÅŸÃ¼phesi olan",
-      "BacaÄŸÄ± kÄ±rÄ±k olan"
+      "Bilinci kapalı ama solunumu olan",
+      "Solunumu ve kalbi durmuş olan",
+      "Omurga kırığı şüphesi olan",
+      "Bacağı kırık olan"
     ],
     "dogruCevap": "A",
     "resimYolu": "src2_6.jpeg",
@@ -78,12 +78,12 @@
     "Subject": "İlkyardım"
   },
   {
-    "soru": "GÃ¶rseldeki cihazÄ±n (Takograf) ticari araÃ§larda bulundurulmasÄ±nÄ±n temel amacÄ± nedir?",
+    "soru": "Görseldeki cihazın (Takograf) ticari araçlarda bulundurulmasının temel amacı nedir?",
     "siklar": [
-      "AracÄ±n yakÄ±t tÃ¼ketimini Ã¶lÃ§mek",
-      "SÃ¼rÃ¼cÃ¼nÃ¼n Ã§alÄ±ÅŸma ve dinlenme sÃ¼relerini denetlemek",
-      "Yolcu sayÄ±sÄ±nÄ± saymak",
-      "Motor arÄ±zalarÄ±nÄ± tespit etmek"
+      "Aracın yakıt tüketimini ölçmek",
+      "Sürücünün çalışma ve dinlenme sürelerini denetlemek",
+      "Yolcu sayısını saymak",
+      "Motor arızalarını tespit etmek"
     ],
     "dogruCevap": "B",
     "resimYolu": "src2_7.jpeg",
@@ -91,12 +91,12 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "OtobÃ¼s sÃ¼rÃ¼cÃ¼sÃ¼ ÅŸerit deÄŸiÅŸtirirken, gÃ¶rseldeki 'kÃ¶r nokta' riskini ortadan kaldÄ±rmak iÃ§in ne yapmalÄ±dÄ±r?",
+    "soru": "Otobüs sürücüsü şerit değiştirirken, görseldeki 'kör nokta' riskini ortadan kaldırmak için ne yapmalıdır?",
     "siklar": [
-      "Sadece dikiz aynasÄ±na bakmalÄ±dÄ±r",
-      "MÃ¼ziÄŸin sesini kÄ±smalÄ±dÄ±r",
-      "BaÅŸÄ±nÄ± Ã§evirerek omuz Ã¼stÃ¼ bakÄ±ÅŸ yapmalÄ±dÄ±r",
-      "Kornaya basÄ±p hemen ÅŸeride girmelidir"
+      "Sadece dikiz aynasına bakmalıdır",
+      "Müziğin sesini kısmalıdır",
+      "Başını çevirerek omuz üstü bakış yapmalıdır",
+      "Kornaya basıp hemen şeride girmelidir"
     ],
     "dogruCevap": "C",
     "resimYolu": "src2_8.jpeg",
@@ -104,12 +104,12 @@
     "Subject": "Genel"
   },
   {
-    "soru": "Tali yoldan ana yola Ã§Ä±kan bir sÃ¼rÃ¼cÃ¼ bu levhayÄ± gÃ¶rdÃ¼ÄŸÃ¼nde ne yapmalÄ±dÄ±r?",
+    "soru": "Tali yoldan ana yola çıkan bir sürücü bu levhayı gördüğünde ne yapmalıdır?",
     "siklar": [
-      "YavaÅŸlayÄ±p geÃ§melidir",
-      "Mutlaka durmalÄ±, yolu kontrol edip Ã¶yle geÃ§melidir",
-      "Kornaya basÄ±p geÃ§melidir",
-      "SelektÃ¶r yapÄ±p geÃ§melidir"
+      "Yavaşlayıp geçmelidir",
+      "Mutlaka durmalı, yolu kontrol edip öyle geçmelidir",
+      "Kornaya basıp geçmelidir",
+      "Selektör yapıp geçmelidir"
     ],
     "dogruCevap": "B",
     "resimYolu": "src2_9.jpeg",
@@ -117,12 +117,12 @@
     "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "Mevzuata gÃ¶re, engelli yolcularÄ±n araÃ§lara biniÅŸ ve iniÅŸleri ile ilgili sÃ¼rÃ¼cÃ¼nÃ¼n sorumluluÄŸu nedir?",
+    "soru": "Mevzuata göre, engelli yolcuların araçlara biniş ve inişleri ile ilgili sürücünün sorumluluğu nedir?",
     "siklar": [
-      "Sadece refakatÃ§isi varsa yardÄ±m etmek",
-      "YardÄ±m etmek zorunda deÄŸildir",
-      "Yolcuya ve eÅŸyasÄ±na yardÄ±mcÄ± olmak zorundadÄ±r",
-      "Ek Ã¼cret talep ederek yardÄ±m etmek"
+      "Sadece refakatçisi varsa yardım etmek",
+      "Yardım etmek zorunda değildir",
+      "Yolcuya ve eşyasına yardımcı olmak zorundadır",
+      "Ek ücret talep ederek yardım etmek"
     ],
     "dogruCevap": "C",
     "resimYolu": "src2_10.jpeg",
@@ -130,12 +130,12 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Motor Ã§alÄ±ÅŸÄ±rken bu ikaz Ä±ÅŸÄ±ÄŸÄ±nÄ±n yanmasÄ± neyi bildirir?",
+    "soru": "Motor çalışırken bu ikaz ışığının yanması neyi bildirir?",
     "siklar": [
-      "AkÃ¼nÃ¼n bittiÄŸini",
-      "AlternatÃ¶rÃ¼n (ÅŸarj sisteminin) akÃ¼yÃ¼ ÅŸarj etmediÄŸini",
-      "YakÄ±tÄ±n azaldÄ±ÄŸÄ±nÄ±",
-      "Motorun Ä±sÄ±ndÄ±ÄŸÄ±nÄ±"
+      "Akünün bittiğini",
+      "Alternatörün (şarj sisteminin) aküyü şarj etmediğini",
+      "Yakıtın azaldığını",
+      "Motorun ısındığını"
     ],
     "dogruCevap": "B",
     "resimYolu": "src2_11.jpeg",
@@ -143,12 +143,12 @@
     "Subject": "Araç Tekniği"
   },
   {
-    "soru": "Bir kazada 112 arandÄ±ÄŸÄ±nda, ilk yardÄ±mcÄ±nÄ±n vermesi gereken en Ã¶ncelikli ve net bilgi nedir?",
+    "soru": "Bir kazada 112 arandığında, ilk yardımcının vermesi gereken en öncelikli ve net bilgi nedir?",
     "siklar": [
-      "SÃ¼rÃ¼cÃ¼nÃ¼n ehliyet sÄ±nÄ±fÄ±",
-      "AracÄ±n marka ve modeli",
-      "OlayÄ±n tam ve aÃ§Ä±k adresi",
-      "Sigorta poliÃ§e numarasÄ±"
+      "Sürücünün ehliyet sınıfı",
+      "Aracın marka ve modeli",
+      "Olayın tam ve açık adresi",
+      "Sigorta poliçe numarası"
     ],
     "dogruCevap": "C",
     "resimYolu": "src2_12.jpeg",
@@ -156,12 +156,12 @@
     "Subject": "İlkyardım"
   },
   {
-    "soru": "GÃ¶rseldeki gibi yaÄŸÄ±ÅŸlÄ± havalarda 'takip mesafesi' ile ilgili doÄŸru davranÄ±ÅŸ hangisidir?",
+    "soru": "Görseldeki gibi yağışlı havalarda 'takip mesafesi' ile ilgili doğru davranış hangisidir?",
     "siklar": [
-      "Takip mesafesi azaltÄ±lÄ±r",
-      "Takip mesafesi aynÄ± kalÄ±r",
-      "Takip mesafesi artÄ±rÄ±lÄ±r (iki katÄ±na Ã§Ä±karÄ±lÄ±r)",
-      "Ã–ndeki araÃ§ geÃ§ilmeye Ã§alÄ±ÅŸÄ±lÄ±r"
+      "Takip mesafesi azaltılır",
+      "Takip mesafesi aynı kalır",
+      "Takip mesafesi artırılır (iki katına çıkarılır)",
+      "Ã–ndeki araç geçilmeye çalışılır"
     ],
     "dogruCevap": "C",
     "resimYolu": "src2_13.jpeg",
@@ -169,12 +169,12 @@
     "Subject": "Genel"
   },
   {
-    "soru": "OtobÃ¼slerde yangÄ±n sÃ¶ndÃ¼rme cihazÄ±nÄ±n konumu neresi olmalÄ±dÄ±r?",
+    "soru": "Otobüslerde yangın söndürme cihazının konumu neresi olmalıdır?",
     "siklar": [
-      "SÃ¼rÃ¼cÃ¼nÃ¼n hemen ulaÅŸabileceÄŸi, kolay eriÅŸilebilir bir yerde",
-      "YolcularÄ±n gÃ¶remeyeceÄŸi kapalÄ± bir yerde",
-      "Sadece bagaj bÃ¶lÃ¼mÃ¼nde",
-      "Motor kapaÄŸÄ±nÄ±n altÄ±nda"
+      "Sürücünün hemen ulaşabileceği, kolay erişilebilir bir yerde",
+      "Yolcuların göremeyeceği kapalı bir yerde",
+      "Sadece bagaj bölümünde",
+      "Motor kapağının altında"
     ],
     "dogruCevap": "A",
     "resimYolu": "src2_14.jpeg",
@@ -182,12 +182,12 @@
     "Subject": "Genel"
   },
   {
-    "soru": "Karayolu TaÅŸÄ±ma YÃ¶netmeliÄŸi'ne gÃ¶re, kucakta seyahat etmesi ÅŸartÄ±yla hangi yaÅŸ grubundaki Ã§ocuklar bilet alma zorunluluÄŸundan muaftÄ±r (Ã¼cretsizdir)?",
+    "soru": "Karayolu Taşıma Yönetmeliği'ne göre, kucakta seyahat etmesi şartıyla hangi yaş grubundaki çocuklar bilet alma zorunluluğundan muaftır (ücretsizdir)?",
     "siklar": [
-      "0-6 YaÅŸ",
-      "0-2 YaÅŸ",
-      "0-10 YaÅŸ",
-      "0-4 YaÅŸ"
+      "0-6 Yaş",
+      "0-2 Yaş",
+      "0-10 Yaş",
+      "0-4 Yaş"
     ],
     "dogruCevap": "A",
     "resimYolu": "src2_15.jpeg",

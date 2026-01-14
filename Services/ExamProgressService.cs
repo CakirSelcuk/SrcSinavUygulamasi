@@ -403,6 +403,14 @@ namespace SrcSinavUygulamasi.Services
             stats.TotalQuestionsSolved = totalQuestions;
             stats.PassedExams = passedCount;
             stats.FailedExams = stats.TotalExams - passedCount;
+            
+            // Tüm kategorilerdeki kalan yanlış sayısını hesapla
+            int totalWrongs = 0;
+            foreach (var category in categories)
+            {
+                totalWrongs += GetTotalWrongCount(category);
+            }
+            stats.TotalRemainingWrongs = totalWrongs;
 
             // ═══════════════════════════════════════════════════════════
             // SON 5 SINAV GEÇMİŞİ

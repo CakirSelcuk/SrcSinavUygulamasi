@@ -20,6 +20,7 @@ public static class MauiProgram
 
         // Services
         builder.Services.AddSingleton<QuestionService>();
+        builder.Services.AddSingleton<PurchaseService>();
         
         // ViewModels
         builder.Services.AddSingleton<QuizViewModel>();

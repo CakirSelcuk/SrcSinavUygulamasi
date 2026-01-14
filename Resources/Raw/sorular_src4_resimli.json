@@ -1,6 +1,6 @@
-﻿[
+[
   {
-    "soru": "KarayollarÄ± Trafik YÃ¶netmeliÄŸi'ne gÃ¶re, yÃ¼kÃ¼n araÃ§ kasasÄ±ndan arkaya doÄŸru en fazla kaÃ§ metre taÅŸmasÄ±na izin verilir?",
+    "soru": "Karayolları Trafik Yönetmeliği'ne göre, yükün araç kasasından arkaya doğru en fazla kaç metre taşmasına izin verilir?",
     "siklar": [
       "1 metre",
       "2 metre",
@@ -13,12 +13,12 @@
     "Subject": "Genel"
   },
   {
-    "soru": "YurtiÃ§i eÅŸya taÅŸÄ±macÄ±lÄ±ÄŸÄ± yapan bir araÃ§ta, denetim sÄ±rasÄ±nda gÃ¶rseldeki belgenin (Sevk Ä°rsaliyesi) ibraz edilmesi neden zorunludur?",
+    "soru": "Yurtiçi eşya taşımacılığı yapan bir araçta, denetim sırasında görseldeki belgenin (Sevk İrsaliyesi) ibraz edilmesi neden zorunludur?",
     "siklar": [
-      "AracÄ±n sigortalÄ± olduÄŸunu gÃ¶stermek iÃ§in",
-      "MalÄ±n cinsi, miktarÄ± ve kime ait olduÄŸunu kanÄ±tlamak iÃ§in",
-      "SÃ¼rÃ¼cÃ¼nÃ¼n ehliyetini doÄŸrulamak iÃ§in",
-      "AracÄ±n muayenesini gÃ¶stermek iÃ§in"
+      "Aracın sigortalı olduğunu göstermek için",
+      "Malın cinsi, miktarı ve kime ait olduğunu kanıtlamak için",
+      "Sürücünün ehliyetini doğrulamak için",
+      "Aracın muayenesini göstermek için"
     ],
     "dogruCevap": "B",
     "resimYolu": "src4_2.jpeg",
@@ -26,12 +26,12 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "SRC 4 belgeli bir sÃ¼rÃ¼cÃ¼, seyir halindeyken bu levhayÄ± gÃ¶rdÃ¼ÄŸÃ¼nde ne yapmalÄ±dÄ±r?",
+    "soru": "SRC 4 belgeli bir sürücü, seyir halindeyken bu levhayı gördüğünde ne yapmalıdır?",
     "siklar": [
-      "YÃ¼kÃ¼nÃ¼ boÅŸaltÄ±p girmelidir",
-      "Bu yola veya gÃ¼zergaha girmemelidir",
+      "Yükünü boşaltıp girmelidir",
+      "Bu yola veya güzergaha girmemelidir",
       "Sadece gece saatlerinde girmelidir",
-      "HÄ±zÄ±nÄ± azaltarak girmelidir"
+      "Hızını azaltarak girmelidir"
     ],
     "dogruCevap": "B",
     "resimYolu": "src4_3.jpeg",
@@ -39,12 +39,12 @@
     "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "GÃ¶rseldeki lastiÄŸin sadece orta kÄ±smÄ±nÄ±n aÅŸÄ±nmÄ±ÅŸ olmasÄ±nÄ±n teknik sebebi nedir?",
+    "soru": "Görseldeki lastiğin sadece orta kısmının aşınmış olmasının teknik sebebi nedir?",
     "siklar": [
-      "DÃ¼ÅŸÃ¼k hava basÄ±ncÄ±",
-      "Bozuk rot ayarÄ±",
-      "YÃ¼ksek hava basÄ±ncÄ± (LastiÄŸin ÅŸiÅŸkin olmasÄ±)",
-      "Ani fren yapÄ±lmasÄ±"
+      "Düşük hava basıncı",
+      "Bozuk rot ayarı",
+      "Yüksek hava basıncı (Lastiğin şişkin olması)",
+      "Ani fren yapılması"
     ],
     "dogruCevap": "C",
     "resimYolu": "src4_4.jpeg",
@@ -52,7 +52,7 @@
     "Subject": "Araç Tekniği"
   },
   {
-    "soru": "Mevzuata gÃ¶re, azami aÄŸÄ±rlÄ±ÄŸÄ± 12 tonun Ã¼zerinde olan kamyon ve Ã§ekicilerde yangÄ±n sÃ¶ndÃ¼rme cihazÄ± bulundurma zorunluluÄŸu nasÄ±ldÄ±r?",
+    "soru": "Mevzuata göre, azami ağırlığı 12 tonun üzerinde olan kamyon ve çekicilerde yangın söndürme cihazı bulundurma zorunluluğu nasıldır?",
     "siklar": [
       "1 adet 1 kg",
       "2 adet 1 kg",
@@ -65,12 +65,12 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "YÃ¼k taÅŸÄ±yan bir araÃ§ta seyir halindeyken hararet gÃ¶stergesi kÄ±rmÄ±zÄ±ya gelirse sÃ¼rÃ¼cÃ¼ ne yapmalÄ±dÄ±r?",
+    "soru": "Yük taşıyan bir araçta seyir halindeyken hararet göstergesi kırmızıya gelirse sürücü ne yapmalıdır?",
     "siklar": [
-      "Vitesi boÅŸa alÄ±p devam etmelidir",
-      "KlimayÄ± aÃ§Ä±p devam etmelidir",
-      "Kurallara uygun ÅŸekilde derhal durmalÄ± ve motoru rÃ¶lantide Ã§alÄ±ÅŸtÄ±rÄ±p soÄŸumasÄ±nÄ± beklemelidir",
-      "HÄ±zlanarak motoru soÄŸutmalÄ±dÄ±r"
+      "Vitesi boşa alıp devam etmelidir",
+      "Klimayı açıp devam etmelidir",
+      "Kurallara uygun şekilde derhal durmalı ve motoru rölantide çalıştırıp soğumasını beklemelidir",
+      "Hızlanarak motoru soğutmalıdır"
     ],
     "dogruCevap": "C",
     "resimYolu": "src4_6.jpeg",
@@ -78,12 +78,12 @@
     "Subject": "Genel"
   },
   {
-    "soru": "YÃ¼klÃ¼ bir kamyon sÃ¼rÃ¼cÃ¼sÃ¼ bu levhayÄ± gÃ¶rdÃ¼ÄŸÃ¼nde direksiyon hakimiyetini kaybetmemek iÃ§in ne yapmalÄ±dÄ±r?",
+    "soru": "Yüklü bir kamyon sürücüsü bu levhayı gördüğünde direksiyon hakimiyetini kaybetmemek için ne yapmalıdır?",
     "siklar": [
-      "Ani fren yapmalÄ±dÄ±r",
-      "Ani direksiyon hareketlerinden kaÃ§Ä±nmalÄ± ve hÄ±zÄ±nÄ± azaltmalÄ±dÄ±r",
-      "Vitesi boÅŸa almalÄ±dÄ±r",
-      "Gaza basarak hÄ±zlÄ± geÃ§melidir"
+      "Ani fren yapmalıdır",
+      "Ani direksiyon hareketlerinden kaçınmalı ve hızını azaltmalıdır",
+      "Vitesi boşa almalıdır",
+      "Gaza basarak hızlı geçmelidir"
     ],
     "dogruCevap": "B",
     "resimYolu": "src4_7.jpeg",
@@ -91,12 +91,12 @@
     "Subject": "Araç Tekniği"
   },
   {
-    "soru": "GÃ¶rseldeki ekipmanÄ±n (Spanset) temel kullanÄ±m amacÄ± nedir?",
+    "soru": "Görseldeki ekipmanın (Spanset) temel kullanım amacı nedir?",
     "siklar": [
-      "YÃ¼kÃ¼ yaÄŸmurdan korumak",
-      "YÃ¼kÃ¼n araÃ§ iÃ§inde savrulmasÄ±nÄ± ve devrilmesini Ã¶nlemek (Sabitleme)",
-      "YÃ¼kleme iÅŸlemini hÄ±zlandÄ±rmak",
-      "YÃ¼kÃ¼n aÄŸÄ±rlÄ±ÄŸÄ±nÄ± azaltmak"
+      "Yükü yağmurdan korumak",
+      "Yükün araç içinde savrulmasını ve devrilmesini önlemek (Sabitleme)",
+      "Yükleme işlemini hızlandırmak",
+      "Yükün ağırlığını azaltmak"
     ],
     "dogruCevap": "B",
     "resimYolu": "src4_8.jpeg",
@@ -104,12 +104,12 @@
     "Subject": "Genel"
   },
   {
-    "soru": "Kamyon sÃ¼rÃ¼cÃ¼sÃ¼ geri manevra yaparken kÃ¶r noktada kalan bir cismi veya kiÅŸiyi gÃ¶remeyebilir. Bu riski en aza indirmek iÃ§in ne yapÄ±lmalÄ±dÄ±r?",
+    "soru": "Kamyon sürücüsü geri manevra yaparken kör noktada kalan bir cismi veya kişiyi göremeyebilir. Bu riski en aza indirmek için ne yapılmalıdır?",
     "siklar": [
-      "Sadece dikiz aynasÄ±na bakÄ±lmalÄ±dÄ±r",
-      "MÃ¼mkÃ¼nse bir gÃ¶zcÃ¼den yardÄ±m alÄ±nmalÄ±dÄ±r",
-      "HÄ±zlÄ±ca geri gidilmelidir",
-      "Kornaya basÄ±p geri gidilmelidir"
+      "Sadece dikiz aynasına bakılmalıdır",
+      "Mümkünse bir gözcüden yardım alınmalıdır",
+      "Hızlıca geri gidilmelidir",
+      "Kornaya basıp geri gidilmelidir"
     ],
     "dogruCevap": "B",
     "resimYolu": "src4_9.jpeg",
@@ -117,12 +117,12 @@
     "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "GÃ¶rseldeki yetki belgesine sahip olan bir firma hangi tÃ¼r taÅŸÄ±macÄ±lÄ±k faaliyetinde bulunabilir?",
+    "soru": "Görseldeki yetki belgesine sahip olan bir firma hangi tür taşımacılık faaliyetinde bulunabilir?",
     "siklar": [
-      "UluslararasÄ± yolcu taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
-      "YurtiÃ§i ticari eÅŸya taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
-      "UluslararasÄ± evden eve nakliyat",
-      "YurtiÃ§i kargo daÄŸÄ±tÄ±mÄ±"
+      "Uluslararası yolcu taşımacılığı",
+      "Yurtiçi ticari eşya taşımacılığı",
+      "Uluslararası evden eve nakliyat",
+      "Yurtiçi kargo dağıtımı"
     ],
     "dogruCevap": "B",
     "resimYolu": "src4_10.jpeg",
@@ -130,12 +130,12 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "Trafik kazasÄ± sonrasÄ± bir yaralÄ±ya gÃ¶rseldeki \"Boyunluk\" takÄ±lmasÄ±nÄ±n temel amacÄ± nedir?",
+    "soru": "Trafik kazası sonrası bir yaralıya görseldeki \"Boyunluk\" takılmasının temel amacı nedir?",
     "siklar": [
-      "YaralÄ±nÄ±n Ã¼ÅŸÃ¼mesini engellemek",
-      "Solunum yolunu aÃ§mak",
-      "OlasÄ± omurilik felcini Ã¶nlemek iÃ§in boynu sabitlemek",
-      "YaralÄ±nÄ±n uyumasÄ±nÄ± saÄŸlamak"
+      "Yaralının üşümesini engellemek",
+      "Solunum yolunu açmak",
+      "Olası omurilik felcini önlemek için boynu sabitlemek",
+      "Yaralının uyumasını sağlamak"
     ],
     "dogruCevap": "C",
     "resimYolu": "src4_11.jpeg",
@@ -143,12 +143,12 @@
     "Subject": "İlkyardım"
   },
   {
-    "soru": "Dizel motorlu bir kamyonda yakÄ±t tamamen biterse ne olur?",
+    "soru": "Dizel motorlu bir kamyonda yakıt tamamen biterse ne olur?",
     "siklar": [
-      "Motor hava yapar ve tekrar Ã§alÄ±ÅŸtÄ±rÄ±lmasÄ± zorlaÅŸÄ±r",
-      "Motor daha performanslÄ± Ã§alÄ±ÅŸÄ±r",
-      "HiÃ§bir ÅŸey olmaz, yakÄ±t konunca hemen Ã§alÄ±ÅŸÄ±r",
-      "AkÃ¼ biter"
+      "Motor hava yapar ve tekrar çalıştırılması zorlaşır",
+      "Motor daha performanslı çalışır",
+      "Hiçbir şey olmaz, yakıt konunca hemen çalışır",
+      "Akü biter"
     ],
     "dogruCevap": "A",
     "resimYolu": "src4_12.jpeg",
@@ -156,12 +156,12 @@
     "Subject": "Araç Tekniği"
   },
   {
-    "soru": "Bu levhayÄ± gÃ¶ren yÃ¼klÃ¼ bir kamyon sÃ¼rÃ¼cÃ¼sÃ¼ neyi kontrol etmelidir?",
+    "soru": "Bu levhayı gören yüklü bir kamyon sürücüsü neyi kontrol etmelidir?",
     "siklar": [
-      "AracÄ±n toplam yÃ¼ksekliÄŸini",
-      "AracÄ±n dingil aÄŸÄ±rlÄ±klarÄ±nÄ±n levhadaki sÄ±nÄ±rdan fazla olup olmadÄ±ÄŸÄ±nÄ±",
-      "AracÄ±n geniÅŸliÄŸini",
-      "AracÄ±n hÄ±zÄ±nÄ±"
+      "Aracın toplam yüksekliğini",
+      "Aracın dingil ağırlıklarının levhadaki sınırdan fazla olup olmadığını",
+      "Aracın genişliğini",
+      "Aracın hızını"
     ],
     "dogruCevap": "B",
     "resimYolu": "src4_13.jpeg",
@@ -169,7 +169,7 @@
     "Subject": "Trafik Mevzuatı"
   },
   {
-    "soru": "ÅžehirlerarasÄ± yolda arÄ±zalanan bir kamyonun arkasÄ±na konulan reflektÃ¶r, diÄŸer sÃ¼rÃ¼cÃ¼ler tarafÄ±ndan en az kaÃ§ metreden gÃ¶rÃ¼lebilmelidir?",
+    "soru": "Åžehirlerarası yolda arızalanan bir kamyonun arkasına konulan reflektör, diğer sürücüler tarafından en az kaç metreden görülebilmelidir?",
     "siklar": [
       "50 metre",
       "100 metre",
@@ -182,12 +182,12 @@
     "Subject": "Ulaştırma Mevzuatı"
   },
   {
-    "soru": "SRC 4 sÄ±navÄ±nda veya trafik denetiminde, araÃ§ ruhsatÄ±ndaki bilgiler ile araÃ§ Ã¼zerindeki bu numaranÄ±n uyuÅŸmamasÄ± ne anlama gelir?",
+    "soru": "SRC 4 sınavında veya trafik denetiminde, araç ruhsatındaki bilgiler ile araç üzerindeki bu numaranın uyuşmaması ne anlama gelir?",
     "siklar": [
-      "AracÄ±n \"change\" (deÄŸiÅŸtirilmiÅŸ/Ã§alÄ±ntÄ±) veya motor/ÅŸasi deÄŸiÅŸikliÄŸinin iÅŸlenmemiÅŸ olduÄŸunu",
-      "AracÄ±n yeni model olduÄŸunu",
-      "AracÄ±n muayenesinin tam olduÄŸunu",
-      "AracÄ±n sigortalÄ± olduÄŸunu"
+      "Aracın \"change\" (değiştirilmiş/çalıntı) veya motor/şasi değişikliğinin işlenmemiş olduğunu",
+      "Aracın yeni model olduğunu",
+      "Aracın muayenesinin tam olduğunu",
+      "Aracın sigortalı olduğunu"
     ],
     "dogruCevap": "A",
     "resimYolu": "src4_15.jpeg",

@@ -20,6 +20,11 @@ namespace SrcSinavUygulamasi.Models
         public double AverageScore { get; set; }
         
         /// <summary>
+        /// Toplam kalan yanlış soru sayısı (tüm kategorilerde)
+        /// </summary>
+        public int TotalRemainingWrongs { get; set; }
+        
+        /// <summary>
         /// Toplam çözülen soru sayısı
         /// </summary>
         public int TotalQuestionsSolved { get; set; }
@@ -35,9 +40,30 @@ namespace SrcSinavUygulamasi.Models
         public int FailedExams { get; set; }
         
         /// <summary>
-        /// Başarı oranı (%)
+        /// Başarı oranı (%) - Ortalama puan bazlı
+        /// Yanlış kaldıysa %100 yazılmaz
         /// </summary>
-        public double SuccessRate => TotalExams > 0 ? (double)PassedExams / TotalExams * 100 : 0;
+        public double SuccessRate
+        {
+            get
+            {
+                if (TotalExams == 0) return 0;
+                
+                // Temel başarı: Ortalama puan
+                double baseRate = AverageScore;
+                
+                // Yanlış sayısı %100'ü engelliyor
+                // Eğer yanlış varsa ve puan 100'e yakınsa bile düşür
+                if (TotalRemainingWrongs > 0 && baseRate >= 85)
+                {
+                    // Yanlış başına max 2 puan düş, ama 85'in altına indirme
+                    double penalty = Math.Min(TotalRemainingWrongs * 2, baseRate - 85);
+                    baseRate -= penalty;
+                }
+                
+                return Math.Min(baseRate, 100);
+            }
+        }
 
         // ═══════════════════════════════════════════════════════════
         // ZAYIF KONULAR
@@ -99,7 +125,7 @@ namespace SrcSinavUygulamasi.Models
         /// <summary>
         /// Tarih formatı
         /// </summary>
-        public string FormattedDate => Date.ToString("dd.MM.yyyy HH:mm");
+        public string FormattedDate => Date.ToLocalTime().ToString("dd.MM.yyyy HH:mm");
         
         /// <summary>
         /// Durum metni

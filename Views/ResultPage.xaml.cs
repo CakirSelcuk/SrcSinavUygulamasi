@@ -1,5 +1,6 @@
 ﻿using SrcSinavUygulamasi.Models;
 using SrcSinavUygulamasi.Services;
+using SrcSinavUygulamasi.Constants;
 using Microsoft.Maui.Controls.Shapes;
 
 namespace SrcSinavUygulamasi.Views;
@@ -25,16 +26,14 @@ public partial class ResultPage : ContentPage
     private const string COLOR_SUCCESS = "#22c55e";       // Yeşil
     private const string COLOR_WARNING = "#f59e0b";       // Turuncu
     private const string COLOR_DANGER = "#ef4444";        // Kırmızı
-    
-    private const string PREMIUM_BACKDOOR_CODE = "SRC2024PREMIUM";
-    private const string PREF_KEY_PREMIUM = "IsUserPremium";
 
     // ═══════════════════════════════════════════════════════════
     // ALANLAR
     // ═══════════════════════════════════════════════════════════
     private QuizResultModel? _result;
-    private ExamProgressService _progressService = new();
-    private QuestionService _questionService = new();
+    private readonly ExamProgressService _progressService = new();
+    private readonly QuestionService _questionService = new();
+    private PurchaseService? _purchaseService;
     private bool _allPracticeExamsCompleted = false;
     private string? _nextPracticeExamId = null;
 
@@ -45,6 +44,8 @@ public partial class ResultPage : ContentPage
     {
         InitializeComponent();
         _result = result;
+        _purchaseService = Application.Current?.Handler?.MauiContext?.Services.GetService<PurchaseService>() 
+                          ?? new PurchaseService();
         Loaded += OnPageLoaded;
     }
 
@@ -398,7 +399,7 @@ public partial class ResultPage : ContentPage
         // Mini sınavda premium kontrolü yapma
         if (_result.IsMiniExam) return;
 
-        bool isPremium = Preferences.Get(PREF_KEY_PREMIUM, false);
+        bool isPremium = _purchaseService?.IsPremium ?? false;
         
         if (isPremium)
         {
@@ -424,7 +425,7 @@ public partial class ResultPage : ContentPage
         }
 
         // Normal sınav - Premium kontrolü
-        bool isPremium = Preferences.Get(PREF_KEY_PREMIUM, false);
+        bool isPremium = _purchaseService?.IsPremium ?? false;
 
         if (isPremium)
         {
@@ -481,42 +482,52 @@ public partial class ResultPage : ContentPage
 
     private async Task HandlePurchase()
     {
-        string? code = await DisplayPromptAsync(
-            "Aktivasyon Kodu",
-            "Satın alma kodunuz varsa girin.\n(Destek ekibinden aldıysanız)",
-            "Aktifleştir",
-            "İptal",
-            placeholder: "Kod girin...",
-            maxLength: 20);
+        if (_purchaseService == null) return;
 
-        if (string.IsNullOrWhiteSpace(code))
+        try
         {
-            await DisplayAlert("Mağaza",
-                "Uygulama içi satın alma yakında aktif olacak.\n\nDestek için: srcsinav.destek@gmail.com",
-                "Tamam");
-            return;
+            // Offerings'leri getir
+            var offerings = await _purchaseService.GetOfferingsAsync();
+            
+            if (offerings == null || offerings.Count == 0)
+            {
+                await DisplayAlert("Bilgi", 
+                    "Şu an satın alma yapılamıyor.\n\nLütfen daha sonra tekrar deneyin.", 
+                    "Tamam");
+                return;
+            }
+
+            // İlk ürünü göster (ömür boyu premium)
+            var product = offerings.First();
+            
+            bool confirm = await DisplayAlert(
+                "Premium'a Yükselt",
+                $"{product.Title}\n\n{product.Description}\n\nFiyat: {product.FormattedPrice}",
+                "Satın Al",
+                "İptal");
+
+            if (confirm)
+            {
+                var result = await _purchaseService.PurchaseAsync(product.ProductId);
+                
+                if (result.Success)
+                {
+                    BtnSolveWrongs.Text = $"✅ Yanlışları Çöz ({_result?.WrongCount ?? 0})";
+                    BtnSolveWrongs.BackgroundColor = Color.FromArgb(COLOR_SUCCESS);
+
+                    await DisplayAlert("🎉 Başarılı!", 
+                        "VIP üyeliğiniz aktifleştirildi!\n\nArtık tüm premium özelliklere erişebilirsiniz.", 
+                        "Harika!");
+                }
+                else
+                {
+                    await DisplayAlert("Bilgi", result.Message, "Tamam");
+                }
+            }
         }
-
-        // ════════════════════════════════════════════════════
-        // BACKDOOR (Destek amaçlı)
-        // ════════════════════════════════════════════════════
-        if (code.Trim().ToUpperInvariant() == PREMIUM_BACKDOOR_CODE)
+        catch (Exception ex)
         {
-            Preferences.Set(PREF_KEY_PREMIUM, true);
-            Preferences.Set("PremiumActivationDate", DateTime.UtcNow.ToString("o"));
-
-            BtnSolveWrongs.Text = $"✅ Yanlışları Çöz ({_result?.WrongCount ?? 0})";
-            BtnSolveWrongs.BackgroundColor = Color.FromArgb(COLOR_SUCCESS);
-
-            await DisplayAlert("🎉 Başarılı!",
-                "VIP üyeliğiniz aktifleştirildi!\n\nArtık tüm premium özelliklere erişebilirsiniz.",
-                "Harika!");
-        }
-        else
-        {
-            await DisplayAlert("Geçersiz Kod",
-                "Girdiğiniz kod geçerli değil.\n\nLütfen destek ekibinden doğru kodu alın.",
-                "Tamam");
+            await DisplayAlert("Hata", $"Satın alma hatası: {ex.Message}", "Tamam");
         }
     }
 

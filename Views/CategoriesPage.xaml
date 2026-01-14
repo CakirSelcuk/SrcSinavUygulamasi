@@ -4,7 +4,7 @@
              xmlns:viewmodels="clr-namespace:SrcSinavUygulamasi.ViewModels"
              xmlns:models="clr-namespace:SrcSinavUygulamasi.Models"
              x:Class="SrcSinavUygulamasi.Views.CategoriesPage"
-             Title="Sınav Merkezi"
+             Title="Ana Sayfa"
              BackgroundColor="#0f172a"
              NavigationPage.HasNavigationBar="False">
 
@@ -12,72 +12,296 @@
         <viewmodels:CategoriesViewModel />
     </ContentPage.BindingContext>
 
-    <Grid RowDefinitions="Auto, *">
+    <ScrollView>
+        <VerticalStackLayout Spacing="0" Padding="0,0,0,30">
 
-        <Grid Grid.Row="0" ColumnDefinitions="*, Auto" Padding="25,40,25,20">
-            <VerticalStackLayout Spacing="5">
-                <Label Text="Merhaba," TextColor="#94a3b8" FontSize="16"/>
-                <Label Text="Hangi Sınava Hazırlanıyorsun?" TextColor="White" FontSize="24" FontAttributes="Bold" LineHeight="1.2"/>
-            </VerticalStackLayout>
+            <!-- ═════════════════════════════════════════════════════════ -->
+            <!-- HEADER                                                    -->
+            <!-- ═════════════════════════════════════════════════════════ -->
+            <Grid Padding="24,50,24,16">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
 
-            <!-- Butonlar -->
-            <HorizontalStackLayout Grid.Column="1" Spacing="10" VerticalOptions="Center">
-                <!-- Profil/Ayarlar Butonu -->
-                <Border Stroke="Transparent" BackgroundColor="#1e293b" 
-                        StrokeShape="RoundRectangle 12" Padding="12">
-                    <Border.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnProfileTapped"/>
-                    </Border.GestureRecognizers>
-                    <Label Text="⚙️" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"/>
-                </Border>
-                
-                <!-- Hakkında Butonu -->
-                <Border Stroke="Transparent" BackgroundColor="#1e293b" 
-                        StrokeShape="RoundRectangle 12" Padding="12">
-                    <Border.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnAboutTapped"/>
-                    </Border.GestureRecognizers>
-                    <Label Text="ℹ️" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"/>
-                </Border>
-            </HorizontalStackLayout>
-        </Grid>
+                <!-- Sol: Karşılama -->
+                <VerticalStackLayout Spacing="4" VerticalOptions="Center">
+                    <Label Text="Merhaba 👋" 
+                           TextColor="#94a3b8" 
+                           FontSize="16"/>
+                    <Label Text="Sürücü Adayı" 
+                           TextColor="White" 
+                           FontSize="26" 
+                           FontAttributes="Bold"/>
+                </VerticalStackLayout>
 
-        <CollectionView Grid.Row="1" ItemsSource="{Binding Categories}" Margin="15,0">
-            <CollectionView.ItemsLayout>
-                <GridItemsLayout Orientation="Vertical" Span="1" VerticalItemSpacing="15"/>
-            </CollectionView.ItemsLayout>
-
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="models:CategoryModel">
+                <!-- Sağ: Profil ve Hakkında butonları -->
+                <HorizontalStackLayout Grid.Column="1" Spacing="12" VerticalOptions="Center">
+                    <!-- Hakkında Butonu -->
                     <Border Stroke="Transparent" 
                             BackgroundColor="#1e293b" 
-                            StrokeShape="RoundRectangle 16"
-                            HeightRequest="100"
-                            Padding="0">
+                            StrokeShape="RoundRectangle 14" 
+                            Padding="14"
+                            HeightRequest="52"
+                            WidthRequest="52">
                         <Border.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:CategoriesViewModel}}, Path=KategoriSecCommand}"
-                      CommandParameter="{Binding .}"/>
+                            <TapGestureRecognizer Tapped="OnAboutTapped"/>
                         </Border.GestureRecognizers>
-
-                        <Grid ColumnDefinitions="80, *, Auto">
-                            <BoxView Grid.Column="0" Color="{Binding Color}" Opacity="0.2"/>
-                            <Label Grid.Column="0" Text="{Binding IconText}" 
-                                   TextColor="{Binding Color}" 
-                                   FontSize="40" FontAttributes="Bold"
-                                   HorizontalOptions="Center" VerticalOptions="Center"/>
-
-                            <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="2" Padding="10,0">
-                                <Label Text="{Binding Title}" TextColor="White" FontSize="18" FontAttributes="Bold"/>
-                                <Label Text="{Binding Description}" TextColor="#94a3b8" FontSize="13"/>
-                            </VerticalStackLayout>
-
-                            <Label Grid.Column="2" Text="➤" TextColor="#475569" 
-                                   FontSize="20" VerticalOptions="Center" Margin="0,0,20,0"/>
-                        </Grid>
+                        <Label Text="ℹ️" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center"/>
                     </Border>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </Grid>
+
+                    <!-- Profil Butonu -->
+                    <Border Stroke="#3b82f6" 
+                            StrokeThickness="2"
+                            BackgroundColor="#1e293b" 
+                            StrokeShape="RoundRectangle 14" 
+                            Padding="14"
+                            HeightRequest="52"
+                            WidthRequest="52">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnProfileTapped"/>
+                        </Border.GestureRecognizers>
+                        <Label Text="👤" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Border>
+                </HorizontalStackLayout>
+            </Grid>
+
+            <!-- ═════════════════════════════════════════════════════════ -->
+            <!-- MİNİ DASHBOARD BANNER (Gradient Kart)                     -->
+            <!-- ═════════════════════════════════════════════════════════ -->
+            <Border Margin="20,0,20,16"
+                    StrokeShape="RoundRectangle 20"
+                    Stroke="Transparent"
+                    Padding="0"
+                    HeightRequest="140">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#3b82f6" Offset="0"/>
+                        <GradientStop Color="#8b5cf6" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Shadow>
+                    <Shadow Brush="#3b82f6" Offset="0,8" Opacity="0.35" Radius="20"/>
+                </Border.Shadow>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnDashboardTapped"/>
+                </Border.GestureRecognizers>
+
+                <Grid Padding="24,20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <VerticalStackLayout Spacing="10" VerticalOptions="Center">
+                        <Label Text="📊 Sınav Hazırlık Durumu" 
+                               TextColor="White" 
+                               FontSize="14" 
+                               Opacity="0.9"/>
+                        
+                        <HorizontalStackLayout Spacing="8">
+                            <Label x:Name="LblSuccessRate" 
+                                   Text="%0" 
+                                   TextColor="White" 
+                                   FontSize="36" 
+                                   FontAttributes="Bold"/>
+                            <Label x:Name="LblStatusText" 
+                                   Text="Başarı" 
+                                   TextColor="White" 
+                                   FontSize="14" 
+                                   Opacity="0.85"
+                                   VerticalOptions="End"
+                                   Margin="0,0,0,6"/>
+                        </HorizontalStackLayout>
+
+                        <!-- Progress Bar -->
+                        <Grid HeightRequest="10" WidthRequest="200" HorizontalOptions="Start">
+                            <Border BackgroundColor="#ffffff" 
+                                    Opacity="0.3"
+                                    StrokeShape="RoundRectangle 5"
+                                    Stroke="Transparent"/>
+                            <Border x:Name="ProgressBar"
+                                    BackgroundColor="White" 
+                                    StrokeShape="RoundRectangle 5"
+                                    Stroke="Transparent"
+                                    HorizontalOptions="Start"
+                                    WidthRequest="0"/>
+                        </Grid>
+                    </VerticalStackLayout>
+
+                    <!-- Sağ ok işareti -->
+                    <Label Grid.Column="1" 
+                           Text="→" 
+                           TextColor="White" 
+                           FontSize="28" 
+                           Opacity="0.6"
+                           VerticalOptions="Center"/>
+                </Grid>
+            </Border>
+
+            <!-- ═════════════════════════════════════════════════════════ -->
+            <!-- KATEGORİLER BAŞLIĞI                                       -->
+            <!-- ═════════════════════════════════════════════════════════ -->
+            <Label Text="Kategoriler" 
+                   TextColor="White" 
+                   FontSize="18" 
+                   FontAttributes="Bold"
+                   Margin="24,0,24,12"/>
+
+            <!-- ═════════════════════════════════════════════════════════ -->
+            <!-- KATEGORİ GRİD (2 SÜTUN)                                   -->
+            <!-- ═════════════════════════════════════════════════════════ -->
+            <Grid Margin="16,0,16,0" 
+                  ColumnDefinitions="*, *" 
+                  RowDefinitions="Auto, Auto, Auto"
+                  ColumnSpacing="12"
+                  RowSpacing="12">
+
+                <!-- SRC 1 -->
+                <Border Grid.Row="0" Grid.Column="0"
+                        BackgroundColor="#1e293b"
+                        StrokeShape="RoundRectangle 18"
+                        Stroke="Transparent"
+                        Padding="16"
+                        HeightRequest="130">
+                    <Border.Shadow>
+                        <Shadow Brush="#000" Offset="0,4" Opacity="0.15" Radius="8"/>
+                    </Border.Shadow>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCategorySrc1Tapped"/>
+                    </Border.GestureRecognizers>
+                    <VerticalStackLayout Spacing="8" VerticalOptions="Center">
+                        <Border BackgroundColor="#3b82f6" 
+                                Opacity="0.2" 
+                                StrokeShape="RoundRectangle 12"
+                                Stroke="Transparent"
+                                HeightRequest="50"
+                                WidthRequest="50"
+                                HorizontalOptions="Center">
+                            <Label Text="🌍" FontSize="28" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </Border>
+                        <Label Text="SRC 1" TextColor="White" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label Text="Uluslararası Yolcu" TextColor="#94a3b8" FontSize="11" HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- SRC 2 -->
+                <Border Grid.Row="0" Grid.Column="1"
+                        BackgroundColor="#1e293b"
+                        StrokeShape="RoundRectangle 18"
+                        Stroke="Transparent"
+                        Padding="16"
+                        HeightRequest="130">
+                    <Border.Shadow>
+                        <Shadow Brush="#000" Offset="0,4" Opacity="0.15" Radius="8"/>
+                    </Border.Shadow>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCategorySrc2Tapped"/>
+                    </Border.GestureRecognizers>
+                    <VerticalStackLayout Spacing="8" VerticalOptions="Center">
+                        <Border BackgroundColor="#22c55e" 
+                                Opacity="0.2" 
+                                StrokeShape="RoundRectangle 12"
+                                Stroke="Transparent"
+                                HeightRequest="50"
+                                WidthRequest="50"
+                                HorizontalOptions="Center">
+                            <Label Text="🚌" FontSize="28" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </Border>
+                        <Label Text="SRC 2" TextColor="White" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label Text="Yurtiçi Yolcu" TextColor="#94a3b8" FontSize="11" HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- SRC 3 -->
+                <Border Grid.Row="1" Grid.Column="0"
+                        BackgroundColor="#1e293b"
+                        StrokeShape="RoundRectangle 18"
+                        Stroke="Transparent"
+                        Padding="16"
+                        HeightRequest="130">
+                    <Border.Shadow>
+                        <Shadow Brush="#000" Offset="0,4" Opacity="0.15" Radius="8"/>
+                    </Border.Shadow>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCategorySrc3Tapped"/>
+                    </Border.GestureRecognizers>
+                    <VerticalStackLayout Spacing="8" VerticalOptions="Center">
+                        <Border BackgroundColor="#f59e0b" 
+                                Opacity="0.2" 
+                                StrokeShape="RoundRectangle 12"
+                                Stroke="Transparent"
+                                HeightRequest="50"
+                                WidthRequest="50"
+                                HorizontalOptions="Center">
+                            <Label Text="🌐" FontSize="28" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </Border>
+                        <Label Text="SRC 3" TextColor="White" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label Text="Uluslararası Yük" TextColor="#94a3b8" FontSize="11" HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- SRC 4 -->
+                <Border Grid.Row="1" Grid.Column="1"
+                        BackgroundColor="#1e293b"
+                        StrokeShape="RoundRectangle 18"
+                        Stroke="Transparent"
+                        Padding="16"
+                        HeightRequest="130">
+                    <Border.Shadow>
+                        <Shadow Brush="#000" Offset="0,4" Opacity="0.15" Radius="8"/>
+                    </Border.Shadow>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCategorySrc4Tapped"/>
+                    </Border.GestureRecognizers>
+                    <VerticalStackLayout Spacing="8" VerticalOptions="Center">
+                        <Border BackgroundColor="#ef4444" 
+                                Opacity="0.2" 
+                                StrokeShape="RoundRectangle 12"
+                                Stroke="Transparent"
+                                HeightRequest="50"
+                                WidthRequest="50"
+                                HorizontalOptions="Center">
+                            <Label Text="🚛" FontSize="28" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </Border>
+                        <Label Text="SRC 4" TextColor="White" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label Text="Yurtiçi Yük" TextColor="#94a3b8" FontSize="11" HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- SRC 5 -->
+                <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+                        BackgroundColor="#1e293b"
+                        StrokeShape="RoundRectangle 18"
+                        Stroke="Transparent"
+                        Padding="20"
+                        HeightRequest="100">
+                    <Border.Shadow>
+                        <Shadow Brush="#000" Offset="0,4" Opacity="0.15" Radius="8"/>
+                    </Border.Shadow>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCategorySrc5Tapped"/>
+                    </Border.GestureRecognizers>
+                    <HorizontalStackLayout Spacing="16" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Border BackgroundColor="#8b5cf6" 
+                                Opacity="0.2" 
+                                StrokeShape="RoundRectangle 12"
+                                Stroke="Transparent"
+                                HeightRequest="50"
+                                WidthRequest="50">
+                            <Label Text="☢️" FontSize="28" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </Border>
+                        <VerticalStackLayout Spacing="2" VerticalOptions="Center">
+                            <Label Text="SRC 5" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+                            <Label Text="Tehlikeli Madde Taşımacılığı" TextColor="#94a3b8" FontSize="12"/>
+                        </VerticalStackLayout>
+                        <Label Text="→" TextColor="#64748b" FontSize="24" VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Border>
+
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
 
 </ContentPage>
