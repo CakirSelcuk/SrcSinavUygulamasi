@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:SrcSinavUygulamasi.ViewModels"
              xmlns:models="clr-namespace:SrcSinavUygulamasi.Models"
+             xmlns:admob="clr-namespace:Plugin.MauiMTAdmob.Controls;assembly=Plugin.MauiMTAdmob"
              x:Class="SrcSinavUygulamasi.Views.CategoriesPage"
              Title="Ana Sayfa"
              BackgroundColor="#0f172a"
@@ -163,7 +164,7 @@
                         StrokeShape="RoundRectangle 18"
                         Stroke="Transparent"
                         Padding="16"
-                        HeightRequest="130">
+                        HeightRequest="150">
                     <Border.Shadow>
                         <Shadow Brush="#000" Offset="0,4" Opacity="0.15" Radius="8"/>
                     </Border.Shadow>
@@ -191,7 +192,7 @@
                         StrokeShape="RoundRectangle 18"
                         Stroke="Transparent"
                         Padding="16"
-                        HeightRequest="130">
+                        HeightRequest="150">
                     <Border.Shadow>
                         <Shadow Brush="#000" Offset="0,4" Opacity="0.15" Radius="8"/>
                     </Border.Shadow>
@@ -219,7 +220,7 @@
                         StrokeShape="RoundRectangle 18"
                         Stroke="Transparent"
                         Padding="16"
-                        HeightRequest="130">
+                        HeightRequest="150">
                     <Border.Shadow>
                         <Shadow Brush="#000" Offset="0,4" Opacity="0.15" Radius="8"/>
                     </Border.Shadow>
@@ -247,7 +248,7 @@
                         StrokeShape="RoundRectangle 18"
                         Stroke="Transparent"
                         Padding="16"
-                        HeightRequest="130">
+                        HeightRequest="150">
                     <Border.Shadow>
                         <Shadow Brush="#000" Offset="0,4" Opacity="0.15" Radius="8"/>
                     </Border.Shadow>
@@ -269,7 +270,7 @@
                     </VerticalStackLayout>
                 </Border>
 
-                <!-- SRC 5 -->
+                <!-- SRC Kurye -->
                 <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
                         BackgroundColor="#1e293b"
                         StrokeShape="RoundRectangle 18"
@@ -289,17 +290,101 @@
                                 Stroke="Transparent"
                                 HeightRequest="50"
                                 WidthRequest="50">
-                            <Label Text="☢️" FontSize="28" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Text="📦" FontSize="28" HorizontalOptions="Center" VerticalOptions="Center"/>
                         </Border>
                         <VerticalStackLayout Spacing="2" VerticalOptions="Center">
-                            <Label Text="SRC 5" TextColor="White" FontSize="18" FontAttributes="Bold"/>
-                            <Label Text="Tehlikeli Madde Taşımacılığı" TextColor="#94a3b8" FontSize="12"/>
+                            <Label Text="SRC Kurye" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+                            <Label Text="Kurye Taşımacılığı" TextColor="#94a3b8" FontSize="12"/>
                         </VerticalStackLayout>
                         <Label Text="→" TextColor="#64748b" FontSize="24" VerticalOptions="Center"/>
                     </HorizontalStackLayout>
                 </Border>
 
             </Grid>
+
+            <!-- ═════════════════════════════════════════════════════════ -->
+            <!-- KURS ÖZEL İÇERİK KARTI (Hibrit Sistem)                   -->
+            <!-- Sadece HasCourse && IsPremium && CourseHasContent ise    -->
+            <!-- ═════════════════════════════════════════════════════════ -->
+            <Border x:Name="CourseContentCard"
+                    Margin="20,20,20,0"
+                    IsVisible="False"
+                    StrokeShape="RoundRectangle 20"
+                    Stroke="#10b981"
+                    StrokeThickness="2"
+                    Padding="0"
+                    HeightRequest="100">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#065f46" Offset="0"/>
+                        <GradientStop Color="#047857" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Shadow>
+                    <Shadow Brush="#10b981" Offset="0,6" Opacity="0.3" Radius="16"/>
+                </Border.Shadow>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnCourseContentTapped"/>
+                </Border.GestureRecognizers>
+
+                <Grid Padding="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- İkon -->
+                    <Border BackgroundColor="#10b981" 
+                            Opacity="0.3" 
+                            StrokeShape="RoundRectangle 14"
+                            Stroke="Transparent"
+                            HeightRequest="56"
+                            WidthRequest="56"
+                            VerticalOptions="Center">
+                        <Label Text="🏫" FontSize="28" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </Border>
+
+                    <!-- Başlık ve Açıklama -->
+                    <VerticalStackLayout Grid.Column="1" 
+                                         Spacing="4" 
+                                         VerticalOptions="Center"
+                                         Margin="16,0,0,0">
+                        <Label Text="Kurs Soruları" 
+                               TextColor="White" 
+                               FontSize="18" 
+                               FontAttributes="Bold"/>
+                        <Label x:Name="LblCourseContentDesc"
+                               Text="Kursa özel sınavlar" 
+                               TextColor="#a7f3d0" 
+                               FontSize="12"/>
+                    </VerticalStackLayout>
+
+                    <!-- Ok işareti -->
+                    <Label Grid.Column="2" 
+                           Text="→" 
+                           TextColor="#a7f3d0" 
+                           FontSize="26" 
+                           VerticalOptions="Center"/>
+                </Grid>
+            </Border>
+
+            <!-- ═════════════════════════════════════════════════════════ -->
+            <!-- BANNER REKLAM (Alt Bölüm - Premium değilse göster)         -->
+            <!-- ═════════════════════════════════════════════════════════ -->
+            <Border x:Name="BannerAdContainer"
+                    Margin="0,20,0,0"
+                    BackgroundColor="#1e293b"
+                    StrokeShape="RoundRectangle 0"
+                    Stroke="Transparent"
+                    HeightRequest="60"
+                    IsVisible="False">
+                <admob:MTAdView 
+                    x:Name="BannerAdView"
+                    HeightRequest="50"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Fill" />
+            </Border>
 
         </VerticalStackLayout>
     </ScrollView>

@@ -52,9 +52,9 @@ namespace SrcSinavUygulamasi.ViewModels
     new CategoryModel
     {
         Id = "src5",
-        Title = "SRC 5",
-        IconText = "☢️", // Tehlikeli madde
-        Description = "Tehlikeli Madde Taşımacılığı (ADR)",
+        Title = "SRC Kurye",
+        IconText = "📦",
+        Description = "Kurye Taşımacılığı",
         Color = "#00BCD4"
     }
 };

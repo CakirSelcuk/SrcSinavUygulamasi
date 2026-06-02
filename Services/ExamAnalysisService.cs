@@ -1,4 +1,5 @@
 using SrcSinavUygulamasi.Models;
+using SrcSinavUygulamasi.Constants;
 
 namespace SrcSinavUygulamasi.Services
 {
@@ -119,7 +120,7 @@ namespace SrcSinavUygulamasi.Services
             var recommendations = new List<string>();
 
             // 1. Genel başarı kontrolü
-            if (result.OverallPercentage < 70)
+            if (result.OverallPercentage < ExamRules.PassScore)
             {
                 result.IsCriticalState = true;
                 result.StatusTitle = "⛔ DURUM KRİTİK";
@@ -145,7 +146,7 @@ namespace SrcSinavUygulamasi.Services
                     criticalMessages.Add($"{score.Subject} konusunda çok risklisiniz! (%{score.Percentage:F0})");
                     recommendations.Add($"{score.Subject} konusunu öncelikli çalışın.");
                 }
-                else if (score.Percentage < 70)
+                else if (score.Percentage < ExamRules.PassScore)
                 {
                     recommendations.Add($"{score.Subject} konusunu pekiştirin.");
                 }
@@ -188,7 +189,7 @@ namespace SrcSinavUygulamasi.Services
                 ? (double)correctCount / totalQuestions * 100 
                 : 0;
 
-            if (percentage < 70)
+            if (percentage < ExamRules.PassScore)
             {
                 return (true, 
                     $"⛔ KALDINIZ! (%" + percentage.ToString("F0") + ")\nSınava hazır değilsiniz. Eksiklerinizi hemen kapatın!", 

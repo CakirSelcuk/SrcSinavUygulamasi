@@ -9,7 +9,7 @@ namespace SrcSinavUygulamasi.Views;
 /// Sınav Sonuç Sayfası
 /// Business Rules:
 /// 1. Laundry Mode (Mini Sınav): Puan gizle, temizlenen yanlış göster
-/// 2. Fear Logic: Puan < 70 = Kırmızı, < 85 = Turuncu tema
+/// 2. Fear Logic: Geçme puanı altı = Kırmızı, &lt; 85 = Turuncu tema
 /// 3. Subject Analysis: Konu bazlı başarı analizi
 /// 4. Premium Check: Yanlışları Çöz butonu için paywall
 /// </summary>
@@ -33,7 +33,7 @@ public partial class ResultPage : ContentPage
     private QuizResultModel? _result;
     private readonly ExamProgressService _progressService = new();
     private readonly QuestionService _questionService = new();
-    private PurchaseService? _purchaseService;
+    private readonly PremiumService _premiumService = new();
     private bool _allPracticeExamsCompleted = false;
     private string? _nextPracticeExamId = null;
 
@@ -44,8 +44,7 @@ public partial class ResultPage : ContentPage
     {
         InitializeComponent();
         _result = result;
-        _purchaseService = Application.Current?.Handler?.MauiContext?.Services.GetService<PurchaseService>() 
-                          ?? new PurchaseService();
+
         Loaded += OnPageLoaded;
     }
 
@@ -92,6 +91,7 @@ public partial class ResultPage : ContentPage
 
         // Premium buton durumunu ayarla
         UpdatePremiumButtonState();
+
     }
 
     // ═══════════════════════════════════════════════════════════
@@ -170,21 +170,21 @@ public partial class ResultPage : ContentPage
         // ═══════════════════════════════════════════════════════
         // FEAR LOGIC: Puan bazlı tema uygulama
         // ═══════════════════════════════════════════════════════
-        if (score < 70)
+        if (score < ExamRules.PassScore)
         {
             // ════════════════════════════════════════════════════
-            // BAŞARISIZ (< 70)
+            // BAŞARISIZ
             // ════════════════════════════════════════════════════
             CriticalFrame.IsVisible = true;
             CriticalFrame.BackgroundColor = Color.FromArgb(COLOR_CRITICAL);
             LblCriticalTitle.Text = "⛔ BAŞARISIZ OLDUN!";
-            LblCriticalMessage.Text = "Bugün sınav olsaydı KALIRDIN!\n70 puan barajını geçemedin. Eksiklerini acilen kapat.";
+            LblCriticalMessage.Text = $"Bugün sınav olsaydı KALIRDIN!\n{ExamRules.PassScore} puan barajını geçemedin. En az {ExamRules.MinimumCorrectToPass} doğru gerekiyor.";
 
             HeaderBox.Color = Color.FromArgb(COLOR_HEADER_FAIL);
             
             LblMessage.Text = "Maalesef Kaldınız";
             LblMessage.TextColor = Color.FromArgb(COLOR_DANGER);
-            LblSubMessage.Text = "70 puan barajını geçemediniz.\nDaha fazla çalışmanız gerekiyor.";
+            LblSubMessage.Text = $"{ExamRules.PassScore} puan barajını geçemediniz.\nDaha fazla çalışmanız gerekiyor.";
             LblScore.TextColor = Color.FromArgb(COLOR_DANGER);
             
             BtnRetry.Text = "🔄 Sınavı Tekrarla";
@@ -193,7 +193,7 @@ public partial class ResultPage : ContentPage
         else if (score < 85)
         {
             // ════════════════════════════════════════════════════
-            // RİSKLİ BÖLGE (70-84)
+            // RİSKLİ BÖLGE
             // ════════════════════════════════════════════════════
             CriticalFrame.IsVisible = true;
             CriticalFrame.BackgroundColor = Color.FromArgb(COLOR_WARNING);
@@ -310,7 +310,7 @@ public partial class ResultPage : ContentPage
             colorHex = COLOR_DANGER;
             statusIcon = "🔴";
         }
-        else if (percentage < 70)
+        else if (percentage < ExamRules.PassScore)
         {
             colorHex = COLOR_WARNING;
             statusIcon = "🟠";
@@ -399,7 +399,7 @@ public partial class ResultPage : ContentPage
         // Mini sınavda premium kontrolü yapma
         if (_result.IsMiniExam) return;
 
-        bool isPremium = _purchaseService?.IsPremium ?? false;
+        bool isPremium = _premiumService.IsUserPremium;
         
         if (isPremium)
         {
@@ -425,7 +425,7 @@ public partial class ResultPage : ContentPage
         }
 
         // Normal sınav - Premium kontrolü
-        bool isPremium = _purchaseService?.IsPremium ?? false;
+        bool isPremium = _premiumService.IsUserPremium;
 
         if (isPremium)
         {
@@ -433,23 +433,7 @@ public partial class ResultPage : ContentPage
         }
         else
         {
-            // ════════════════════════════════════════════════════
-            // PAYWALL
-            // ════════════════════════════════════════════════════
-            bool wantsToBuy = await DisplayAlert(
-                "🔒 Kilitli Özellik",
-                "Yanlışlarını çözmek ve sınavı GARANTİLEMEK için VIP ol!\n\n" +
-                "✅ Yanlış cevaplarını tekrar çöz\n" +
-                "✅ Konu bazlı detaylı analiz\n" +
-                "✅ Reklamsız deneyim\n\n" +
-                "Fiyat: ₺49.99 (Ömür boyu)",
-                "Satın Al",
-                "Vazgeç");
-
-            if (wantsToBuy)
-            {
-                await HandlePurchase();
-            }
+            await _premiumService.ShowUpsellPopupAsync(PremiumService.Features.WRONG_ANSWERS);
         }
     }
 
@@ -458,7 +442,7 @@ public partial class ResultPage : ContentPage
         if (_result == null) return;
 
         // Yanlış soru ID'lerini al
-        var wrongQuestionIds = _progressService.BuildMiniExamQuestionIds(_result.CategoryId, 20);
+        var wrongQuestionIds = _progressService.BuildMiniExamQuestionIds(_result.CategoryId, ExamRules.QuestionCount);
 
         if (wrongQuestionIds.Count == 0)
         {
@@ -474,61 +458,10 @@ public partial class ResultPage : ContentPage
                 { "TotalExams", "1" },
                 { "IsRealExam", "False" },
                 { "IsImageExam", "False" },
-                { "PointsPerQuestion", "5" },
+                { "PointsPerQuestion", ExamRules.PointsPerQuestion.ToString(System.Globalization.CultureInfo.InvariantCulture) },
                 { "IsMiniExam", "True" },
                 { "MiniExamQuestionIds", string.Join(",", wrongQuestionIds) }
             });
-    }
-
-    private async Task HandlePurchase()
-    {
-        if (_purchaseService == null) return;
-
-        try
-        {
-            // Offerings'leri getir
-            var offerings = await _purchaseService.GetOfferingsAsync();
-            
-            if (offerings == null || offerings.Count == 0)
-            {
-                await DisplayAlert("Bilgi", 
-                    "Şu an satın alma yapılamıyor.\n\nLütfen daha sonra tekrar deneyin.", 
-                    "Tamam");
-                return;
-            }
-
-            // İlk ürünü göster (ömür boyu premium)
-            var product = offerings.First();
-            
-            bool confirm = await DisplayAlert(
-                "Premium'a Yükselt",
-                $"{product.Title}\n\n{product.Description}\n\nFiyat: {product.FormattedPrice}",
-                "Satın Al",
-                "İptal");
-
-            if (confirm)
-            {
-                var result = await _purchaseService.PurchaseAsync(product.ProductId);
-                
-                if (result.Success)
-                {
-                    BtnSolveWrongs.Text = $"✅ Yanlışları Çöz ({_result?.WrongCount ?? 0})";
-                    BtnSolveWrongs.BackgroundColor = Color.FromArgb(COLOR_SUCCESS);
-
-                    await DisplayAlert("🎉 Başarılı!", 
-                        "VIP üyeliğiniz aktifleştirildi!\n\nArtık tüm premium özelliklere erişebilirsiniz.", 
-                        "Harika!");
-                }
-                else
-                {
-                    await DisplayAlert("Bilgi", result.Message, "Tamam");
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            await DisplayAlert("Hata", $"Satın alma hatası: {ex.Message}", "Tamam");
-        }
     }
 
     // ═══════════════════════════════════════════════════════════
@@ -593,7 +526,7 @@ public partial class ResultPage : ContentPage
     {
         if (_result == null) return;
 
-        double pointsPerQuestion = _result.IsRealExam ? 2.5 : (_result.IsImageExam ? 6.67 : 5);
+        double pointsPerQuestion = ExamRules.PointsPerQuestion;
 
         await Shell.Current.GoToAsync($"../{nameof(QuizPage)}",
             new Dictionary<string, object>
@@ -628,7 +561,7 @@ public partial class ResultPage : ContentPage
                 { "TotalExams", _result.TotalExams.ToString() },
                 { "IsRealExam", "False" },
                 { "IsImageExam", "False" },
-                { "PointsPerQuestion", "5" }
+                { "PointsPerQuestion", ExamRules.PointsPerQuestion.ToString(System.Globalization.CultureInfo.InvariantCulture) }
             });
     }
 

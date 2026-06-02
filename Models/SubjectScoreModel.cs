@@ -1,3 +1,5 @@
+using SrcSinavUygulamasi.Constants;
+
 namespace SrcSinavUygulamasi.Models
 {
     /// <summary>
@@ -20,12 +22,12 @@ namespace SrcSinavUygulamasi.Models
         
         /// <summary>
         /// Fear Logic renk kodu
-        /// Kırmızı < 50%, Turuncu 50-70%, Yeşil > 70%
+        /// Kırmızı &lt; 50%, Turuncu 50-geçme barajı, Yeşil geçme barajı+
         /// </summary>
         public string StatusColor => Percentage switch
         {
             < 50 => "#B00020",   // Kan kırmızısı - KRİTİK
-            < 70 => "#FF6B00",   // Turuncu - RİSKLİ
+            < ExamRules.PassScore => "#FF6B00",   // Turuncu - RİSKLİ
             _ => "#22c55e"       // Yeşil - GÜVENLI
         };
         
@@ -40,7 +42,7 @@ namespace SrcSinavUygulamasi.Models
         public string StatusIcon => Percentage switch
         {
             < 50 => "⚠️",
-            < 70 => "⚡",
+            < ExamRules.PassScore => "⚡",
             _ => "✓"
         };
     }

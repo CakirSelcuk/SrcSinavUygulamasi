@@ -1,3 +1,5 @@
+using SrcSinavUygulamasi.Constants;
+
 namespace SrcSinavUygulamasi.Models
 {
     /// <summary>
@@ -30,12 +32,12 @@ namespace SrcSinavUygulamasi.Models
         public int TotalQuestionsSolved { get; set; }
         
         /// <summary>
-        /// Geçilen sınav sayısı (70+)
+        /// Geçilen sınav sayısı
         /// </summary>
         public int PassedExams { get; set; }
         
         /// <summary>
-        /// Kalınan sınav sayısı (<70)
+        /// Kalınan sınav sayısı
         /// </summary>
         public int FailedExams { get; set; }
         
@@ -101,14 +103,14 @@ namespace SrcSinavUygulamasi.Models
         public double SuccessRate => TotalQuestions > 0 ? (double)CorrectCount / TotalQuestions * 100 : 0;
         
         /// <summary>
-        /// Durum rengi: Kırmızı (<50%), Turuncu (50-70%), Yeşil (70%+)
+        /// Durum rengi: Kırmızı (&lt;50%), Turuncu (50-geçme barajı), Yeşil (geçme barajı+)
         /// </summary>
-        public string StatusColor => SuccessRate < 50 ? "#ef4444" : (SuccessRate < 70 ? "#f59e0b" : "#22c55e");
+        public string StatusColor => SuccessRate < 50 ? "#ef4444" : (SuccessRate < ExamRules.PassScore ? "#f59e0b" : "#22c55e");
         
         /// <summary>
         /// Durum ikonu
         /// </summary>
-        public string StatusIcon => SuccessRate < 50 ? "🔴" : (SuccessRate < 70 ? "🟠" : "🟢");
+        public string StatusIcon => SuccessRate < 50 ? "🔴" : (SuccessRate < ExamRules.PassScore ? "🟠" : "🟢");
     }
 
     /// <summary>
@@ -120,7 +122,7 @@ namespace SrcSinavUygulamasi.Models
         public string CategoryId { get; set; } = "";
         public DateTime Date { get; set; }
         public double Score { get; set; }
-        public bool IsPassed => Score >= 70;
+        public bool IsPassed => Score >= ExamRules.PassScore;
         
         /// <summary>
         /// Tarih formatı

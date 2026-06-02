@@ -143,7 +143,7 @@ namespace SrcSinavUygulamasi.Services
             { "src2", "SRC2" },
             { "src3", "SRC3" },
             { "src4", "SRC4" },
-            { "src5", "SRC5" }
+            { "src5", "SRC Kurye" }
         };
 
         /// <summary>
@@ -175,8 +175,8 @@ namespace SrcSinavUygulamasi.Services
             // Özel sınavlar
             return examId switch
             {
-                REAL_EXAM_ID => $"{categoryName} - Gerçek Sınav Simülasyonu",
-                IMAGE_EXAM_ID => $"{categoryName} - Resimli Sorular",
+                REAL_EXAM_ID => $"{categoryName} - SRC e-Sınav Simülasyonu",
+                IMAGE_EXAM_ID => $"{categoryName} - Eski Sınav Türü",
                 MINI_EXAM_ID => $"{categoryName} - Mini Sınav",
                 _ => $"{categoryName} - {examId}"
             };

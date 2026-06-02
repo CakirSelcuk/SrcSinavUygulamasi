@@ -1,5 +1,6 @@
 using SrcSinavUygulamasi.Models;
 using SrcSinavUygulamasi.Services;
+using SrcSinavUygulamasi.Constants;
 using Microsoft.Maui.Controls.Shapes;
 
 namespace SrcSinavUygulamasi.Views;
@@ -86,7 +87,7 @@ public partial class AnalysisPage : ContentPage
         LblTotalExams.Text = stats.TotalExams.ToString();
 
         // Başarı oranı rengi
-        if (stats.AverageScore >= 70)
+        if (stats.AverageScore >= ExamRules.PassScore)
             LblAverageScore.TextColor = Color.FromArgb("#22c55e");
         else if (stats.AverageScore >= 50)
             LblAverageScore.TextColor = Color.FromArgb("#f59e0b");
@@ -106,7 +107,7 @@ public partial class AnalysisPage : ContentPage
             double targetWidth = maxWidth * (stats.SuccessRate / 100);
             SuccessRateBar.WidthRequest = targetWidth;
             
-            if (stats.SuccessRate >= 70)
+            if (stats.SuccessRate >= ExamRules.PassScore)
                 SuccessRateBar.BackgroundColor = Color.FromArgb("#22c55e");
             else if (stats.SuccessRate >= 50)
                 SuccessRateBar.BackgroundColor = Color.FromArgb("#f59e0b");
@@ -193,7 +194,7 @@ public partial class AnalysisPage : ContentPage
         double barHeight = Math.Max(10, maxHeight * (exam.Score / 100));
 
         // Bar rengi
-        string barColor = exam.Score >= 70 ? "#22c55e" : (exam.Score >= 50 ? "#f59e0b" : "#ef4444");
+        string barColor = exam.Score >= ExamRules.PassScore ? "#22c55e" : (exam.Score >= 50 ? "#f59e0b" : "#ef4444");
 
         // Bar
         var bar = new Border
@@ -208,8 +209,8 @@ public partial class AnalysisPage : ContentPage
 
         container.Children.Add(bar);
 
-        // 70 puan çizgisi (referans)
-        if (exam.Score >= 70)
+        // Geçme puanı çizgisi (referans)
+        if (exam.Score >= ExamRules.PassScore)
         {
             container.Children.Add(new BoxView
             {

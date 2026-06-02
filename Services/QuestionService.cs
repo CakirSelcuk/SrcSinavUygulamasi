@@ -1,6 +1,7 @@
 using System.Reflection;
 using System.Text.Json;
 using SrcSinavUygulamasi.Models;
+using SrcSinavUygulamasi.Constants;
 using Microsoft.Maui.Storage;
 
 namespace SrcSinavUygulamasi.Services
@@ -67,20 +68,22 @@ namespace SrcSinavUygulamasi.Services
         }
 
         /// <summary>
-        /// 20 soruluk deneme için şık dağılımını kontrol et
-        /// Her şık (A,B,C,D) tam 5 kez olmalı
+        /// Güncel deneme için şık dağılımını kontrol et
+        /// Her şık (A,B,C,D) eşit sayıda olmalı
         /// </summary>
         public bool ValidateSikDagilimi(List<QuestionModel> sorular)
         {
-            if (sorular.Count != 20) return true; // Sadece 20 soruluk denemeler için kontrol
+            if (sorular.Count != ExamRules.QuestionCount) return true;
+
+            int expectedPerChoice = ExamRules.QuestionCount / 4;
 
             var dagilim = sorular.GroupBy(s => s.DogruCevap)
                                   .ToDictionary(g => g.Key, g => g.Count());
 
-            bool isValid = dagilim.GetValueOrDefault("A", 0) == 5 &&
-                          dagilim.GetValueOrDefault("B", 0) == 5 &&
-                          dagilim.GetValueOrDefault("C", 0) == 5 &&
-                          dagilim.GetValueOrDefault("D", 0) == 5;
+            bool isValid = dagilim.GetValueOrDefault("A", 0) == expectedPerChoice &&
+                          dagilim.GetValueOrDefault("B", 0) == expectedPerChoice &&
+                          dagilim.GetValueOrDefault("C", 0) == expectedPerChoice &&
+                          dagilim.GetValueOrDefault("D", 0) == expectedPerChoice;
 
 #if DEBUG
             if (!isValid)
@@ -101,12 +104,13 @@ namespace SrcSinavUygulamasi.Services
         /// </summary>
         public string GetSikDagilimiHataMesaji(List<QuestionModel> sorular)
         {
-            if (sorular.Count != 20) return "";
+            if (sorular.Count != ExamRules.QuestionCount) return "";
 
             var dagilim = sorular.GroupBy(s => s.DogruCevap)
                                   .ToDictionary(g => g.Key, g => g.Count());
 
-            return "Bu deneme şu an yayınlanamaz. Şık dağılımı 5A/5B/5C/5D değil.";
+            int expectedPerChoice = ExamRules.QuestionCount / 4;
+            return $"Bu deneme şu an yayınlanamaz. Şık dağılımı {expectedPerChoice}A/{expectedPerChoice}B/{expectedPerChoice}C/{expectedPerChoice}D değil.";
         }
 
         /// <summary>

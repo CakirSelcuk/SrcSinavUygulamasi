@@ -1,3 +1,5 @@
+using SrcSinavUygulamasi.Constants;
+
 namespace SrcSinavUygulamasi.Models
 {
     /// <summary>
@@ -32,8 +34,8 @@ namespace SrcSinavUygulamasi.Models
             : 0;
         
         /// <summary>
-        /// 70 ve üzeri geçti mi?
+        /// Güncel geçme puanı ve üzeri geçti mi?
         /// </summary>
-        public bool IsPassed => SuccessRate >= 70;
+        public bool IsPassed => SuccessRate >= ExamRules.PassScore;
     }
 }

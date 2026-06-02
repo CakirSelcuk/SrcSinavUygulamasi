@@ -1,5 +1,7 @@
 ﻿using Microsoft.Maui.Graphics;
 
+using SrcSinavUygulamasi.Constants;
+
 namespace SrcSinavUygulamasi.Models
 {
     public class QuizResultModel
@@ -16,9 +18,20 @@ namespace SrcSinavUygulamasi.Models
         public int TotalExams { get; set; }      // Toplam deneme sayısı
         public string CategoryId { get; set; } = "";   // Kategori ID ("src3")
         public string ExamId { get; set; } = "";       // Sınav ID ("deneme_1", "real_exam", etc.)
-        public bool IsPassed => Score >= 70;     // 70+ geçti mi?
+        public bool IsPassed => Score >= ExamRules.PassScore;
         public bool IsRealExam { get; set; }     // Gerçek sınav simülasyonu mu?
         public bool IsImageExam { get; set; }    // Resimli sorular mı?
+        public Guid? BankId { get; set; }        // CourseSpecial için API bank ID
+        
+        /// <summary>
+        /// Sınav süresi (saniye)
+        /// </summary>
+        public int DurationSeconds { get; set; }
+        
+        /// <summary>
+        /// Yanlış cevaplanan soru ID'leri
+        /// </summary>
+        public List<string>? WrongQuestionIds { get; set; }
 
         // ═══════════════════════════════════════════════════════════
         // MINI SINAV (LAUNDRY MODE) için alanlar

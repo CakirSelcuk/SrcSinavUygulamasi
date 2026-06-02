@@ -1,10 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <application android:allowBackup="true" 
-                 android:label="SRC Sınav" 
-                 android:supportsRtl="true">
-    </application>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="35" />
+    <!-- AD_ID izni - tools:node="replace" ile kutuphane merge'den korunuyor -->
+    <!-- AD_ID izni -->
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.android.vending.BILLING" />
+    <application android:allowBackup="true"
+                 android:label="SRC Sinav"
+                 android:icon="@mipmap/appicon"
+                 android:roundIcon="@mipmap/appicon_round"
+                 android:supportsRtl="true"
+                 android:extractNativeLibs="true">
+        <!-- AdMob App ID -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1333313233367768~6014271517"/>
+    </application>
 </manifest>

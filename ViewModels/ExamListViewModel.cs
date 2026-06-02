@@ -4,6 +4,7 @@ using CommunityToolkit.Mvvm.Input;
 using SrcSinavUygulamasi.Models;
 using SrcSinavUygulamasi.Services;
 using SrcSinavUygulamasi.Views;
+using SrcSinavUygulamasi.Constants;
 
 namespace SrcSinavUygulamasi.ViewModels
 {
@@ -33,6 +34,7 @@ namespace SrcSinavUygulamasi.ViewModels
         private string _categoryId = "";
         private QuestionService _questionService = new();
         private ExamProgressService _progressService = new();
+        private BalancedExamBuilder _examBuilder = new();
         private List<string> _expectedExamIds = new();
 
         private Dictionary<string, (string title, string color)> _categoryInfo = new()
@@ -41,7 +43,7 @@ namespace SrcSinavUygulamasi.ViewModels
             { "src2", ("SRC 2", "#2196F3") },
             { "src3", ("SRC 3", "#4CAF50") },
             { "src4", ("SRC 4", "#9C27B0") },
-            { "src5", ("SRC 5", "#00BCD4") }
+            { "src5", ("SRC Kurye", "#00BCD4") }
         };
 
         public async void LoadExams(string categoryId)
@@ -72,15 +74,13 @@ namespace SrcSinavUygulamasi.ViewModels
 
                 if (totalQuestions > 0)
                 {
-                    // 20'şerli gruplara böl, maksimum 5 deneme sınavı
-                    int questionsPerExam = 20;
-                    int maxExamCount = 5; // Sabit 5 deneme sınavı
-                    int examCount = Math.Min(maxExamCount, (int)Math.Ceiling((double)totalQuestions / questionsPerExam));
+                    int maxExamCount = 5;
+                    int examCount = Math.Min(maxExamCount, _examBuilder.CalculateMaxExams(allQuestions));
 
                     for (int i = 0; i < examCount; i++)
                     {
-                        int startIndex = i * questionsPerExam;
-                        int count = Math.Min(questionsPerExam, totalQuestions - startIndex);
+                        int startIndex = 0;
+                        int count = ExamRules.QuestionCount;
                         string examId = $"deneme_{i + 1}";
                         bool isCompleted = completedExamIds.Contains(examId);
 
@@ -96,39 +96,17 @@ namespace SrcSinavUygulamasi.ViewModels
                             StartIndex = startIndex,
                             Color = isCompleted ? "#22c55e" : CategoryColor,
                             IsRealExam = false,
-                            PointsPerQuestion = 5,
-                            Subtitle = isCompleted ? $"✓ Tamamlandı · {count} Soru" : $"{count} Soru"
+                            PointsPerQuestion = ExamRules.PointsPerQuestion,
+                            Subtitle = isCompleted
+                                ? $"✓ Tamamlandı · {count} Soru"
+                                : $"{ExamRules.QuestionCount} Soru · {ExamRules.DurationMinutes} Dakika · {ExamRules.PassScore}+ Geçer"
                         });
                     }
                 }
 
-                // Resimli soruları kontrol et
-                var imageQuestions = await _questionService.ResimliSorulariGetir(_categoryId);
-                if (imageQuestions.Count > 0)
-                {
-                    string examId = "image_exam";
-                    bool isCompleted = completedExamIds.Contains(examId);
-                    _expectedExamIds.Add(examId);
-
-                    Exams.Add(new ExamModel
-                    {
-                        Id = 998,
-                        IconText = isCompleted ? "✓" : "R",
-                        Title = "🖼️ Resimli Sorular",
-                        QuestionCount = imageQuestions.Count,
-                        CategoryId = _categoryId,
-                        StartIndex = 0,
-                        Color = isCompleted ? "#22c55e" : "#E91E63",
-                        IsRealExam = false,
-                        IsImageExam = true,
-                        PointsPerQuestion = 6.67,
-                        Subtitle = isCompleted ? $"✓ Tamamlandı · {imageQuestions.Count} Görsel Soru" : $"{imageQuestions.Count} Görsel Soru · 100 Puan · 70+ Geçer"
-                    });
-                }
-
                 // Gerçek sınav sorularını kontrol et
                 var realExamQuestions = await _questionService.SinavSorulariniGetir(_categoryId);
-                if (realExamQuestions.Count > 0)
+                if (realExamQuestions.Count >= ExamRules.QuestionCount)
                 {
                     string examId = "real_exam";
                     bool isCompleted = completedExamIds.Contains(examId);
@@ -138,14 +116,16 @@ namespace SrcSinavUygulamasi.ViewModels
                     {
                         Id = 999,
                         IconText = isCompleted ? "✓" : "S",
-                        Title = "🎯 Gerçek Sınav Simülasyonu",
-                        QuestionCount = realExamQuestions.Count,
+                        Title = "🎯 SRC e-Sınav Simülasyonu",
+                        QuestionCount = ExamRules.QuestionCount,
                         CategoryId = _categoryId,
                         StartIndex = 0,
                         Color = isCompleted ? "#22c55e" : "#FFD700",
                         IsRealExam = true,
-                        PointsPerQuestion = 2.5,
-                        Subtitle = isCompleted ? $"✓ Tamamlandı · {realExamQuestions.Count} Soru" : $"{realExamQuestions.Count} Soru · 100 Puan · 70+ Geçer"
+                        PointsPerQuestion = ExamRules.PointsPerQuestion,
+                        Subtitle = isCompleted
+                            ? $"✓ Tamamlandı · {ExamRules.QuestionCount} Soru"
+                            : $"{ExamRules.QuestionCount} Soru · {ExamRules.DurationMinutes} Dakika · {ExamRules.PassScore}+ Geçer"
                     });
                 }
 
@@ -155,7 +135,7 @@ namespace SrcSinavUygulamasi.ViewModels
 
                 // ExamCatalog'a kaydet (diğer sayfalarda kullanılacak)
                 int practiceExamCount = Exams.Count(e => !e.IsRealExam && !e.IsImageExam && e.QuestionCount > 0);
-                bool hasImageExam = Exams.Any(e => e.IsImageExam);
+                bool hasImageExam = false;
                 bool hasRealExam = Exams.Any(e => e.IsRealExam);
                 ExamCatalog.RegisterCategoryExams(_categoryId, practiceExamCount, hasImageExam, hasRealExam);
 

@@ -1,4 +1,5 @@
 using SrcSinavUygulamasi.Models;
+using SrcSinavUygulamasi.Constants;
 
 namespace SrcSinavUygulamasi.Services
 {
@@ -15,8 +16,8 @@ namespace SrcSinavUygulamasi.Services
     /// </summary>
     public class BalancedExamBuilder
     {
-        private const int QUESTIONS_PER_CHOICE = 5;
-        private const int TOTAL_QUESTIONS = 20;
+        private const int QUESTIONS_PER_CHOICE = ExamRules.QuestionCount / 4;
+        private const int TOTAL_QUESTIONS = ExamRules.QuestionCount;
 
         /// <summary>
         /// Soru havuzundan dengeli bir deneme oluşturur.

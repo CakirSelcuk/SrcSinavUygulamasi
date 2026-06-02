@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using SrcSinavUygulamasi.Models;
 using SrcSinavUygulamasi.Services;
 using SrcSinavUygulamasi.Views;
+using SrcSinavUygulamasi.Constants;
 using System.Collections.ObjectModel;
 using Microsoft.Maui.Graphics;
 using Microsoft.Maui.Controls;
@@ -21,7 +22,7 @@ namespace SrcSinavUygulamasi.ViewModels
         [ObservableProperty] private string examTitle = "Deneme Sınavı";
 
         // Timer properties
-        [ObservableProperty] private string timerText = "60:00";
+        [ObservableProperty] private string timerText = "45:00";
         [ObservableProperty] private bool isTimerVisible = false;
         [ObservableProperty] private Color timerColor = Colors.White;
         private System.Timers.Timer? _examTimer;
@@ -52,7 +53,7 @@ namespace SrcSinavUygulamasi.ViewModels
         private bool _isRealExam = false;
         private bool _isImageExam = false;
         private bool _isMiniExam = false;
-        private double _pointsPerQuestion = 5;
+        private double _pointsPerQuestion = ExamRules.PointsPerQuestion;
         private List<string>? _specificQuestionIds = null;  // Mini sınav için spesifik soru ID'leri
         private List<string> _miniExamClearedIds = new();     // Mini sınavda doğru cevaplanan soru ID'leri
         private int _miniExamTotalWrongsBefore = 0;           // Mini sınav başlamadan önceki toplam yanlış sayısı
@@ -60,7 +61,9 @@ namespace SrcSinavUygulamasi.ViewModels
         private QuestionService _questionService = new QuestionService();
         private ExamProgressService _progressService = new ExamProgressService();
         private BalancedExamBuilder _examBuilder = new BalancedExamBuilder();
+        private AdMobService? _adMobService;
         private string _examId = "";
+        private Guid? _bankId = null;  // CourseSpecial için API bank ID
 
         private Dictionary<string, (string title, Color color)> _categoryInfo = new()
         {
@@ -68,13 +71,17 @@ namespace SrcSinavUygulamasi.ViewModels
             { "src2", ("SRC 2", Color.FromArgb("#2196F3")) },
             { "src3", ("SRC 3", Color.FromArgb("#4CAF50")) },
             { "src4", ("SRC 4", Color.FromArgb("#9C27B0")) },
-            { "src5", ("SRC 5", Color.FromArgb("#00BCD4")) }
+            { "src5", ("SRC Kurye", Color.FromArgb("#00BCD4")) }
         };
 
         public QuizViewModel()
         {
             ResetColors();
             ThemeColor = Color.FromArgb("#0f172a");
+            
+            // DI'dan AdMobService'i al
+            _adMobService = Application.Current?.Handler?.MauiContext?.Services
+                .GetService<AdMobService>();
         }
 
         public async void LoadExam(string categoryId, int examIndex, int totalExams, bool isRealExam = false, bool isImageExam = false, double pointsPerQuestion = 5, bool isMiniExam = false, List<string>? specificQuestionIds = null)
@@ -83,9 +90,9 @@ namespace SrcSinavUygulamasi.ViewModels
             _examIndex = examIndex;
             _totalExams = totalExams;
             _isRealExam = isRealExam;
-            _isImageExam = isImageExam;
+            _isImageExam = false;
             _isMiniExam = isMiniExam;
-            _pointsPerQuestion = pointsPerQuestion;
+            _pointsPerQuestion = ExamRules.PointsPerQuestion;
             _specificQuestionIds = specificQuestionIds;
             _correctCount = 0;
             _wrongCount = 0;
@@ -127,7 +134,58 @@ namespace SrcSinavUygulamasi.ViewModels
         // Eski metod için uyumluluk
         public void LoadCategory(string categoryId)
         {
-            LoadExam(categoryId, 0, 1, false, false, 5);
+            LoadExam(categoryId, 0, 1, false, false, ExamRules.PointsPerQuestion);
+        }
+
+        /// <summary>
+        /// API'den gelen soruları doğrudan yükle (CourseSpecial için).
+        /// QuestionService kullanmaz, doğrudan QuestionModel listesi alır.
+        /// </summary>
+        public void LoadQuestionsDirectly(
+            List<Models.QuestionModel> questions, 
+            string categoryId, 
+            string examId, 
+            string examTitle,
+            Guid? bankId = null)
+        {
+            if (questions == null || questions.Count == 0)
+            {
+                return;
+            }
+
+            _categoryId = categoryId?.ToLower() ?? "course";
+            _examId = examId;
+            _bankId = bankId;
+            _examIndex = 0;
+            _totalExams = 1;
+            _isRealExam = false;
+            _isImageExam = false;
+            _isMiniExam = false;
+            _pointsPerQuestion = ExamRules.PointsPerQuestion;
+            _correctCount = 0;
+            _wrongCount = 0;
+            Score = 0;
+
+            // Theme - CourseSpecial için yeşil
+            ThemeColor = Color.FromArgb("#10b981");
+            _categoryTitle = examTitle;
+            ExamTitle = examTitle;
+
+            // Soruları güncel e-Sınav formatına göre karıştır ve 40'a indir
+            _allQuestions = questions;
+            _examQuestions = questions
+                .OrderBy(x => Guid.NewGuid())
+                .Take(ExamRules.QuestionCount)
+                .ToList();
+            
+            _currentIndex = 0;
+            
+#if DEBUG
+            System.Diagnostics.Debug.WriteLine($"📝 LoadQuestionsDirectly: {_examQuestions.Count} questions, BankId={bankId}");
+#endif
+            
+            ShowQuestion();
+            StartExamTimer();
         }
 
         private void SetCategoryTheme()
@@ -196,9 +254,10 @@ namespace SrcSinavUygulamasi.ViewModels
                     
                     if (_isRealExam || _isImageExam)
                     {
-                        // Gerçek sınav veya resimli sorularda tüm soruları karıştırarak al
+                        // e-Sınav simülasyonunda güncel formatta 40 soru kullan
                         _examQuestions = gelenSorular
                             .OrderBy(x => Guid.NewGuid())
+                            .Take(ExamRules.QuestionCount)
                             .ToList();
                     }
                     else if (_isMiniExam)
@@ -252,11 +311,11 @@ namespace SrcSinavUygulamasi.ViewModels
                     }
 
                     // ═══════════════════════════════════════════════════════════
-                    // FAIL FAST: 20 soruluk ana sınavlarda şık dağılımı doğrula
-                    // (BalancedExamBuilder zaten 5/5/5/5 garanti eder ama double-check)
+                    // FAIL FAST: Ana sınavlarda şık dağılımını doğrula
+                    // (BalancedExamBuilder zaten dengeli dağılımı garanti eder ama double-check)
                     // Mini sınavlarda bu kural UYGULANMAZ
                     // ═══════════════════════════════════════════════════════════
-                    if (_examQuestions.Count == 20 && !_isMiniExam && !_isRealExam && !_isImageExam)
+                    if (_examQuestions.Count == ExamRules.QuestionCount && !_isMiniExam && !_isRealExam && !_isImageExam)
                     {
                         if (!_questionService.ValidateSikDagilimi(_examQuestions))
                         {
@@ -296,19 +355,7 @@ namespace SrcSinavUygulamasi.ViewModels
 
         private void StartExamTimer()
         {
-            // Timer sürelerini belirle
-            if (_isRealExam)
-            {
-                _totalExamTimeMinutes = 60; // Gerçek sınav: 60 dakika
-            }
-            else if (_isImageExam)
-            {
-                _totalExamTimeMinutes = 20; // Resimli sorular: 20 dakika
-            }
-            else
-            {
-                _totalExamTimeMinutes = 30; // Deneme sınavı: 30 dakika
-            }
+            _totalExamTimeMinutes = ExamRules.DurationMinutes;
 
             _remainingSeconds = _totalExamTimeMinutes * 60;
             IsTimerVisible = true;
@@ -380,6 +427,7 @@ namespace SrcSinavUygulamasi.ViewModels
                 ExamId = _examId,
                 IsRealExam = _isRealExam,
                 IsImageExam = _isImageExam,
+                BankId = _bankId,
                 // Mini sınav (Laundry) alanları
                 IsMiniExam = _isMiniExam,
                 TotalWrongsBefore = _miniExamTotalWrongsBefore,
@@ -387,7 +435,9 @@ namespace SrcSinavUygulamasi.ViewModels
                 RemainingWrongs = _miniExamTotalWrongsBefore - _miniExamClearedIds.Count,
                 ClearedQuestionIds = new List<string>(_miniExamClearedIds)
             };
-            await Application.Current.MainPage.Navigation.PushAsync(new ResultPage(resultModel));
+            
+            // Interstitial reklam göster (premium değilse)
+            await ShowInterstitialAndNavigateAsync(resultModel);
         }
 
         private void StopTimer()
@@ -505,6 +555,7 @@ namespace SrcSinavUygulamasi.ViewModels
                     ExamId = _examId,
                     IsRealExam = _isRealExam,
                     IsImageExam = _isImageExam,
+                    BankId = _bankId,
                     // Mini sınav (Laundry) alanları
                     IsMiniExam = _isMiniExam,
                     TotalWrongsBefore = _miniExamTotalWrongsBefore,
@@ -512,7 +563,9 @@ namespace SrcSinavUygulamasi.ViewModels
                     RemainingWrongs = _miniExamTotalWrongsBefore - _miniExamClearedIds.Count,
                     ClearedQuestionIds = new List<string>(_miniExamClearedIds)
                 };
-                await Application.Current.MainPage.Navigation.PushAsync(new ResultPage(resultModel));
+                
+                // Interstitial reklam göster (premium değilse)
+                await ShowInterstitialAndNavigateAsync(resultModel);
             }
         }
 
@@ -578,6 +631,37 @@ namespace SrcSinavUygulamasi.ViewModels
             await Task.Delay(1200);
             _currentIndex++;
             ShowQuestion();
+        }
+
+        /// <summary>
+        /// Interstitial reklam göster ve ResultPage'e git.
+        /// Premium kullanıcılar için direkt navigate eder.
+        /// </summary>
+        private async Task ShowInterstitialAndNavigateAsync(QuizResultModel resultModel)
+        {
+            try
+            {
+                if (_adMobService != null)
+                {
+                    // Interstitial reklamı önceden yükle
+                    await _adMobService.LoadInterstitialAdAsync();
+                    
+                    // Reklamı göster (premium değilse)
+                    // Premium ise veya reklam yüklenemezse direkt navigate eder
+                    await _adMobService.ShowInterstitialAdAsync();
+                }
+            }
+            catch (Exception ex)
+            {
+#if DEBUG
+                System.Diagnostics.Debug.WriteLine($"Interstitial ad error: {ex.Message}");
+#endif
+            }
+            finally
+            {
+                // Reklam gösterilsin veya gösterilmesin, sonuç sayfasına git
+                await Application.Current.MainPage.Navigation.PushAsync(new ResultPage(resultModel));
+            }
         }
     }
 }

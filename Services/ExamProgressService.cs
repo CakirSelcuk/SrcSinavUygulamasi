@@ -1,5 +1,6 @@
 using System.Text.Json;
 using SrcSinavUygulamasi.Models;
+using SrcSinavUygulamasi.Constants;
 
 namespace SrcSinavUygulamasi.Services
 {
@@ -269,7 +270,7 @@ namespace SrcSinavUygulamasi.Services
 
             if (avgSuccess >= 85)
                 return ("Hazır ✓", "#22c55e");
-            else if (avgSuccess >= 60)
+            else if (avgSuccess >= ExamRules.PassScore)
                 return ("Geliştirilmeli", "#f59e0b");
             else
                 return ("Tekrar Gerekli", "#ef4444");
@@ -395,7 +396,7 @@ namespace SrcSinavUygulamasi.Services
                 totalScore += examScore;
                 totalQuestions += exam.TotalQuestionCount;
 
-                if (examScore >= 70)
+                if (examScore >= ExamRules.PassScore)
                     passedCount++;
             }
 
@@ -523,7 +524,7 @@ namespace SrcSinavUygulamasi.Services
                 totalScore += examScore;
                 totalQuestions += exam.TotalQuestionCount;
 
-                if (examScore >= 70)
+                if (examScore >= ExamRules.PassScore)
                     passedCount++;
             }
 

@@ -228,10 +228,10 @@
                             <!-- Bars will be added from code-behind -->
                         </Grid>
                         
-                        <!-- 70 puan çizgisi referansı -->
+                        <!-- 60 puan çizgisi referansı -->
                         <HorizontalStackLayout Spacing="4" HorizontalOptions="Center">
                             <BoxView Color="#f59e0b" WidthRequest="20" HeightRequest="3" VerticalOptions="Center"/>
-                            <Label Text="70 puan barajı" TextColor="#94a3b8" FontSize="10"/>
+                            <Label Text="60 puan barajı" TextColor="#94a3b8" FontSize="10"/>
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
                 </Border>

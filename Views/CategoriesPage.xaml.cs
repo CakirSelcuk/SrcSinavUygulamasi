@@ -1,20 +1,49 @@
 using SrcSinavUygulamasi.Services;
+using SrcSinavUygulamasi.Constants;
 
 namespace SrcSinavUygulamasi.Views;
 
 public partial class CategoriesPage : ContentPage
 {
     private readonly ExamProgressService _progressService = new();
+    private readonly AdMobService? _adMobService;
 
     public CategoriesPage()
     {
         InitializeComponent();
+        BannerAdView.AdsId = AdMobService.BANNER_AD_UNIT_ID;
+
+        _adMobService = Application.Current?.Handler?.MauiContext?.Services
+            .GetService<AdMobService>();
     }
 
-    protected override void OnAppearing()
+    protected override async void OnAppearing()
     {
         base.OnAppearing();
         LoadDashboardStats();
+        CourseContentCard.IsVisible = false;
+        await UpdateBannerVisibilityAsync();
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // BANNER REKLAM GÖRÜNÜRLÜĞÜNÜ GÜNCELLE
+    // ═══════════════════════════════════════════════════════════
+    private async Task UpdateBannerVisibilityAsync()
+    {
+        try
+        {
+            if (_adMobService != null)
+            {
+                bool shouldShow = await _adMobService.ShouldShowBannerAsync();
+                BannerAdContainer.IsVisible = shouldShow;
+            }
+        }
+        catch (Exception ex)
+        {
+#if DEBUG
+            System.Diagnostics.Debug.WriteLine($"Banner visibility error: {ex.Message}");
+#endif
+        }
     }
 
     // ═══════════════════════════════════════════════════════════
@@ -33,7 +62,7 @@ public partial class CategoriesPage : ContentPage
                 LblSuccessRate.Text = $"%{successRate:F0}";
                 
                 // Durum metnini belirle
-                if (successRate >= 70)
+                if (successRate >= ExamRules.PassScore)
                     LblStatusText.Text = "Hazırsın! ✓";
                 else if (successRate >= 50)
                     LblStatusText.Text = "İyi gidiyorsun";
@@ -66,6 +95,9 @@ public partial class CategoriesPage : ContentPage
     }
 
     // ═══════════════════════════════════════════════════════════
+    // KURS ÖZEL İÇERİK KARTI (Hibrit Sistem)
+    // ═══════════════════════════════════════════════════════════
+    // ═══════════════════════════════════════════════════════════
     // NAVİGASYON OLAYLARI
     // ═══════════════════════════════════════════════════════════
 
@@ -83,6 +115,15 @@ public partial class CategoriesPage : ContentPage
     {
         // Analiz sayfasına git (tüm kategoriler)
         await Shell.Current.GoToAsync(nameof(AnalysisPage));
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // KURS ÖZEL İÇERİK
+    // ═══════════════════════════════════════════════════════════
+
+    private async void OnCourseContentTapped(object sender, EventArgs e)
+    {
+        await Task.CompletedTask;
     }
 
     // ═══════════════════════════════════════════════════════════
