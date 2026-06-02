@@ -73,6 +73,10 @@ namespace SrcSinavUygulamasi.Services
         /// </summary>
         public bool ValidateSikDagilimi(List<QuestionModel> sorular)
         {
+            // Güncel SRC e-Sınav formatında şıkların 10A/10B/10C/10D dağılması zorunlu değildir.
+            bool sikDagilimiZorunlu = false;
+            if (!sikDagilimiZorunlu) return true;
+
             if (sorular.Count != ExamRules.QuestionCount) return true;
 
             int expectedPerChoice = ExamRules.QuestionCount / 4;

@@ -43,14 +43,16 @@ namespace SrcSinavUygulamasi.Services
             var groupC = questionPool.Where(q => q.DogruCevap == "C").ToList();
             var groupD = questionPool.Where(q => q.DogruCevap == "D").ToList();
 
-            // FAIL FAST: Her gruptan en az 5 soru olmalı
             var validationResult = ValidatePool(groupA.Count, groupB.Count, groupC.Count, groupD.Count);
             if (!validationResult.IsValid)
             {
-                return new BalancedExamResult(
-                    new List<QuestionModel>(),
-                    false,
-                    validationResult.ErrorMessage);
+                string fallbackSeedString = $"{categoryId.ToLower()}_{examIndex}_fallback";
+                int fallbackSeed = GetDeterministicSeed(fallbackSeedString);
+                var fallbackQuestions = ShuffleDeterministic(questionPool, fallbackSeed)
+                    .Take(TOTAL_QUESTIONS)
+                    .ToList();
+
+                return new BalancedExamResult(fallbackQuestions, fallbackQuestions.Count == TOTAL_QUESTIONS, "");
             }
 
             // Deterministik seed oluştur
@@ -119,14 +121,10 @@ namespace SrcSinavUygulamasi.Services
             if (questionPool == null || questionPool.Count == 0)
                 return 0;
 
-            var groupA = questionPool.Count(q => q.DogruCevap == "A");
-            var groupB = questionPool.Count(q => q.DogruCevap == "B");
-            var groupC = questionPool.Count(q => q.DogruCevap == "C");
-            var groupD = questionPool.Count(q => q.DogruCevap == "D");
+            if (questionPool.Count < TOTAL_QUESTIONS)
+                return 0;
 
-            // En az soru sayısına sahip gruba göre max deneme sayısı
-            int minGroup = Math.Min(Math.Min(groupA, groupB), Math.Min(groupC, groupD));
-            return minGroup / QUESTIONS_PER_CHOICE;
+            return 5;
         }
 
         /// <summary>

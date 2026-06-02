@@ -54,7 +54,7 @@ namespace SrcSinavUygulamasi.Services
 
                 // Reklamı yükle
                 CrossMauiMTAdmob.Current.LoadInterstitial(INTERSTITIAL_AD_UNIT_ID);
-                Console.WriteLine("[AdMob] Interstitial reklam yükleniyor...");
+                Console.WriteLine($"[AdMob] Interstitial reklam yükleniyor: {INTERSTITIAL_AD_UNIT_ID}");
 
                 var timeoutTask = Task.Delay(10000);
                 var completedTask = await Task.WhenAny(_adLoadTcs.Task, timeoutTask);
@@ -138,7 +138,10 @@ namespace SrcSinavUygulamasi.Services
         /// </summary>
         public Task<bool> ShouldShowBannerAsync()
         {
-            return Task.FromResult(!_premiumService.IsUserPremium);
+            bool isPremium = _premiumService.IsUserPremium;
+            bool shouldShow = !isPremium;
+            Console.WriteLine($"[AdMob] Banner kontrolü: premium={isPremium}, show={shouldShow}, adUnit={BANNER_AD_UNIT_ID}");
+            return Task.FromResult(shouldShow);
         }
 
         // Event Handlers

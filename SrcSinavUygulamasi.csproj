@@ -14,8 +14,8 @@
 		<ApplicationId>com.srcsinavuygulamasi.app</ApplicationId>
 		<ApplicationIdGuid>A1B2C3D4-E5F6-7890-ABCD-EF1234567890</ApplicationIdGuid>
 
-		<ApplicationDisplayVersion>1.8.6</ApplicationDisplayVersion>
-		<ApplicationVersion>73</ApplicationVersion>
+		<ApplicationDisplayVersion>1.8.8</ApplicationDisplayVersion>
+		<ApplicationVersion>75</ApplicationVersion>
 
 		<WindowsPackageType>None</WindowsPackageType>
 		<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
